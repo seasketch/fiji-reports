@@ -8,7 +8,19 @@
                 "display": "EEZ",
                 "datasourceId": "eez",
                 "objectiveId": "eez",
-                "layerId": "60c7ca5c75ab03840c7c0528"
+                "layerId": "62ec54aab61ca71b12462a90"
+            }
+        ]
+    },
+    {
+        "metricId": "ebsaAreaOverlap",
+        "type": "areaOverlap",
+        "classes": [
+            {
+                "classId": "ebsa",
+                "display": "Ecologically/Biologically Significant Areas",
+                "datasourceId": "ebsa",
+                "layerId": "62ec54aab61ca71b12462a92"
             }
         ]
     }

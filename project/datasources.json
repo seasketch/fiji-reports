@@ -18,38 +18,30 @@
     "url": "https://d3muy0hbwp5qkl.cloudfront.net"
   },
   {
-    "datasourceId": "coastline",
+    "datasourceId": "land",
     "geo_type": "vector",
     "keyStats": {
       "total": {
         "total": {
-          "count": 1925,
+          "count": 952,
           "sum": null,
-          "area": 18398457287.5706
+          "area": 18836508352.556564
         }
       }
     },
     "formats": [
       "fgb"
     ],
-    "layerName": "Fiji Coast",
+    "layerName": "land",
     "classKeys": [],
     "created": "2022-08-16T19:22:14.391Z",
-    "lastUpdated": "2022-08-16T19:22:14.391Z",
-    "src": "data/src/Analytics/Fiji Coast.shp",
+    "lastUpdated": "2022-08-17T01:42:37.244Z",
+    "src": "data/src/Analytics/land.fgb",
     "propertiesToKeep": []
   },
   {
-    "src": "data/src/Analytics/eez.geojson",
-    "layerName": "eez",
-    "geo_type": "vector",
     "datasourceId": "eez",
-    "formats": [
-      "fgb"
-    ],
-    "classKeys": [],
-    "created": "2022-08-16T21:23:19.097Z",
-    "lastUpdated": "2022-08-16T21:23:19.097Z",
+    "geo_type": "vector",
     "keyStats": {
       "total": {
         "total": {
@@ -59,6 +51,36 @@
         }
       }
     },
+    "formats": [
+      "fgb"
+    ],
+    "layerName": "eez",
+    "classKeys": [],
+    "created": "2022-08-16T21:23:19.097Z",
+    "lastUpdated": "2022-08-17T01:42:38.983Z",
+    "src": "data/src/Analytics/eez.geojson",
+    "propertiesToKeep": []
+  },
+  {
+    "datasourceId": "ebsa",
+    "geo_type": "vector",
+    "keyStats": {
+      "total": {
+        "total": {
+          "count": 11,
+          "sum": null,
+          "area": 299355861734.266
+        }
+      }
+    },
+    "formats": [
+      "fgb"
+    ],
+    "layerName": "webm_Fiji_Ecologically_Biologically_Significant_Areas__EBSA_",
+    "classKeys": [],
+    "created": "2022-08-17T00:01:47.857Z",
+    "lastUpdated": "2022-08-17T01:42:41.355Z",
+    "src": "data/src/Fiji_SSL_Layers/Fiji_SSL_Layers.gdb",
     "propertiesToKeep": []
   }
 ]

@@ -212,12 +212,27 @@ export function genVectorKeyStats(
   };
 }
 
+export function getGeomColumnName(geoSrcPath: string) {
+  const ext = path.extname(geoSrcPath);
+  console.log("extension", ext, geoSrcPath);
+  if (ext === ".gdb") {
+    return "Shape";
+  } else if (ext === ".geojson" || ext === "json" || ext === "shp") {
+    return "geometry";
+  } else if (ext === ".gpkg") {
+    return "geom";
+  } else {
+    return "geometry";
+  }
+}
+
 /** Convert vector datasource to GeoJSON */
 export async function genGeojson(config: ImportVectorDatasourceConfig) {
   let { src, propertiesToKeep, layerName } = config;
-  const propsToKeep = propertiesToKeep.concat("geometry");
+  const geomColumnName = getGeomColumnName(config.src);
+  const propsToKeep = propertiesToKeep.concat(geomColumnName);
   const dst = getJsonPath(config.dstPath, config.datasourceId);
-  const query = `SELECT "${propsToKeep}" FROM "${layerName}" where geometry is not null`;
+  const query = `SELECT "${propsToKeep}" FROM "${layerName}" where ${geomColumnName} is not null`;
   const explodeOption =
     config.explodeMulti === undefined
       ? "-explodecollections"
@@ -231,9 +246,10 @@ export async function genGeojson(config: ImportVectorDatasourceConfig) {
 /** Convert vector datasource to FlatGeobuf */
 export async function genFlatgeobuf(config: ImportVectorDatasourceConfig) {
   const { src, propertiesToKeep, layerName } = config;
-  const propsToKeep = propertiesToKeep.concat("geometry");
+  const geomColumnName = getGeomColumnName(config.src);
+  const propsToKeep = propertiesToKeep.concat(geomColumnName);
   const dst = getFlatGeobufPath(config.dstPath, config.datasourceId);
-  const query = `SELECT "${propsToKeep}" FROM "${layerName}" where geometry is not null`;
+  const query = `SELECT "${propsToKeep}" FROM "${layerName}" where ${geomColumnName} is not null`;
   const explodeOption =
     config.explodeMulti === undefined
       ? "-explodecollections"

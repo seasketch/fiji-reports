@@ -23,17 +23,12 @@ import styled from "styled-components";
 import project from "../../project";
 import { squareMeterToKilometer } from "@seasketch/geoprocessing";
 
-const boundaryMetricGroup = project.getMetricGroup("boundaryAreaOverlap");
-const boundaryLegacyMetricGroup = project.getLegacyMetricGroup(
-  "boundaryAreaOverlap"
-);
-const boundaryTotalMetrics = project.getPrecalcMetrics(
-  boundaryMetricGroup,
-  "area"
-);
+const metricGroup = project.getMetricGroup("ebsaAreaOverlap");
+const legacyMetricGroup = project.getLegacyMetricGroup("ebsaAreaOverlap");
+const totalMetrics = project.getPrecalcMetrics(metricGroup, "area");
 
-const METRIC_ID = boundaryMetricGroup.metricId;
-const PERC_METRIC_ID = `${boundaryMetricGroup.metricId}Perc`;
+const METRIC_ID = metricGroup.metricId;
+const PERC_METRIC_ID = `${metricGroup.metricId}Perc`;
 
 const Number = new Intl.NumberFormat("en", { style: "decimal" });
 
@@ -70,16 +65,20 @@ const TableStyled = styled(ReportTableStyled)`
   }
 `;
 
-const SizeCard = () => {
+const EbsaCard = () => {
   const [{ isCollection }] = useSketchProperties();
   return (
-    <ResultsCard title="Size" functionName="boundaryAreaOverlap" useChildCard>
+    <ResultsCard
+      title="Ecologically/Biologically Significant Areas"
+      functionName="ebsaAreaOverlap"
+      useChildCard
+    >
       {(data: ReportResult) => {
         if (Object.keys(data).length === 0)
           throw new Error("Protection results not found");
         return (
           <ToolbarCard
-            title="Size"
+            title="Ecologically/Biologically Significant Areas"
             items={
               <>
                 <DataDownload
@@ -92,8 +91,8 @@ const SizeCard = () => {
             }
           >
             <p>
-              Plans must meet size objectives the{" "}
-              {project.basic.nounPossessive || ""} EEZ.
+              Plans must include Ecologically/Biologically Significant Areas
+              (EBSAs).
             </p>
 
             {genSingleSizeTable(data)}
@@ -106,13 +105,9 @@ const SizeCard = () => {
 
             <Collapse title="Learn more">
               <p>
-                The Exclusive Economic Zone (EEZ) extends from the shoreline out
-                to 200 nautical miles.
-              </p>
-              <p>
                 {" "}
-                This report summarizes the size and proportion of this plan
-                within the EEZ.
+                This report summarizes the proportion of known significant areas
+                within this plan.
               </p>
               <p>
                 If MPA boundaries overlap with each other, the overlap is only
@@ -127,14 +122,14 @@ const SizeCard = () => {
 };
 
 const genSingleSizeTable = (data: ReportResult) => {
-  const classesById = keyBy(boundaryMetricGroup.classes, (c) => c.classId);
+  const classesById = keyBy(metricGroup.classes, (c) => c.classId);
   let singleMetrics = data.metrics.filter(
     (m) => m.sketchId === data.sketch.properties.id
   );
 
   const finalMetrics = [
     ...singleMetrics,
-    ...toPercentMetric(singleMetrics, boundaryTotalMetrics, PERC_METRIC_ID),
+    ...toPercentMetric(singleMetrics, totalMetrics, PERC_METRIC_ID),
   ];
 
   const aggMetrics = nestMetrics(finalMetrics, ["classId", "metricId"]);
@@ -169,10 +164,10 @@ const genSingleSizeTable = (data: ReportResult) => {
     <>
       <ClassTable
         rows={finalMetrics}
-        dataGroup={boundaryLegacyMetricGroup}
+        dataGroup={legacyMetricGroup}
         columnConfig={[
           {
-            columnLabel: "Boundary",
+            columnLabel: "Area",
             type: "class",
             width: 20,
           },
@@ -237,7 +232,7 @@ const genNetworkSizeTable = (data: ReportResult) => {
   );
   const finalMetrics = [
     ...sketchMetrics,
-    ...toPercentMetric(sketchMetrics, boundaryTotalMetrics, PERC_METRIC_ID),
+    ...toPercentMetric(sketchMetrics, totalMetrics, PERC_METRIC_ID),
   ];
 
   const aggMetrics = nestMetrics(finalMetrics, [
@@ -251,7 +246,7 @@ const genNetworkSizeTable = (data: ReportResult) => {
   }));
 
   const classColumns: Column<{ sketchId: string }>[] =
-    boundaryLegacyMetricGroup.classes.map((curClass, index) => ({
+    legacyMetricGroup.classes.map((curClass, index) => ({
       Header: curClass.display,
       style: { color: "#777" },
       columns: [
@@ -295,4 +290,4 @@ const genNetworkSizeTable = (data: ReportResult) => {
   );
 };
 
-export default SizeCard;
+export default EbsaCard;

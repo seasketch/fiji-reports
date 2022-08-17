@@ -18,12 +18,12 @@ import {
   isInternalVectorDatasource,
 } from "../util/datasources/helpers";
 
-export async function boundaryAreaOverlap(
+export async function ebsaAreaOverlap(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>
 ): Promise<ReportResult> {
-  const metricGroup = project.getMetricGroup("boundaryAreaOverlap");
+  const metricGroup = project.getMetricGroup("ebsaAreaOverlap");
 
-  const polysByBoundary = (
+  const features = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
         if (!curClass.datasourceId) {
@@ -55,7 +55,7 @@ export async function boundaryAreaOverlap(
       metricGroup.classes.map(async (curClass) => {
         const overlapResult = await overlapFeatures(
           metricGroup.metricId,
-          polysByBoundary[curClass.classId],
+          features[curClass.classId],
           sketch
         );
         return overlapResult.map(
@@ -78,11 +78,11 @@ export async function boundaryAreaOverlap(
   };
 }
 
-export default new GeoprocessingHandler(boundaryAreaOverlap, {
-  title: "boundaryAreaOverlap",
-  description: "Calculate sketch overlap with boundary polygons",
+export default new GeoprocessingHandler(ebsaAreaOverlap, {
+  title: "ebsaAreaOverlap",
+  description: "Calculate sketch overlap with ebsa polygons",
   executionMode: "async",
-  timeout: 40,
   memory: 4096,
+  timeout: 40,
   requiresProperties: [],
 });

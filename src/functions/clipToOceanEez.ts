@@ -32,7 +32,7 @@ import { fgbFetchAll } from "@seasketch/geoprocessing/dataproviders";
 const ENFORCE_MAX_SIZE = false;
 const MAX_SIZE_KM = 500000 * 1000 ** 2; // Default 500,000 KM
 
-const ds = project.getDatasourceById("coastline");
+const ds = project.getDatasourceById("land");
 
 // Defined at module level for potential caching/reuse by serverless process
 const datasources = datasourcesSchema.parse(project.datasources);
@@ -132,10 +132,10 @@ export async function clipToOceanEez(
   //   );
   // }
 
-  const kinkPoints = kinks(feature);
-  if (kinkPoints.features.length > 0) {
-    throw new ValidationError("Your sketch polygon crosses itself.");
-  }
+  // const kinkPoints = kinks(feature);
+  // if (kinkPoints.features.length > 0) {
+  //   throw new ValidationError("Your sketch polygon crosses itself.");
+  // }
 
   // Ensure coordinate positions are within -180 to 180 longitude, -90 to 90 latitude
   const cleanFeature = cleanCoords(feature) as Feature<Polygon | MultiPolygon>;
