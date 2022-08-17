@@ -12,10 +12,10 @@ import area from "@turf/area";
 import bbox from "@turf/bbox";
 import { featureCollection as fc, multiPolygon } from "@turf/helpers";
 import flatten from "@turf/flatten";
-import kinks from "@turf/kinks";
 import { clipMultiMerge } from "@seasketch/geoprocessing";
 import splitGeojson from "geojson-antimeridian-cut";
 import { cleanCoords } from "../util/cleanCoords";
+import selfIntersection from "sweepline-intersections";
 
 import {
   getLandVectorDatasource,
@@ -45,13 +45,13 @@ export async function clipLand(feature: Feature<Polygon | MultiPolygon>) {
   return clip(fc([feature, ...landFeatures.features]), "difference");
 }
 
-export async function clipCoastline(feature: Feature<Polygon | MultiPolygon>) {
+export async function clipLocalLand(feature: Feature<Polygon | MultiPolygon>) {
   if (!isInternalVectorDatasource(ds))
     throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
   const url = `${project.dataBucketUrl()}${getFlatGeobufFilename(ds)}`;
   // Fetch for entire project area, we want the whole thing
-  const polys = await fgbFetchAll<Feature<Polygon>>(url);
-  return clipMultiMerge(feature, fc(polys), "intersection");
+  const polys = await fgbFetchAll<Feature<Polygon>>(url, bbox(feature));
+  return clip(fc([feature, ...polys]), "difference");
 }
 
 export async function clipOutsideEez(
@@ -132,8 +132,8 @@ export async function clipToOceanEez(
   //   );
   // }
 
-  // const kinkPoints = kinks(feature);
-  // if (kinkPoints.features.length > 0) {
+  // const intersections = selfIntersection(cleanFeature, false);
+  // if (intersections.length > 0) {
   //   throw new ValidationError("Your sketch polygon crosses itself.");
   // }
 
@@ -143,7 +143,7 @@ export async function clipToOceanEez(
   // Split sketch on antimeridian.  If it doesn't cross simply returns original polygon
   const splitOrNotFeature = splitGeojson(cleanFeature);
 
-  let clipped = await clipLand(splitOrNotFeature);
+  let clipped = await clipLocalLand(splitOrNotFeature);
   // if (clipped) clipped = await clipOutsideEez(clipped, eezFilterByNames);
 
   if (!clipped || area(clipped) === 0) {
