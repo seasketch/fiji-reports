@@ -1,0 +1,30 @@
+[
+  {
+    "geographyId": "world",
+    "datasourceId": "world",
+    "display": "World",
+    "groups": [],
+    "precalc": false
+  },
+  {
+    "geographyId": "eez",
+    "datasourceId": "global-eez-mr-v12",
+    "display": "Fijian Exclusive Economic Zone",
+    "propertyFilter": {
+      "property": "GEONAME",
+      "values": [
+        "Fijian Exclusive Economic Zone"
+      ]
+    },
+    "bboxFilter": [
+      -180,
+      -25.0971098344673,
+      180,
+      -9.78332062105598
+    ],
+    "groups": [
+      "default-boundary"
+    ],
+    "precalc": true
+  }
+]

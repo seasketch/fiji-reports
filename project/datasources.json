@@ -5,6 +5,9 @@
     "formats": [
       "subdivided"
     ],
+    "precalc": false,
+    "idProperty": "gid",
+    "nameProperty": "gid",
     "classKeys": [],
     "url": "https://d3p1dsef9f0gjr.cloudfront.net/"
   },
@@ -14,73 +17,92 @@
     "formats": [
       "subdivided"
     ],
+    "precalc": false,
+    "idProperty": "UNION",
+    "nameProperty": "UNION",
     "classKeys": [],
     "url": "https://d3muy0hbwp5qkl.cloudfront.net"
   },
   {
-    "datasourceId": "land",
+    "datasourceId": "global-eez-mr-v12",
     "geo_type": "vector",
-    "keyStats": {
-      "total": {
-        "total": {
-          "count": 952,
-          "sum": null,
-          "area": 18836508352.556564
-        }
-      }
-    },
     "formats": [
-      "fgb"
+      "fgb",
+      "json"
     ],
-    "layerName": "land",
+    "precalc": true,
+    "metadata": {
+      "name": "World EEZ v11",
+      "description": "World EEZ boundaries and disputed areas",
+      "version": "11.0",
+      "publisher": "Flanders Marine Institute (VLIZ)",
+      "publishDate": "2019118",
+      "publishLink": "https://marineregions.org/"
+    },
+    "idProperty": "GEONAME",
+    "nameProperty": "GEONAME",
+    "propertyFilter": {
+      "property": "GEONAME",
+      "values": [
+        "Fijian Exclusive Economic Zone"
+      ]
+    },
+    "bboxFilter": [
+      -180,
+      -25.0971098344673,
+      180,
+      -9.78332062105598
+    ],
     "classKeys": [],
-    "created": "2022-08-16T19:22:14.391Z",
-    "lastUpdated": "2022-08-17T01:42:37.244Z",
-    "src": "data/src/Analytics/land.fgb",
-    "propertiesToKeep": []
+    "url": "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/global-eez-mr-v12.fgb"
   },
   {
-    "datasourceId": "eez",
+    "datasourceId": "world",
     "geo_type": "vector",
-    "keyStats": {
-      "total": {
-        "total": {
-          "count": 2,
-          "sum": null,
-          "area": 1309250598171.1682
-        }
-      }
-    },
     "formats": [
+      "json",
       "fgb"
     ],
-    "layerName": "eez",
+    "precalc": false,
+    "metadata": {
+      "name": "World Outline Polygon",
+      "description": "World polygon for default project geography in seasketch geoprocessing proejcts",
+      "version": "1.0",
+      "publisher": "SeaSketch",
+      "publishDate": "20231018",
+      "publishLink": ""
+    },
+    "layerName": "world",
     "classKeys": [],
-    "created": "2022-08-16T21:23:19.097Z",
-    "lastUpdated": "2022-08-17T01:42:38.983Z",
-    "src": "data/src/Analytics/eez.geojson",
-    "propertiesToKeep": []
+    "url": "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/world.fgb"
   },
   {
     "datasourceId": "ebsa",
     "geo_type": "vector",
-    "keyStats": {
-      "total": {
-        "total": {
-          "count": 11,
-          "sum": null,
-          "area": 299355861734.266
-        }
-      }
-    },
     "formats": [
       "fgb"
     ],
+    "precalc": true,
     "layerName": "webm_Fiji_Ecologically_Biologically_Significant_Areas__EBSA_",
     "classKeys": [],
-    "created": "2022-08-17T00:01:47.857Z",
-    "lastUpdated": "2022-08-17T01:42:41.355Z",
+    "created": "2023-11-17T00:40:25.146Z",
+    "lastUpdated": "2023-11-17T02:57:47.202Z",
     "src": "data/src/Fiji_SSL_Layers/Fiji_SSL_Layers.gdb",
-    "propertiesToKeep": []
+    "propertiesToKeep": [],
+    "explodeMulti": false
+  },
+  {
+    "datasourceId": "fiji_anticross_random_test",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2023-11-17T02:15:17.969Z",
+    "lastUpdated": "2023-11-17T02:57:47.379Z",
+    "src": "data/src/Analytics/fiji_anticross_random_test.tif"
   }
 ]

@@ -1,6 +1,12 @@
 {
-  "bbox": [-180.0000000000000000, -25.0971098344673003, 180.0000000000000000, -9.7833206210559798],
-  "areaSquareMeters": 1309250598171.1682,
-  "noun": "Fiji",
-  "nounPossessive": "Fijian"
+  "bbox": [
+    -180,
+    -25.0971098344673,
+    180,
+    -9.78332062105598
+  ],
+  "planningAreaType": "eez",
+  "planningAreaId": "Fijian Exclusive Economic Zone",
+  "planningAreaName": "Fijian Exclusive Economic Zone",
+  "externalLinks": {}
 }

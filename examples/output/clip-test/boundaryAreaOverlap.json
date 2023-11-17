@@ -1,12 +1,12 @@
 {
   "metrics": [
     {
+      "geographyId": "eez",
       "metricId": "boundaryAreaOverlap",
-      "sketchId": "62fc1c502ad47e404e9cd5b9",
       "classId": "eez",
+      "sketchId": "62fc1c502ad47e404e9cd5b9",
       "groupId": null,
-      "geographyId": null,
-      "value": 14488364503.732622,
+      "value": 7309610866.452122,
       "extra": {
         "sketchName": "clip-test"
       }

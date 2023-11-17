@@ -7,6 +7,8 @@ import {
   nestMetrics,
   valueFormatter,
   toPercentMetric,
+  sortMetricsDisplayOrder,
+  MetricGroup,
 } from "@seasketch/geoprocessing/client-core";
 import {
   ClassTable,
@@ -21,19 +23,10 @@ import {
 } from "@seasketch/geoprocessing/client-ui";
 import styled from "styled-components";
 import project from "../../project";
-import { squareMeterToKilometer } from "@seasketch/geoprocessing";
-
-const boundaryMetricGroup = project.getMetricGroup("boundaryAreaOverlap");
-const boundaryLegacyMetricGroup = project.getLegacyMetricGroup(
-  "boundaryAreaOverlap"
-);
-const boundaryTotalMetrics = project.getPrecalcMetrics(
-  boundaryMetricGroup,
-  "area"
-);
-
-const METRIC_ID = boundaryMetricGroup.metricId;
-const PERC_METRIC_ID = `${boundaryMetricGroup.metricId}Perc`;
+import { Metric, squareMeterToKilometer } from "@seasketch/geoprocessing";
+import Translator from "../components/TranslatorAsync";
+import { Trans, useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 
 const Number = new Intl.NumberFormat("en", { style: "decimal" });
 
@@ -70,116 +63,148 @@ const TableStyled = styled(ReportTableStyled)`
   }
 `;
 
-const SizeCard = () => {
+interface GeogProp {
+  geographyId?: string
+}
+
+export const SizeCard: React.FunctionComponent<GeogProp> = (props) => {
   const [{ isCollection }] = useSketchProperties();
+  const { t } = useTranslation();
+
+  const curGeography = project.getGeographyById(props.geographyId, {
+    fallbackGroup: "default-boundary",
+  });
+  const metricGroup = project.getMetricGroup("boundaryAreaOverlap", t);
+  const precalcMetrics = project.getPrecalcMetrics(
+    metricGroup,
+    "area",
+    curGeography.geographyId
+  );
+
+  const notFoundString = t("Results not found");
+
+  /* i18next-extract-disable-next-line */
+  const planningUnitName = t(project.basic.planningAreaName);
   return (
-    <ResultsCard title="Size" functionName="boundaryAreaOverlap" useChildCard>
+    <ResultsCard
+      title={t("Size")}
+      functionName="boundaryAreaOverlap"
+      useChildCard
+    >
       {(data: ReportResult) => {
-        if (Object.keys(data).length === 0)
-          throw new Error("Protection results not found");
+        if (Object.keys(data).length === 0) throw new Error(notFoundString);
+
         return (
-          <ToolbarCard
-            title="Size"
-            items={
-              <>
-                <DataDownload
-                  filename="size"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-end"
-                />
-              </>
-            }
-          >
-            <p>
-              Plans must meet size objectives the{" "}
-              {project.basic.nounPossessive || ""} EEZ.
-            </p>
-
-            {genSingleSizeTable(data)}
-
-            {isCollection && (
-              <Collapse title="Show by MPA">
-                {genNetworkSizeTable(data)}
+          <>
+            <ToolbarCard
+              title={t("Size")}
+              items={
+                <>
+                  <DataDownload
+                    filename="size"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-end"
+                  />
+                </>
+              }
+            >
+              <p>
+                {planningUnitName}{" "}
+                <Trans i18nKey="SizeCard - introduction">
+                  national waters extend from the shoreline out to 200 nautical
+                  miles, known as the Exclusive Economic Zone (EEZ). This report
+                  summarizes offshore plan overlap with the EEZ and other
+                  boundaries within it, measuring progress towards achieving %
+                  targets for each boundary.
+                </Trans>
+              </p>
+              {genSingleSizeTable(data, precalcMetrics, metricGroup, t)}
+              {isCollection && (
+                <Collapse title={t("Show by MPA")}>
+                  {genNetworkSizeTable(data, precalcMetrics, metricGroup, t)}
+                </Collapse>
+              )}
+              <Collapse title={t("Learn more")}>
+                <p>
+                  <img
+                    src={require("../assets/img/territorial_waters.png")}
+                    style={{ maxWidth: "100%" }}
+                  />
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Territorial_waters"
+                  >
+                    <Trans i18nKey="SizeCard - learn more source">
+                      Source: Wikipedia - Territorial Waters
+                    </Trans>
+                  </a>
+                </p>
+                <Trans i18nKey="SizeCard - learn more">
+                  <p>
+                    {" "}
+                    This report summarizes the size and proportion of this plan
+                    within these boundaries.
+                  </p>
+                  <p>
+                    If sketch boundaries within a plan overlap with each other,
+                    the overlap is only counted once.
+                  </p>
+                </Trans>
               </Collapse>
-            )}
-
-            <Collapse title="Learn more">
-              <p>
-                The Exclusive Economic Zone (EEZ) extends from the shoreline out
-                to 200 nautical miles.
-              </p>
-              <p>
-                {" "}
-                This report summarizes the size and proportion of this plan
-                within the EEZ.
-              </p>
-              <p>
-                If MPA boundaries overlap with each other, the overlap is only
-                counted once.
-              </p>
-            </Collapse>
-          </ToolbarCard>
+            </ToolbarCard>
+          </>
         );
       }}
     </ResultsCard>
   );
 };
 
-const genSingleSizeTable = (data: ReportResult) => {
-  const classesById = keyBy(boundaryMetricGroup.classes, (c) => c.classId);
+const genSingleSizeTable = (
+  data: ReportResult,
+  precalcMetrics: Metric[],
+  mg: MetricGroup,
+  t: TFunction
+) => {
+  const boundaryLabel = t("Boundary");
+  const foundWithinLabel = t("Found Within Plan");
+  const areaWithinLabel = t("Area Within Plan");
+  const areaPercWithinLabel = t("% Within Plan");
+  const mapLabel = t("Map");
+  const sqKmLabel = t("km²");
+
+  const classesById = keyBy(mg.classes, (c) => c.classId);
   let singleMetrics = data.metrics.filter(
     (m) => m.sketchId === data.sketch.properties.id
   );
 
-  const finalMetrics = [
-    ...singleMetrics,
-    ...toPercentMetric(singleMetrics, boundaryTotalMetrics, PERC_METRIC_ID),
-  ];
-
-  const aggMetrics = nestMetrics(finalMetrics, ["classId", "metricId"]);
-
-  // Use sketch ID for each table row, index into aggMetrics
-  const rows = Object.keys(aggMetrics).map((classId) => ({ classId }));
-
-  const areaColumns: Column<{ classId: string }>[] = [
-    {
-      Header: " ",
-      accessor: (row) => <b>{classesById[row.classId || "missing"].display}</b>,
-    },
-    {
-      Header: "Area Within Plan",
-      accessor: (row) => {
-        const value = aggMetrics[row.classId][METRIC_ID][0].value;
-        return (
-          Number.format(Math.round(squareMeterToKilometer(value))) + " sq. km."
-        );
-      },
-    },
-    {
-      Header: "% Within Plan",
-      accessor: (row) => {
-        const value = aggMetrics[row.classId][PERC_METRIC_ID][0].value;
-        return percentWithEdge(value);
-      },
-    },
-  ];
+  const finalMetrics = sortMetricsDisplayOrder(
+    [
+      ...singleMetrics,
+      ...toPercentMetric(singleMetrics, precalcMetrics, {
+        metricIdOverride: project.getMetricGroupPercId(mg),
+      }),
+    ],
+    "classId",
+    ["eez", "offshore", "contiguous"]
+  );
 
   return (
     <>
       <ClassTable
         rows={finalMetrics}
-        dataGroup={boundaryLegacyMetricGroup}
+        metricGroup={mg}
+        objective={project.getMetricGroupObjectives(mg, t)}
         columnConfig={[
           {
-            columnLabel: "Boundary",
+            columnLabel: boundaryLabel,
             type: "class",
-            width: 20,
+            width: 25,
           },
           {
-            columnLabel: "Found Within Plan",
+            columnLabel: foundWithinLabel,
             type: "metricValue",
-            metricId: METRIC_ID,
+            metricId: mg.metricId,
             valueFormatter: (val: string | number) =>
               Number.format(
                 Math.round(
@@ -188,21 +213,22 @@ const genSingleSizeTable = (data: ReportResult) => {
                   )
                 )
               ),
-            valueLabel: "sq. km.",
-            width: 25,
+            valueLabel: sqKmLabel,
+            width: 20,
           },
           {
             columnLabel: " ",
             type: "metricChart",
-            metricId: PERC_METRIC_ID,
+            metricId: project.getMetricGroupPercId(mg),
             valueFormatter: "percent",
             chartOptions: {
               showTitle: true,
+              showTargetLabel: true,
               targetLabelPosition: "bottom",
               targetLabelStyle: "tight",
               barHeight: 11,
             },
-            width: 30,
+            width: 40,
             targetValueFormatter: (
               value: number,
               row: number,
@@ -210,7 +236,9 @@ const genSingleSizeTable = (data: ReportResult) => {
             ) => {
               if (row === 0) {
                 return (value: number) =>
-                  `${valueFormatter(value / 100, "percent0dig")} Target`;
+                  `${valueFormatter(value / 100, "percent0dig")} ${t(
+                    "Target"
+                  )}`;
               } else {
                 return (value: number) =>
                   `${valueFormatter(value / 100, "percent0dig")}`;
@@ -220,7 +248,7 @@ const genSingleSizeTable = (data: ReportResult) => {
           {
             type: "layerToggle",
             width: 15,
-            columnLabel: "Map",
+            columnLabel: mapLabel,
           },
         ]}
       />
@@ -228,7 +256,12 @@ const genSingleSizeTable = (data: ReportResult) => {
   );
 };
 
-const genNetworkSizeTable = (data: ReportResult) => {
+const genNetworkSizeTable = (
+  data: ReportResult,
+  precalcMetrics: Metric[],
+  mg: MetricGroup,
+  t: TFunction
+) => {
   const sketches = toNullSketchArray(data.sketch);
   const sketchesById = keyBy(sketches, (sk) => sk.properties.id);
   const sketchIds = sketches.map((sk) => sk.properties.id);
@@ -237,7 +270,9 @@ const genNetworkSizeTable = (data: ReportResult) => {
   );
   const finalMetrics = [
     ...sketchMetrics,
-    ...toPercentMetric(sketchMetrics, boundaryTotalMetrics, PERC_METRIC_ID),
+    ...toPercentMetric(sketchMetrics, precalcMetrics, {
+      metricIdOverride: project.getMetricGroupPercId(mg),
+    }),
   ];
 
   const aggMetrics = nestMetrics(finalMetrics, [
@@ -250,35 +285,42 @@ const genNetworkSizeTable = (data: ReportResult) => {
     sketchId,
   }));
 
-  const classColumns: Column<{ sketchId: string }>[] =
-    boundaryLegacyMetricGroup.classes.map((curClass, index) => ({
-      Header: curClass.display,
-      style: { color: "#777" },
-      columns: [
-        {
-          Header: "Area" + " ".repeat(index),
-          accessor: (row) => {
-            const value =
-              aggMetrics[row.sketchId][curClass.classId as string][METRIC_ID][0]
-                .value;
-            return (
-              Number.format(Math.round(squareMeterToKilometer(value))) +
-              " sq. km."
-            );
+  const classColumns: Column<{ sketchId: string }>[] = mg.classes.map(
+    (curClass, index) => {
+      /* i18next-extract-disable-next-line */
+      const transString = t(curClass.display);
+      return {
+        Header: transString,
+        style: { color: "#777" },
+        columns: [
+          {
+            Header: t("Area") + " ".repeat(index),
+            accessor: (row) => {
+              const value =
+                aggMetrics[row.sketchId][curClass.classId as string][
+                  mg.metricId
+                ][0].value;
+              return (
+                Number.format(Math.round(squareMeterToKilometer(value))) +
+                " " +
+                t("km²")
+              );
+            },
           },
-        },
-        {
-          Header: "% Area" + " ".repeat(index),
-          accessor: (row) => {
-            const value =
-              aggMetrics[row.sketchId][curClass.classId as string][
-                PERC_METRIC_ID
-              ][0].value;
-            return percentWithEdge(value);
+          {
+            Header: t("% Area") + " ".repeat(index),
+            accessor: (row) => {
+              const value =
+                aggMetrics[row.sketchId][curClass.classId as string][
+                  project.getMetricGroupPercId(mg)
+                ][0].value;
+              return percentWithEdge(value);
+            },
           },
-        },
-      ],
-    }));
+        ],
+      };
+    }
+  );
 
   const columns: Column<any>[] = [
     {
@@ -295,4 +337,13 @@ const genNetworkSizeTable = (data: ReportResult) => {
   );
 };
 
-export default SizeCard;
+/**
+ * SizeCard as a top-level report client
+ */
+export const SizeCardReportClient = () => {
+  return (
+    <Translator>
+      <SizeCard />
+    </Translator>
+  );
+};
