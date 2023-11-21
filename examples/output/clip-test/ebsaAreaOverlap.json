@@ -1,0 +1,54 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "ebsaAreaOverlap",
+      "classId": "ebsa",
+      "sketchId": "62fc1c502ad47e404e9cd5b9",
+      "groupId": null,
+      "value": 1445289399.764877,
+      "extra": {
+        "sketchName": "clip-test"
+      }
+    }
+  ],
+  "sketch": {
+    "type": "Feature",
+    "properties": {
+      "id": "62fc1c502ad47e404e9cd5b9",
+      "name": "clip-test",
+      "updatedAt": "2022-08-16T22:38:08.640Z",
+      "createdAt": "2022-08-16T22:38:08.640Z",
+      "sketchClassId": "62f2d40ff56d907b1dd7998a",
+      "isCollection": false,
+      "userAttributes": [
+        {
+          "label": "Aquaculture and Bottom Exploitation",
+          "fieldType": "ChoiceField",
+          "exportId": "AQUACULTURE",
+          "value": "NOT_ALLOWED"
+        },
+        {
+          "label": "Allowed Fishing Gear",
+          "fieldType": "ChoiceField",
+          "exportId": "GEAR_TYPES",
+          "value": "[\"BEACH_SEINES\"]"
+        },
+        {
+          "label": "Boating and Anchoring",
+          "fieldType": "ChoiceField",
+          "exportId": "BOATING",
+          "value": "FULLY_REGULATED"
+        }
+      ]
+    },
+    "id": "1",
+    "bbox": [
+      -177.0213869206259,
+      -16.085820483404543,
+      179.70466437981239,
+      -15.85344919300553
+    ],
+    "geometry": null
+  }
+}

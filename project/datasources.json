@@ -30,7 +30,7 @@
       "fgb",
       "json"
     ],
-    "precalc": true,
+    "precalc": false,
     "metadata": {
       "name": "World EEZ v11",
       "description": "World EEZ boundaries and disputed areas",
@@ -104,5 +104,20 @@
     "created": "2023-11-17T02:15:17.969Z",
     "lastUpdated": "2023-11-17T02:57:47.379Z",
     "src": "data/src/Analytics/fiji_anticross_random_test.tif"
+  },
+  {
+    "src": "data/src/Analytics/fiji-eez-mr-v12.geojson",
+    "layerName": "fiji-eez-mr-v12",
+    "geo_type": "vector",
+    "datasourceId": "fiji-eez-mr-v12",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [],
+    "created": "2023-11-21T00:25:38.018Z",
+    "lastUpdated": "2023-11-21T00:25:38.018Z",
+    "propertiesToKeep": [],
+    "explodeMulti": false,
+    "precalc": true
   }
 ]
