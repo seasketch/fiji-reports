@@ -2,11 +2,11 @@
   "metrics": [
     {
       "geographyId": "eez",
-      "metricId": "ebsaAreaOverlap",
-      "classId": "ebsa",
+      "metricId": "testRasterOverlap",
+      "classId": "class1",
       "sketchId": "62fc1c502ad47e404e9cd5b9",
       "groupId": null,
-      "value": 11025042762.061483,
+      "value": 111,
       "extra": {
         "sketchName": "clip-test"
       }

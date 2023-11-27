@@ -22,4 +22,15 @@
           "layerId": ""
       }
   ]
+},{
+  "metricId": "testRasterOverlap",
+  "type": "valueOverlap",
+  "classes": [
+      {
+          "classId": "class1",
+          "display": "Class 1",
+          "datasourceId": "fiji_anticross_random_test",
+          "layerId": ""
+      }
+  ]
 }]

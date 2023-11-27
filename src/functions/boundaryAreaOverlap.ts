@@ -10,12 +10,11 @@ import {
   overlapFeatures,
   rekeyMetrics,
   sortMetrics,
-  isInternalVectorDatasource,
-  isExternalVectorDatasource,
   isPolygonFeatureArray,
   getFirstFromParam,
   DefaultExtraParams,
   splitSketchAntimeridian,
+  isVectorDatasource,
 } from "@seasketch/geoprocessing";
 import { getFeatures } from "@seasketch/geoprocessing/dataproviders";
 import bbox from "@turf/bbox";
@@ -33,7 +32,6 @@ export async function boundaryAreaOverlap(
     fallbackGroup: "default-boundary",
   });
   const splitSketch = splitSketchAntimeridian(sketch);
-  console.log("split sketch", JSON.stringify(splitSketch));
   const clippedSketch = await clipToGeography(splitSketch, curGeography);
   const sketchBox = clippedSketch.bbox || bbox(clippedSketch);
 
@@ -45,10 +43,7 @@ export async function boundaryAreaOverlap(
           throw new Error(`Missing datasourceId ${curClass.classId}`);
         }
         const ds = project.getDatasourceById(curClass.datasourceId);
-        if (
-          !isInternalVectorDatasource(ds) &&
-          !isExternalVectorDatasource(ds)
-        ) {
+        if (!isVectorDatasource(ds)) {
           throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
         }
 
@@ -70,7 +65,8 @@ export async function boundaryAreaOverlap(
     };
   }, {});
 
-  const metrics: Metric[] = ( // calculate area overlap metrics for each class
+  const metrics: Metric[] = // calculate area overlap metrics for each class
+  (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
         const overlapResult = await overlapFeatures(
