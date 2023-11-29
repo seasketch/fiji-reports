@@ -16,8 +16,6 @@ import {
   clipMultiMerge,
   zeroSketchArray,
   zeroPolygon,
-  splitFeature,
-  toFeaturePolygonArray,
 } from "@seasketch/geoprocessing";
 import simplify from "@turf/simplify";
 
@@ -41,7 +39,7 @@ export async function clipToGeography<G extends Polygon | MultiPolygon>(
     else return sketch;
   }
 
-  const box = sketch.bbox || bbox(sketch);
+  const sketchBbox = sketch.bbox || bbox(sketch);
   // ToDo: need to support external geography too, can we borrow logic from precalc
   const ds = project.getVectorDatasourceById(geography.datasourceId);
   // ToDo - accept array of geographies and union all their features, then intersect with sketch
@@ -49,7 +47,7 @@ export async function clipToGeography<G extends Polygon | MultiPolygon>(
     ds,
     project.getDatasourceUrl(ds),
     {
-      bbox: box,
+      bbox: sketchBbox,
     }
   );
 
@@ -67,7 +65,7 @@ export async function clipToGeography<G extends Polygon | MultiPolygon>(
     if (isSketchCollection(sketch)) {
       return {
         properties: sketch.properties,
-        bbox: box,
+        bbox: sketchBbox,
         type: "FeatureCollection",
         features: finalSketches,
       };
@@ -76,33 +74,34 @@ export async function clipToGeography<G extends Polygon | MultiPolygon>(
     }
   } else {
     const sketches = toSketchArray(sketch);
-    sketches.forEach((sketch) => {
+    sketches.forEach((curSketch) => {
       const intersection = clipMultiMerge(
-        sketch,
+        curSketch,
         featureCollection(geogFeatures),
         "intersection"
       ) as Feature<G>;
       if (!intersection)
         console.log(
-          `Sketch ${sketch.id} does not intersect with geography ${geography.geographyId}`
+          `Sketch ${curSketch.id} does not intersect with geography ${geography.geographyId}`
         );
       if (intersection) {
         if (options) {
-          sketch.geometry = simplify(intersection.geometry, options);
+          curSketch.geometry = simplify(intersection.geometry, options);
         } else {
-          sketch.geometry = intersection.geometry;
+          curSketch.geometry = intersection.geometry;
         }
       } else {
-        sketch.geometry = zeroPolygon() as G;
+        curSketch.geometry = zeroPolygon() as G;
       }
-      finalSketches.push(sketch);
+      curSketch.bbox = bbox(curSketch);
+      finalSketches.push(curSketch);
     });
   }
 
   if (isSketchCollection(sketch)) {
     return {
       properties: sketch.properties,
-      bbox: box,
+      bbox: bbox(finalSketches),
       type: "FeatureCollection",
       features: finalSketches,
     };
