@@ -33,7 +33,7 @@ export async function boundaryAreaOverlap(
   });
   const splitSketch = splitSketchAntimeridian(sketch);
   const clippedSketch = await clipToGeography(splitSketch, curGeography);
-  const sketchBox = clippedSketch.bbox || bbox(clippedSketch);
+  const clippedSketchBox = clippedSketch.bbox || bbox(clippedSketch);
 
   // Fetch boundary features indexed by classId
   const polysByBoundary = (
@@ -50,7 +50,7 @@ export async function boundaryAreaOverlap(
         // Fetch only the features that overlap the bounding box of the sketch
         const url = project.getDatasourceUrl(ds);
         const polys = await getFeatures(ds, url, {
-          bbox: sketchBox,
+          bbox: clippedSketchBox,
         });
         if (!isPolygonFeatureArray(polys)) {
           throw new Error("Expected array of Polygon features");
