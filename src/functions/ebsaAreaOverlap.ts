@@ -27,13 +27,22 @@ export async function ebsaAreaOverlap(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>,
   extraParams: DefaultExtraParams = {}
 ): Promise<ReportResult> {
+  // Use caller-provided geographyId if provided
   const geographyId = getFirstFromParam("geographyIds", extraParams);
+
+  // Get geography features, falling back to geography assigned to default-boundary group
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
+
+  // Support sketches crossing antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
+
+  // Clip to portion of sketch within current geography
   const clippedSketch = await clipToGeography(splitSketch, curGeography);
-  const sketchBox = clippedSketch.bbox || bbox(clippedSketch);
+
+  // Get bounding box of sketch remainder
+  const clippedSketchBox = clippedSketch.bbox || bbox(clippedSketch);
 
   // Fetch boundary features indexed by classId
   const polysByBoundary = (
@@ -50,7 +59,7 @@ export async function ebsaAreaOverlap(
         // Fetch only the features that overlap the bounding box of the sketch
         const url = project.getDatasourceUrl(ds);
         const polys = await getFeatures(ds, url, {
-          bbox: sketchBox,
+          bbox: clippedSketchBox,
         });
         if (!isPolygonFeatureArray(polys)) {
           throw new Error("Expected array of Polygon features");
@@ -65,7 +74,8 @@ export async function ebsaAreaOverlap(
     };
   }, {});
 
-  const metrics: Metric[] = ( // calculate area overlap metrics for each class
+  const metrics: Metric[] = // calculate area overlap metrics for each class
+  (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
         const overlapResult = await overlapFeatures(

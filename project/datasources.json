@@ -87,7 +87,7 @@
     "layerName": "webm_Fiji_Ecologically_Biologically_Significant_Areas__EBSA_",
     "classKeys": [],
     "created": "2023-11-17T00:40:25.146Z",
-    "lastUpdated": "2023-11-29T10:08:16.611Z",
+    "lastUpdated": "2023-12-06T18:05:09.883Z",
     "src": "data/src/Fiji_SSL_Layers/Fiji_SSL_Layers.gdb",
     "propertiesToKeep": [],
     "explodeMulti": true
@@ -103,7 +103,7 @@
     "band": 1,
     "noDataValue": 0,
     "created": "2023-11-17T02:15:17.969Z",
-    "lastUpdated": "2023-11-29T10:08:16.774Z",
+    "lastUpdated": "2023-12-06T18:05:10.206Z",
     "src": "data/src/Analytics/fiji_anticross_random_test.tif"
   },
   {
@@ -117,7 +117,7 @@
     "layerName": "fiji-eez-mr-v12",
     "classKeys": [],
     "created": "2023-11-21T00:25:38.018Z",
-    "lastUpdated": "2023-11-29T10:31:11.002Z",
+    "lastUpdated": "2023-12-06T18:05:10.571Z",
     "src": "data/src/Analytics/fiji-eez-mr-v12.geojson",
     "propertiesToKeep": [],
     "explodeMulti": true
