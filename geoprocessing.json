@@ -20,6 +20,8 @@
     "src/functions/clipToOcean.ts"
   ],
   "geoprocessingFunctions": [
-    "src/functions/boundaryAreaOverlap.ts"
+    "src/functions/boundaryAreaOverlap.ts",
+    "src/functions/ebsaAreaOverlap.ts",
+    "src/functions/testRasterOverlap.ts"
   ]
 }
