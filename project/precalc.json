@@ -50,9 +50,25 @@
   {
     "geographyId": "eez",
     "metricId": "sum",
+    "classId": "bo-present-surface-temp-max-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 469293.5806969972
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "bo-present-surface-temp-min-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 399056.70465300075
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
     "classId": "fiji_anticross_random_test-total",
     "sketchId": null,
     "groupId": null,
-    "value": 65
+    "value": 90
   }
 ]
