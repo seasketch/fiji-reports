@@ -1,0 +1,58 @@
+[
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ebsa-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 299328516072.7165
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "fiji-eez-mr-v12-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1308341353258.3381
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "global-eez-mr-v12-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1308341353258.3381
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ebsa-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "fiji-eez-mr-v12-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "global-eez-mr-v12-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "fiji_anticross_random_test-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 65
+  }
+]

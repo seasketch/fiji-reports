@@ -1,0 +1,74 @@
+{
+    "id": 22968,
+    "bbox": [
+        170.3874,
+        -15.761472,
+        186.44315,
+        -14.24049
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    170.387412007,
+                    -14.240489787
+                ],
+                [
+                    186.381385397,
+                    -14.390078131
+                ],
+                [
+                    186.44313819,
+                    -15.493856974
+                ],
+                [
+                    170.480041196,
+                    -15.761471484
+                ],
+                [
+                    170.387412007,
+                    -14.240489787
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "2852": "Fully Protected",
+        "2853": "fiji-crossing-1",
+        "id": "22968",
+        "name": "fiji-crossing-1",
+        "postId": null,
+        "userId": "269",
+        "comments": null,
+        "userSlug": "Tim",
+        "createdAt": "2023-11-16T23:20:54.178483+00:00",
+        "updatedAt": "2023-11-16T23:20:54.178483+00:00",
+        "designation": "Fully Protected",
+        "collectionId": null,
+        "isCollection": false,
+        "sharedInForum": false,
+        "sketchClassId": "175",
+        "userAttributes": [
+            {
+                "label": "Designation",
+                "value": "Fully Protected",
+                "exportId": "designation",
+                "fieldType": "ComboBox",
+                "valueLabel": null,
+                "formElementId": 2852,
+                "alternateLanguages": {}
+            },
+            {
+                "label": "Comments",
+                "value": null,
+                "exportId": "comments",
+                "fieldType": "TextArea",
+                "valueLabel": null,
+                "formElementId": 2854,
+                "alternateLanguages": {}
+            }
+        ]
+    }
+}

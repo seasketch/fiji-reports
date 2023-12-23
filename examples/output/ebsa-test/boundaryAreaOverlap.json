@@ -1,12 +1,12 @@
 {
   "metrics": [
     {
+      "geographyId": "eez",
       "metricId": "boundaryAreaOverlap",
-      "sketchId": "62fc336b2ad47e404e9cd601",
       "classId": "eez",
+      "sketchId": "62fc336b2ad47e404e9cd601",
       "groupId": null,
-      "geographyId": null,
-      "value": 229530312488.78052,
+      "value": 229482652304.2354,
       "extra": {
         "sketchName": "ebsa-test"
       }

@@ -1,27 +1,36 @@
-[
-    {
-        "metricId": "boundaryAreaOverlap",
-        "type": "areaOverlap",
-        "classes": [
-            {
-                "classId": "eez",
-                "display": "EEZ",
-                "datasourceId": "eez",
-                "objectiveId": "eez",
-                "layerId": "62ec54aab61ca71b12462a90"
-            }
-        ]
-    },
-    {
-        "metricId": "ebsaAreaOverlap",
-        "type": "areaOverlap",
-        "classes": [
-            {
-                "classId": "ebsa",
-                "display": "Ecologically/Biologically Significant Areas",
-                "datasourceId": "ebsa",
-                "layerId": "62ec54aab61ca71b12462a92"
-            }
-        ]
-    }
-]
+[{
+  "metricId": "boundaryAreaOverlap",
+  "type": "areaOverlap",
+  "classes": [
+      {
+          "classId": "eez",
+          "display": "EEZ",
+          "datasourceId": "fiji-eez-mr-v12",
+          "objectiveId": "eez",
+          "layerId": ""
+      }
+  ]
+}, {
+  "metricId": "ebsaAreaOverlap",
+  "type": "areaOverlap",
+  "classes": [
+      {
+          "classId": "ebsa",
+          "display": "EBSA",
+          "datasourceId": "ebsa",
+          "objectiveId": "eez",
+          "layerId": ""
+      }
+  ]
+},{
+  "metricId": "testRasterOverlap",
+  "type": "valueOverlap",
+  "classes": [
+      {
+          "classId": "class1",
+          "display": "Class 1",
+          "datasourceId": "fiji_anticross_random_test",
+          "layerId": ""
+      }
+  ]
+}]

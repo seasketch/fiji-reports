@@ -1,12 +1,12 @@
 {
   "metrics": [
     {
+      "geographyId": "eez",
       "metricId": "ebsaAreaOverlap",
-      "sketchId": "62fc1c502ad47e404e9cd5b9",
       "classId": "ebsa",
+      "sketchId": "62fc1c502ad47e404e9cd5b9",
       "groupId": null,
-      "geographyId": null,
-      "value": 0,
+      "value": 11025042762.061483,
       "extra": {
         "sketchName": "clip-test"
       }
@@ -14,6 +14,7 @@
   ],
   "sketch": {
     "type": "Feature",
+    "id": "1",
     "properties": {
       "id": "62fc1c502ad47e404e9cd5b9",
       "name": "clip-test",
@@ -42,12 +43,11 @@
         }
       ]
     },
-    "id": "1",
     "bbox": [
-      -177.0213869206259,
-      -16.085820483404543,
-      179.70466437981239,
-      -15.85344919300553
+      -177.0357901890364,
+      -17.821204662620804,
+      179.76317233105988,
+      -15.429751663697473
     ],
     "geometry": null
   }
