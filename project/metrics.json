@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "metricId": "size",
+    "type": "areaOverlap",
+    "layerId": "UU0vApkb2",
+    "objectiveId": "30x30",
+    "classes": [
+      {
+        "classId": "eez",
+        "display": "EEZ",
+        "datasourceId": "eez"
+      }
+    ]
+  }
+]

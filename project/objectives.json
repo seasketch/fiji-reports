@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "objectiveId": "30x30",
+    "shortDesc": "30% of the ocean protected by 2030",
+    "target": 0.3,
+    "countsToward": { "fully_protected": "yes" }
+  }
+]

@@ -1,20 +1,15 @@
 [
   {
-    "datasourceId": "world",
+    "src": "data/src/Analytics/fiji_planning_region.fgb",
+    "layerName": "fiji_planning_region",
     "geo_type": "vector",
-    "formats": ["json", "fgb"],
-    "layerName": "world",
+    "datasourceId": "eez",
+    "formats": ["fgb"],
     "classKeys": [],
-    "url": "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/world.fgb",
+    "created": "2025-02-06T00:32:16.370Z",
+    "lastUpdated": "2025-02-06T00:32:16.370Z",
     "propertiesToKeep": [],
-    "metadata": {
-      "name": "World Outline Polygon",
-      "description": "World polygon for default project geography in seasketch geoprocessing proejcts",
-      "version": "1.0",
-      "publisher": "SeaSketch",
-      "publishDate": "20231018",
-      "publishLink": ""
-    },
-    "precalc": false
+    "explodeMulti": true,
+    "precalc": true
   }
 ]

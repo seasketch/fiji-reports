@@ -1,8 +1,8 @@
 [
   {
-    "geographyId": "world",
-    "datasourceId": "world",
-    "display": "World",
+    "geographyId": "eez",
+    "datasourceId": "eez",
+    "display": "EEZ",
     "groups": ["default-boundary"],
     "precalc": true
   }

@@ -1,0 +1,38 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "75553",
+      "groupId": null,
+      "value": 19315084357.348183,
+      "extra": {
+        "sketchName": "south_mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "75554",
+      "groupId": null,
+      "value": 38550814547.52956,
+      "extra": {
+        "sketchName": "network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "75555",
+      "groupId": null,
+      "value": 19235730190.181377,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    }
+  ]
+}

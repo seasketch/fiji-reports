@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "75552",
+      "groupId": null,
+      "value": 19235730190.181377,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    }
+  ]
+}
