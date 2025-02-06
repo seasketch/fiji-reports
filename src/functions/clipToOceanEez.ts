@@ -5,14 +5,16 @@ import {
   ensureValidPolygon,
   Polygon,
   MultiPolygon,
-  loadFgb,
-  clip,
-  clipMultiMerge,
-  ValidationError,
-  isPolygonFeature,
-  biggestPolygon,
+  FeatureClipOperation,
+  clipToPolygonFeatures,
+  FeatureCollection,
+  Position,
+  splitBBoxAntimeridian,
+  getFeaturesForBBoxes,
+  BBox,
 } from "@seasketch/geoprocessing";
-import { area, bbox, featureCollection } from "@turf/turf";
+import fijiEez from "./fiji_eez.json" with { type: "json" };
+import { bbox } from "@turf/turf";
 
 /**
  * Preprocessor takes a Polygon feature/sketch and returns the portion that
@@ -21,58 +23,41 @@ import { area, bbox, featureCollection } from "@turf/turf";
 export async function clipToOceanEez(
   feature: Feature | Sketch,
 ): Promise<Feature> {
-  if (!isPolygonFeature(feature)) {
-    throw new ValidationError("Input must be a polygon");
-  }
-
-  // throws if not valid with specific message
   ensureValidPolygon(feature, {
     minSize: 1,
     enforceMinSize: false,
-    maxSize: 500_000 * 1000 ** 2, // Default 500,000 KM
+    maxSize: 500_000 * 1000 ** 2,
     enforceMaxSize: false,
   });
 
-  const featureBox = bbox(feature);
-
-  // Get features from land and eez datasources
-  const landFeatures: Feature<Polygon | MultiPolygon>[] = await loadFgb(
-    "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/global-coastline-daylight-v158.fgb",
-    featureBox,
+  // The Fiji EEZ crosses the antimeridian
+  // To keep the sketch a simple polygon, we need make our EEZ clipping coordinates
+  // extend positively beyond the antimeridian
+  const fijiEezUnclean = makeEezUnclean(
+    fijiEez as FeatureCollection,
+    -170,
+    360,
   );
 
-  const eezFeatures: Feature<Polygon | MultiPolygon>[] = await loadFgb(
-    "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/global-eez-land-union-mr-v4.fgb",
-    featureBox,
-  );
+  const splitBbox = splitBBoxAntimeridian(bbox(feature));
 
-  // Erase portion of sketch over land
-
-  let clipped: Feature<Polygon | MultiPolygon> | null = feature;
-  if (clipped !== null && landFeatures.length > 0) {
-    clipped = clip(featureCollection([clipped, ...landFeatures]), "difference");
-  }
-
-  // Keep portion of sketch within EEZ
-
-  if (eezFeatures.length === 0) {
-    clipped = null; // No land to clip to, intersection is empty
-  }
-
-  if (clipped !== null) {
-    clipped = clipMultiMerge(
-      clipped,
-      featureCollection(eezFeatures),
-      "intersection",
+  const landFeatures: Feature<Polygon | MultiPolygon>[] =
+    await getFeaturesForBBoxes(
+      splitBbox as BBox[],
+      "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/global-coastline-daylight-v158.fgb",
     );
-  }
 
-  if (!clipped || area(clipped) === 0) {
-    throw new ValidationError("Feature is outside of EEZ boundary");
-  }
+  const eraseLand: FeatureClipOperation = {
+    operation: "difference",
+    clipFeatures: landFeatures,
+  };
 
-  // Assume user wants the largest polygon if multiple remain
-  return biggestPolygon(clipped);
+  const keepInsideEez: FeatureClipOperation = {
+    operation: "intersection",
+    clipFeatures: fijiEezUnclean.features as Feature<Polygon | MultiPolygon>[],
+  };
+
+  return clipToPolygonFeatures(feature, [eraseLand, keepInsideEez]);
 }
 
 export default new PreprocessingHandler(clipToOceanEez, {
@@ -82,3 +67,61 @@ export default new PreprocessingHandler(clipToOceanEez, {
   requiresProperties: [],
   memory: 1024,
 });
+
+export function makeEezUnclean(
+  eez: FeatureCollection,
+  threshold = -120,
+  offset = 360,
+): FeatureCollection {
+  // Deep clone so we don't mutate the original
+  const newEez = JSON.parse(JSON.stringify(eez)) as FeatureCollection;
+
+  newEez.features.forEach((feature) => {
+    if (
+      feature.geometry.type !== "Polygon" &&
+      feature.geometry.type !== "MultiPolygon"
+    ) {
+      throw new Error("Invalid geometry type");
+    }
+    shiftGeometry(feature.geometry, threshold, offset);
+  });
+
+  return newEez;
+}
+
+function shiftGeometry(
+  geometry: Polygon | MultiPolygon,
+  threshold: number,
+  offset: number,
+): void {
+  const { type, coordinates } = geometry;
+
+  switch (type) {
+    case "Polygon": {
+      const coords = coordinates as Position[][];
+      coords.forEach((ring) => {
+        ring.forEach((coord) => {
+          if (coord[0] <= threshold) {
+            coord[0] += offset;
+          }
+        });
+      });
+      break;
+    }
+    case "MultiPolygon": {
+      const coords = coordinates as Position[][][];
+      coords.forEach((polygon) => {
+        polygon.forEach((ring) => {
+          ring.forEach((coord) => {
+            if (coord[0] <= threshold) {
+              coord[0] += offset;
+            }
+          });
+        });
+      });
+      break;
+    }
+    default:
+      console.warn(`Geometry type ${type} not supported`);
+  }
+}
