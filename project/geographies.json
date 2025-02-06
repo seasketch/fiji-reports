@@ -1,5 +1,12 @@
 [
   {
+    "geographyId": "world",
+    "datasourceId": "world",
+    "display": "World",
+    "groups": [],
+    "precalc": true
+  },
+  {
     "geographyId": "eez",
     "datasourceId": "eez",
     "display": "EEZ",

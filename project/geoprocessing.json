@@ -4,9 +4,9 @@
   "region": "us-west-1",
   "clients": [
     {
-      "name": "TabReport",
-      "description": "Report suite for MPA planning within EEZ with tab navigation",
-      "source": "src/clients/TabReport.tsx"
+      "name": "MpaTabReport",
+      "description": "Large reports",
+      "source": "src/clients/MpaTabReport.tsx"
     }
   ],
   "preprocessingFunctions": ["src/functions/clipToOceanEez.ts"],
