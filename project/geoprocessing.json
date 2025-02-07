@@ -16,6 +16,7 @@
     "src/functions/size.ts",
     "src/functions/gfw.ts",
     "src/functions/biodiversity.ts",
-    "src/functions/geomorphology.ts"
+    "src/functions/geomorphology.ts",
+    "src/functions/deepwaterBioregions.ts"
   ]
 }

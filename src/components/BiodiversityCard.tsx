@@ -16,7 +16,7 @@ import {
   SketchProperties,
   flattenBySketchAllClass,
   metricsWithSketchId,
-  roundLower,
+  roundDecimal,
   squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
@@ -101,7 +101,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
                   type: "metricValue",
                   metricId: metricGroup.metricId,
                   valueFormatter: (val) =>
-                    roundLower(squareMeterToKilometer(Number(val))),
+                    roundDecimal(squareMeterToKilometer(Number(val))),
                   valueLabel: unitsLabel,
                   chartOptions: {
                     showTitle: true,

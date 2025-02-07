@@ -2,6 +2,198 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "deepwater_bioregions-Abyssal plain, seamounts and Vityaz trench bordering Fiji (NW), Tuvalu (SW) and Solomon Islands (SE)",
+    "sketchId": null,
+    "groupId": null,
+    "value": 39679213179.26112
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Ambae Trough and North Fiji Basin",
+    "sketchId": null,
+    "groupId": null,
+    "value": 137884700862.58386
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Central Lau to Northwest Vava'u plateau and hydrothermal vents",
+    "sketchId": null,
+    "groupId": null,
+    "value": 46496080999.37364
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-East Shefa, Fiji Central and Maui's Stone Place.",
+    "sketchId": null,
+    "groupId": null,
+    "value": 152470037026.69183
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-East Temotu and North Fiji Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 9187279013.17515
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-East Temotu and Northwest Rotuma Seamounts and the Vityaz trench",
+    "sketchId": null,
+    "groupId": null,
+    "value": 10812604953.433907
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-East Temotu,Banks and West of Rotuma Seamounts and the Vityaz trench",
+    "sketchId": null,
+    "groupId": null,
+    "value": 97721502660.83249
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Fiji - Tonga Chains",
+    "sketchId": null,
+    "groupId": null,
+    "value": 59228490786.97751
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Fiji-Tonga-Vanuatu Plateau and Basins including Moore Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 179124742499.54315
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Matthew and Hunter, South Fiji and Telekom Outbound Deep",
+    "sketchId": null,
+    "groupId": null,
+    "value": 21147051493.089012
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Minerva to South Ata plateaus",
+    "sketchId": null,
+    "groupId": null,
+    "value": 15546504482.894382
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Norfolk and High Seas Deep",
+    "sketchId": null,
+    "groupId": null,
+    "value": 561058906.1875509
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-North Fiji and Tuvalu ridge chain",
+    "sketchId": null,
+    "groupId": null,
+    "value": 6697469701.767689
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-North-East Rotuma, Futuna, Tuvalu abyssal mountains and seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 24428929154.970425
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Northern Hunga and Wallis plateaus and North Viti and Vanua Levu basin",
+    "sketchId": null,
+    "groupId": null,
+    "value": 55231974151.17417
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Ono-i-Lau, South Lau Ridge and Halved Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 25165370334.951267
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Rotuma-Futuna-Tuvalu-abyssal mountains and seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 48816262661.88604
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-South Ceva-I-Ra Deep and Southern Cliff from Kalau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 67554934465.661285
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-South New Hebrides trench and South Eastern Ceva-I-Ra seamounts abyssal hills",
+    "sketchId": null,
+    "groupId": null,
+    "value": 79442758183.56583
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Southeast Rotuma, Isle De Horne, Futuna,Samoa and Niuas plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 63966823371.43207
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Southern Fiji Flats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 48678687242.62096
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Southern Lau and the Ha'apai Tofua Ridge and Trough",
+    "sketchId": null,
+    "groupId": null,
+    "value": 29528218216.788586
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1238486542962.109
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "deepwater_bioregions-Vanuatu and Fiji Plateau High Seas",
+    "sketchId": null,
+    "groupId": null,
+    "value": 19115848613.246914
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "ebsa-total",
     "sketchId": null,
     "groupId": null,
@@ -134,6 +326,198 @@
     "sketchId": null,
     "groupId": null,
     "value": 154476984177.43564
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Abyssal plain, seamounts and Vityaz trench bordering Fiji (NW), Tuvalu (SW) and Solomon Islands (SE)",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Ambae Trough and North Fiji Basin",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Central Lau to Northwest Vava'u plateau and hydrothermal vents",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-East Shefa, Fiji Central and Maui's Stone Place.",
+    "sketchId": null,
+    "groupId": null,
+    "value": 15
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-East Temotu and North Fiji Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-East Temotu and Northwest Rotuma Seamounts and the Vityaz trench",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-East Temotu,Banks and West of Rotuma Seamounts and the Vityaz trench",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Fiji - Tonga Chains",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Fiji-Tonga-Vanuatu Plateau and Basins including Moore Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Matthew and Hunter, South Fiji and Telekom Outbound Deep",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Minerva to South Ata plateaus",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Norfolk and High Seas Deep",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-North Fiji and Tuvalu ridge chain",
+    "sketchId": null,
+    "groupId": null,
+    "value": 8
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-North-East Rotuma, Futuna, Tuvalu abyssal mountains and seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Northern Hunga and Wallis plateaus and North Viti and Vanua Levu basin",
+    "sketchId": null,
+    "groupId": null,
+    "value": 9
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Ono-i-Lau, South Lau Ridge and Halved Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Rotuma-Futuna-Tuvalu-abyssal mountains and seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-South Ceva-I-Ra Deep and Southern Cliff from Kalau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-South New Hebrides trench and South Eastern Ceva-I-Ra seamounts abyssal hills",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Southeast Rotuma, Isle De Horne, Futuna,Samoa and Niuas plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Southern Fiji Flats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Southern Lau and the Ha'apai Tofua Ridge and Trough",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 73
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "deepwater_bioregions-Vanuatu and Fiji Plateau High Seas",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
   },
   {
     "geographyId": "eez",

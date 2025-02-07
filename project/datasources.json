@@ -61,7 +61,7 @@
     "layerName": "EBSAs",
     "classKeys": [],
     "created": "2025-02-07T18:08:15.764Z",
-    "lastUpdated": "2025-02-07T18:08:15.764Z",
+    "lastUpdated": "2025-02-07T23:48:53.605Z",
     "src": "data/src/Data_Received/IUCN/Fiji Consulatations Data Transfer/Ecologically and biologically siginificant areas (EBSAs)/EBSAs.shp",
     "propertiesToKeep": [],
     "explodeMulti": true
@@ -74,7 +74,7 @@
     "layerName": "Fiji_Special_Unique_Marine_Areas_SUMA",
     "classKeys": [],
     "created": "2025-02-07T18:18:34.774Z",
-    "lastUpdated": "2025-02-07T18:18:34.774Z",
+    "lastUpdated": "2025-02-07T23:48:53.780Z",
     "src": "data/src/Data_Created/meridian-warp/Fiji_Special_Unique_Marine_Areas_SUMA.geojson",
     "propertiesToKeep": [],
     "explodeMulti": true
@@ -210,16 +210,29 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/Analytics/Reports/geomorphology/Troughs.fgb",
-    "layerName": "Troughs",
-    "geo_type": "vector",
     "datasourceId": "geo_troughs",
+    "geo_type": "vector",
     "formats": ["fgb"],
+    "precalc": true,
+    "layerName": "Troughs",
     "classKeys": [],
     "created": "2025-02-07T22:49:26.862Z",
     "lastUpdated": "2025-02-07T22:49:26.862Z",
+    "src": "data/src/Analytics/Reports/geomorphology/Troughs.fgb",
     "propertiesToKeep": [],
-    "explodeMulti": true,
-    "precalc": true
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "deepwater_bioregions",
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": true,
+    "layerName": "Revised_Deepwater_Bioregions_Fj",
+    "classKeys": ["Draft_name"],
+    "created": "2025-02-07T23:29:40.204Z",
+    "lastUpdated": "2025-02-07T23:29:40.204Z",
+    "src": "data/src/Analytics/Reports/deepwater_bioregions/Revised_Deepwater_Bioregions_Fj.shp",
+    "propertiesToKeep": ["Draft_name"],
+    "explodeMulti": true
   }
 ]

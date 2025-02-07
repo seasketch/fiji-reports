@@ -10,6 +10,7 @@ import { SizeCard } from "../components/SizeCard.js";
 import { GfwCard } from "../components/GfwCard.js";
 import { BiodiversityCard } from "../components/BiodiversityCard.js";
 import { GeomorphologyCard } from "../components/GeomorphologyCard.js";
+import { DeepwaterBioregionsCard } from "../components/DeepwaterBioregionsCard.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -37,6 +38,7 @@ const BaseReport = () => {
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <BiodiversityCard />
         <GeomorphologyCard />
+        <DeepwaterBioregionsCard />
       </ReportPage>
     </>
   );
