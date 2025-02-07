@@ -81,7 +81,8 @@ export const GeomorphologyCard: React.FunctionComponent<GeogProp> = (props) => {
           <ReportError>
             <p>
               <Trans i18nKey="GeomorphologyCard 1">
-                This report summarizes this plan&apos;s overlap with the data.
+                This report summarizes this plan's overlap with geomorphic
+                features.
               </Trans>
             </p>
 
