@@ -8,12 +8,16 @@ import {
 import Translator from "../components/TranslatorAsync.js";
 import { SizeCard } from "../components/SizeCard.js";
 import { GfwCard } from "../components/GfwCard.js";
+import { BiodiversityCard } from "../components/BiodiversityCard.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
   const { t } = useTranslation();
-  const segments = [{ id: "OVERVIEW", label: t("Viability") }];
-  const [tab, setTab] = useState<string>("OVERVIEW");
+  const segments = [
+    { id: "VIABILITY", label: t("Viability") },
+    { id: "REPRESENTATION", label: t("Representation") },
+  ];
+  const [tab, setTab] = useState<string>("VIABILITY");
 
   return (
     <>
@@ -24,10 +28,13 @@ const BaseReport = () => {
           segments={segments}
         />
       </div>
-      <ReportPage hidden={!enableAllTabs && tab !== "OVERVIEW"}>
+      <ReportPage hidden={!enableAllTabs && tab !== "VIABILITY"}>
         <SizeCard />
         <GfwCard />
         <SketchAttributesCard autoHide />
+      </ReportPage>
+      <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
+        <BiodiversityCard />
       </ReportPage>
     </>
   );

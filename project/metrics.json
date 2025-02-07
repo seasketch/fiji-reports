@@ -14,7 +14,7 @@
   },
   {
     "metricId": "gfw",
-    "type": "areaOverlap",
+    "type": "sumOverlap",
     "classes": [
       {
         "classId": "gfw_longline",
@@ -27,6 +27,24 @@
         "display": "Purse Seine",
         "datasourceId": "gfw_purseseine",
         "layerId": "mIzHfvMFe"
+      }
+    ]
+  },
+  {
+    "metricId": "biodiversity",
+    "type": "areaOverlap",
+    "classes": [
+      {
+        "classId": "ebsa",
+        "display": "Ecologically and Biologically Siginificant Areas (EBSAs)",
+        "datasourceId": "ebsa",
+        "layerId": "hc3ec_Ibd"
+      },
+      {
+        "classId": "suma",
+        "display": "Special Unique Marine Areas (SUMAs)",
+        "datasourceId": "suma",
+        "layerId": "ltiiN1QcB"
       }
     ]
   }

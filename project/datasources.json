@@ -49,17 +49,47 @@
     "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Purse_seine/GFW_Fiji_purseseine.tif"
   },
   {
-    "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Longline/GFW_Fiji_longline.tif",
-    "band": 1,
-    "geo_type": "raster",
     "datasourceId": "gfw_longline",
+    "geo_type": "raster",
     "formats": [
       "tif"
     ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": -3.402823e+38,
     "created": "2025-02-07T01:11:30.460Z",
     "lastUpdated": "2025-02-07T01:11:30.460Z",
-    "noDataValue": -3.402823e+38,
-    "measurementType": "quantitative",
+    "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Longline/GFW_Fiji_longline.tif"
+  },
+  {
+    "datasourceId": "ebsa",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": true,
+    "layerName": "EBSAs",
+    "classKeys": [],
+    "created": "2025-02-07T18:08:15.764Z",
+    "lastUpdated": "2025-02-07T18:08:15.764Z",
+    "src": "data/src/Data_Received/IUCN/Fiji Consulatations Data Transfer/Ecologically and biologically siginificant areas (EBSAs)/EBSAs.shp",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/Data_Created/meridian-warp/Fiji_Special_Unique_Marine_Areas_SUMA.geojson",
+    "layerName": "Fiji_Special_Unique_Marine_Areas_SUMA",
+    "geo_type": "vector",
+    "datasourceId": "suma",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [],
+    "created": "2025-02-07T18:18:34.774Z",
+    "lastUpdated": "2025-02-07T18:18:34.774Z",
+    "propertiesToKeep": [],
+    "explodeMulti": true,
     "precalc": true
   }
 ]

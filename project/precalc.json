@@ -2,6 +2,14 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "ebsa-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 318380290307.837
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "eez-total",
     "sketchId": null,
     "groupId": null,
@@ -30,6 +38,22 @@
     "sketchId": null,
     "groupId": "band-0",
     "value": 1.4
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 154476984177.43564
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ebsa-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 7
   },
   {
     "geographyId": "eez",
@@ -62,6 +86,14 @@
     "sketchId": null,
     "groupId": "band-0",
     "value": 11086
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 257
   },
   {
     "geographyId": "eez",

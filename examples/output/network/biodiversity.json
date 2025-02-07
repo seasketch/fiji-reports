@@ -1,0 +1,72 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "biodiversity",
+      "classId": "ebsa",
+      "sketchId": "75553",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "south_mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "biodiversity",
+      "classId": "ebsa",
+      "sketchId": "75554",
+      "groupId": null,
+      "value": 7521081976.614465,
+      "extra": {
+        "sketchName": "network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "biodiversity",
+      "classId": "ebsa",
+      "sketchId": "75555",
+      "groupId": null,
+      "value": 7521081976.614465,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "biodiversity",
+      "classId": "suma",
+      "sketchId": "75553",
+      "groupId": null,
+      "value": 259663129.254509,
+      "extra": {
+        "sketchName": "south_mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "biodiversity",
+      "classId": "suma",
+      "sketchId": "75554",
+      "groupId": null,
+      "value": 5256490820.473948,
+      "extra": {
+        "sketchName": "network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "biodiversity",
+      "classId": "suma",
+      "sketchId": "75555",
+      "groupId": null,
+      "value": 4996827691.21944,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    }
+  ]
+}
