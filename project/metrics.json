@@ -47,5 +47,77 @@
         "layerId": "ltiiN1QcB"
       }
     ]
+  },
+  {
+    "metricId": "geomorphology",
+    "type": "areaOverlap",
+    "classes": [
+      {
+        "classId": "geo_basins",
+        "display": "Basins",
+        "datasourceId": "geo_basins",
+        "layerId": "Afm5d1RX9"
+      },
+      {
+        "classId": "geo_bridges",
+        "display": "Bridges",
+        "datasourceId": "geo_bridges",
+        "layerId": "pravj0ujH"
+      },
+      {
+        "classId": "geo_canyons",
+        "display": "Canyons",
+        "datasourceId": "geo_canyons",
+        "layerId": "dojlPQINc"
+      },
+      {
+        "classId": "geo_guyots",
+        "display": "Guyots",
+        "datasourceId": "geo_guyots",
+        "layerId": "jUbPWyOIp"
+      },
+      {
+        "classId": "geo_plateaus",
+        "display": "Plateaus",
+        "datasourceId": "geo_plateaus",
+        "layerId": "B4uCqMxLP"
+      },
+      {
+        "classId": "geo_ridges",
+        "display": "Ridges",
+        "datasourceId": "geo_ridges",
+        "layerId": "0Ze9GCCw4"
+      },
+      {
+        "classId": "geo_riftvalleys",
+        "display": "Rift Valleys",
+        "datasourceId": "geo_riftvalleys",
+        "layerId": "Z3VGkpSbX"
+      },
+      {
+        "classId": "geo_shelf",
+        "display": "Shelf",
+        "datasourceId": "geo_shelf",
+        "layerId": "zqMaCot6b"
+      },
+      {
+        "classId": "geo_spreadingridges",
+        "display": "Spreading Ridges",
+        "datasourceId": "geo_spreadingridges",
+        "layerId": "xeAw0m2je"
+      },
+      {
+        "classId": "geo_trenches",
+        "display": "Trenches",
+        "datasourceId": "geo_trenches",
+        "layerId": "jaHzzO6Pr"
+      },
+      {
+        "classId": "geo_troughs",
+        "display": "Troughs",
+        "datasourceId": "geo_troughs",
+        "layerId": "Yx5dgn2ri"
+      }
+    ]
   }
 ]

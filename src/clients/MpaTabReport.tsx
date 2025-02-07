@@ -9,6 +9,7 @@ import Translator from "../components/TranslatorAsync.js";
 import { SizeCard } from "../components/SizeCard.js";
 import { GfwCard } from "../components/GfwCard.js";
 import { BiodiversityCard } from "../components/BiodiversityCard.js";
+import { GeomorphologyCard } from "../components/GeomorphologyCard.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -35,6 +36,7 @@ const BaseReport = () => {
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <BiodiversityCard />
+        <GeomorphologyCard />
       </ReportPage>
     </>
   );

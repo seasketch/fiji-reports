@@ -23,12 +23,12 @@ import {
 import project from "../../project/projectClient.js";
 
 /**
- * BiodiversityCard component
+ * GeomorphologyCard component
  *
  * @param props - geographyId
  * @returns A react component which displays an overlap report
  */
-export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
+export const GeomorphologyCard: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -36,7 +36,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
   });
 
   // Metrics
-  const metricGroup = project.getMetricGroup("biodiversity", t);
+  const metricGroup = project.getMetricGroup("geomorphology", t);
   const precalcMetrics = project.getPrecalcMetrics(
     metricGroup,
     "area",
@@ -44,7 +44,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
   );
 
   // Labels
-  const titleLabel = t("Biodiversity");
+  const titleLabel = t("Geomorphology");
   const mapLabel = t("Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
@@ -53,7 +53,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
   return (
     <ResultsCard
       title={titleLabel}
-      functionName="biodiversity"
+      functionName="geomorphology"
       extraParams={{ geographyIds: [curGeography.geographyId] }}
     >
       {(data: ReportResult) => {
@@ -80,9 +80,8 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
         return (
           <ReportError>
             <p>
-              <Trans i18nKey="BiodiversityCard 1">
-                This report summarizes this plan's overlap with significant
-                marine biodiversity areas.
+              <Trans i18nKey="GeomorphologyCard 1">
+                This report summarizes this plan&apos;s overlap with the data.
               </Trans>
             </p>
 
@@ -94,7 +93,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
                 {
                   columnLabel: " ",
                   type: "class",
-                  width: 40,
+                  width: 30,
                 },
                 {
                   columnLabel: withinLabel,
@@ -116,7 +115,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
                   chartOptions: {
                     showTitle: true,
                   },
-                  width: 30,
+                  width: 40,
                 },
                 {
                   columnLabel: mapLabel,
@@ -138,7 +137,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
             )}
 
             <Collapse title={t("Learn More")}>
-              <Trans i18nKey="BiodiversityCard - learn more">
+              <Trans i18nKey="GeomorphologyCard - learn more">
                 <p>ℹ️ Overview:</p>
                 <p>
                   🗺️ Source Data:{" "}

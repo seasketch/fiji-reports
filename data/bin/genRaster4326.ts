@@ -21,8 +21,6 @@ export async function genCog(config: ImportRasterDatasourceConfig) {
 const config = (datasources as Datasource[]).find(
   (d) => d.datasourceId === "gfw_purseseine",
 );
-if (isRasterDatasource(config)) {
-  if (isInternalRasterDatasource(config)) {
-    genCog(config);
-  }
+if (isRasterDatasource(config) && isInternalRasterDatasource(config)) {
+  genCog(config);
 }

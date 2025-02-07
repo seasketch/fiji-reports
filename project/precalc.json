@@ -18,6 +18,94 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "geo_basins-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 326312869291.8502
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_bridges-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 69183632.68926236
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_canyons-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 27273595892.093426
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_guyots-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 5439115068.368765
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_plateaus-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 259525016332.34137
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_ridges-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 112332906818.29323
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_riftvalleys-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 6504346282.4862175
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_shelf-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 42997729455.1937
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_spreadingridges-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 44615705375.22295
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_trenches-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 7021379567.13674
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_troughs-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 691835092.9732919
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "GFW_Fiji_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
@@ -62,6 +150,94 @@
     "sketchId": null,
     "groupId": null,
     "value": 12
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_basins-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 77
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_bridges-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_canyons-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 97
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_guyots-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_plateaus-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 16
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_ridges-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 74
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_riftvalleys-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 13
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_shelf-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 85
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_spreadingridges-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 8
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_trenches-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_troughs-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
   },
   {
     "geographyId": "eez",
