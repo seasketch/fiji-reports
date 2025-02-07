@@ -7,11 +7,12 @@ import {
 } from "@seasketch/geoprocessing/client-ui";
 import Translator from "../components/TranslatorAsync.js";
 import { SizeCard } from "../components/SizeCard.js";
+import { GfwCard } from "../components/GfwCard.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
   const { t } = useTranslation();
-  const segments = [{ id: "OVERVIEW", label: t("Overview") }];
+  const segments = [{ id: "OVERVIEW", label: t("Viability") }];
   const [tab, setTab] = useState<string>("OVERVIEW");
 
   return (
@@ -25,6 +26,7 @@ const BaseReport = () => {
       </div>
       <ReportPage hidden={!enableAllTabs && tab !== "OVERVIEW"}>
         <SizeCard />
+        <GfwCard />
         <SketchAttributesCard autoHide />
       </ReportPage>
     </>

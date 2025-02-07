@@ -1,0 +1,72 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "75553",
+      "groupId": "band-0",
+      "value": 3683.075941,
+      "extra": {
+        "sketchName": "south_mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "75554",
+      "groupId": "band-0",
+      "value": 11609.893317,
+      "extra": {
+        "sketchName": "network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "75555",
+      "groupId": "band-0",
+      "value": 7926.817377,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "75553",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "south_mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "75554",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "75555",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    }
+  ]
+}

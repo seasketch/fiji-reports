@@ -2,13 +2,31 @@
   {
     "metricId": "size",
     "type": "areaOverlap",
-    "layerId": "UU0vApkb2",
+    "layerId": "5ncMceSGg",
     "objectiveId": "30x30",
     "classes": [
       {
         "classId": "eez",
         "display": "EEZ",
         "datasourceId": "eez"
+      }
+    ]
+  },
+  {
+    "metricId": "gfw",
+    "type": "areaOverlap",
+    "classes": [
+      {
+        "classId": "gfw_longline",
+        "display": "Longline",
+        "datasourceId": "gfw_longline",
+        "layerId": "Wz50Gusmm"
+      },
+      {
+        "classId": "gfw_purseseine",
+        "display": "Purse Seine",
+        "datasourceId": "gfw_purseseine",
+        "layerId": "mIzHfvMFe"
       }
     ]
   }

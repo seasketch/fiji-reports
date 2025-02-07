@@ -2,11 +2,11 @@
   {
     "datasourceId": "world",
     "geo_type": "vector",
-    "formats": ["json", "fgb"],
-    "layerName": "world",
-    "classKeys": [],
-    "url": "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/world.fgb",
-    "propertiesToKeep": [],
+    "formats": [
+      "json",
+      "fgb"
+    ],
+    "precalc": false,
     "metadata": {
       "name": "World Outline Polygon",
       "description": "World polygon for default project geography in seasketch geoprocessing proejcts",
@@ -15,19 +15,51 @@
       "publishDate": "20231018",
       "publishLink": ""
     },
-    "precalc": false
+    "layerName": "world",
+    "classKeys": [],
+    "url": "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/world.fgb"
   },
   {
-    "src": "data/src/Analytics/fiji_planning_region.fgb",
-    "layerName": "fiji_planning_region",
-    "geo_type": "vector",
     "datasourceId": "eez",
-    "formats": ["fgb"],
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": true,
+    "layerName": "fiji_planning_region",
     "classKeys": [],
     "created": "2025-02-06T00:32:16.370Z",
     "lastUpdated": "2025-02-06T00:32:16.370Z",
+    "src": "data/src/Analytics/fiji_planning_region.fgb",
     "propertiesToKeep": [],
-    "explodeMulti": true,
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "gfw_purseseine",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": -3.402823e+38,
+    "created": "2025-02-07T00:15:16.689Z",
+    "lastUpdated": "2025-02-07T00:58:09.831Z",
+    "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Purse_seine/GFW_Fiji_purseseine.tif"
+  },
+  {
+    "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Longline/GFW_Fiji_longline.tif",
+    "band": 1,
+    "geo_type": "raster",
+    "datasourceId": "gfw_longline",
+    "formats": [
+      "tif"
+    ],
+    "created": "2025-02-07T01:11:30.460Z",
+    "lastUpdated": "2025-02-07T01:11:30.460Z",
+    "noDataValue": -3.402823e+38,
+    "measurementType": "quantitative",
     "precalc": true
   }
 ]

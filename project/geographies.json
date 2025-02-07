@@ -4,7 +4,7 @@
     "datasourceId": "world",
     "display": "World",
     "groups": [],
-    "precalc": true
+    "precalc": false
   },
   {
     "geographyId": "eez",

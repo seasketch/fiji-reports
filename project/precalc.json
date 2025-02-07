@@ -9,10 +9,106 @@
   },
   {
     "geographyId": "eez",
+    "metricId": "area",
+    "classId": "GFW_Fiji_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 110.86
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_longline-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 85.85
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1.4
+  },
+  {
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "eez-total",
     "sketchId": null,
     "groupId": null,
     "value": 12
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "GFW_Fiji_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 11086
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_longline-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 11086
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 11086
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "GFW_Fiji_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": -3.7250704045888996e+42
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_longline-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 177613.12088
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 504.790007
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "GFW_Fiji_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 11086
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_longline-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 8585
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_purseseine-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 140
   }
 ]

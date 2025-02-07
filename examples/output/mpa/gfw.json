@@ -1,0 +1,26 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "75552",
+      "groupId": "band-0",
+      "value": 7926.817377,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "75552",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    }
+  ]
+}
