@@ -170,8 +170,8 @@ export const SizeCard: React.FunctionComponent<GeogProp> = (props) => {
             <Collapse title={t("Learn More")}>
               <Trans i18nKey="SizeCard - learn more">
                 <p>ℹ️ Overview:</p>
-                <p>🎯 Planning Objective:</p>
-                <p>🗺️ Source Data:</p>
+                <p>🎯 Planning Objective: 30% protection by 2030</p>
+                <p>🗺️ Source Data: Marine Regions</p>
                 <p>
                   📈 Report: This report calculates the total value of each
                   feature within the plan. This value is divided by the total

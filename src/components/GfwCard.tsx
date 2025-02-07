@@ -42,7 +42,7 @@ export const GfwCard: React.FunctionComponent<GeogProp> = (props) => {
   );
 
   // Labels
-  const titleLabel = t("Global Fishing Watch");
+  const titleLabel = t("Fishing Effort");
   const mapLabel = t("Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
