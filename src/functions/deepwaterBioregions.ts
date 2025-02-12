@@ -47,22 +47,14 @@ export async function deepwaterBioregions(
 
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("deepwaterBioregions");
+  const ds = project.getMetricGroupDatasource(metricGroup);
+  if (!isVectorDatasource(ds))
+    throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
+  const url = project.getDatasourceUrl(ds);
+  const features = (await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(sketch, url));
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
-        const ds = project.getMetricGroupDatasource(metricGroup, {
-          classId: curClass.classId,
-        });
-        if (!isVectorDatasource(ds))
-          throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
-        const url = project.getDatasourceUrl(ds);
-
-        // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(sketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
-
         // Get classKey for current data class
         const classKey = project.getMetricGroupClassKey(metricGroup, {
           classId: curClass.classId,
