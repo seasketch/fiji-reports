@@ -2,7 +2,10 @@
   {
     "datasourceId": "world",
     "geo_type": "vector",
-    "formats": ["json", "fgb"],
+    "formats": [
+      "json",
+      "fgb"
+    ],
     "precalc": false,
     "metadata": {
       "name": "World Outline Polygon",
@@ -19,7 +22,9 @@
   {
     "datasourceId": "eez",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "fiji_planning_region",
     "classKeys": [],
@@ -32,11 +37,13 @@
   {
     "datasourceId": "gfw_purseseine",
     "geo_type": "raster",
-    "formats": ["tif"],
+    "formats": [
+      "tif"
+    ],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.402823e38,
+    "noDataValue": -3.402823e+38,
     "created": "2025-02-07T00:15:16.689Z",
     "lastUpdated": "2025-02-07T00:58:09.831Z",
     "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Purse_seine/GFW_Fiji_purseseine.tif"
@@ -44,11 +51,13 @@
   {
     "datasourceId": "gfw_longline",
     "geo_type": "raster",
-    "formats": ["tif"],
+    "formats": [
+      "tif"
+    ],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.402823e38,
+    "noDataValue": -3.402823e+38,
     "created": "2025-02-07T01:11:30.460Z",
     "lastUpdated": "2025-02-07T01:11:30.460Z",
     "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Longline/GFW_Fiji_longline.tif"
@@ -56,7 +65,9 @@
   {
     "datasourceId": "ebsa",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "EBSAs",
     "classKeys": [],
@@ -69,20 +80,24 @@
   {
     "datasourceId": "suma",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
-    "layerName": "Fiji_Special_Unique_Marine_Areas_SUMA",
+    "layerName": "suma_dissolved",
     "classKeys": [],
     "created": "2025-02-07T18:18:34.774Z",
-    "lastUpdated": "2025-02-07T23:48:53.780Z",
-    "src": "data/src/Data_Created/meridian-warp/Fiji_Special_Unique_Marine_Areas_SUMA.geojson",
+    "lastUpdated": "2025-02-13T22:52:05.850Z",
+    "src": "data/src/Analytics/Reports/biodiversity/suma_dissolved.fgb",
     "propertiesToKeep": [],
     "explodeMulti": true
   },
   {
     "datasourceId": "geo_basins",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_offshore_basins",
     "classKeys": [],
@@ -95,7 +110,9 @@
   {
     "datasourceId": "geo_bridges",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_offshore_bridges",
     "classKeys": [],
@@ -108,7 +125,9 @@
   {
     "datasourceId": "geo_canyons",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_offshore_canyons",
     "classKeys": [],
@@ -121,7 +140,9 @@
   {
     "datasourceId": "geo_guyots",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_offshore_guyots",
     "classKeys": [],
@@ -134,7 +155,9 @@
   {
     "datasourceId": "geo_plateaus",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_offshore_plateaus",
     "classKeys": [],
@@ -147,7 +170,9 @@
   {
     "datasourceId": "geo_trenches",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_offshore_trench",
     "classKeys": [],
@@ -160,7 +185,9 @@
   {
     "datasourceId": "geo_ridges",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_ridges",
     "classKeys": [],
@@ -173,7 +200,9 @@
   {
     "datasourceId": "geo_shelf",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "GEO_shelf_classification",
     "classKeys": [],
@@ -186,7 +215,9 @@
   {
     "datasourceId": "geo_riftvalleys",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "Rift Valleys",
     "classKeys": [],
@@ -199,7 +230,9 @@
   {
     "datasourceId": "geo_spreadingridges",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "Spreading Ridges",
     "classKeys": [],
@@ -212,7 +245,9 @@
   {
     "datasourceId": "geo_troughs",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "Troughs",
     "classKeys": [],
@@ -225,14 +260,20 @@
   {
     "datasourceId": "deepwater_bioregions",
     "geo_type": "vector",
-    "formats": ["fgb"],
+    "formats": [
+      "fgb"
+    ],
     "precalc": true,
     "layerName": "Revised_Deepwater_Bioregions_Fj",
-    "classKeys": ["Draft_name"],
+    "classKeys": [
+      "Draft_name"
+    ],
     "created": "2025-02-07T23:29:40.204Z",
     "lastUpdated": "2025-02-07T23:29:40.204Z",
     "src": "data/src/Analytics/Reports/deepwater_bioregions/Revised_Deepwater_Bioregions_Fj.shp",
-    "propertiesToKeep": ["Draft_name"],
+    "propertiesToKeep": [
+      "Draft_name"
+    ],
     "explodeMulti": true
   }
 ]

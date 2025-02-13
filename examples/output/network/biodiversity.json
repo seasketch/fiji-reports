@@ -40,7 +40,7 @@
       "classId": "suma",
       "sketchId": "75553",
       "groupId": null,
-      "value": 259663129.254509,
+      "value": 259694019.390448,
       "extra": {
         "sketchName": "south_mpa"
       }
@@ -51,7 +51,7 @@
       "classId": "suma",
       "sketchId": "75554",
       "groupId": null,
-      "value": 5256490820.473948,
+      "value": 5256591875.219828,
       "extra": {
         "sketchName": "network",
         "isCollection": true
@@ -63,7 +63,7 @@
       "classId": "suma",
       "sketchId": "75555",
       "groupId": null,
-      "value": 4996827691.21944,
+      "value": 4996897855.829379,
       "extra": {
         "sketchName": "mpa"
       }

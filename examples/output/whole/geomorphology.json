@@ -1,0 +1,125 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 326312869291.8503,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 69183632.689262,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 27273595892.093426,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 5439115068.368765,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 259525016332.34137,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 112332906818.29326,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 6504346282.486217,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 42998979057.37841,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 44615705375.22295,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 7021379567.13674,
+      "extra": {
+        "sketchName": "whole"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 691835092.973292,
+      "extra": {
+        "sketchName": "whole"
+      }
+    }
+  ]
+}
