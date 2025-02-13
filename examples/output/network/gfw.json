@@ -6,7 +6,7 @@
       "classId": "gfw_longline",
       "sketchId": "75553",
       "groupId": "band-0",
-      "value": 3683.075941,
+      "value": 6005.258197,
       "extra": {
         "sketchName": "south_mpa"
       }
@@ -17,7 +17,7 @@
       "classId": "gfw_longline",
       "sketchId": "75554",
       "groupId": "band-0",
-      "value": 11609.893317,
+      "value": 14853.274763,
       "extra": {
         "sketchName": "network",
         "isCollection": true
@@ -29,7 +29,7 @@
       "classId": "gfw_longline",
       "sketchId": "75555",
       "groupId": "band-0",
-      "value": 7926.817377,
+      "value": 8848.016565,
       "extra": {
         "sketchName": "mpa"
       }

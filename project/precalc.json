@@ -298,18 +298,10 @@
   {
     "geographyId": "eez",
     "metricId": "area",
-    "classId": "GFW_Fiji_purseseine-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 110.86
-  },
-  {
-    "geographyId": "eez",
-    "metricId": "area",
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 85.85
+    "value": 86.11
   },
   {
     "geographyId": "eez",
@@ -317,7 +309,7 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1.4
+    "value": 1.39
   },
   {
     "geographyId": "eez",
@@ -626,14 +618,6 @@
   {
     "geographyId": "eez",
     "metricId": "count",
-    "classId": "GFW_Fiji_purseseine-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 11086
-  },
-  {
-    "geographyId": "eez",
-    "metricId": "count",
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
@@ -658,18 +642,10 @@
   {
     "geographyId": "eez",
     "metricId": "sum",
-    "classId": "GFW_Fiji_purseseine-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": -3.7250704045888996e+42
-  },
-  {
-    "geographyId": "eez",
-    "metricId": "sum",
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 177613.12088
+    "value": 191706.65913
   },
   {
     "geographyId": "eez",
@@ -677,15 +653,7 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 504.790007
-  },
-  {
-    "geographyId": "eez",
-    "metricId": "valid",
-    "classId": "GFW_Fiji_purseseine-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 11086
+    "value": 466.93986
   },
   {
     "geographyId": "eez",
@@ -693,7 +661,7 @@
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 8585
+    "value": 8611
   },
   {
     "geographyId": "eez",
@@ -701,6 +669,6 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 140
+    "value": 139
   }
 ]
