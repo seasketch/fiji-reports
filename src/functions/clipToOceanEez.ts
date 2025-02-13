@@ -12,6 +12,8 @@ import {
   splitBBoxAntimeridian,
   getFeaturesForBBoxes,
   BBox,
+  isFeature,
+  toFeatureArray,
 } from "@seasketch/geoprocessing";
 import fijiEez from "./fiji_eez.json" with { type: "json" };
 import { bbox } from "@turf/turf";
@@ -30,14 +32,12 @@ export async function clipToOceanEez(
     enforceMaxSize: false,
   });
 
+  const sketchUnclean = makeUnclean(feature, -170, 360) as Feature;
+
   // The Fiji EEZ crosses the antimeridian
   // To keep the sketch a simple polygon, we need make our EEZ clipping coordinates
   // extend positively beyond the antimeridian
-  const fijiEezUnclean = makeEezUnclean(
-    fijiEez as FeatureCollection,
-    -170,
-    360,
-  );
+  const fijiEezUnclean = makeUnclean(fijiEez as FeatureCollection, -170, 360);
 
   const splitBbox = splitBBoxAntimeridian(bbox(feature));
 
@@ -54,10 +54,14 @@ export async function clipToOceanEez(
 
   const keepInsideEez: FeatureClipOperation = {
     operation: "intersection",
-    clipFeatures: fijiEezUnclean.features as Feature<Polygon | MultiPolygon>[],
+    clipFeatures: toFeatureArray(fijiEezUnclean) as Feature<
+      Polygon | MultiPolygon
+    >[],
   };
 
-  return clipToPolygonFeatures(feature, [eraseLand, keepInsideEez]);
+  console.log(JSON.stringify(feature));
+
+  return clipToPolygonFeatures(sketchUnclean, [eraseLand, keepInsideEez]);
 }
 
 export default new PreprocessingHandler(clipToOceanEez, {
@@ -68,25 +72,36 @@ export default new PreprocessingHandler(clipToOceanEez, {
   memory: 1024,
 });
 
-export function makeEezUnclean(
-  eez: FeatureCollection,
+export function makeUnclean(
+  shape: Feature | FeatureCollection,
   threshold = -120,
   offset = 360,
-): FeatureCollection {
-  // Deep clone so we don't mutate the original
-  const newEez = JSON.parse(JSON.stringify(eez)) as FeatureCollection;
+): Feature | FeatureCollection {
+  const newShape = JSON.parse(JSON.stringify(shape)) as
+    | Feature
+    | FeatureCollection;
 
-  newEez.features.forEach((feature) => {
+  if (isFeature(newShape)) {
     if (
-      feature.geometry.type !== "Polygon" &&
-      feature.geometry.type !== "MultiPolygon"
+      newShape.geometry.type !== "Polygon" &&
+      newShape.geometry.type !== "MultiPolygon"
     ) {
       throw new Error("Invalid geometry type");
     }
-    shiftGeometry(feature.geometry, threshold, offset);
-  });
+    shiftGeometry(newShape.geometry, threshold, offset);
+  } else {
+    newShape.features.forEach((feature) => {
+      if (
+        feature.geometry.type !== "Polygon" &&
+        feature.geometry.type !== "MultiPolygon"
+      ) {
+        throw new Error("Invalid geometry type");
+      }
+      shiftGeometry(feature.geometry, threshold, offset);
+    });
+  }
 
-  return newEez;
+  return newShape;
 }
 
 function shiftGeometry(
