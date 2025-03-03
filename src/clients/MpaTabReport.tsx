@@ -11,6 +11,7 @@ import { GfwCard } from "../components/GfwCard.js";
 import { BiodiversityCard } from "../components/BiodiversityCard.js";
 import { GeomorphologyCard } from "../components/GeomorphologyCard.js";
 import { DeepwaterBioregionsCard } from "../components/DeepwaterBioregionsCard.js";
+import { BenthicRichnessCard } from "../components/BenthicRichnessCard.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -39,6 +40,7 @@ const BaseReport = () => {
         <BiodiversityCard />
         <GeomorphologyCard />
         <DeepwaterBioregionsCard />
+        <BenthicRichnessCard />
       </ReportPage>
     </>
   );

@@ -220,5 +220,17 @@
         "display": "Central Lau to Northwest Vava'u plateau and hydrothermal vents"
       }
     ]
+  },
+  {
+    "metricId": "benthicRichness",
+    "type": "sumOverlap",
+    "classes": [
+      {
+        "classId": "benthicRichness",
+        "datasourceId": "benthicRichness",
+        "display": "Benthic Species Richness",
+        "layerId": "6yAxReGVl"
+      }
+    ]
   }
 ]

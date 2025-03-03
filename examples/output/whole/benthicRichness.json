@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "benthicRichness",
+      "classId": "benthicRichness",
+      "sketchId": "75742",
+      "groupId": null,
+      "value": 188937,
+      "extra": {
+        "sketchName": "whole"
+      }
+    }
+  ]
+}
