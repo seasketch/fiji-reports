@@ -18,7 +18,6 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
-import { clipToGeography } from "../util/clipToGeography.js";
 
 /**
  * gfw: A geoprocessing function that calculates overlap metrics for raster datasources

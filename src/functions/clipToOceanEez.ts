@@ -59,8 +59,6 @@ export async function clipToOceanEez(
     >[],
   };
 
-  console.log(JSON.stringify(feature));
-
   return clipToPolygonFeatures(sketchUnclean, [eraseLand, keepInsideEez]);
 }
 

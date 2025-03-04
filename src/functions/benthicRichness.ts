@@ -11,10 +11,6 @@ import {
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
-  rekeyMetrics,
-  sortMetrics,
-} from "@seasketch/geoprocessing/client-core";
-import {
   overlapPolygonStats,
   SpRichnessResults,
 } from "../util/overlapPolygonStats.js";
