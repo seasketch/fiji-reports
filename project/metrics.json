@@ -128,96 +128,96 @@
     "layerId": "P3s81YggR",
     "classes": [
       {
+        "classId": "Abyssal plain, seamounts and Vityaz trench bordering Fiji (NW), Tuvalu (SW) and Solomon Islands (SE)",
+        "display": "Abyssal Plain, Seamounts, & Vityaz Trench, Bordering Fiji (NW), Tuvalu (SW), & Solomon Islands (SE)"
+      },
+      {
+        "classId": "Ambae Trough and North Fiji Basin",
+        "display": "Ambae Trough & North Fiji Basin"
+      },
+      {
+        "classId": "Central Lau to Northwest Vava'u plateau and hydrothermal vents",
+        "display": "Central Lau to Northwest Vava'u Plateau & Hydrothermal Vents"
+      },
+      {
+        "classId": "East Shefa, Fiji Central and Maui's Stone Place.",
+        "display": "East Shefa, Fiji Central, & Maui's Stone Place"
+      },
+      {
+        "classId": "East Temotu and North Fiji Ridge",
+        "display": "East Temotu & North Fiji Ridge"
+      },
+      {
+        "classId": "East Temotu and Northwest Rotuma Seamounts and the Vityaz trench",
+        "display": "East Temotu and Northwest Rotuma Seamounts & The Vityaz Trench"
+      },
+      {
+        "classId": "East Temotu,Banks and West of Rotuma Seamounts and the Vityaz trench",
+        "display": "East Temotu, Banks and West of Rotuma Seamounts & The Vityaz Trench"
+      },
+      {
+        "classId": "Fiji - Tonga Chains",
+        "display": "Fiji-Tonga Chains"
+      },
+      {
         "classId": "Fiji-Tonga-Vanuatu Plateau and Basins including Moore Ridge",
-        "display": "Fiji-Tonga-Vanuatu Plateau and Basins including Moore Ridge"
+        "display": "Fiji-Tonga-Vanuatu Plateau and Basins (Including Moore Ridge)"
+      },
+      {
+        "classId": "Matthew and Hunter, South Fiji and Telekom Outbound Deep",
+        "display": "Matthew and Hunter, South Fiji, & Telekom Outbound Deep"
+      },
+      {
+        "classId": "Minerva to South Ata plateaus",
+        "display": "Minerva to South Ata Plateaus"
+      },
+      {
+        "classId": "Norfolk and High Seas Deep",
+        "display": "Norfolk & High Seas Deep"
+      },
+      {
+        "classId": "North Fiji and Tuvalu ridge chain",
+        "display": "North Fiji & Tuvalu Ridge Chain"
+      },
+      {
+        "classId": "North-East Rotuma, Futuna, Tuvalu abyssal mountains and seamounts",
+        "display": "Northeast Rotuma, Futuna, Tuvalu Abyssal Mountains & Seamounts"
+      },
+      {
+        "classId": "Northern Hunga and Wallis plateaus and North Viti and Vanua Levu basin",
+        "display": "Northern Hunga and Wallis Plateaus & North Viti and Vanua Levu Basin"
+      },
+      {
+        "classId": "Ono-i-Lau, South Lau Ridge and Halved Ridge",
+        "display": "Ono-i-Lau, South Lau Ridge, & Halved Ridge"
+      },
+      {
+        "classId": "Rotuma-Futuna-Tuvalu-abyssal mountains and seamounts",
+        "display": "Rotuma-Futuna-Tuvalu Abyssal Mountains & Seamounts"
+      },
+      {
+        "classId": "South Ceva-I-Ra Deep and Southern Cliff from Kalau",
+        "display": "South Ceva-I-Ra Deep & Southern Cliff from Kalau"
+      },
+      {
+        "classId": "South New Hebrides trench and South Eastern Ceva-I-Ra seamounts abyssal hills",
+        "display": "South New Hebrides Trench & Southeastern Ceva-I-Ra Seamounts Abyssal Hills"
+      },
+      {
+        "classId": "Southeast Rotuma, Isle De Horne, Futuna,Samoa and Niuas plateau",
+        "display": "Southeast Rotuma, Isle De Horne, Futuna, Samoa & Niuas Plateau"
       },
       {
         "classId": "Southern Fiji Flats",
         "display": "Southern Fiji Flats"
       },
       {
-        "classId": "Fiji - Tonga Chains",
-        "display": "Fiji - Tonga Chains"
-      },
-      {
-        "classId": "Ambae Trough and North Fiji Basin",
-        "display": "Ambae Trough and North Fiji Basin"
-      },
-      {
-        "classId": "East Shefa, Fiji Central and Maui's Stone Place.",
-        "display": "East Shefa, Fiji Central and Maui's Stone Place."
-      },
-      {
-        "classId": "East Temotu and Northwest Rotuma Seamounts and the Vityaz trench",
-        "display": "East Temotu and Northwest Rotuma Seamounts and the Vityaz trench"
-      },
-      {
-        "classId": "Northern Hunga and Wallis plateaus and North Viti and Vanua Levu basin",
-        "display": "Northern Hunga and Wallis plateaus and North Viti and Vanua Levu basin"
-      },
-      {
-        "classId": "South Ceva-I-Ra Deep and Southern Cliff from Kalau",
-        "display": "South Ceva-I-Ra Deep and Southern Cliff from Kalau"
-      },
-      {
-        "classId": "Norfolk and High Seas Deep",
-        "display": "Norfolk and High Seas Deep"
-      },
-      {
-        "classId": "Abyssal plain, seamounts and Vityaz trench bordering Fiji (NW), Tuvalu (SW) and Solomon Islands (SE)",
-        "display": "Abyssal plain, seamounts and Vityaz trench bordering Fiji (NW), Tuvalu (SW) and Solomon Islands (SE)"
-      },
-      {
-        "classId": "East Temotu,Banks and West of Rotuma Seamounts and the Vityaz trench",
-        "display": "East Temotu,Banks and West of Rotuma Seamounts and the Vityaz trench"
-      },
-      {
-        "classId": "North-East Rotuma, Futuna, Tuvalu abyssal mountains and seamounts",
-        "display": "North-East Rotuma, Futuna, Tuvalu abyssal mountains and seamounts"
-      },
-      {
-        "classId": "Rotuma-Futuna-Tuvalu-abyssal mountains and seamounts",
-        "display": "Rotuma-Futuna-Tuvalu-abyssal mountains and seamounts"
-      },
-      {
-        "classId": "Matthew and Hunter, South Fiji and Telekom Outbound Deep",
-        "display": "Matthew and Hunter, South Fiji and Telekom Outbound Deep"
-      },
-      {
-        "classId": "South New Hebrides trench and South Eastern Ceva-I-Ra seamounts abyssal hills",
-        "display": "South New Hebrides trench and South Eastern Ceva-I-Ra seamounts abyssal hills"
-      },
-      {
-        "classId": "Ono-i-Lau, South Lau Ridge and Halved Ridge",
-        "display": "Ono-i-Lau, South Lau Ridge and Halved Ridge"
-      },
-      {
-        "classId": "Minerva to South Ata plateaus",
-        "display": "Minerva to South Ata plateaus"
-      },
-      {
         "classId": "Southern Lau and the Ha'apai Tofua Ridge and Trough",
-        "display": "Southern Lau and the Ha'apai Tofua Ridge and Trough"
-      },
-      {
-        "classId": "North Fiji and Tuvalu ridge chain",
-        "display": "North Fiji and Tuvalu ridge chain"
-      },
-      {
-        "classId": "Southeast Rotuma, Isle De Horne, Futuna,Samoa and Niuas plateau",
-        "display": "Southeast Rotuma, Isle De Horne, Futuna,Samoa and Niuas plateau"
-      },
-      {
-        "classId": "East Temotu and North Fiji Ridge",
-        "display": "East Temotu and North Fiji Ridge"
+        "display": "Southern Lau & The Ha'apai Tofua Ridge and Trough"
       },
       {
         "classId": "Vanuatu and Fiji Plateau High Seas",
-        "display": "Vanuatu and Fiji Plateau High Seas"
-      },
-      {
-        "classId": "Central Lau to Northwest Vava'u plateau and hydrothermal vents",
-        "display": "Central Lau to Northwest Vava'u plateau and hydrothermal vents"
+        "display": "Vanuatu & Fiji Plateau High Seas"
       }
     ]
   },
