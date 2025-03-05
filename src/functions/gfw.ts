@@ -8,8 +8,7 @@ import {
   DefaultExtraParams,
   rasterMetrics,
   isRasterDatasource,
-  loadCog,
-  splitSketchAntimeridian,
+  loadCog
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
@@ -18,6 +17,7 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
  * gfw: A geoprocessing function that calculates overlap metrics for raster datasources

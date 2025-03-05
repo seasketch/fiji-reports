@@ -1,0 +1,620 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 23680708777.42137,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 23680708777.42137,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 81219387.791264,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 81219387.791264,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 94240566.157454,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 9448043.090429,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 84792523.067024,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 725994380.133836,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 615342958.100159,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 18256324.247409,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 92395097.786268,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 26380453.370945,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 26380453.370945,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    }
+  ]
+}

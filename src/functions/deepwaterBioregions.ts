@@ -9,7 +9,6 @@ import {
   Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
-  splitSketchAntimeridian,
   overlapPolygonArea,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
@@ -19,6 +18,7 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
  * deepwaterBioregions: A geoprocessing function that calculates overlap metrics for vector datasources
@@ -51,7 +51,7 @@ export async function deepwaterBioregions(
   if (!isVectorDatasource(ds))
     throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
   const url = project.getDatasourceUrl(ds);
-  const features = (await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(sketch, url));
+  const features = (await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(splitSketch, url));
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {

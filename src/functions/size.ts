@@ -9,7 +9,6 @@ import {
   Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
-  splitSketchAntimeridian,
   overlapPolygonArea,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
@@ -19,6 +18,7 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
  * size: A geoprocessing function that calculates overlap metrics for vector datasources

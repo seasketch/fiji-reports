@@ -7,13 +7,13 @@ import {
   DefaultExtraParams,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
-  splitSketchAntimeridian,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
   overlapPolygonStats,
   SpRichnessResults,
 } from "../util/overlapPolygonStats.js";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
  * benthicRichness: A geoprocessing function that calculates overlap metrics for vector datasources
@@ -28,7 +28,6 @@ export async function benthicRichness(
   extraParams: DefaultExtraParams = {},
 ): Promise<SpRichnessResults[]> {
   const splitSketch = splitSketchAntimeridian(sketch);
-
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("benthicRichness");
   const metrics = (
@@ -41,10 +40,10 @@ export async function benthicRichness(
           throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
         const url = project.getDatasourceUrl(ds);
 
-        // Fetch features overlapping with sketch, if not already fetched
-        const features = await getFeaturesForSketchBBoxes<
-          Polygon | MultiPolygon
-        >(sketch, url);
+        const features = await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(
+          splitSketch,
+          url,
+        );
 
         // Calculate overlap metrics
         const overlapResult = await overlapPolygonStats(features, splitSketch, {

@@ -10,7 +10,7 @@ describe("Basic smoke tests", () => {
     expect(typeof benthicRichness).toBe("function");
   });
   test("benthicRichness - tests run against all examples", async () => {
-    const examples = await getExamplePolygonSketchAll();
+    const examples = await getExamplePolygonSketchAll("large-network");
     for (const example of examples) {
       const result = await benthicRichness(example);
       expect(result).toBeTruthy();

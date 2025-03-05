@@ -1,0 +1,60 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 25083393414.258747,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 811753833.073736,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 19801290.492642,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 24025934477.55197,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 225903813.140395,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    }
+  ]
+}

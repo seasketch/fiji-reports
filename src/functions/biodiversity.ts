@@ -9,8 +9,7 @@ import {
   Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
-  overlapPolygonArea,
-  splitSketchAntimeridian,
+  overlapPolygonArea
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
@@ -19,6 +18,7 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
  * biodiversity: A geoprocessing function that calculates overlap metrics for vector datasources
@@ -60,7 +60,7 @@ export async function biodiversity(
         // Fetch features overlapping with sketch, if not already fetched
         const features =
           featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(sketch, url));
+          (await getFeaturesForSketchBBoxes(splitSketch, url));
         featuresByDatasource[ds.datasourceId] = features;
 
         // Get classKey for current data class
