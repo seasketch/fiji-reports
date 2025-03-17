@@ -93,6 +93,7 @@ export async function geomorphology(
           (metric): Metric => ({
             ...metric,
             classId: curClass.classId,
+            groupId: curClass.display,
             geographyId: curGeography.geographyId,
           }),
         );

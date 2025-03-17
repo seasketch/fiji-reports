@@ -210,6 +210,38 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "geo_abyss-Hills",
+    "sketchId": null,
+    "groupId": null,
+    "value": 593834526389.5491
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_abyss-Mountains",
+    "sketchId": null,
+    "groupId": null,
+    "value": 498294835097.47906
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_abyss-Plains",
+    "sketchId": null,
+    "groupId": null,
+    "value": 55479198553.881805
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_abyss-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1147608560040.9102
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "geo_basins-total",
     "sketchId": null,
     "groupId": null,
@@ -230,6 +262,14 @@
     "sketchId": null,
     "groupId": null,
     "value": 27273595892.093426
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_escarpments-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 196370135848.86057
   },
   {
     "geographyId": "eez",
@@ -266,10 +306,26 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "geo_seamounts-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 44714637836.22196
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "geo_shelf-total",
     "sketchId": null,
     "groupId": null,
     "value": 42997729455.1937
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geo_slope-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 70865119919.67438
   },
   {
     "geographyId": "eez",
@@ -530,6 +586,38 @@
   {
     "geographyId": "eez",
     "metricId": "count",
+    "classId": "geo_abyss-Hills",
+    "sketchId": null,
+    "groupId": null,
+    "value": 55
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_abyss-Mountains",
+    "sketchId": null,
+    "groupId": null,
+    "value": 37
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_abyss-Plains",
+    "sketchId": null,
+    "groupId": null,
+    "value": 32
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_abyss-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 124
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
     "classId": "geo_basins-total",
     "sketchId": null,
     "groupId": null,
@@ -550,6 +638,14 @@
     "sketchId": null,
     "groupId": null,
     "value": 97
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_escarpments-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 255
   },
   {
     "geographyId": "eez",
@@ -586,10 +682,26 @@
   {
     "geographyId": "eez",
     "metricId": "count",
+    "classId": "geo_seamounts-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 61
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
     "classId": "geo_shelf-total",
     "sketchId": null,
     "groupId": null,
     "value": 85
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "geo_slope-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 19
   },
   {
     "geographyId": "eez",

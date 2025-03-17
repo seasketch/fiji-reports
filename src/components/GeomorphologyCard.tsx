@@ -17,6 +17,7 @@ import {
   flattenBySketchAllClass,
   metricsWithSketchId,
   roundDecimalFormat,
+  sortMetrics,
   squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
@@ -87,7 +88,7 @@ export const GeomorphologyCard: React.FunctionComponent<GeogProp> = (props) => {
             </p>
 
             <ClassTable
-              rows={metrics}
+              rows={sortMetrics(metrics, ["groupId"])}
               metricGroup={metricGroup}
               objective={objectives}
               columnConfig={[

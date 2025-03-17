@@ -53,6 +53,27 @@
     "type": "areaOverlap",
     "classes": [
       {
+        "display": "Abyss (Hills)",
+        "datasourceId": "geo_abyss",
+        "classId": "Hills",
+        "classKey": "Class",
+        "layerId": "n6GEpdPb0"
+      },
+      {
+        "display": "Abyss (Mountains)",
+        "datasourceId": "geo_abyss",
+        "classId": "Mountains",
+        "classKey": "Class",
+        "layerId": "n6GEpdPb0"
+      },
+      {
+        "display": "Abyss (Plains)",
+        "datasourceId": "geo_abyss",
+        "classId": "Plains",
+        "classKey": "Class",
+        "layerId": "n6GEpdPb0"
+      },
+      {
         "classId": "geo_basins",
         "display": "Basins",
         "datasourceId": "geo_basins",
@@ -69,6 +90,12 @@
         "display": "Canyons",
         "datasourceId": "geo_canyons",
         "layerId": "dojlPQINc"
+      },
+      {
+        "classId": "geo_escarpments",
+        "display": "Escarpments",
+        "datasourceId": "geo_escarpments",
+        "layerId": "LZbHTArPE"
       },
       {
         "classId": "geo_guyots",
@@ -95,10 +122,22 @@
         "layerId": "Z3VGkpSbX"
       },
       {
+        "classId": "geo_seamounts",
+        "display": "Seamounts",
+        "datasourceId": "geo_seamounts",
+        "layerId": "EWRkNkysD"
+      },
+      {
         "classId": "geo_shelf",
         "display": "Shelf",
         "datasourceId": "geo_shelf",
         "layerId": "zqMaCot6b"
+      },
+      {
+        "classId": "geo_slope",
+        "display": "Slope",
+        "datasourceId": "geo_slope",
+        "layerId": "SWUOD5St5"
       },
       {
         "classId": "geo_spreadingridges",

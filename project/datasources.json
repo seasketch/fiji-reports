@@ -277,18 +277,82 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/Data_Received/Geopackage/fiji_v1.gpkg",
-    "layerName": "ECO_benthic_species_richness",
-    "geo_type": "vector",
     "datasourceId": "benthicRichness",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": true,
+    "layerName": "ECO_benthic_species_richness",
     "classKeys": [],
     "created": "2025-02-13T23:59:46.579Z",
     "lastUpdated": "2025-02-13T23:59:46.579Z",
+    "src": "data/src/Data_Received/Geopackage/fiji_v1.gpkg",
     "propertiesToKeep": [
       "DeepSpCoun"
+    ],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "geo_slope",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": true,
+    "layerName": "Slope.geojson",
+    "classKeys": [],
+    "created": "2025-03-17T17:42:28.544Z",
+    "lastUpdated": "2025-03-17T17:42:28.544Z",
+    "src": "data/src/Analytics/Reports/geomorphology/Slope.geojson.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "geo_seamounts",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": true,
+    "layerName": "Seamounts_360",
+    "classKeys": [],
+    "created": "2025-03-17T17:44:53.003Z",
+    "lastUpdated": "2025-03-17T17:44:53.003Z",
+    "src": "data/src/Analytics/Reports/geomorphology/Seamounts_360.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "geo_escarpments",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": true,
+    "layerName": "Escarpment_ 360",
+    "classKeys": [],
+    "created": "2025-03-17T17:46:15.942Z",
+    "lastUpdated": "2025-03-17T17:46:15.942Z",
+    "src": "data/src/Analytics/Reports/geomorphology/Escarpment_ 360.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/Analytics/Reports/geomorphology/Abyssal_Classification_360.fgb",
+    "layerName": "Abyssal_Classification_360",
+    "geo_type": "vector",
+    "datasourceId": "geo_abyss",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [
+      "Class"
+    ],
+    "created": "2025-03-17T17:46:36.435Z",
+    "lastUpdated": "2025-03-17T17:46:36.435Z",
+    "propertiesToKeep": [
+      "Class"
     ],
     "explodeMulti": true,
     "precalc": true
