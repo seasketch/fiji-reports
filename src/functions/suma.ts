@@ -9,7 +9,7 @@ import {
   Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
-  overlapPolygonArea
+  overlapPolygonArea,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
@@ -21,12 +21,12 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * biodiversity: A geoprocessing function that calculates overlap metrics for vector datasources
+ * suma: A geoprocessing function that calculates overlap metrics for vector datasources
  * @param sketch - A sketch or collection of sketches
  * @param extraParams
  * @returns Calculated metrics and a null sketch
  */
-export async function biodiversity(
+export async function suma(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
@@ -46,7 +46,7 @@ export async function biodiversity(
   > = {};
 
   // Calculate overlap metrics for each class in metric group
-  const metricGroup = project.getMetricGroup("biodiversity");
+  const metricGroup = project.getMetricGroup("suma");
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
@@ -105,8 +105,8 @@ export async function biodiversity(
   };
 }
 
-export default new GeoprocessingHandler(biodiversity, {
-  title: "biodiversity",
+export default new GeoprocessingHandler(suma, {
+  title: "suma",
   description: "",
   timeout: 500, // seconds
   memory: 1024, // megabytes

@@ -31,20 +31,778 @@
     ]
   },
   {
-    "metricId": "biodiversity",
+    "metricId": "ebsa",
     "type": "areaOverlap",
+    "layerId": "hc3ec_Ibd",
     "classes": [
       {
-        "classId": "ebsa",
-        "display": "Ecologically and Biologically Siginificant Areas (EBSAs)",
-        "datasourceId": "ebsa",
-        "layerId": "hc3ec_Ibd"
+        "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
+        "classKey": "ebsaname",
+        "display": "Vatu-i-Ra/Lomaiviti, Fiji",
+        "datasourceId": "ebsa"
       },
       {
-        "classId": "suma",
-        "display": "Special Unique Marine Areas (SUMAs)",
-        "datasourceId": "suma",
-        "layerId": "ltiiN1QcB"
+        "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
+        "classKey": "ebsaname",
+        "display": "Kadavu and the Southern Lau Region",
+        "datasourceId": "ebsa"
+      },
+      {
+        "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
+        "classKey": "ebsaname",
+        "display": "Taveuni and Ringgold Islands",
+        "datasourceId": "ebsa"
+      },
+      {
+        "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+        "classKey": "ebsaname",
+        "display": "South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+        "datasourceId": "ebsa"
+      }
+    ]
+  },
+  {
+    "metricId": "suma",
+    "type": "areaOverlap",
+    "layerId": "ltiiN1QcB",
+    "classes": [
+      {
+        "classId": "Southwest Trench/Conway Reef",
+        "classKey": "Site_Name",
+        "display": "Southwest Trench/Conway Reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Southwest Ridge",
+        "classKey": "Site_Name",
+        "display": "Southwest Ridge",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Ceva-i-Ra reef/ Conway Island",
+        "classKey": "Site_Name",
+        "display": "Ceva-i-Ra reef/ Conway Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Conway reef _ Ceva -i -ra Island",
+        "classKey": "Site_Name",
+        "display": "Conway reef _ Ceva -i -ra Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Southwest seamount",
+        "classKey": "Site_Name",
+        "display": "Southwest seamount",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "South Kadavu Ridge",
+        "classKey": "Site_Name",
+        "display": "South Kadavu Ridge",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "South Kadavu reefs",
+        "classKey": "Site_Name",
+        "display": "South Kadavu reefs",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Matuku Island",
+        "classKey": "Site_Name",
+        "display": "Matuku Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Kadavu mangrove bays",
+        "classKey": "Site_Name",
+        "display": "Kadavu mangrove bays",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Great and North Astrolabe reef",
+        "classKey": "Site_Name",
+        "display": "Great and North Astrolabe reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Moala Island including Cakova Passage, Keteira Bay",
+        "classKey": "Site_Name",
+        "display": "Moala Island including Cakova Passage, Keteira Bay",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vatulele island",
+        "classKey": "Site_Name",
+        "display": "Vatulele island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Beqa barrier reef and lagoon",
+        "classKey": "Site_Name",
+        "display": "Beqa barrier reef and lagoon",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Ugaga Island (Royal Davui)",
+        "classKey": "Site_Name",
+        "display": "Ugaga Island (Royal Davui)",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nanuku Island  (Storm Island)",
+        "classKey": "Site_Name",
+        "display": "Nanuku Island  (Storm Island)",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Wainiyabia and Galoa shark corridor",
+        "classKey": "Site_Name",
+        "display": "Wainiyabia and Galoa shark corridor",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Serua mangroves and passages",
+        "classKey": "Site_Name",
+        "display": "Serua mangroves and passages",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Rewa delta",
+        "classKey": "Site_Name",
+        "display": "Rewa delta",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Natadola Bay",
+        "classKey": "Site_Name",
+        "display": "Natadola Bay",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Yanuca Island_ Cuvu",
+        "classKey": "Site_Name",
+        "display": "Yanuca Island_ Cuvu",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Sigatoka Catchment",
+        "classKey": "Site_Name",
+        "display": "Sigatoka Catchment",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Sovi Bay",
+        "classKey": "Site_Name",
+        "display": "Sovi Bay",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nukulau and Makuluva Islands",
+        "classKey": "Site_Name",
+        "display": "Nukulau and Makuluva Islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Suva barrier reef",
+        "classKey": "Site_Name",
+        "display": "Suva barrier reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Suva mudflats",
+        "classKey": "Site_Name",
+        "display": "Suva mudflats",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nasoata Island",
+        "classKey": "Site_Name",
+        "display": "Nasoata Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Namuka Bay",
+        "classKey": "Site_Name",
+        "display": "Namuka Bay",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Naigali passage",
+        "classKey": "Site_Name",
+        "display": "Naigali passage",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Gau Island and barrier reef",
+        "classKey": "Site_Name",
+        "display": "Gau Island and barrier reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Tailevu mangroves and mudflats",
+        "classKey": "Site_Name",
+        "display": "Tailevu mangroves and mudflats",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Momi Bay and passage",
+        "classKey": "Site_Name",
+        "display": "Momi Bay and passage",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Navula-Malolo reef including Tavarua and Namotu Islands",
+        "classKey": "Site_Name",
+        "display": "Navula-Malolo reef including Tavarua and Namotu Islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Malololevu Island",
+        "classKey": "Site_Name",
+        "display": "Malololevu Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nadi Bay reefs",
+        "classKey": "Site_Name",
+        "display": "Nadi Bay reefs",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "South Denarau mangroves",
+        "classKey": "Site_Name",
+        "display": "South Denarau mangroves",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Leleuvia Island and Caqalai sandbank",
+        "classKey": "Site_Name",
+        "display": "Leleuvia Island and Caqalai sandbank",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Davetalevu passage and islands",
+        "classKey": "Site_Name",
+        "display": "Davetalevu passage and islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Toberua and Mabualau Islands",
+        "classKey": "Site_Name",
+        "display": "Toberua and Mabualau Islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nairai Island",
+        "classKey": "Site_Name",
+        "display": "Nairai Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Batiki Island",
+        "classKey": "Site_Name",
+        "display": "Batiki Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Caqalai Island",
+        "classKey": "Site_Name",
+        "display": "Caqalai Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vatulami Island",
+        "classKey": "Site_Name",
+        "display": "Vatulami Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Sabeto delta",
+        "classKey": "Site_Name",
+        "display": "Sabeto delta",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Malamala Island",
+        "classKey": "Site_Name",
+        "display": "Malamala Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Dreketi and Saweni mangroves and mudflats",
+        "classKey": "Site_Name",
+        "display": "Dreketi and Saweni mangroves and mudflats",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cakau Momo",
+        "classKey": "Site_Name",
+        "display": "Cakau Momo",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Ovalau East Reefs",
+        "classKey": "Site_Name",
+        "display": "Ovalau East Reefs",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Wakaya Island and barrier reef",
+        "classKey": "Site_Name",
+        "display": "Wakaya Island and barrier reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Central Viti Canyons",
+        "classKey": "Site_Name",
+        "display": "Central Viti Canyons",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Moon Reef and  Cakau Davui",
+        "classKey": "Site_Name",
+        "display": "Moon Reef and Cakau Davui",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Tavua Island",
+        "classKey": "Site_Name",
+        "display": "Tavua Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Monuriki Island",
+        "classKey": "Site_Name",
+        "display": "Monuriki Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Supermarket reef Mana Island",
+        "classKey": "Site_Name",
+        "display": "Supermarket reef Mana Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Kadomo Island",
+        "classKey": "Site_Name",
+        "display": "Kadomo Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Ba delta",
+        "classKey": "Site_Name",
+        "display": "Ba delta",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Makogai Island and barrier reef",
+        "classKey": "Site_Name",
+        "display": "Makogai Island and barrier reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Tavua Peninsula",
+        "classKey": "Site_Name",
+        "display": "Tavua Peninsula",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "White rock",
+        "classKey": "Site_Name",
+        "display": "White rock",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vatu-i-Ra Island and reef",
+        "classKey": "Site_Name",
+        "display": "Vatu-i-Ra Island and reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vatu-i-Ra passage",
+        "classKey": "Site_Name",
+        "display": "Vatu-i-Ra passage",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Koro East corner",
+        "classKey": "Site_Name",
+        "display": "Koro East corner",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nananu-i-Ra Island and reefs",
+        "classKey": "Site_Name",
+        "display": "Nananu-i-Ra Island and reefs",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "West Yasawa Plateau",
+        "classKey": "Site_Name",
+        "display": "West Yasawa Plateau",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Viwa Island and barrier reef",
+        "classKey": "Site_Name",
+        "display": "Viwa Island and barrier reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Naviti and smaller islands",
+        "classKey": "Site_Name",
+        "display": "Naviti and smaller islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Kubulau and Namena",
+        "classKey": "Site_Name",
+        "display": "Kubulau and Namena",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Western Hydrothemal vents",
+        "classKey": "Site_Name",
+        "display": "Western Hydrothemal vents",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "West Rift Valley",
+        "classKey": "Site_Name",
+        "display": "West Rift Valley",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Yadua Island",
+        "classKey": "Site_Name",
+        "display": "Yadua Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Yanuyanu Island_Naweni",
+        "classKey": "Site_Name",
+        "display": "Yanuyanu Island_Naweni",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Somosomo straits",
+        "classKey": "Site_Name",
+        "display": "Somosomo straits",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Qaloqalo Salt Lake_Naweni",
+        "classKey": "Site_Name",
+        "display": "Qaloqalo Salt Lake_Naweni",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Yasawa Island",
+        "classKey": "Site_Name",
+        "display": "Yasawa Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Natewa bay",
+        "classKey": "Site_Name",
+        "display": "Natewa bay",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cakaulevu_ Bua",
+        "classKey": "Site_Name",
+        "display": "Cakaulevu_ Bua",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cakaulevu and Kia Island_Macuata",
+        "classKey": "Site_Name",
+        "display": "Cakaulevu and Kia Island_Macuata",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "North Fiji Plateau",
+        "classKey": "Site_Name",
+        "display": "North Fiji Plateau",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Seamounts",
+        "classKey": "Site_Name",
+        "display": "Seamounts",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Rotuma Island",
+        "classKey": "Site_Name",
+        "display": "Rotuma Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Rotuma archipelago",
+        "classKey": "Site_Name",
+        "display": "Rotuma archipelago",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Fiji Plateau west trench and canyons",
+        "classKey": "Site_Name",
+        "display": "Fiji Plateau west trench and canyons",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Fiji Plateau ridge and canyons",
+        "classKey": "Site_Name",
+        "display": "Fiji Plateau ridge and canyons",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Ringgold and Cikobia islands and reefs",
+        "classKey": "Site_Name",
+        "display": "Ringgold and Cikobia islands and reefs",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nanuku Canyon",
+        "classKey": "Site_Name",
+        "display": "Nanuku Canyon",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Northeast Rift Valley",
+        "classKey": "Site_Name",
+        "display": "Northeast Rift Valley",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Wailagilala atoll",
+        "classKey": "Site_Name",
+        "display": "Wailagilala atoll",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Wailagilala atoll and Cakau Gala",
+        "classKey": "Site_Name",
+        "display": "Wailagilala atoll and Cakau Gala",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cakau Gala",
+        "classKey": "Site_Name",
+        "display": "Cakau Gala",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Bouma Heritage Park",
+        "classKey": "Site_Name",
+        "display": "Bouma Heritage Park",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Qilaqila bay of islands",
+        "classKey": "Site_Name",
+        "display": "Qilaqila bay of islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vanuabalavu Island and reefs",
+        "classKey": "Site_Name",
+        "display": "Vanuabalavu Island and reefs",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Masomo bay",
+        "classKey": "Site_Name",
+        "display": "Masomo bay",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Northwest Lau Group",
+        "classKey": "Site_Name",
+        "display": "Northwest Lau Group",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Yacata/Kaibu",
+        "classKey": "Site_Name",
+        "display": "Yacata/Kaibu",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Nukutolu",
+        "classKey": "Site_Name",
+        "display": "Nukutolu",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Tuvuca",
+        "classKey": "Site_Name",
+        "display": "Tuvuca",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cicia",
+        "classKey": "Site_Name",
+        "display": "Cicia",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Late Reefs",
+        "classKey": "Site_Name",
+        "display": "Late Reefs",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vanua Masi Reef",
+        "classKey": "Site_Name",
+        "display": "Vanua Masi Reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Bukatatanoa and Oneata Group",
+        "classKey": "Site_Name",
+        "display": "Bukatatanoa and Oneata Group",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Bukatatanoa reef",
+        "classKey": "Site_Name",
+        "display": "Bukatatanoa reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Oneata Island and barrier reef",
+        "classKey": "Site_Name",
+        "display": "Oneata Island and barrier reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cakau Vau reef",
+        "classKey": "Site_Name",
+        "display": "Cakau Vau reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cakau Lekaleka reef",
+        "classKey": "Site_Name",
+        "display": "Cakau Lekaleka reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Navatu",
+        "classKey": "Site_Name",
+        "display": "Navatu",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Cakau Motu reef",
+        "classKey": "Site_Name",
+        "display": "Cakau Motu reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Moce Group",
+        "classKey": "Site_Name",
+        "display": "Moce Group",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Karoni Island and reef",
+        "classKey": "Site_Name",
+        "display": "Karoni Island and reef",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Tavunasici",
+        "classKey": "Site_Name",
+        "display": "Tavunasici",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Yagasa Group",
+        "classKey": "Site_Name",
+        "display": "Yagasa Group",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vuaqava Island Inland Lake",
+        "classKey": "Site_Name",
+        "display": "Vuaqava Island Inland Lake",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Kabara Island",
+        "classKey": "Site_Name",
+        "display": "Kabara Island",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Kabara and Vuaqava islands",
+        "classKey": "Site_Name",
+        "display": "Kabara and Vuaqava islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Totoya",
+        "classKey": "Site_Name",
+        "display": "Totoya",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Fulaga lagoon",
+        "classKey": "Site_Name",
+        "display": "Fulaga lagoon",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Ogea lagoon",
+        "classKey": "Site_Name",
+        "display": "Ogea lagoon",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Fulaga and Ogea Islands",
+        "classKey": "Site_Name",
+        "display": "Fulaga and Ogea Islands",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Central Lau Ridge",
+        "classKey": "Site_Name",
+        "display": "Central Lau Ridge",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Vatoa Group",
+        "classKey": "Site_Name",
+        "display": "Vatoa Group",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Ono-I-Lau Group",
+        "classKey": "Site_Name",
+        "display": "Ono-I-Lau Group",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Central Lau Seamount",
+        "classKey": "Site_Name",
+        "display": "Central Lau Seamount",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Southeast Lau Seamounts",
+        "classKey": "Site_Name",
+        "display": "Southeast Lau Seamounts",
+        "datasourceId": "suma"
+      },
+      {
+        "classId": "Minerva reef",
+        "classKey": "Site_Name",
+        "display": "Minerva reef",
+        "datasourceId": "suma"
       }
     ]
   },

@@ -194,6 +194,38 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "ebsa-EBSA No: 22: Taveuni and Ringgold Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 16509428422.408566
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ebsa-EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 85103001270.0157
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ebsa-EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
+    "sketchId": null,
+    "groupId": null,
+    "value": 23139529713.254745
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ebsa-EBSA No. 5:  Kadavu and the Southern Lau Region",
+    "sketchId": null,
+    "groupId": null,
+    "value": 193628330902.15793
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "ebsa-total",
     "sketchId": null,
     "groupId": null,
@@ -370,10 +402,994 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "suma-Ba delta",
+    "sketchId": null,
+    "groupId": null,
+    "value": 18674486.48819984
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Batiki Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 22495767.48084733
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Beqa barrier reef and lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 401765749.82613164
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Bouma Heritage Park",
+    "sketchId": null,
+    "groupId": null,
+    "value": 25717483.9346368
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Bukatatanoa and Oneata Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1776351135.0412478
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Bukatatanoa reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 458257516.02608573
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cakau Gala",
+    "sketchId": null,
+    "groupId": null,
+    "value": 46485354.905302085
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cakau Lekaleka reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4679709.583918044
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cakau Momo",
+    "sketchId": null,
+    "groupId": null,
+    "value": 8573855.166508708
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cakau Motu reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 34136154.02252648
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cakau Vau reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 5112084.869719172
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cakaulevu and Kia Island_Macuata",
+    "sketchId": null,
+    "groupId": null,
+    "value": 802443785.7085327
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cakaulevu_ Bua",
+    "sketchId": null,
+    "groupId": null,
+    "value": 578929264.234139
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Caqalai Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 143546.73806351534
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Central Lau Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 8218748051.1153555
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Central Lau Seamount",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2631165592.015744
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Central Viti Canyons",
+    "sketchId": null,
+    "groupId": null,
+    "value": 6631520618.172805
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Ceva-i-Ra reef/ Conway Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1253702055.8192658
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Cicia",
+    "sketchId": null,
+    "groupId": null,
+    "value": 12246401.767418727
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Conway reef _ Ceva -i -ra Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 20590174.879141077
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Davetalevu passage and islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 80213754.38903987
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Dreketi and Saweni mangroves and mudflats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2376403.1963930978
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Fiji Plateau ridge and canyons",
+    "sketchId": null,
+    "groupId": null,
+    "value": 13496922301.092857
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Fiji Plateau west trench and canyons",
+    "sketchId": null,
+    "groupId": null,
+    "value": 17378853115.65209
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Fulaga and Ogea Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 225850584.42438906
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Fulaga lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 20933384.83155575
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Gau Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 195399802.32591662
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Great and North Astrolabe reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 344645229.89518774
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Kabara and Vuaqava islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 119353904.31113157
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Kabara Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 10021944.52944288
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Kadavu mangrove bays",
+    "sketchId": null,
+    "groupId": null,
+    "value": 13291.314813170937
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Kadomo Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1144928.1352815751
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Karoni Island and reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 51310601.19063132
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Koro East corner",
+    "sketchId": null,
+    "groupId": null,
+    "value": 25402437.28119577
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Kubulau and Namena",
+    "sketchId": null,
+    "groupId": null,
+    "value": 243433219.47374752
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Late Reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 90229343.39718343
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Leleuvia Island and Caqalai sandbank",
+    "sketchId": null,
+    "groupId": null,
+    "value": 441127.8939549535
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Makogai Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 69194439.7596987
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Malamala Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 270439.9011571262
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Malololevu Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1583684.8682035997
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Masomo bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 303032.9516411645
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Matuku Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 35002009.25653847
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Minerva reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 9017527032.598063
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Moala Island including Cakova Passage, Keteira Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 157133858.05285466
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Moce Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 391051816.23628515
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Momi Bay and passage",
+    "sketchId": null,
+    "groupId": null,
+    "value": 35071016.59828538
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Monuriki Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1375995.4858485563
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Moon Reef and  Cakau Davui",
+    "sketchId": null,
+    "groupId": null,
+    "value": 6855097.773664223
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nadi Bay reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 7768596.855875658
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Naigali passage",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1211063.9067770531
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nairai Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 173626087.93272692
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Namuka Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 20271787.39240243
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nananu-i-Ra Island and reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 72350297.26330857
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nanuku Canyon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 447464249.9113233
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nanuku Island  (Storm Island)",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4460.37135140296
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nasoata Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 639973.383513331
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Natadola Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3172405.4515016084
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Natewa bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 246469021.86163205
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Navatu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 18391891.329364084
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Naviti and smaller islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 34029673.76451174
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Navula-Malolo reef including Tavarua and Namotu Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 60885782.38202051
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-North Fiji Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 5673589638.236818
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Northeast Rift Valley",
+    "sketchId": null,
+    "groupId": null,
+    "value": 10163857856.890081
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Northwest Lau Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 78844289.73899029
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nukulau and Makuluva Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 5152970.859378319
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Nukutolu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2336162.01932204
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Ogea lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 34040217.542074695
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Oneata Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 102947919.05446903
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Ono-I-Lau Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 196984883.388682
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Ovalau East Reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 23338347.994282935
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Qaloqalo Salt Lake_Naweni",
+    "sketchId": null,
+    "groupId": null,
+    "value": 991965.4656332207
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Qilaqila bay of islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 7645203.597076684
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Rewa delta",
+    "sketchId": null,
+    "groupId": null,
+    "value": 37236135.26598394
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Ringgold and Cikobia islands and reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4169271425.742267
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Rotuma archipelago",
+    "sketchId": null,
+    "groupId": null,
+    "value": 5516624942.601926
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Rotuma Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 76080427.62155436
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Sabeto delta",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2041633.1598533257
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4307427259.254243
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Serua mangroves and passages",
+    "sketchId": null,
+    "groupId": null,
+    "value": 119352827.83674866
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Sigatoka Catchment",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3184801.376511387
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Somosomo straits",
+    "sketchId": null,
+    "groupId": null,
+    "value": 153835523.25451374
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-South Denarau mangroves",
+    "sketchId": null,
+    "groupId": null,
+    "value": 347933.86803867045
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-South Kadavu reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 58838022.80951532
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-South Kadavu Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 6908455826.552219
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Southeast Lau Seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3700104906.688163
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Southwest Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4985617592.050468
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Southwest seamount",
+    "sketchId": null,
+    "groupId": null,
+    "value": 851263149.0732363
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Southwest Trench/Conway Reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 5974027630.677874
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Sovi Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1308911.3769884144
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Supermarket reef Mana Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 211197.78510874824
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Suva barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 10214976.353075925
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Suva mudflats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3542862.0819054004
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Tailevu mangroves and mudflats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 248378776.3731803
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Tavua Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 602182.4584272337
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Tavua Peninsula",
+    "sketchId": null,
+    "groupId": null,
+    "value": 19617487.37055493
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Tavunasici",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3416391.127860154
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Toberua and Mabualau Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 104750.55939779224
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "suma-total",
     "sketchId": null,
     "groupId": null,
-    "value": 148722581492.66028
+    "value": 154630819700.69016
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Totoya",
+    "sketchId": null,
+    "groupId": null,
+    "value": 131309261.00619361
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Tuvuca",
+    "sketchId": null,
+    "groupId": null,
+    "value": 19614572.392306663
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Ugaga Island (Royal Davui)",
+    "sketchId": null,
+    "groupId": null,
+    "value": 412407.7516619026
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vanua Masi Reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 109551498.08748503
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vanuabalavu Island and reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 913305173.8554144
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vatoa Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 102152706.04987304
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vatu-i-Ra Island and reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 122538742.15828153
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vatu-i-Ra passage",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1415506341.2436051
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vatulami Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 89682.18341810473
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vatulele island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 55907677.82035085
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Viwa Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 188238051.13012367
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Vuaqava Island Inland Lake",
+    "sketchId": null,
+    "groupId": null,
+    "value": 0
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Wailagilala atoll",
+    "sketchId": null,
+    "groupId": null,
+    "value": 26600215.583589107
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Wailagilala atoll and Cakau Gala",
+    "sketchId": null,
+    "groupId": null,
+    "value": 289766999.1205625
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Wainiyabia and Galoa shark corridor",
+    "sketchId": null,
+    "groupId": null,
+    "value": 87204744.67979035
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Wakaya Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 133335558.35860948
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-West Rift Valley",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1128194190.9428968
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-West Yasawa Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 29588504570.226868
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Western Hydrothemal vents",
+    "sketchId": null,
+    "groupId": null,
+    "value": 45693228.027445816
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-White rock",
+    "sketchId": null,
+    "groupId": null,
+    "value": 252340.19114676316
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Yacata/Kaibu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 9373307.78185343
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Yadua Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 21594587.07051599
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Yagasa Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 267583219.88756996
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Yanuca Island_ Cuvu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1388524.2217030807
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Yanuyanu Island_Naweni",
+    "sketchId": null,
+    "groupId": null,
+    "value": 81883.23173501348
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "suma-Yasawa Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 491845313.1618525
   },
   {
     "geographyId": "eez",
@@ -570,6 +1586,38 @@
   {
     "geographyId": "eez",
     "metricId": "count",
+    "classId": "ebsa-EBSA No: 22: Taveuni and Ringgold Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ebsa-EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ebsa-EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ebsa-EBSA No. 5:  Kadavu and the Southern Lau Region",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
     "classId": "ebsa-total",
     "sketchId": null,
     "groupId": null,
@@ -746,10 +1794,994 @@
   {
     "geographyId": "eez",
     "metricId": "count",
+    "classId": "suma-Ba delta",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Batiki Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Beqa barrier reef and lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Bouma Heritage Park",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Bukatatanoa and Oneata Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Bukatatanoa reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cakau Gala",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cakau Lekaleka reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cakau Momo",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cakau Motu reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cakau Vau reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cakaulevu and Kia Island_Macuata",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cakaulevu_ Bua",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Caqalai Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Central Lau Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Central Lau Seamount",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Central Viti Canyons",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Ceva-i-Ra reef/ Conway Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Cicia",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Conway reef _ Ceva -i -ra Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Davetalevu passage and islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Dreketi and Saweni mangroves and mudflats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Fiji Plateau ridge and canyons",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Fiji Plateau west trench and canyons",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Fulaga and Ogea Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Fulaga lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Gau Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Great and North Astrolabe reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Kabara and Vuaqava islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Kabara Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 107
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Kadavu mangrove bays",
+    "sketchId": null,
+    "groupId": null,
+    "value": 27
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Kadomo Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Karoni Island and reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Koro East corner",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Kubulau and Namena",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Late Reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Leleuvia Island and Caqalai sandbank",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Makogai Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Malamala Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Malololevu Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Masomo bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Matuku Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Minerva reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Moala Island including Cakova Passage, Keteira Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Moce Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Momi Bay and passage",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Monuriki Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Moon Reef and  Cakau Davui",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nadi Bay reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Naigali passage",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nairai Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Namuka Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nananu-i-Ra Island and reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nanuku Canyon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nanuku Island  (Storm Island)",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nasoata Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Natadola Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Natewa bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Navatu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Naviti and smaller islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Navula-Malolo reef including Tavarua and Namotu Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-North Fiji Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Northeast Rift Valley",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Northwest Lau Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nukulau and Makuluva Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Nukutolu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Ogea lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Oneata Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Ono-I-Lau Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Ovalau East Reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Qaloqalo Salt Lake_Naweni",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Qilaqila bay of islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Rewa delta",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Ringgold and Cikobia islands and reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Rotuma archipelago",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Rotuma Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Sabeto delta",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Serua mangroves and passages",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Sigatoka Catchment",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Somosomo straits",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-South Denarau mangroves",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-South Kadavu reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-South Kadavu Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Southeast Lau Seamounts",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Southwest Ridge",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Southwest seamount",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Southwest Trench/Conway Reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Sovi Bay",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Supermarket reef Mana Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Suva barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Suva mudflats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Tailevu mangroves and mudflats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Tavua Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Tavua Peninsula",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Tavunasici",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Toberua and Mabualau Islands",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
     "classId": "suma-total",
     "sketchId": null,
     "groupId": null,
-    "value": 96
+    "value": 259
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Totoya",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Tuvuca",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Ugaga Island (Royal Davui)",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vanua Masi Reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vanuabalavu Island and reefs",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vatoa Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vatu-i-Ra Island and reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vatu-i-Ra passage",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vatulami Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vatulele island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Viwa Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Vuaqava Island Inland Lake",
+    "sketchId": null,
+    "groupId": null,
+    "value": 0
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Wailagilala atoll",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Wailagilala atoll and Cakau Gala",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Wainiyabia and Galoa shark corridor",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Wakaya Island and barrier reef",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-West Rift Valley",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-West Yasawa Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Western Hydrothemal vents",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-White rock",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Yacata/Kaibu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Yadua Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Yagasa Group",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Yanuca Island_ Cuvu",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Yanuyanu Island_Naweni",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma-Yasawa Island",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
   },
   {
     "geographyId": "eez",

@@ -3,18 +3,18 @@ import {
   writeResultOutput,
 } from "@seasketch/geoprocessing/scripts/testing";
 import { describe, test, expect } from "vitest";
-import { biodiversity } from "./biodiversity.js";
+import { suma } from "./suma.js";
 
 describe("Basic smoke tests", () => {
   test("handler function is present", () => {
-    expect(typeof biodiversity).toBe("function");
+    expect(typeof suma).toBe("function");
   });
-  test("biodiversity - tests run against all examples", async () => {
+  test("suma - tests run against all examples", async () => {
     const examples = await getExamplePolygonSketchAll();
     for (const example of examples) {
-      const result = await biodiversity(example);
+      const result = await suma(example);
       expect(result).toBeTruthy();
-      writeResultOutput(result, "biodiversity", example.properties.name);
+      writeResultOutput(result, "suma", example.properties.name);
     }
   }, 60_000);
 });

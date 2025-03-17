@@ -70,25 +70,12 @@
     ],
     "precalc": true,
     "layerName": "EBSAs",
-    "classKeys": [],
-    "created": "2025-02-07T18:08:15.764Z",
-    "lastUpdated": "2025-02-07T23:48:53.605Z",
-    "src": "data/src/Data_Received/IUCN/Fiji Consulatations Data Transfer/Ecologically and biologically siginificant areas (EBSAs)/EBSAs.shp",
-    "propertiesToKeep": [],
-    "explodeMulti": true
-  },
-  {
-    "datasourceId": "suma",
-    "geo_type": "vector",
-    "formats": [
-      "fgb"
+    "classKeys": [
+      "ebsaname"
     ],
-    "precalc": true,
-    "layerName": "suma_dissolved",
-    "classKeys": [],
-    "created": "2025-02-07T18:18:34.774Z",
-    "lastUpdated": "2025-02-13T22:52:05.850Z",
-    "src": "data/src/Analytics/Reports/biodiversity/suma_dissolved.fgb",
+    "created": "2025-02-07T18:08:15.764Z",
+    "lastUpdated": "2025-03-17T18:18:09.889Z",
+    "src": "data/src/Data_Received/IUCN/Fiji Consulatations Data Transfer/Ecologically and biologically siginificant areas (EBSAs)/EBSAs.shp",
     "propertiesToKeep": [],
     "explodeMulti": true
   },
@@ -339,20 +326,39 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/Analytics/Reports/geomorphology/Abyssal_Classification_360.fgb",
-    "layerName": "Abyssal_Classification_360",
-    "geo_type": "vector",
     "datasourceId": "geo_abyss",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": true,
+    "layerName": "Abyssal_Classification_360",
     "classKeys": [
       "Class"
     ],
     "created": "2025-03-17T17:46:36.435Z",
     "lastUpdated": "2025-03-17T17:46:36.435Z",
+    "src": "data/src/Analytics/Reports/geomorphology/Abyssal_Classification_360.fgb",
     "propertiesToKeep": [
       "Class"
+    ],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Boundaries_Biological Data/Fiji Special Unique Marine Areas (SUMA).shp",
+    "layerName": "Fiji Special Unique Marine Areas (SUMA)",
+    "geo_type": "vector",
+    "datasourceId": "suma",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [
+      "Site_Name"
+    ],
+    "created": "2025-03-17T18:52:38.388Z",
+    "lastUpdated": "2025-03-17T18:52:38.388Z",
+    "propertiesToKeep": [
+      "Site_Name"
     ],
     "explodeMulti": true,
     "precalc": true

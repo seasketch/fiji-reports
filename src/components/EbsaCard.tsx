@@ -3,6 +3,7 @@ import { Trans, useTranslation } from "react-i18next";
 import {
   ClassTable,
   Collapse,
+  LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTable,
@@ -23,12 +24,12 @@ import {
 import project from "../../project/projectClient.js";
 
 /**
- * BiodiversityCard component
+ * EbsaCard component
  *
  * @param props - geographyId
  * @returns A react component which displays an overlap report
  */
-export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
+export const EbsaCard: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -36,7 +37,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
   });
 
   // Metrics
-  const metricGroup = project.getMetricGroup("biodiversity", t);
+  const metricGroup = project.getMetricGroup("ebsa", t);
   const precalcMetrics = project.getPrecalcMetrics(
     metricGroup,
     "area",
@@ -44,8 +45,10 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
   );
 
   // Labels
-  const titleLabel = t("Biodiversity");
-  const mapLabel = t("Map");
+  const titleLabel = t(
+    "Ecologically and Biologically Significant Areas (EBSAs)",
+  );
+  const mapLabel = t("Show EBSAs On Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
   const unitsLabel = t("km²");
@@ -53,7 +56,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
   return (
     <ResultsCard
       title={titleLabel}
-      functionName="biodiversity"
+      functionName="ebsa"
       extraParams={{ geographyIds: [curGeography.geographyId] }}
     >
       {(data: ReportResult) => {
@@ -80,11 +83,13 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
         return (
           <ReportError>
             <p>
-              <Trans i18nKey="BiodiversityCard 1">
-                This report summarizes this plan's overlap with significant
-                marine biodiversity areas.
+              <Trans i18nKey="EbsaCard 1">
+                This report summarizes this plan's overlap with ecologically and
+                biologically significant areas.
               </Trans>
             </p>
+
+            <LayerToggle layerId={metricGroup.layerId} label={mapLabel} />
 
             <ClassTable
               rows={metrics}
@@ -92,9 +97,9 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
               objective={objectives}
               columnConfig={[
                 {
-                  columnLabel: " ",
+                  columnLabel: t("Name"),
                   type: "class",
-                  width: 40,
+                  width: 50,
                 },
                 {
                   columnLabel: withinLabel,
@@ -118,11 +123,6 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
                   },
                   width: 30,
                 },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
               ]}
             />
 
@@ -138,7 +138,7 @@ export const BiodiversityCard: React.FunctionComponent<GeogProp> = (props) => {
             )}
 
             <Collapse title={t("Learn More")}>
-              <Trans i18nKey="BiodiversityCard - learn more">
+              <Trans i18nKey="EbsaCard - learn more">
                 <p>ℹ️ Overview:</p>
                 <p>
                   🗺️ Source Data:{" "}

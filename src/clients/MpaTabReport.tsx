@@ -8,10 +8,11 @@ import {
 import Translator from "../components/TranslatorAsync.js";
 import { SizeCard } from "../components/SizeCard.js";
 import { GfwCard } from "../components/GfwCard.js";
-import { BiodiversityCard } from "../components/BiodiversityCard.js";
+import { EbsaCard } from "../components/EbsaCard.js";
 import { GeomorphologyCard } from "../components/GeomorphologyCard.js";
 import { DeepwaterBioregionsCard } from "../components/DeepwaterBioregionsCard.js";
 import { BenthicRichnessCard } from "../components/BenthicRichnessCard.js";
+import { SumaCard } from "../components/SumaCard.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -37,7 +38,8 @@ const BaseReport = () => {
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
-        <BiodiversityCard />
+        <EbsaCard />
+        <SumaCard />
         <GeomorphologyCard />
         <DeepwaterBioregionsCard />
         <BenthicRichnessCard />

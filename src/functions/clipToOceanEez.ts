@@ -9,14 +9,10 @@ import {
   clipToPolygonFeatures,
   FeatureCollection,
   Position,
-  splitBBoxAntimeridian,
-  getFeaturesForBBoxes,
-  BBox,
   isFeature,
   toFeatureArray,
 } from "@seasketch/geoprocessing";
-import fijiEez from "./fiji_eez.json" with { type: "json" };
-import { bbox } from "@turf/turf";
+import fijiEez from "./fiji_planning_region.json" with { type: "json" };
 
 /**
  * Preprocessor takes a Polygon feature/sketch and returns the portion that
@@ -39,19 +35,6 @@ export async function clipToOceanEez(
   // extend positively beyond the antimeridian
   const fijiEezUnclean = makeUnclean(fijiEez as FeatureCollection, -170, 360);
 
-  const splitBbox = splitBBoxAntimeridian(bbox(feature));
-
-  const landFeatures: Feature<Polygon | MultiPolygon>[] =
-    await getFeaturesForBBoxes(
-      splitBbox as BBox[],
-      "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/global-coastline-daylight-v158.fgb",
-    );
-
-  const eraseLand: FeatureClipOperation = {
-    operation: "difference",
-    clipFeatures: landFeatures,
-  };
-
   const keepInsideEez: FeatureClipOperation = {
     operation: "intersection",
     clipFeatures: toFeatureArray(fijiEezUnclean) as Feature<
@@ -59,7 +42,7 @@ export async function clipToOceanEez(
     >[],
   };
 
-  return clipToPolygonFeatures(sketchUnclean, [eraseLand, keepInsideEez]);
+  return clipToPolygonFeatures(sketchUnclean, [keepInsideEez]);
 }
 
 export default new PreprocessingHandler(clipToOceanEez, {

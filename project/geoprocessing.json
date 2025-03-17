@@ -13,7 +13,8 @@
   "geoprocessingFunctions": [
     "src/functions/size.ts",
     "src/functions/gfw.ts",
-    "src/functions/biodiversity.ts",
+    "src/functions/suma.ts",
+    "src/functions/ebsa.ts",
     "src/functions/geomorphology.ts",
     "src/functions/deepwaterBioregions.ts",
     "src/functions/benthicRichness.ts"

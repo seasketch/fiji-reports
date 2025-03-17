@@ -118,7 +118,7 @@
       "classId": "geo_canyons",
       "sketchId": "77760",
       "groupId": "Canyons",
-      "value": 81219387.791264,
+      "value": 81219535.227434,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -130,7 +130,7 @@
       "classId": "geo_canyons",
       "sketchId": "77761",
       "groupId": "Canyons",
-      "value": 81219387.791264,
+      "value": 81219535.227434,
       "extra": {
         "sketchName": "vanua"
       }
@@ -342,7 +342,7 @@
       "classId": "geo_ridges",
       "sketchId": "77760",
       "groupId": "Ridges",
-      "value": 94240566.157454,
+      "value": 94240617.502443,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -354,7 +354,7 @@
       "classId": "geo_ridges",
       "sketchId": "77761",
       "groupId": "Ridges",
-      "value": 9448043.090429,
+      "value": 9448094.435418,
       "extra": {
         "sketchName": "vanua"
       }
@@ -510,7 +510,7 @@
       "classId": "geo_shelf",
       "sketchId": "77760",
       "groupId": "Shelf",
-      "value": 725994380.133836,
+      "value": 725865824.136376,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -522,7 +522,7 @@
       "classId": "geo_shelf",
       "sketchId": "77761",
       "groupId": "Shelf",
-      "value": 615342958.100159,
+      "value": 615214402.102699,
       "extra": {
         "sketchName": "vanua"
       }
@@ -566,7 +566,7 @@
       "classId": "geo_slope",
       "sketchId": "77760",
       "groupId": "Slope",
-      "value": 152449359.484801,
+      "value": 152449536.010522,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -578,7 +578,7 @@
       "classId": "geo_slope",
       "sketchId": "77761",
       "groupId": "Slope",
-      "value": 152449359.484801,
+      "value": 152449536.010522,
       "extra": {
         "sketchName": "vanua"
       }

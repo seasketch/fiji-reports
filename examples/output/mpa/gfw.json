@@ -4,7 +4,7 @@
       "geographyId": "eez",
       "metricId": "gfw",
       "classId": "gfw_longline",
-      "sketchId": "75552",
+      "sketchId": "75741",
       "groupId": "band-0",
       "value": 8848.016565,
       "extra": {
@@ -15,7 +15,7 @@
       "geographyId": "eez",
       "metricId": "gfw",
       "classId": "gfw_purseseine",
-      "sketchId": "75552",
+      "sketchId": "75741",
       "groupId": "band-0",
       "value": 0,
       "extra": {

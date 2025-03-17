@@ -1,0 +1,6892 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ba delta",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ba delta",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ba delta",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ba delta",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ba delta",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Batiki Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Batiki Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Batiki Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Batiki Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Batiki Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Beqa barrier reef and lagoon",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Beqa barrier reef and lagoon",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Beqa barrier reef and lagoon",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Beqa barrier reef and lagoon",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Beqa barrier reef and lagoon",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bouma Heritage Park",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bouma Heritage Park",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bouma Heritage Park",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bouma Heritage Park",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bouma Heritage Park",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa and Oneata Group",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa and Oneata Group",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa and Oneata Group",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa and Oneata Group",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa and Oneata Group",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Bukatatanoa reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Gala",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Gala",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Gala",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Gala",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Gala",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Lekaleka reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Lekaleka reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Lekaleka reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Lekaleka reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Lekaleka reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Momo",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Momo",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Momo",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Momo",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Momo",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Motu reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Motu reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Motu reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Motu reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Motu reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Vau reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Vau reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Vau reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Vau reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakau Vau reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu and Kia Island_Macuata",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu and Kia Island_Macuata",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu and Kia Island_Macuata",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu and Kia Island_Macuata",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu and Kia Island_Macuata",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu_ Bua",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu_ Bua",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu_ Bua",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu_ Bua",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cakaulevu_ Bua",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Caqalai Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Caqalai Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Caqalai Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Caqalai Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Caqalai Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Ridge",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Ridge",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Ridge",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Ridge",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Ridge",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Seamount",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Seamount",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Seamount",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Seamount",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Lau Seamount",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Viti Canyons",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Viti Canyons",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Viti Canyons",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Viti Canyons",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Central Viti Canyons",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ceva-i-Ra reef/ Conway Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ceva-i-Ra reef/ Conway Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ceva-i-Ra reef/ Conway Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ceva-i-Ra reef/ Conway Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ceva-i-Ra reef/ Conway Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cicia",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cicia",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cicia",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cicia",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Cicia",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Conway reef _ Ceva -i -ra Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Conway reef _ Ceva -i -ra Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Conway reef _ Ceva -i -ra Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Conway reef _ Ceva -i -ra Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Conway reef _ Ceva -i -ra Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Davetalevu passage and islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Davetalevu passage and islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Davetalevu passage and islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Davetalevu passage and islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Davetalevu passage and islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Dreketi and Saweni mangroves and mudflats",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Dreketi and Saweni mangroves and mudflats",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Dreketi and Saweni mangroves and mudflats",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Dreketi and Saweni mangroves and mudflats",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Dreketi and Saweni mangroves and mudflats",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau ridge and canyons",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau ridge and canyons",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau ridge and canyons",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau ridge and canyons",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau ridge and canyons",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau west trench and canyons",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau west trench and canyons",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau west trench and canyons",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau west trench and canyons",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fiji Plateau west trench and canyons",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga and Ogea Islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga and Ogea Islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga and Ogea Islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga and Ogea Islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga and Ogea Islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga lagoon",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga lagoon",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga lagoon",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga lagoon",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Fulaga lagoon",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Gau Island and barrier reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Gau Island and barrier reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Gau Island and barrier reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Gau Island and barrier reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Gau Island and barrier reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Great and North Astrolabe reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Great and North Astrolabe reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Great and North Astrolabe reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Great and North Astrolabe reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Great and North Astrolabe reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara and Vuaqava islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara and Vuaqava islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara and Vuaqava islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara and Vuaqava islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara and Vuaqava islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kabara Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadavu mangrove bays",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadavu mangrove bays",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadavu mangrove bays",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadavu mangrove bays",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadavu mangrove bays",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadomo Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadomo Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadomo Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadomo Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kadomo Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Karoni Island and reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 4578110.517802,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Karoni Island and reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Karoni Island and reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 4578110.517802,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Karoni Island and reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Karoni Island and reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Koro East corner",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Koro East corner",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Koro East corner",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Koro East corner",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Koro East corner",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kubulau and Namena",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kubulau and Namena",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kubulau and Namena",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kubulau and Namena",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Kubulau and Namena",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Late Reefs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Late Reefs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Late Reefs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Late Reefs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Late Reefs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Leleuvia Island and Caqalai sandbank",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Leleuvia Island and Caqalai sandbank",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Leleuvia Island and Caqalai sandbank",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Leleuvia Island and Caqalai sandbank",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Leleuvia Island and Caqalai sandbank",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Makogai Island and barrier reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Makogai Island and barrier reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Makogai Island and barrier reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Makogai Island and barrier reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Makogai Island and barrier reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malamala Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malamala Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malamala Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malamala Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malamala Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malololevu Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malololevu Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malololevu Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malololevu Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Malololevu Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Masomo bay",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 303032.951641,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Masomo bay",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 303032.951641,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Masomo bay",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Masomo bay",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Masomo bay",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Matuku Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Matuku Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Matuku Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Matuku Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Matuku Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Minerva reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Minerva reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Minerva reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Minerva reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Minerva reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moala Island including Cakova Passage, Keteira Bay",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moala Island including Cakova Passage, Keteira Bay",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moala Island including Cakova Passage, Keteira Bay",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moala Island including Cakova Passage, Keteira Bay",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moala Island including Cakova Passage, Keteira Bay",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moce Group",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 19804187.015705,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moce Group",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moce Group",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 19804187.015705,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moce Group",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moce Group",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Momi Bay and passage",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Momi Bay and passage",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Momi Bay and passage",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Momi Bay and passage",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Momi Bay and passage",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Monuriki Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Monuriki Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Monuriki Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Monuriki Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Monuriki Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moon Reef and  Cakau Davui",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moon Reef and  Cakau Davui",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moon Reef and  Cakau Davui",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moon Reef and  Cakau Davui",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Moon Reef and  Cakau Davui",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nadi Bay reefs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nadi Bay reefs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nadi Bay reefs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nadi Bay reefs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nadi Bay reefs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naigali passage",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naigali passage",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naigali passage",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naigali passage",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naigali passage",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nairai Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nairai Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nairai Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nairai Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nairai Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Namuka Bay",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Namuka Bay",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Namuka Bay",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Namuka Bay",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Namuka Bay",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nananu-i-Ra Island and reefs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nananu-i-Ra Island and reefs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nananu-i-Ra Island and reefs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nananu-i-Ra Island and reefs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nananu-i-Ra Island and reefs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Canyon",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Canyon",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Canyon",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Canyon",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Canyon",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Island  (Storm Island)",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Island  (Storm Island)",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Island  (Storm Island)",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Island  (Storm Island)",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nanuku Island  (Storm Island)",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nasoata Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nasoata Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nasoata Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nasoata Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nasoata Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natadola Bay",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natadola Bay",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natadola Bay",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natadola Bay",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natadola Bay",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natewa bay",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natewa bay",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natewa bay",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natewa bay",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Natewa bay",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navatu",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navatu",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navatu",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navatu",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navatu",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naviti and smaller islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naviti and smaller islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naviti and smaller islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naviti and smaller islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Naviti and smaller islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navula-Malolo reef including Tavarua and Namotu Islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navula-Malolo reef including Tavarua and Namotu Islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navula-Malolo reef including Tavarua and Namotu Islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navula-Malolo reef including Tavarua and Namotu Islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Navula-Malolo reef including Tavarua and Namotu Islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "North Fiji Plateau",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "North Fiji Plateau",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "North Fiji Plateau",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "North Fiji Plateau",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "North Fiji Plateau",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northeast Rift Valley",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northeast Rift Valley",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northeast Rift Valley",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northeast Rift Valley",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northeast Rift Valley",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northwest Lau Group",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northwest Lau Group",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northwest Lau Group",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northwest Lau Group",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Northwest Lau Group",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukulau and Makuluva Islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukulau and Makuluva Islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukulau and Makuluva Islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukulau and Makuluva Islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukulau and Makuluva Islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukutolu",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukutolu",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukutolu",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukutolu",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Nukutolu",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ogea lagoon",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ogea lagoon",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ogea lagoon",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ogea lagoon",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ogea lagoon",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Oneata Island and barrier reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Oneata Island and barrier reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Oneata Island and barrier reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Oneata Island and barrier reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Oneata Island and barrier reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ono-I-Lau Group",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ono-I-Lau Group",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ono-I-Lau Group",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ono-I-Lau Group",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ono-I-Lau Group",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ovalau East Reefs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ovalau East Reefs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ovalau East Reefs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ovalau East Reefs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ovalau East Reefs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qaloqalo Salt Lake_Naweni",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qaloqalo Salt Lake_Naweni",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qaloqalo Salt Lake_Naweni",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qaloqalo Salt Lake_Naweni",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qaloqalo Salt Lake_Naweni",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qilaqila bay of islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 7645203.597077,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qilaqila bay of islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 7645203.597077,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qilaqila bay of islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qilaqila bay of islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Qilaqila bay of islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rewa delta",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rewa delta",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rewa delta",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rewa delta",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rewa delta",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ringgold and Cikobia islands and reefs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ringgold and Cikobia islands and reefs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ringgold and Cikobia islands and reefs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ringgold and Cikobia islands and reefs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ringgold and Cikobia islands and reefs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma archipelago",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 225903823.219269,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma archipelago",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma archipelago",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma archipelago",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma archipelago",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 225903823.219269,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 75478908.881956,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Rotuma Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 75478908.881956,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sabeto delta",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sabeto delta",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sabeto delta",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sabeto delta",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sabeto delta",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Seamounts",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Seamounts",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Seamounts",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Seamounts",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Seamounts",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Serua mangroves and passages",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Serua mangroves and passages",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Serua mangroves and passages",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Serua mangroves and passages",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Serua mangroves and passages",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sigatoka Catchment",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sigatoka Catchment",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sigatoka Catchment",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sigatoka Catchment",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sigatoka Catchment",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Somosomo straits",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Somosomo straits",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Somosomo straits",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Somosomo straits",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Somosomo straits",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Denarau mangroves",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Denarau mangroves",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Denarau mangroves",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Denarau mangroves",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Denarau mangroves",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu reefs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu reefs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu reefs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu reefs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu reefs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu Ridge",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu Ridge",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu Ridge",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu Ridge",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "South Kadavu Ridge",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southeast Lau Seamounts",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southeast Lau Seamounts",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southeast Lau Seamounts",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southeast Lau Seamounts",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southeast Lau Seamounts",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Ridge",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Ridge",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Ridge",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Ridge",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Ridge",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest seamount",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest seamount",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest seamount",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest seamount",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest seamount",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Trench/Conway Reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Trench/Conway Reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Trench/Conway Reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Trench/Conway Reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Southwest Trench/Conway Reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sovi Bay",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sovi Bay",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sovi Bay",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sovi Bay",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Sovi Bay",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Supermarket reef Mana Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Supermarket reef Mana Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Supermarket reef Mana Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Supermarket reef Mana Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Supermarket reef Mana Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva barrier reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva barrier reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva barrier reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva barrier reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva barrier reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva mudflats",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva mudflats",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva mudflats",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva mudflats",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Suva mudflats",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tailevu mangroves and mudflats",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tailevu mangroves and mudflats",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tailevu mangroves and mudflats",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tailevu mangroves and mudflats",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tailevu mangroves and mudflats",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Peninsula",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Peninsula",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Peninsula",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Peninsula",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavua Peninsula",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavunasici",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavunasici",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavunasici",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavunasici",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tavunasici",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Toberua and Mabualau Islands",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Toberua and Mabualau Islands",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Toberua and Mabualau Islands",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Toberua and Mabualau Islands",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Toberua and Mabualau Islands",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Totoya",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Totoya",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Totoya",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Totoya",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Totoya",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tuvuca",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tuvuca",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tuvuca",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tuvuca",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Tuvuca",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ugaga Island (Royal Davui)",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ugaga Island (Royal Davui)",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ugaga Island (Royal Davui)",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ugaga Island (Royal Davui)",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Ugaga Island (Royal Davui)",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanua Masi Reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanua Masi Reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanua Masi Reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanua Masi Reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanua Masi Reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanuabalavu Island and reefs",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 486186683.156846,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanuabalavu Island and reefs",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 486186683.156846,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanuabalavu Island and reefs",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanuabalavu Island and reefs",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vanuabalavu Island and reefs",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatoa Group",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatoa Group",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatoa Group",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatoa Group",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatoa Group",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra Island and reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra Island and reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra Island and reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra Island and reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra Island and reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra passage",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra passage",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra passage",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra passage",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatu-i-Ra passage",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulami Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulami Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulami Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulami Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulami Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulele island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulele island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulele island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulele island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vatulele island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Viwa Island and barrier reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Viwa Island and barrier reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Viwa Island and barrier reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Viwa Island and barrier reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Viwa Island and barrier reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vuaqava Island Inland Lake",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vuaqava Island Inland Lake",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vuaqava Island Inland Lake",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vuaqava Island Inland Lake",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Vuaqava Island Inland Lake",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll and Cakau Gala",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll and Cakau Gala",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll and Cakau Gala",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll and Cakau Gala",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wailagilala atoll and Cakau Gala",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wainiyabia and Galoa shark corridor",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wainiyabia and Galoa shark corridor",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wainiyabia and Galoa shark corridor",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wainiyabia and Galoa shark corridor",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wainiyabia and Galoa shark corridor",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wakaya Island and barrier reef",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wakaya Island and barrier reef",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wakaya Island and barrier reef",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wakaya Island and barrier reef",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Wakaya Island and barrier reef",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Rift Valley",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Rift Valley",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Rift Valley",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Rift Valley",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Rift Valley",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Yasawa Plateau",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Yasawa Plateau",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Yasawa Plateau",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Yasawa Plateau",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "West Yasawa Plateau",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Western Hydrothemal vents",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Western Hydrothemal vents",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Western Hydrothemal vents",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Western Hydrothemal vents",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Western Hydrothemal vents",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "White rock",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "White rock",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "White rock",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "White rock",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "White rock",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yacata/Kaibu",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yacata/Kaibu",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yacata/Kaibu",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yacata/Kaibu",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yacata/Kaibu",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yadua Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yadua Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yadua Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yadua Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yadua Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yagasa Group",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yagasa Group",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yagasa Group",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yagasa Group",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yagasa Group",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuca Island_ Cuvu",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuca Island_ Cuvu",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuca Island_ Cuvu",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuca Island_ Cuvu",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuca Island_ Cuvu",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuyanu Island_Naweni",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuyanu Island_Naweni",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuyanu Island_Naweni",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuyanu Island_Naweni",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yanuyanu Island_Naweni",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yasawa Island",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yasawa Island",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yasawa Island",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yasawa Island",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "suma",
+      "classId": "Yasawa Island",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    }
+  ]
+}
