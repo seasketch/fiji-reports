@@ -10,11 +10,11 @@ import {
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
   overlapPolygonArea,
+  isSketchCollection,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
   Metric,
-  ReportResult,
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
@@ -31,7 +31,7 @@ export async function suma(
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
   extraParams: DefaultExtraParams = {},
-): Promise<ReportResult> {
+): Promise<{ totalValue: number; metrics: Metric[] }> {
   // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
   const geographyId = getFirstFromParam("geographyIds", extraParams);
   const curGeography = project.getGeographyById(geographyId, {
@@ -39,6 +39,23 @@ export async function suma(
   });
   // Clip portion of sketch outside geography features
   const splitSketch = splitSketchAntimeridian(sketch);
+
+  // First, get total value
+  const totalDs = project.getDatasourceById("suma_dissolved");
+  if (!isVectorDatasource(totalDs))
+    throw new Error(`Expected vector datasource for ${totalDs.datasourceId}`);
+  const totalUrl = project.getDatasourceUrl(totalDs);
+  const totalFeatures = await getFeaturesForSketchBBoxes<
+    Polygon | MultiPolygon
+  >(splitSketch, totalUrl);
+  const totalMetric = (
+    await overlapPolygonArea(
+      "sumaTotal",
+      totalFeatures,
+      splitSketch,
+      isSketchCollection(sketch) ? { includeChildMetrics: false } : {},
+    )
+  )[0];
 
   const metricGroup = project.getMetricGroup("suma");
   const dsId = metricGroup.datasourceId;
@@ -92,6 +109,7 @@ export async function suma(
   ).flat();
 
   return {
+    totalValue: totalMetric.value,
     metrics: sortMetrics(rekeyMetrics(metrics)),
   };
 }

@@ -3,11 +3,13 @@ import { Trans, useTranslation } from "react-i18next";
 import {
   ClassTable,
   Collapse,
+  KeySection,
   LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTable,
   useSketchProperties,
+  VerticalSpacer,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   GeogProp,
@@ -17,7 +19,9 @@ import {
   SketchProperties,
   flattenBySketchAllClass,
   metricsWithSketchId,
+  percentWithEdge,
   roundDecimalFormat,
+  roundLower,
   squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
@@ -57,9 +61,11 @@ export const SumaCard: React.FunctionComponent<GeogProp> = (props) => {
       functionName="suma"
       extraParams={{ geographyIds: [curGeography.geographyId] }}
     >
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+      {(data: { totalValue: number; metrics: Metric[] }) => {
+        const totalValue = data.totalValue;
+        const totalSUMAs = 148263414428.76416; // From QGIS
 
+        const percMetricIdName = `${metricGroup.metricId}Perc`;
         const valueMetrics = metricsWithSketchId(
           data.metrics.filter((m) => m.metricId === metricGroup.metricId),
           [id],
@@ -88,6 +94,18 @@ export const SumaCard: React.FunctionComponent<GeogProp> = (props) => {
             </p>
 
             <LayerToggle layerId={metricGroup.layerId} label={mapLabel} />
+
+            <VerticalSpacer />
+
+            <KeySection>
+              {t("This plan contains")}{" "}
+              <b>
+                {roundLower(squareMeterToKilometer(totalValue))} {unitsLabel}
+              </b>
+              {" of SUMAs, "}
+              {t("which is")} <b>{percentWithEdge(totalValue / totalSUMAs)}</b>{" "}
+              {t("of total SUMA area.")}
+            </KeySection>
 
             <ClassTable
               rows={metrics}

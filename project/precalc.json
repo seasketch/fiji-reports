@@ -402,6 +402,14 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "suma_dissolved-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 152094513279.99908
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "suma-Ba delta",
     "sketchId": null,
     "groupId": null,
@@ -1790,6 +1798,14 @@
     "sketchId": null,
     "groupId": "band-0",
     "value": 11086
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "suma_dissolved-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 106
   },
   {
     "geographyId": "eez",
