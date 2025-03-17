@@ -40,38 +40,29 @@ export async function suma(
   // Clip portion of sketch outside geography features
   const splitSketch = splitSketchAntimeridian(sketch);
 
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
-
-  // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("suma");
+  const dsId = metricGroup.datasourceId;
+  if (!dsId)
+    throw new Error(`Expected datasourceId for ${metricGroup.metricId}`);
+  const ds = project.getDatasourceById(dsId);
+  if (!isVectorDatasource(ds))
+    throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
+  const url = project.getDatasourceUrl(ds);
+  const features = await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(
+    splitSketch,
+    url,
+  );
+
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
-        const ds = project.getMetricGroupDatasource(metricGroup, {
-          classId: curClass.classId,
-        });
-        if (!isVectorDatasource(ds))
-          throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
-        const url = project.getDatasourceUrl(ds);
-
-        // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(splitSketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
-
         // Get classKey for current data class
         const classKey = project.getMetricGroupClassKey(metricGroup, {
           classId: curClass.classId,
         });
 
         let finalFeatures: Feature<Polygon | MultiPolygon>[] = [];
-        if (classKey === undefined)
-          // Use all features
-          finalFeatures = features;
+        if (classKey === undefined) finalFeatures = features;
         else {
           // Filter to features that are a member of this class
           finalFeatures = features.filter(
