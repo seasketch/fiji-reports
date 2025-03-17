@@ -88,8 +88,8 @@ export const SumaCard: React.FunctionComponent<GeogProp> = (props) => {
           <ReportError>
             <p>
               <Trans i18nKey="SumaCard 1">
-                This report summarizes this plan's overlap with ecologically and
-                biologically significant areas.
+                This report summarizes this plan's overlap with Special Unique
+                Marine Areas (SUMAs).
               </Trans>
             </p>
 
