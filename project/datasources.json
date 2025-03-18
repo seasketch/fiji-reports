@@ -301,16 +301,27 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/Analytics/Reports/suma/suma_dissolved.fgb",
-    "layerName": "suma_dissolved",
-    "geo_type": "vector",
     "datasourceId": "suma_dissolved",
+    "geo_type": "vector",
     "formats": ["fgb"],
+    "precalc": true,
+    "layerName": "suma_dissolved",
     "classKeys": [],
     "created": "2025-03-17T21:26:26.136Z",
     "lastUpdated": "2025-03-17T21:26:26.136Z",
+    "src": "data/src/Analytics/Reports/suma/suma_dissolved.fgb",
     "propertiesToKeep": [],
-    "explodeMulti": true,
-    "precalc": true
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "bathymetry",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "created": "2025-03-18T17:20:05.424Z",
+    "lastUpdated": "2025-03-18T17:22:15.682Z",
+    "src": "data/src/Analytics/Reports/bathymetry/fiji_GEBCO_bathymetry.tif"
   }
 ]

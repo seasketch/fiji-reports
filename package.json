@@ -68,6 +68,7 @@
     "prettier": "^3.3.3",
     "prop-types": "^15.8.1",
     "react-i18next": "^15.0.1",
+    "simple-statistics": "^7.8.8",
     "storybook": "^8.2.9",
     "vite": "^5.4.2",
     "vitest": "^2.0.5",

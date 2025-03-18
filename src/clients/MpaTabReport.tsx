@@ -13,6 +13,7 @@ import { GeomorphologyCard } from "../components/GeomorphologyCard.js";
 import { DeepwaterBioregionsCard } from "../components/DeepwaterBioregionsCard.js";
 import { BenthicRichnessCard } from "../components/BenthicRichnessCard.js";
 import { SumaCard } from "../components/SumaCard.js";
+import { Depth } from "../components/Depth.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -38,6 +39,7 @@ const BaseReport = () => {
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
+        <Depth />
         <EbsaCard />
         <SumaCard />
         <GeomorphologyCard />

@@ -31,6 +31,18 @@
     ]
   },
   {
+    "metricId": "bathymetry",
+    "type": "valueOverlap",
+    "layerId": "TY3ET5dIG",
+    "classes": [
+      {
+        "classId": "bathymetry",
+        "display": "Depth",
+        "datasourceId": "bathymetry"
+      }
+    ]
+  },
+  {
     "metricId": "ebsa",
     "type": "areaOverlap",
     "layerId": "hc3ec_Ibd",
