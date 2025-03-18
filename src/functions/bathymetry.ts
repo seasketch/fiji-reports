@@ -16,6 +16,7 @@ import project from "../../project/projectClient.js";
 
 // @ts-expect-error no types
 import geoblaze, { Georaster } from "geoblaze";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 export interface BathymetryResults {
   /** minimum depth in sketch */
@@ -32,6 +33,9 @@ export interface BathymetryResults {
 export async function bathymetry(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>,
 ): Promise<BathymetryResults[]> {
+  // Clip portion of sketch outside geography features
+  const splitSketch = splitSketchAntimeridian(sketch);
+
   const mg = project.getMetricGroup("bathymetry");
   if (!mg.classes[0].datasourceId)
     throw new Error(`Expected datasourceId for ${mg.classes[0]}`);
@@ -39,7 +43,7 @@ export async function bathymetry(
     project.getInternalRasterDatasourceById(mg.classes[0].datasourceId),
   )}`;
   const raster = await loadCog(url);
-  const stats = await bathyStats(sketch, raster);
+  const stats = await bathyStats(splitSketch, raster);
   if (!stats)
     throw new Error(`No stats returned for ${sketch.properties.name}`);
   return stats;

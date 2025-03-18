@@ -95,6 +95,7 @@ export async function suma(
           metricGroup.metricId,
           finalFeatures,
           splitSketch,
+          { solveOverlap: false },
         );
 
         return overlapResult.map(

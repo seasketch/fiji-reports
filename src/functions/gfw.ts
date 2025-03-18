@@ -8,7 +8,7 @@ import {
   DefaultExtraParams,
   rasterMetrics,
   isRasterDatasource,
-  loadCog
+  loadCog,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {

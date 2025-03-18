@@ -87,6 +87,7 @@ export async function ebsa(
           metricGroup.metricId,
           finalFeatures,
           splitSketch,
+          { solveOverlap: false },
         );
 
         return overlapResult.map(

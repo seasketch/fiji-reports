@@ -40,18 +40,16 @@ export async function deepwaterBioregions(
   // Clip portion of sketch outside geography features
   const splitSketch = splitSketchAntimeridian(sketch);
 
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
-
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("deepwaterBioregions");
   const ds = project.getMetricGroupDatasource(metricGroup);
   if (!isVectorDatasource(ds))
     throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
   const url = project.getDatasourceUrl(ds);
-  const features = (await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(splitSketch, url));
+  const features = await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(
+    splitSketch,
+    url,
+  );
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
@@ -79,6 +77,7 @@ export async function deepwaterBioregions(
           metricGroup.metricId,
           finalFeatures,
           splitSketch,
+          { solveOverlap: false },
         );
 
         return overlapResult.map(
