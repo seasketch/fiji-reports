@@ -1,0 +1,26 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 6578.609455,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    }
+  ]
+}

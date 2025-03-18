@@ -1,0 +1,191 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "78746",
+      "groupId": "Basins",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "78746",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "78746",
+      "groupId": "Canyons",
+      "value": 1100239324.738853,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "78746",
+      "groupId": "Escarpments",
+      "value": 2067430875.198389,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "78746",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "78746",
+      "groupId": "Plateaus",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "78746",
+      "groupId": "Ridges",
+      "value": 644438717.545118,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "78746",
+      "groupId": "Rift Valleys",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "78746",
+      "groupId": "Seamounts",
+      "value": 262512076.996374,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "78746",
+      "groupId": "Shelf",
+      "value": 799198975.41699,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "78746",
+      "groupId": "Slope",
+      "value": 3134621040.03168,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "78746",
+      "groupId": "Spreading Ridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "78746",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "78746",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "78746",
+      "groupId": "Abyss (Hills)",
+      "value": 3698858967.36256,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "78746",
+      "groupId": "Abyss (Mountains)",
+      "value": 516003505.91854,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "78746",
+      "groupId": "Abyss (Plains)",
+      "value": 33049161.941942,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    }
+  ]
+}
