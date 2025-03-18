@@ -15,6 +15,7 @@
     "src/functions/gfw.ts",
     "src/functions/suma.ts",
     "src/functions/ebsa.ts",
+    "src/functions/bathymetry.ts",
     "src/functions/geomorphology.ts",
     "src/functions/deepwaterBioregions.ts",
     "src/functions/benthicRichness.ts"
