@@ -1,0 +1,582 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "79005",
+      "groupId": "Basins",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "79006",
+      "groupId": "Basins",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "79007",
+      "groupId": "Basins",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "79005",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "79006",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "79007",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "79005",
+      "groupId": "Canyons",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "79006",
+      "groupId": "Canyons",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "79007",
+      "groupId": "Canyons",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "79005",
+      "groupId": "Escarpments",
+      "value": 67582451.567467,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "79006",
+      "groupId": "Escarpments",
+      "value": 135164903.134935,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "79007",
+      "groupId": "Escarpments",
+      "value": 67582451.567467,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "79005",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "79006",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "79007",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "79005",
+      "groupId": "Plateaus",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "79006",
+      "groupId": "Plateaus",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "79007",
+      "groupId": "Plateaus",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "79005",
+      "groupId": "Ridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "79006",
+      "groupId": "Ridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "79007",
+      "groupId": "Ridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "79005",
+      "groupId": "Rift Valleys",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "79006",
+      "groupId": "Rift Valleys",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "79007",
+      "groupId": "Rift Valleys",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "79005",
+      "groupId": "Seamounts",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "79006",
+      "groupId": "Seamounts",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "79007",
+      "groupId": "Seamounts",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "79005",
+      "groupId": "Shelf",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "79006",
+      "groupId": "Shelf",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "79007",
+      "groupId": "Shelf",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "79005",
+      "groupId": "Slope",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "79006",
+      "groupId": "Slope",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "79007",
+      "groupId": "Slope",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "79005",
+      "groupId": "Spreading Ridges",
+      "value": 537865135.268785,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "79006",
+      "groupId": "Spreading Ridges",
+      "value": 1075730270.537571,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "79007",
+      "groupId": "Spreading Ridges",
+      "value": 537865135.268785,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "79005",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "79006",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "79007",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "79005",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "79006",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "79007",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "79005",
+      "groupId": "Abyss (Hills)",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "79006",
+      "groupId": "Abyss (Hills)",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "79007",
+      "groupId": "Abyss (Hills)",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "79005",
+      "groupId": "Abyss (Mountains)",
+      "value": 633441066.570027,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "79006",
+      "groupId": "Abyss (Mountains)",
+      "value": 1266882133.140054,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "79007",
+      "groupId": "Abyss (Mountains)",
+      "value": 633441066.570027,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "79005",
+      "groupId": "Abyss (Plains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "79006",
+      "groupId": "Abyss (Plains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "79007",
+      "groupId": "Abyss (Plains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    }
+  ]
+}

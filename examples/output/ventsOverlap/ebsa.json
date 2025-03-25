@@ -1,0 +1,140 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    }
+  ]
+}

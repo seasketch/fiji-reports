@@ -1,0 +1,38 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 633441066.570027,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 1266882133.140054,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 633441066.570027,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    }
+  ]
+}

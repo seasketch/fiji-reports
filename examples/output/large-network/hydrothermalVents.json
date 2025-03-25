@@ -1,0 +1,60 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "hydrothermalVents",
+      "classId": "hydrothermalVents",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "hydrothermalVents",
+      "classId": "hydrothermalVents",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "hydrothermalVents",
+      "classId": "hydrothermalVents",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "hydrothermalVents",
+      "classId": "hydrothermalVents",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "hydrothermalVents",
+      "classId": "hydrothermalVents",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    }
+  ]
+}

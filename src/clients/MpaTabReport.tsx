@@ -14,6 +14,7 @@ import { DeepwaterBioregionsCard } from "../components/DeepwaterBioregionsCard.j
 import { BenthicRichnessCard } from "../components/BenthicRichnessCard.js";
 import { SumaCard } from "../components/SumaCard.js";
 import { Depth } from "../components/Depth.js";
+import { HydrothermalVents } from "../components/HydrothermalVents.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -42,6 +43,7 @@ const BaseReport = () => {
         <Depth />
         <EbsaCard />
         <SumaCard />
+        <HydrothermalVents />
         <GeomorphologyCard />
         <DeepwaterBioregionsCard />
         <BenthicRichnessCard />

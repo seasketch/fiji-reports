@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "hydrothermalVents",
+      "classId": "hydrothermalVents",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    }
+  ]
+}

@@ -9,7 +9,9 @@
       "source": "src/clients/MpaTabReport.tsx"
     }
   ],
-  "preprocessingFunctions": ["src/functions/clipToOceanEez.ts"],
+  "preprocessingFunctions": [
+    "src/functions/clipToOceanEez.ts"
+  ],
   "geoprocessingFunctions": [
     "src/functions/size.ts",
     "src/functions/gfw.ts",
@@ -18,6 +20,7 @@
     "src/functions/bathymetry.ts",
     "src/functions/geomorphology.ts",
     "src/functions/deepwaterBioregions.ts",
-    "src/functions/benthicRichness.ts"
+    "src/functions/benthicRichness.ts",
+    "src/functions/hydrothermalVents.ts"
   ]
 }

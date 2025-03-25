@@ -797,5 +797,17 @@
         "layerId": "6yAxReGVl"
       }
     ]
+  },
+  {
+    "metricId": "hydrothermalVents",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "classId": "hydrothermalVents",
+        "datasourceId": "hydrothermal_vents",
+        "display": "Hydrothermal Vents",
+        "layerId": "xiXx9ljIv"
+      }
+    ]
   }
 ]

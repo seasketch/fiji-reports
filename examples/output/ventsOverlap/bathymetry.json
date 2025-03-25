@@ -1,0 +1,23 @@
+[
+  {
+    "min": -2646,
+    "max": -1853,
+    "mean": -2206.0329417773237,
+    "units": "meters",
+    "sketchName": "hydrothermalVents (copy)"
+  },
+  {
+    "min": -2646,
+    "max": -1853,
+    "mean": -2206.0329417773237,
+    "units": "meters",
+    "sketchName": "hydrothermalVents"
+  },
+  {
+    "min": -2646,
+    "max": -1853,
+    "units": "meters",
+    "sketchName": "ventsOverlap",
+    "isCollection": true
+  }
+]

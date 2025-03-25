@@ -323,5 +323,18 @@
     "created": "2025-03-18T17:20:05.424Z",
     "lastUpdated": "2025-03-18T17:22:15.682Z",
     "src": "data/src/Analytics/Reports/bathymetry/fiji_GEBCO_bathymetry.tif"
+  },
+  {
+    "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Geomorphology Data/Fiji Hydrothermal Vents.shp",
+    "layerName": "Fiji Hydrothermal Vents",
+    "geo_type": "vector",
+    "datasourceId": "hydrothermal_vents",
+    "formats": ["fgb"],
+    "classKeys": [],
+    "created": "2025-03-25T20:40:37.085Z",
+    "lastUpdated": "2025-03-25T20:40:37.085Z",
+    "propertiesToKeep": [],
+    "explodeMulti": true,
+    "precalc": true
   }
 ]
