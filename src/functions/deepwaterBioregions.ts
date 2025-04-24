@@ -32,12 +32,12 @@ export async function deepwaterBioregions(
     | SketchCollection<Polygon | MultiPolygon>,
   extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
   const geographyId = getFirstFromParam("geographyIds", extraParams);
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
-  // Clip portion of sketch outside geography features
+
+  // Split sketch at antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // Calculate overlap metrics for each class in metric group
@@ -50,6 +50,7 @@ export async function deepwaterBioregions(
     splitSketch,
     url,
   );
+
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {

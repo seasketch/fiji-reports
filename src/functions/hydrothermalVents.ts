@@ -6,9 +6,7 @@ import {
   GeoprocessingHandler,
   getFirstFromParam,
   DefaultExtraParams,
-  Feature,
   isVectorDatasource,
-  overlapFeatures,
   getFeaturesForSketchBBoxes,
   Point,
 } from "@seasketch/geoprocessing";
@@ -19,8 +17,8 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
-import { clipToGeography } from "../util/clipToGeography.js";
 import { overlapPoints } from "../util/overlapPoints.js";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
  * hydrothermalVents: A geoprocessing function that calculates overlap metrics for vector datasources
@@ -39,10 +37,9 @@ export async function hydrothermalVents(
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
-  // Clip portion of sketch outside geography features
-  const clippedSketch = await clipToGeography(sketch, curGeography);
 
-  const featuresByDatasource: Record<string, Feature<Point>[]> = {};
+  // Split sketch as antimeridian
+  const splitSketch = splitSketchAntimeridian(sketch);
 
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("hydrothermalVents");
@@ -57,35 +54,13 @@ export async function hydrothermalVents(
         const url = project.getDatasourceUrl(ds);
 
         // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes<Point>(sketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
-
-        // Get classKey for current data class
-        const classKey = project.getMetricGroupClassKey(metricGroup, {
-          classId: curClass.classId,
-        });
-
-        let finalFeatures: Feature<Point>[] = [];
-        if (classKey === undefined)
-          // Use all features
-          finalFeatures = features;
-        else {
-          // Filter to features that are a member of this class
-          finalFeatures = features.filter(
-            (feat) =>
-              feat.geometry &&
-              feat.properties &&
-              feat.properties[classKey] === curClass.classId,
-          );
-        }
+        const features = await getFeaturesForSketchBBoxes<Point>(sketch, url);
 
         // Calculate overlap metrics
         const overlapResult = await overlapPoints(
           metricGroup.metricId,
-          finalFeatures,
-          clippedSketch,
+          features,
+          splitSketch,
         );
 
         return overlapResult.map(

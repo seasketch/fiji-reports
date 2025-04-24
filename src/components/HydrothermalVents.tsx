@@ -21,10 +21,7 @@ import project from "../../project/projectClient.js";
 import precalcMetrics from "../../data/precalc/precalcHydrothermalVents.json" with { type: "json" };
 
 /**
- * HydrothermalVents component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Hydrothermal Vents report
  */
 export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
@@ -73,8 +70,8 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
           <ReportError>
             <p>
               <Trans i18nKey="HydrothermalVents 1">
-                This report summarizes this plan&apos;s overlap with
-                hydrothermal vents.
+                This report summarizes the number of hydrothermal vents within
+                the plan.
               </Trans>
             </p>
 
@@ -125,11 +122,11 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
             <Collapse title={t("Learn More")}>
               <Trans i18nKey="HydrothermalVents - learn more">
                 <p>
-                  📈 Report: This report calculates the total value of each
-                  feature within the plan. This value is divided by the total
-                  value of each feature to obtain the % contained within the
-                  plan. If the plan includes multiple areas that overlap, the
-                  overlap is only counted once.
+                  📈 Report: This report calculates the total number of
+                  hydrothermal vents within the plan. This value is divided by
+                  the total number of hydrothermal vents to obtain the %
+                  contained within the plan. If the plan includes multiple areas
+                  that overlap, the overlap is only counted once.
                 </p>
               </Trans>
             </Collapse>

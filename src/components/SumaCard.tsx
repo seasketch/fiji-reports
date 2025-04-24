@@ -28,10 +28,7 @@ import {
 import project from "../../project/projectClient.js";
 
 /**
- * SumaCard component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Special Unique Marine Areas (SUMAs) report
  */
 export const SumaCard: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
@@ -88,8 +85,8 @@ export const SumaCard: React.FunctionComponent<GeogProp> = (props) => {
           <ReportError>
             <p>
               <Trans i18nKey="SumaCard 1">
-                This report summarizes this plan's overlap with Special Unique
-                Marine Areas (SUMAs).
+                This report summarizes the Special Unique Marine Areas (SUMAs)
+                contained within this plan.
               </Trans>
             </p>
 
@@ -155,22 +152,22 @@ export const SumaCard: React.FunctionComponent<GeogProp> = (props) => {
 
             <Collapse title={t("Learn More")}>
               <Trans i18nKey="SumaCard - learn more">
-                <p>ℹ️ Overview:</p>
                 <p>
-                  🗺️ Source Data:{" "}
+                  ℹ️ Overview:{" "}
                   <a
-                    href="https://iucn.org/our-work/region/oceania"
+                    href="https://macbio-pacific.info/Resources/biophysically-special-unique-marine-areas-of-fiji/"
                     target="_blank"
                   >
-                    IUCN
+                    Biophysically Special, Unique Marine Areas of Fiji Report
                   </a>
                 </p>
                 <p>
-                  📈 Report: This report calculates the total value of each
-                  feature within the plan. This value is divided by the total
-                  value of each feature to obtain the % contained within the
-                  plan. If the plan includes multiple areas that overlap, the
-                  overlap is only counted once.
+                  📈 Report: This report calculates the total area of SUMAs
+                  within the plan. This value is divided by the total area of
+                  SUMAs to obtain the % contained within the plan. Overlap of
+                  sketches is not handled, and overlapping areas will be double
+                  counted if drawn. Reach out to the developers if sketch
+                  overlap needs to be accounted for.
                 </p>
               </Trans>
             </Collapse>

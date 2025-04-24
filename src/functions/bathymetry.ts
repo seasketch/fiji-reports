@@ -4,26 +4,21 @@ import {
   GeoprocessingHandler,
   Polygon,
   toSketchArray,
-  getCogFilename,
   toRasterProjection,
   isSketchCollection,
   MultiPolygon,
 } from "@seasketch/geoprocessing";
 import { loadCog } from "@seasketch/geoprocessing/dataproviders";
-import { bbox } from "@turf/turf";
 import { min, max } from "simple-statistics";
 import project from "../../project/projectClient.js";
+import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 // @ts-expect-error no types
 import geoblaze, { Georaster } from "geoblaze";
-import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 export interface BathymetryResults {
-  /** minimum depth in sketch */
   min: number;
-  /** maximum depth in sketch */
   max: number;
-  /** avg depth in sketch */
   mean?: number;
   units: string;
   sketchName?: string;
@@ -35,17 +30,20 @@ export async function bathymetry(
 ): Promise<BathymetryResults[]> {
   // Clip portion of sketch outside geography features
   const splitSketch = splitSketchAntimeridian(sketch);
-
   const mg = project.getMetricGroup("bathymetry");
-  if (!mg.classes[0].datasourceId)
-    throw new Error(`Expected datasourceId for ${mg.classes[0]}`);
-  const url = `${project.dataBucketUrl()}${getCogFilename(
-    project.getInternalRasterDatasourceById(mg.classes[0].datasourceId),
-  )}`;
+  const dsId = mg.datasourceId;
+
+  if (!dsId) throw new Error(`Expected datasourceId for ${mg}`);
+
+  const ds = project.getDatasourceById(dsId);
+  const url = project.getDatasourceUrl(ds);
+
   const raster = await loadCog(url);
   const stats = await bathyStats(splitSketch, raster);
+
   if (!stats)
     throw new Error(`No stats returned for ${sketch.properties.name}`);
+
   return stats;
 }
 
@@ -53,17 +51,16 @@ export async function bathymetry(
  * Core raster analysis - given raster, counts number of cells with value that are within Feature polygons
  */
 export async function bathyStats(
-  /** Polygons to filter for */
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  /** bathymetry raster to search */
+  /** Bathymetry raster */
   raster: Georaster,
 ): Promise<BathymetryResults[]> {
   const features = toSketchArray(sketch);
 
   const sketchStats: BathymetryResults[] = await Promise.all(
-    features.map(async (feature, index) => {
+    features.map(async (feature) => {
       const finalFeat = toRasterProjection(raster, feature);
       // If empty sketch (from subregional clipping)
       if (!finalFeat.geometry.coordinates.length)
@@ -129,7 +126,7 @@ function notNull(value: number): value is number {
 export default new GeoprocessingHandler(bathymetry, {
   title: "bathymetry",
   description: "calculates bathymetry within given sketch",
-  timeout: 60, // seconds
+  timeout: 500, // seconds
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

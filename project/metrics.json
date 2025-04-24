@@ -34,12 +34,11 @@
     "metricId": "bathymetry",
     "type": "valueOverlap",
     "layerId": "TY3ET5dIG",
+    "datasourceId": "bathymetry",
     "classes": [
-      {
-        "classId": "bathymetry",
-        "display": "Depth",
-        "datasourceId": "bathymetry"
-      }
+      { "classId": "min", "display": "Min" },
+      { "classId": "mean", "display": "Mean" },
+      { "classId": "max", "display": "Max" }
     ]
   },
   {
@@ -789,12 +788,12 @@
   {
     "metricId": "benthicRichness",
     "type": "sumOverlap",
+    "layerId": "6yAxReGVl",
     "classes": [
       {
         "classId": "benthicRichness",
         "datasourceId": "benthicRichness",
-        "display": "Benthic Species Richness",
-        "layerId": "6yAxReGVl"
+        "display": "Benthic Species Richness"
       }
     ]
   },

@@ -37,7 +37,8 @@ export async function suma(
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
-  // Clip portion of sketch outside geography features
+
+  // Split sketch as antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // First, get total value

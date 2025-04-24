@@ -5,17 +5,14 @@ import {
   Collapse,
   ToolbarCard,
   useSketchProperties,
-  Column,
-  Table,
-  ReportTableStyled,
   LayerToggle,
-  DataDownload,
   VerticalSpacer,
+  SketchClassTable,
 } from "@seasketch/geoprocessing/client-ui";
 import { BathymetryResults } from "../functions/bathymetry.js";
 import { Trans, useTranslation } from "react-i18next";
-import { styled } from "styled-components";
 import projectClient from "../../project/projectClient.js";
+import { MetricGroup } from "@seasketch/geoprocessing";
 
 const formatDepth = (val: number) => {
   if (!val || val > 0) return "0m";
@@ -64,13 +61,13 @@ export const Depth: React.FunctionComponent = () => {
 
               {isCollection && (
                 <Collapse title={t("Show by MPA")}>
-                  {genBathymetryTable(data)}
+                  {genBathymetryTable(data, mg)}
                 </Collapse>
               )}
 
               <Collapse title={t("Learn More")}>
                 <Trans i18nKey="Depth Card - Learn more">
-                  <p>🗺️ Source Data: GEBCO</p>
+                  <p>🗺️ Source Data: GEBCO 2024</p>
                   <p>
                     📈 Report: Calculates the minimum, average, and maximum
                     ocean depth within the selected MPA(s).
@@ -85,59 +82,18 @@ export const Depth: React.FunctionComponent = () => {
   );
 };
 
-export const BathyTableStyled = styled(ReportTableStyled)`
-  & {
-    width: 100%;
-    overflow-x: scroll;
-    font-size: 12px;
-  }
-
-  & th:first-child,
-  & td:first-child {
-    min-width: 140px;
-    position: sticky;
-    left: 0;
-    text-align: left;
-    background: #efefef;
-  }
-
-  th,
-  tr,
-  td {
-    text-align: center;
-  }
-
-  td:not(:first-child),
-  th {
-    white-space: nowrap;
-  }
-`;
-
-export const genBathymetryTable = (data: BathymetryResults[]) => {
+export const genBathymetryTable = (
+  data: BathymetryResults[],
+  mg: MetricGroup,
+) => {
   const sketchMetrics = data.filter((s) => !s.isCollection);
 
-  const columns: Column<BathymetryResults>[] = [
-    {
-      Header: "MPA",
-      accessor: (row) => row.sketchName,
-    },
-    {
-      Header: "Min",
-      accessor: (row) => formatDepth(row.max),
-    },
-    {
-      Header: "Mean",
-      accessor: (row) => formatDepth(row.mean!),
-    },
-    {
-      Header: "Max",
-      accessor: (row) => formatDepth(row.min),
-    },
-  ];
+  const rows = sketchMetrics.map((metric) => ({
+    sketchName: metric.sketchName!,
+    min: formatDepth(metric.max),
+    mean: formatDepth(metric.mean!),
+    max: formatDepth(metric.min),
+  }));
 
-  return (
-    <BathyTableStyled>
-      <Table columns={columns} data={sketchMetrics} />
-    </BathyTableStyled>
-  );
+  return <SketchClassTable rows={rows} metricGroup={mg} />;
 };

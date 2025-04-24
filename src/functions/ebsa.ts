@@ -37,6 +37,7 @@ export async function ebsa(
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
+
   // Clip portion of sketch outside geography features
   const splitSketch = splitSketchAntimeridian(sketch);
 

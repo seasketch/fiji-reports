@@ -4,7 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  DefaultExtraParams,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
 } from "@seasketch/geoprocessing";
@@ -25,9 +24,9 @@ export async function benthicRichness(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<SpRichnessResults[]> {
   const splitSketch = splitSketchAntimeridian(sketch);
+
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("benthicRichness");
   const metrics = (
@@ -40,10 +39,9 @@ export async function benthicRichness(
           throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
         const url = project.getDatasourceUrl(ds);
 
-        const features = await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(
-          splitSketch,
-          url,
-        );
+        const features = await getFeaturesForSketchBBoxes<
+          Polygon | MultiPolygon
+        >(splitSketch, url);
 
         // Calculate overlap metrics
         const overlapResult = await overlapPolygonStats(features, splitSketch, {

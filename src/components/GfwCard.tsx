@@ -21,10 +21,7 @@ import {
 import project from "../../project/projectClient.js";
 
 /**
- * GfwCard component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Global Fishing Watch report
  */
 export const GfwCard: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
@@ -136,14 +133,21 @@ export const GfwCard: React.FunctionComponent<GeogProp> = (props) => {
 
             <Collapse title={t("Learn More")}>
               <Trans i18nKey="GfwCard - learn more">
-                <p>ℹ️ Overview:</p>
-                <p>🗺️ Source Data: Global Fishing Watch</p>
                 <p>
-                  📈 Report: This report calculates the total value of each
-                  feature within the plan. This value is divided by the total
-                  value of each feature to obtain the % contained within the
-                  plan. If the plan includes multiple areas that overlap, the
-                  overlap is only counted once.
+                  ℹ️ Overview: Global Fishing Watch's apparent fishing effort is
+                  based on transmissions broadcast using the automatic
+                  identification system (AIS). After identifying fishing vessels
+                  and detecting fishing positions in the AIS data, apparent
+                  fishing effort is calculated for any area by summarizing the
+                  fishing hours for all fishing vessels in that area.
+                </p>
+                <p>🗺️ Source Data: Global Fishing Watch 2022</p>
+                <p>
+                  📈 Report: This report calculates the sum of apparent fishing
+                  effort within the plan. This value is divided by the total sum
+                  of apparent fishing effort to obtain the % contained within
+                  the plan. If the plan includes multiple areas that overlap,
+                  the overlap is only counted once.
                 </p>
               </Trans>
             </Collapse>

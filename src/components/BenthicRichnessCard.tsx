@@ -18,16 +18,11 @@ import { styled } from "styled-components";
 import { TFunction } from "i18next";
 
 /**
- * BenthicRichnessCard component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Benthic Richness report
  */
 export const BenthicRichnessCard: React.FunctionComponent = () => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
-
-  // Metrics
   const metricGroup = project.getMetricGroup("benthicRichness", t);
 
   // Labels
@@ -48,7 +43,7 @@ export const BenthicRichnessCard: React.FunctionComponent = () => {
               title={titleLabel}
               items={
                 <LayerToggle
-                  layerId={metricGroup.classes[0].layerId}
+                  layerId={metricGroup.layerId}
                   label={mapLabel}
                   simple
                 />
@@ -93,7 +88,6 @@ export const BenthicRichnessCard: React.FunctionComponent = () => {
 
               <Collapse title={t("Learn More")}>
                 <Trans i18nKey="BenthicRichnessCard - learn more">
-                  <p>ℹ️ Overview:</p>
                   <p>
                     🗺️ Source Data:{" "}
                     <a
@@ -105,7 +99,7 @@ export const BenthicRichnessCard: React.FunctionComponent = () => {
                   </p>
                   <p>
                     📈 Report: This report calculates the minimum, mean, and
-                    maximum benthic species within the plan. If the plan
+                    maximum benthic species counts within the plan. If the plan
                     includes multiple areas that overlap, the overlap is only
                     counted once.
                   </p>
@@ -120,14 +114,12 @@ export const BenthicRichnessCard: React.FunctionComponent = () => {
 };
 
 export const RichnessTableStyled = styled(ReportTableStyled)`
-  & {
-    width: 100%;
-    overflow-x: scroll;
-    font-size: 12px;
-  }
+  width: 100%;
+  overflow-x: auto;
+  font-size: 12px;
 
-  & th:first-child,
-  & td:first-child {
+  th:first-child,
+  td:first-child {
     min-width: 140px;
     position: sticky;
     left: 0;
@@ -136,41 +128,22 @@ export const RichnessTableStyled = styled(ReportTableStyled)`
   }
 
   th,
-  tr,
   td {
     text-align: center;
-  }
-
-  td:not(:first-child),
-  th {
     white-space: nowrap;
   }
 `;
 
-export const genRichnessTable = (data: SpRichnessResults[], t: TFunction) => {
-  const sketchMetrics = data.filter((s) => !s.isCollection);
-  const columns: Column<SpRichnessResults>[] = [
-    {
-      Header: t("MPA"),
-      accessor: (row) => row.sketchName,
-    },
-    {
-      Header: t("Min"),
-      accessor: (row) => row.min,
-    },
-    {
-      Header: t("Avg"),
-      accessor: (row) => row.mean,
-    },
-    {
-      Header: t("Max"),
-      accessor: (row) => row.max,
-    },
-  ];
-
-  return (
-    <RichnessTableStyled>
-      <Table columns={columns} data={sketchMetrics} />
-    </RichnessTableStyled>
-  );
-};
+export const genRichnessTable = (data: SpRichnessResults[], t: TFunction) => (
+  <RichnessTableStyled>
+    <Table
+      columns={[
+        { Header: t("MPA"), accessor: "sketchName" },
+        { Header: t("Min"), accessor: "min" },
+        { Header: t("Avg"), accessor: "mean" },
+        { Header: t("Max"), accessor: "max" },
+      ]}
+      data={data.filter((s) => !s.isCollection)}
+    />
+  </RichnessTableStyled>
+);

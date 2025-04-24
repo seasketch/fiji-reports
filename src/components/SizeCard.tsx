@@ -19,7 +19,6 @@ import {
   flattenBySketchAllClass,
   metricsWithSketchId,
   percentWithEdge,
-  roundDecimal,
   roundLower,
   squareMeterToKilometer,
   toPercentMetric,
@@ -102,8 +101,8 @@ export const SizeCard: React.FunctionComponent<GeogProp> = (props) => {
               <Trans i18nKey="SizeCard 1">
                 The Fijian Exclusive Economic Zone extends from the shoreline to
                 200 nautical miles. This report summarizes this plan's overlap
-                with the total ocean space, measuring progress towards achieving
-                the objective of 30% protection.
+                with the EEZ, measuring progress towards achieving the objective
+                of 30% protection.
               </Trans>
             </p>
 
@@ -169,15 +168,15 @@ export const SizeCard: React.FunctionComponent<GeogProp> = (props) => {
 
             <Collapse title={t("Learn More")}>
               <Trans i18nKey="SizeCard - learn more">
-                <p>ℹ️ Overview:</p>
                 <p>🎯 Planning Objective: 30% protection by 2030</p>
-                <p>🗺️ Source Data: Marine Regions</p>
+                <p>🗺️ Source Data: Marine Regions v12</p>
                 <p>
-                  📈 Report: This report calculates the total value of each
-                  feature within the plan. This value is divided by the total
-                  value of each feature to obtain the % contained within the
-                  plan. If the plan includes multiple areas that overlap, the
-                  overlap is only counted once.
+                  📈 Report: This report calculates the total area of the plan
+                  within the EEZ. This value is divided by the total area of the
+                  EEZ to obtain the % contained within the plan. Overlap of
+                  sketches is not handled, and overlapping areas will be double
+                  counted if drawn. Reach out to the developers if sketch
+                  overlap needs to be accounted for.
                 </p>
               </Trans>
             </Collapse>

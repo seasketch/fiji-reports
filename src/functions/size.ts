@@ -6,7 +6,6 @@ import {
   GeoprocessingHandler,
   getFirstFromParam,
   DefaultExtraParams,
-  Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
   overlapPolygonArea,
@@ -21,10 +20,7 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * size: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Calculates the size of a sketch or sketch collection in square kilometers
  */
 export async function size(
   sketch:
@@ -40,11 +36,6 @@ export async function size(
 
   const splitSketch = splitSketchAntimeridian(sketch);
 
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
-
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("size");
   const metrics = (
@@ -57,35 +48,15 @@ export async function size(
           throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
         const url = project.getDatasourceUrl(ds);
 
-        // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(splitSketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
-
-        // Get classKey for current data class
-        const classKey = project.getMetricGroupClassKey(metricGroup, {
-          classId: curClass.classId,
-        });
-
-        let finalFeatures: Feature<Polygon | MultiPolygon>[] = [];
-        if (classKey === undefined)
-          // Use all features
-          finalFeatures = features;
-        else {
-          // Filter to features that are a member of this class
-          finalFeatures = features.filter(
-            (feat) =>
-              feat.geometry &&
-              feat.properties &&
-              feat.properties[classKey] === curClass.classId,
-          );
-        }
+        // Fetch features overlapping with sketch
+        const features = await getFeaturesForSketchBBoxes<
+          Polygon | MultiPolygon
+        >(splitSketch, url);
 
         // Calculate overlap metrics
         const overlapResult = await overlapPolygonArea(
           metricGroup.metricId,
-          finalFeatures,
+          features,
           splitSketch,
           { solveOverlap: false },
         );
