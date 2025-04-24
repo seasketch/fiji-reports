@@ -582,21 +582,21 @@
         "datasourceId": "geo_abyss",
         "classId": "Hills",
         "classKey": "Class",
-        "layerId": "n6GEpdPb0"
+        "layerId": "iz2vNrfWG"
       },
       {
         "display": "Abyss (Mountains)",
         "datasourceId": "geo_abyss",
         "classId": "Mountains",
         "classKey": "Class",
-        "layerId": "n6GEpdPb0"
+        "layerId": "iz2vNrfWG"
       },
       {
         "display": "Abyss (Plains)",
         "datasourceId": "geo_abyss",
         "classId": "Plains",
         "classKey": "Class",
-        "layerId": "n6GEpdPb0"
+        "layerId": "iz2vNrfWG"
       },
       {
         "classId": "geo_basins",
@@ -650,7 +650,7 @@
         "classId": "geo_seamounts",
         "display": "Seamounts",
         "datasourceId": "geo_seamounts",
-        "layerId": "EWRkNkysD"
+        "layerId": "Fvkj7fKF4"
       },
       {
         "classId": "geo_shelf",
@@ -662,7 +662,7 @@
         "classId": "geo_slope",
         "display": "Slope",
         "datasourceId": "geo_slope",
-        "layerId": "SWUOD5St5"
+        "layerId": "lrWbuYNwO"
       },
       {
         "classId": "geo_spreadingridges",
