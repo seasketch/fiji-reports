@@ -62,8 +62,10 @@
     "@turf/turf": "7.1.0",
     "@types/request": "^2.48.12",
     "babel-plugin-i18next-extract": "0.10.0",
+    "d3": "^7.9.0",
     "geojson-antimeridian-cut": "^0.1.0",
     "globby": "^14.0.2",
+    "graphlib": "^2.1.8",
     "husky": "^9.1.5",
     "prettier": "^3.3.3",
     "prop-types": "^15.8.1",
@@ -82,5 +84,9 @@
   "homepage": "https://github.com/seasketch/fiji-reports#readme",
   "bugs": {
     "url": "https://github.com/seasketch/fiji-reports/issues"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/graphlib": "^2.1.12"
   }
 }

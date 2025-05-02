@@ -15,6 +15,7 @@ import { BenthicRichnessCard } from "../components/BenthicRichnessCard.js";
 import { SumaCard } from "../components/SumaCard.js";
 import { Depth } from "../components/Depth.js";
 import { HydrothermalVents } from "../components/HydrothermalVents.js";
+import { Connectivity } from "../components/Connectivity.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -37,6 +38,7 @@ const BaseReport = () => {
       <ReportPage hidden={!enableAllTabs && tab !== "VIABILITY"}>
         <SizeCard />
         <GfwCard />
+        <Connectivity />
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>

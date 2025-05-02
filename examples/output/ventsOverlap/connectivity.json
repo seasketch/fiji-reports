@@ -1,0 +1,174 @@
+{
+  "sketch": [
+    {
+      "type": "Feature",
+      "id": 79007,
+      "bbox": [
+        173.77531,
+        -17.170567,
+        174.07468,
+        -16.812687
+      ],
+      "properties": {
+        "2852": "Fully Protected",
+        "2853": "hydrothermalVents",
+        "id": "79007",
+        "name": "hydrothermalVents (copy)",
+        "postId": null,
+        "userId": "531",
+        "comments": null,
+        "userSlug": "Abby",
+        "createdAt": "2025-03-25T20:47:17.521131+00:00",
+        "updatedAt": "2025-03-25T20:47:17.521131+00:00",
+        "designation": "Fully Protected",
+        "collectionId": "79006",
+        "isCollection": false,
+        "sharedInForum": false,
+        "sketchClassId": "175",
+        "userAttributes": [
+          {
+            "label": "Designation",
+            "value": "Fully Protected",
+            "exportId": "designation",
+            "fieldType": "ComboBox",
+            "valueLabel": null,
+            "formElementId": 2852,
+            "alternateLanguages": {}
+          },
+          {
+            "label": "Comments",
+            "value": null,
+            "exportId": "comments",
+            "fieldType": "TextArea",
+            "valueLabel": null,
+            "formElementId": 2854,
+            "alternateLanguages": {}
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              173.775306855,
+              -16.916144543
+            ],
+            [
+              173.883413743,
+              -17.170566902
+            ],
+            [
+              174.074679775,
+              -16.963875081
+            ],
+            [
+              173.883413743,
+              -16.812686923
+            ],
+            [
+              173.775306855,
+              -16.916144543
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79005,
+      "bbox": [
+        173.77531,
+        -17.170567,
+        174.07468,
+        -16.812687
+      ],
+      "properties": {
+        "2852": "Fully Protected",
+        "2853": "hydrothermalVents",
+        "id": "79005",
+        "name": "hydrothermalVents",
+        "postId": null,
+        "userId": "531",
+        "comments": null,
+        "userSlug": "Abby",
+        "createdAt": "2025-03-25T20:46:23.326088+00:00",
+        "updatedAt": "2025-03-25T20:47:15.441131+00:00",
+        "designation": "Fully Protected",
+        "collectionId": "79006",
+        "isCollection": false,
+        "sharedInForum": false,
+        "sketchClassId": "175",
+        "userAttributes": [
+          {
+            "label": "Designation",
+            "value": "Fully Protected",
+            "exportId": "designation",
+            "fieldType": "ComboBox",
+            "valueLabel": null,
+            "formElementId": 2852,
+            "alternateLanguages": {}
+          },
+          {
+            "label": "Comments",
+            "value": null,
+            "exportId": "comments",
+            "fieldType": "TextArea",
+            "valueLabel": null,
+            "formElementId": 2854,
+            "alternateLanguages": {}
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              173.775306855,
+              -16.916144543
+            ],
+            [
+              173.883413743,
+              -17.170566902
+            ],
+            [
+              174.074679775,
+              -16.963875081
+            ],
+            [
+              173.883413743,
+              -16.812686923
+            ],
+            [
+              173.775306855,
+              -16.916144543
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "paths": [
+    {
+      "path": {
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              173.775306855,
+              -16.916144543
+            ],
+            [
+              173.775306855,
+              -16.916144543
+            ]
+          ]
+        }
+      },
+      "distance": 0
+    }
+  ]
+}
