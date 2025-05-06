@@ -160,7 +160,7 @@ export const ConnectivityMap: React.FC<ConnectivityMapProps> = ({
         )
         .attr("fill", "none")
         .attr("stroke", colors.link)
-        .attr("stroke-width", 3)
+        .attr("stroke-width", 2)
         .on("mouseover", () => showTooltip(`${distance.toFixed(0)} km`))
         .on("mousemove", moveTooltip)
         .on("mouseout", hideTooltip);

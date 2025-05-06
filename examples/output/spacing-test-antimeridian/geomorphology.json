@@ -1,0 +1,582 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "101153",
+      "groupId": "Basins",
+      "value": 2414104261.661955,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "101154",
+      "groupId": "Basins",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "101155",
+      "groupId": "Basins",
+      "value": 2414104261.661955,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "101153",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "101154",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "101155",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "101153",
+      "groupId": "Canyons",
+      "value": 113656400.886646,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "101154",
+      "groupId": "Canyons",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "101155",
+      "groupId": "Canyons",
+      "value": 113656400.886646,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "101153",
+      "groupId": "Escarpments",
+      "value": 1062949988.116448,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "101154",
+      "groupId": "Escarpments",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "101155",
+      "groupId": "Escarpments",
+      "value": 1062949988.116448,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "101153",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "101154",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "101155",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "101153",
+      "groupId": "Plateaus",
+      "value": 7528747330.341343,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "101154",
+      "groupId": "Plateaus",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "101155",
+      "groupId": "Plateaus",
+      "value": 7528747330.341343,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "101153",
+      "groupId": "Ridges",
+      "value": 334240528.064572,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "101154",
+      "groupId": "Ridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "101155",
+      "groupId": "Ridges",
+      "value": 334240528.064572,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "101153",
+      "groupId": "Rift Valleys",
+      "value": 181622931.019918,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "101154",
+      "groupId": "Rift Valleys",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "101155",
+      "groupId": "Rift Valleys",
+      "value": 181622931.019918,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "101153",
+      "groupId": "Seamounts",
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "101154",
+      "groupId": "Seamounts",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "101155",
+      "groupId": "Seamounts",
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "101153",
+      "groupId": "Shelf",
+      "value": 466177396.713116,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "101154",
+      "groupId": "Shelf",
+      "value": 461040991.704803,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "101155",
+      "groupId": "Shelf",
+      "value": 5136405.008313,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "101153",
+      "groupId": "Slope",
+      "value": 863549729.246025,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "101154",
+      "groupId": "Slope",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "101155",
+      "groupId": "Slope",
+      "value": 863549729.246025,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "101153",
+      "groupId": "Spreading Ridges",
+      "value": 2298155626.719269,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "101154",
+      "groupId": "Spreading Ridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "101155",
+      "groupId": "Spreading Ridges",
+      "value": 2298155626.719269,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "101153",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "101154",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "101155",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "101153",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "101154",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "101155",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "101153",
+      "groupId": "Abyss (Hills)",
+      "value": 3531042052.913786,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "101154",
+      "groupId": "Abyss (Hills)",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "101155",
+      "groupId": "Abyss (Hills)",
+      "value": 3531042052.913786,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "101153",
+      "groupId": "Abyss (Mountains)",
+      "value": 3999761020.472201,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "101154",
+      "groupId": "Abyss (Mountains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "101155",
+      "groupId": "Abyss (Mountains)",
+      "value": 3999761020.472201,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "101153",
+      "groupId": "Abyss (Plains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "101154",
+      "groupId": "Abyss (Plains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "101155",
+      "groupId": "Abyss (Plains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    }
+  ]
+}

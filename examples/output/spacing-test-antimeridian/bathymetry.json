@@ -1,0 +1,23 @@
+[
+  {
+    "min": -3032,
+    "max": -21,
+    "mean": -2185.880663367868,
+    "units": "meters",
+    "sketchName": "b"
+  },
+  {
+    "min": -48,
+    "max": 6,
+    "mean": -18.911103424420617,
+    "units": "meters",
+    "sketchName": "a"
+  },
+  {
+    "min": -3032,
+    "max": 0,
+    "units": "meters",
+    "sketchName": "spacing-test-antimeridian",
+    "isCollection": true
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "101153",
+      "groupId": "band-0",
+      "value": 422.08125,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "101154",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_longline",
+      "sketchId": "101155",
+      "groupId": "band-0",
+      "value": 422.08125,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "101153",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "101154",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "gfw",
+      "classId": "gfw_purseseine",
+      "sketchId": "101155",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    }
+  ]
+}

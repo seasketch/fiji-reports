@@ -1,0 +1,38 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 8866884101.891409,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 470911355.06153,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 8395972746.829879,
+      "extra": {
+        "sketchName": "b"
+      }
+    }
+  ]
+}
