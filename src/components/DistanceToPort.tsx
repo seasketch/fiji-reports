@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import {
   Collapse,
   KeySection,
@@ -49,7 +49,7 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
           return (
             <>
               Reducing the distance to the nearest port can help improve
-              enforcibility and compliance.
+              enforcibility.
               <VerticalSpacer />
               {!isCollection ? (
                 <KeySection>
@@ -77,7 +77,20 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
                   portDistances={data.portDistances}
                 />
               </Collapse>
-              <Collapse title="Show by MPA">{genDistanceTable(data)}</Collapse>
+              {isCollection && (
+                <Collapse title="Show by MPA">
+                  {genDistanceTable(data)}
+                </Collapse>
+              )}
+              <Collapse title={t("Learn More")}>
+                <Trans i18nKey="DistanceToPort Card - Learn more">
+                  <p>🗺️ Source Data: World Port Index 2019</p>
+                  <p>
+                    📈 Report: Calculates the minimum distance over water
+                    between MPAs and the closest port.
+                  </p>
+                </Trans>
+              </Collapse>
             </>
           );
         }}
@@ -226,8 +239,8 @@ export const DistanceToPortMap: React.FC<DistanceToPortMapProps> = ({
         )
         .attr("fill", "none")
         .attr("stroke", colors.link)
-        .attr("stroke-width", 3)
-        .attr("stroke-dasharray", "4 4")
+        .attr("stroke-width", 2)
+        .attr("stroke-dasharray", "8 3")
         .on("mouseover", () =>
           showTooltip(`Distance to ${port}: ${distance.toFixed(0)} km`),
         )

@@ -10,7 +10,7 @@ describe("Basic smoke tests", () => {
     expect(typeof distanceToPort).toBe("function");
   });
   test("distanceToPort - tests run against all examples", async () => {
-    const examples = await getExamplePolygonSketchAll("W");
+    const examples = await getExamplePolygonSketchAll();
     for (const example of examples) {
       const result = await distanceToPort(example);
       expect(result).toBeTruthy();
