@@ -179,7 +179,7 @@ async function addSketchesToGraph(
       const node2Coord = graph.node(node2);
 
       const dist = distance(node1Coord, node2Coord, { units: "kilometers" });
-      if (isLineClear(node1Coord, node2Coord, land) || dist < 1) {
+      if (isLineClear(node1Coord, node2Coord, land)) {
         edges.push({ node1: node1.node, node2: node2, dist });
         edges.push({ node1: node2, node2: node1.node, dist });
       }
@@ -203,7 +203,7 @@ async function addSketchesToGraph(
       const portCoord = graph.node(portNodeId);
 
       const dist = distance(v1Coord, portCoord, { units: "kilometers" });
-      if (isLineClear(v1Coord, portCoord, land) || dist < 1) {
+      if (isLineClear(v1Coord, portCoord, land)) {
         graph.setEdge(node1, portNodeId, dist);
         graph.setEdge(portNodeId, node1, dist);
       }
