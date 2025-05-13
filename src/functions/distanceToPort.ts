@@ -303,5 +303,5 @@ export default new GeoprocessingHandler(distanceToPort, {
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
-  workers: ["spacingGraphWorker"],
+  workers: [],
 });
