@@ -47,16 +47,25 @@ export const Depth: React.FunctionComponent = () => {
                 style={{ display: "flex", justifyContent: "space-around" }}
               >
                 <span>
-                  {t("Min")}: <b>{formatDepth(overallStats!.max)}</b>
+                  {t("Min")}:{" "}
+                  <b>
+                    {overallStats ? formatDepth(overallStats.max) : t("N/A")}
+                  </b>
                 </span>
-                {overallStats!.mean && (
+                {overallStats && overallStats?.mean ? (
                   <span>
-                    {t("Avg")}: <b>{formatDepth(overallStats!.mean)}</b>
+                    {t("Avg")}: <b>{formatDepth(overallStats.mean)}</b>
                   </span>
+                ) : (
+                  <></>
                 )}
                 <span>
-                  {t("Max")}: <b>{formatDepth(overallStats!.min)}</b>
+                  {t("Max")}:{" "}
+                  <b>
+                    {overallStats ? formatDepth(overallStats.min) : t("N/A")}
+                  </b>
                 </span>
+                )
               </KeySection>
 
               {isCollection && (

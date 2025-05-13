@@ -1,0 +1,24 @@
+[
+  {
+    "metricId": "distanceToShore",
+    "value": 9.221835923567843,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "101155",
+    "extra": {
+      "sketchName": "b"
+    }
+  },
+  {
+    "metricId": "distanceToShore",
+    "value": 0,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "101154",
+    "extra": {
+      "sketchName": "a"
+    }
+  }
+]

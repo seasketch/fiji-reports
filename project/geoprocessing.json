@@ -20,6 +20,7 @@
     "src/functions/deepwaterBioregions.ts",
     "src/functions/benthicRichness.ts",
     "src/functions/hydrothermalVents.ts",
-    "src/functions/distanceToPort.ts"
+    "src/functions/distanceToPort.ts",
+    "src/functions/distanceToShore.ts"
   ]
 }

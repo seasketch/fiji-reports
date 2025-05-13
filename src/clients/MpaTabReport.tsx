@@ -16,6 +16,7 @@ import { SumaCard } from "../components/SumaCard.js";
 import { Depth } from "../components/Depth.js";
 import { HydrothermalVents } from "../components/HydrothermalVents.js";
 import { DistanceToPort } from "../components/DistanceToPort.js";
+import { DistanceToShore } from "../components/DistanceToShore.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -39,6 +40,7 @@ const BaseReport = () => {
         <SizeCard />
         <GfwCard />
         <DistanceToPort />
+        <DistanceToShore />
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>

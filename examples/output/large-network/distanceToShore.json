@@ -1,0 +1,46 @@
+[
+  {
+    "metricId": "distanceToShore",
+    "value": 0,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "77764",
+    "extra": {
+      "sketchName": "rotuma"
+    }
+  },
+  {
+    "metricId": "distanceToShore",
+    "value": 0,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "77761",
+    "extra": {
+      "sketchName": "vanua"
+    }
+  },
+  {
+    "metricId": "distanceToShore",
+    "value": 572.3592173517643,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "77763",
+    "extra": {
+      "sketchName": "southwest"
+    }
+  },
+  {
+    "metricId": "distanceToShore",
+    "value": 0.07092035320512122,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "77762",
+    "extra": {
+      "sketchName": "moce"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "metricId": "distanceToShore",
+    "value": 302.08646246651654,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "79007",
+    "extra": {
+      "sketchName": "hydrothermalVents (copy)"
+    }
+  },
+  {
+    "metricId": "distanceToShore",
+    "value": 302.08646246651654,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "79005",
+    "extra": {
+      "sketchName": "hydrothermalVents"
+    }
+  }
+]

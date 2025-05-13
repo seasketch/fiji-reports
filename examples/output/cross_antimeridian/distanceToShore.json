@@ -1,0 +1,13 @@
+[
+  {
+    "metricId": "distanceToShore",
+    "value": 0,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "78746",
+    "extra": {
+      "sketchName": "cross_antimeridian"
+    }
+  }
+]

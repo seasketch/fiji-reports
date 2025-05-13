@@ -1,0 +1,13 @@
+[
+  {
+    "metricId": "distanceToShore",
+    "value": 0,
+    "classId": null,
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": "75741",
+    "extra": {
+      "sketchName": "mpa"
+    }
+  }
+]
