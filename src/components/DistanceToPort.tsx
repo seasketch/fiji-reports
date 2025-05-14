@@ -110,7 +110,12 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
                   <KeySection>
                     This MPA is{" "}
                     <b>~{data.portDistances[0].distance.toFixed(0)} km</b> from
-                    the nearest port <b>{data.portDistances[0].port}</b>
+                    the nearest port{" "}
+                    <b>
+                      {data.portDistances[0].port
+                        .toLowerCase()
+                        .replace(/\b\w/g, (char) => char.toUpperCase())}
+                    </b>
                   </KeySection>
                   {/* <FieldRow style={{ justifyContent: "space-around" }}>
                     <Label>
@@ -154,7 +159,13 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
                     }
                   </b>
                   , is <b>~{furthestMpa.distance.toFixed(0)} km</b> from the
-                  port <b>{furthestMpa.port}</b>.
+                  port{" "}
+                  <b>
+                    {furthestMpa.port
+                      .toLowerCase()
+                      .replace(/\b\w/g, (char) => char.toUpperCase())}
+                  </b>
+                  .
                 </KeySection>
               )}
               <Collapse title="Show Map">
