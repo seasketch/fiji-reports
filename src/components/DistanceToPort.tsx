@@ -1,4 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, {
+  ChangeEvent,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
   Collapse,
@@ -33,10 +39,53 @@ interface DistanceToPortMapProps {
   }[];
 }
 
+const FieldRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+`;
+
+const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #444;
+`;
+
+const NumberInput = styled.input.attrs({ type: "number" })`
+  padding: 0.35rem 0.6rem;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  border: 1px solid #d2d7dd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  width: 7rem;
+
+  /* focus state */
+  &:focus {
+    outline: none;
+    border-color: #1c90ff;
+    box-shadow: 0 0 0 2px rgba(28, 144, 255, 0.3);
+  }
+`;
+
 export const DistanceToPort: React.FunctionComponent<any> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const titleLabel = t("Distance To Port");
+
+  // const [kmPerLitre, setKmPerLitre] = useState<number>(1.5); // boat efficiency
+  // const [pricePerLitre, setPricePerLitre] = useState<number>(2.31); // fuel price
+  // const [distanceKm, setDistanceKm] = useState<number>(0); // distance to port
+  // const { oneWay, roundTrip } = useMemo(() => {
+  //   if (kmPerLitre <= 0) return { oneWay: NaN, roundTrip: NaN };
+  //   const litresOneWay = distanceKm / kmPerLitre;
+  //   const costOneWay = litresOneWay * pricePerLitre;
+  //   return { oneWay: costOneWay, roundTrip: costOneWay * 2 };
+  // }, [distanceKm, kmPerLitre, pricePerLitre]);
 
   return (
     <ReportError>
@@ -46,17 +95,54 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
             prev.distance > current.distance ? prev : current,
           );
 
+          // setDistanceKm(data.portDistances[0].distance);
+
+          // const num = (e: ChangeEvent<HTMLInputElement>) =>
+          //   parseFloat(e.target.value) || 0;
+
           return (
             <>
               Reducing the distance to the nearest port can help improve
               enforcibility.
               <VerticalSpacer />
               {!isCollection ? (
-                <KeySection>
-                  This MPA is{" "}
-                  <b>~{data.portDistances[0].distance.toFixed(0)} km</b> from
-                  the nearest port <b>{data.portDistances[0].port}</b>
-                </KeySection>
+                <>
+                  <KeySection>
+                    This MPA is{" "}
+                    <b>~{data.portDistances[0].distance.toFixed(0)} km</b> from
+                    the nearest port <b>{data.portDistances[0].port}</b>
+                  </KeySection>
+                  {/* <FieldRow style={{ justifyContent: "space-around" }}>
+                    <Label>
+                      Fuel efficiency (km/L)
+                      <NumberInput
+                        step="0.1"
+                        min="0"
+                        value={kmPerLitre}
+                        onChange={(e) => setKmPerLitre(num(e))}
+                      />
+                    </Label>
+
+                    <Label>
+                      Fuel price ($FJD/L)
+                      <NumberInput
+                        step="0.01"
+                        min="0"
+                        value={pricePerLitre}
+                        onChange={(e) => setPricePerLitre(num(e))}
+                      />
+                    </Label>
+                  </FieldRow>
+                  <VerticalSpacer />
+
+                  {!isNaN(oneWay) && (
+                    <>
+                      Cost of travel may be near <b>${oneWay.toFixed(2)} FJD</b>{" "}
+                      one-way, and <b>${roundTrip.toFixed(2)} FJD</b>{" "}
+                      round-trip.
+                    </>
+                  )} */}
+                </>
               ) : (
                 <KeySection>
                   The furthest MPA,{" "}

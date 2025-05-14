@@ -65,7 +65,6 @@ export const Depth: React.FunctionComponent = () => {
                     {overallStats ? formatDepth(overallStats.min) : t("N/A")}
                   </b>
                 </span>
-                )
               </KeySection>
 
               {isCollection && (

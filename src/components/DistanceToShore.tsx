@@ -3,6 +3,7 @@ import { Trans, useTranslation } from "react-i18next";
 import {
   Collapse,
   KeySection,
+  Pill,
   ReportError,
   ReportTableStyled,
   ResultsCard,
@@ -28,9 +29,11 @@ export const DistanceToShore: React.FunctionComponent<any> = (props) => {
           return (
             <>
               {!isCollection ? (
-                <KeySection>
-                  This MPA is <b>{data[0].value.toFixed(1)} km</b> from shore.
-                </KeySection>
+                <>
+                  <VerticalSpacer />
+                  This MPA is <Pill>{data[0].value.toFixed(1)} km</Pill> from
+                  shore.
+                </>
               ) : (
                 <KeySection
                   style={{ display: "flex", justifyContent: "space-around" }}
