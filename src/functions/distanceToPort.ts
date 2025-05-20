@@ -28,6 +28,42 @@ import {
   multiPolygon,
 } from "@turf/turf";
 
+// Normalize longitude to handle antimeridian crossing - same as in pyriv.ts
+function normalizeLongitude(coord: number[]): number[] {
+  let lon = coord[0];
+  if (lon < -160) {
+    lon += 360;
+  }
+  return [lon, coord[1]];
+}
+
+// Normalize sketch coordinates
+function normalizeSketch(sketch: Sketch<Polygon | MultiPolygon>): Sketch<Polygon | MultiPolygon> {
+  if (sketch.geometry.type === "Polygon") {
+    return {
+      ...sketch,
+      geometry: {
+        ...sketch.geometry,
+        coordinates: sketch.geometry.coordinates.map(ring =>
+          ring.map(coord => normalizeLongitude(coord))
+        )
+      }
+    };
+  } else { // MultiPolygon
+    return {
+      ...sketch,
+      geometry: {
+        ...sketch.geometry,
+        coordinates: sketch.geometry.coordinates.map(poly =>
+          poly.map(ring =>
+            ring.map(coord => normalizeLongitude(coord))
+          )
+        )
+      }
+    };
+  }
+}
+
 // Define the function to calculate the distance to the nearest port
 export async function distanceToPort(
   sketch:
@@ -44,14 +80,15 @@ export async function distanceToPort(
 }> {
   console.log(sketch.properties.name);
 
-  const sketchArray = toSketchArray(sketch);
+  // Normalize sketch coordinates
+  const sketchArray = toSketchArray(sketch).map(sk => normalizeSketch(sk));
 
   // Load the graph
   const graph = graphlib.json.read(graphFile);
 
   // Adds sketches to the graph and calculates distances
   const finalGraph = await addSketchesToGraph(
-    sketch,
+    sketchArray,
     graph,
     (ports as FeatureCollection<Point>).features,
   );
@@ -124,22 +161,20 @@ function extractVerticesFromPolygon(
 }
 
 async function addSketchesToGraph(
-  sketch:
-    | Sketch<Polygon | MultiPolygon>
-    | SketchCollection<Polygon | MultiPolygon>,
+  sketches: Sketch<Polygon | MultiPolygon>[],
   graph: graphlib.Graph,
   ports: Feature<Point>[], // Ports as an array of points
 ): Promise<{
   graph: graphlib.Graph;
   sketchNodes: Record<string, string[]>;
 }> {
-  const sketchesSimplified = toSketchArray(sketch).map((sk) =>
+  const sketchesSimplified = sketches.map((sk) =>
     simplify(sk, { tolerance: 0.005 }),
   );
 
   const land = featureCollection(
     (landFile as FeatureCollection).features.filter((land) =>
-      booleanOverlap(bboxPolygon(bbox(land)), bboxPolygon(bbox(sketch))),
+      booleanOverlap(bboxPolygon(bbox(land)), bboxPolygon(bbox(featureCollection(sketches)))),
     ),
   );
 

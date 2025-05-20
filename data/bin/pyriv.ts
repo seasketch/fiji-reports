@@ -13,6 +13,7 @@ import {
   FeatureCollection,
   isFeatureCollection,
   Polygon,
+  MultiPolygon,
 } from "@seasketch/geoprocessing/client-core";
 import coast from "./land.01.1000000.json" with { type: "json" };
 
@@ -31,9 +32,56 @@ export function extractVerticesFromPolygon(
   polygon.forEach((ring: any, ringIndex: number) => {
     ring.forEach((coord: [number, number], vertexIndex: number) => {
       const id = `node_${featureIndex}_${ringIndex}_${vertexIndex}`;
-      vertices.set(id, coord);
+      vertices.set(id, normalizeLongitude(coord));
     });
   });
+}
+
+// Normalize longitude to handle antimeridian crossing
+function normalizeLongitude(coord: number[]): number[] {
+  let lon = coord[0];
+  // Normalize any negative longitude near the antimeridian to its positive equivalent
+  if (lon < -160) {
+    lon += 360;
+  }
+  return [lon, coord[1]];
+}
+
+// Normalize an entire feature collection to handle antimeridian
+function normalizeFeatureCollection(fc: FeatureCollection): FeatureCollection {
+  console.log("Normalizing feature collection coordinates...");
+  
+  const normalized = {
+    ...fc,
+    features: fc.features.map(feature => {
+      if (feature.geometry.type === "Polygon") {
+        return {
+          ...feature,
+          geometry: {
+            ...feature.geometry,
+            coordinates: feature.geometry.coordinates.map(ring =>
+              ring.map(coord => normalizeLongitude(coord))
+            )
+          }
+        };
+      } else if (feature.geometry.type === "MultiPolygon") {
+        return {
+          ...feature,
+          geometry: {
+            ...feature.geometry,
+            coordinates: feature.geometry.coordinates.map(poly =>
+              poly.map(ring =>
+                ring.map(coord => normalizeLongitude(coord))
+              )
+            )
+          }
+        };
+      }
+      return feature;
+    })
+  };
+
+  return normalized;
 }
 
 // Create graph with vertices
@@ -125,6 +173,7 @@ async function addOceanEdgesComplete(
             return;
           }
 
+          // Both coordinates should already be normalized from earlier
           const dist = distance(nodeCoord, otherNodeCoord, {
             units: "kilometers",
           });
@@ -159,11 +208,38 @@ async function addOceanEdgesComplete(
 async function main() {
   if (!isFeatureCollection(coast))
     throw new Error("Expected a FeatureCollection");
-  const land = buffer(coast as FeatureCollection<Polygon>, -0.01);
+
+  console.log("Starting graph and land data generation...");
+  
+  // First normalize the coast data
+  console.log("Normalizing coast data...");
+  const normalizedCoast = normalizeFeatureCollection(coast as FeatureCollection<Polygon>);
+  
+  // Create shrunk land from normalized coast
+  console.log("Creating shrunk land from normalized coast...");
+  const landBuffer = buffer(normalizedCoast, -0.01) as FeatureCollection<Polygon | MultiPolygon>;
+  
+  // Normalize the buffered land data
+  console.log("Normalizing buffered land data...");
+  const land = normalizeFeatureCollection(landBuffer);
+  
+  // Save the normalized and shrunk land
+  console.log("Saving normalized land data...");
   fs.writeFileSync(landShrunkOut, JSON.stringify(land));
-  let graph = createGraph(coast);
+  
+  // Create graph from normalized coast
+  console.log("Creating graph from normalized coast...");
+  let graph = createGraph(normalizedCoast);
+  
+  // Add ocean edges using normalized data
+  console.log("Adding ocean edges...");
   graph = await addOceanEdgesComplete(graph, land, true);
+  
+  // Save the final graph
+  console.log("Saving final graph...");
   fs.writeFileSync(jsonOut, JSON.stringify(graphlib.json.write(graph)));
+  
+  console.log("Done!");
 }
 
 main().catch(console.error);

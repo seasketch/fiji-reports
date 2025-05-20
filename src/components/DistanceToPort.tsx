@@ -106,18 +106,45 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
               enforcibility.
               <VerticalSpacer />
               {!isCollection ? (
-                <>
-                  <KeySection>
-                    This MPA is{" "}
-                    <b>~{data.portDistances[0].distance.toFixed(0)} km</b> from
-                    the nearest port{" "}
-                    <b>
-                      {data.portDistances[0].port
-                        .toLowerCase()
-                        .replace(/\b\w/g, (char) => char.toUpperCase())}
-                    </b>
-                  </KeySection>
-                  {/* <FieldRow style={{ justifyContent: "space-around" }}>
+                <KeySection>
+                  This MPA is{" "}
+                  <b>~{data.portDistances[0].distance.toFixed(0)} km</b> from
+                  the nearest port{" "}
+                  <b>
+                    {data.portDistances[0].port
+                      .toLowerCase()
+                      .replace(/\b\w/g, (char) => char.toUpperCase())}
+                  </b>
+                </KeySection>
+              ) : (
+                <KeySection>
+                  The furthest MPA,{" "}
+                  <b>
+                    {
+                      data.sketch.find(
+                        (sk) => sk.properties.id === furthestMpa.sketchId,
+                      )?.properties.name
+                    }
+                  </b>
+                  , is <b>~{furthestMpa.distance.toFixed(0)} km</b> from the
+                  port{" "}
+                  <b>
+                    {furthestMpa.port
+                      .toLowerCase()
+                      .replace(/\b\w/g, (char) => char.toUpperCase())}
+                  </b>
+                  .
+                </KeySection>
+              )}
+              <Collapse title="Show Map">
+                <DistanceToPortMap
+                  sketch={data.sketch}
+                  portDistances={data.portDistances}
+                />
+              </Collapse>
+              {/* {!isCollection && (
+                <Collapse title="Fuel Cost Estimator">
+                  <FieldRow style={{ justifyContent: "space-around" }}>
                     <Label>
                       Fuel efficiency (km/L)
                       <NumberInput
@@ -146,34 +173,9 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
                       one-way, and <b>${roundTrip.toFixed(2)} FJD</b>{" "}
                       round-trip.
                     </>
-                  )} */}
-                </>
-              ) : (
-                <KeySection>
-                  The furthest MPA,{" "}
-                  <b>
-                    {
-                      data.sketch.find(
-                        (sk) => sk.properties.id === furthestMpa.sketchId,
-                      )?.properties.name
-                    }
-                  </b>
-                  , is <b>~{furthestMpa.distance.toFixed(0)} km</b> from the
-                  port{" "}
-                  <b>
-                    {furthestMpa.port
-                      .toLowerCase()
-                      .replace(/\b\w/g, (char) => char.toUpperCase())}
-                  </b>
-                  .
-                </KeySection>
-              )}
-              <Collapse title="Show Map">
-                <DistanceToPortMap
-                  sketch={data.sketch}
-                  portDistances={data.portDistances}
-                />
-              </Collapse>
+                  )}
+                </Collapse>
+              )} */}
               {isCollection && (
                 <Collapse title="Show by MPA">
                   {genDistanceTable(data)}
@@ -282,25 +284,11 @@ export const DistanceToPortMap: React.FC<DistanceToPortMapProps> = ({
     });
     const pathGen = geoPath().projection(projection);
 
-    // Land - make "unclean" to plot across antimeridian
+    // Land
     svg
       .append("g")
       .selectAll("path")
-      .data(
-        (landData as FeatureCollection<Polygon>).features.map((feature) => {
-          feature.geometry.coordinates = feature.geometry.coordinates.map(
-            (ring) =>
-              ring.map(
-                ([x, y]) =>
-                  [x < -150 ? x + 360 : x > 180 ? x - 360 : x, y] as [
-                    number,
-                    number,
-                  ],
-              ),
-          );
-          return feature;
-        }),
-      )
+      .data((landData as FeatureCollection<Polygon>).features)
       .enter()
       .append("path")
       .attr("d", pathGen as any)
