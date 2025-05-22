@@ -28,6 +28,7 @@ import { bbox, featureCollection } from "@turf/turf";
 import landData from "../../data/bin/landShrunk.01.json" with { type: "json" };
 import ports from "../functions/ports.json" with { type: "json" };
 import { styled } from "styled-components";
+import { FuelCostEstimator } from "../util/FuelCostEstimator.js";
 
 interface DistanceToPortMapProps {
   sketch: Sketch<Polygon | MultiPolygon>[];
@@ -77,16 +78,6 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
   const [{ isCollection }] = useSketchProperties();
   const titleLabel = t("Distance To Port");
 
-  // const [kmPerLitre, setKmPerLitre] = useState<number>(1.5); // boat efficiency
-  // const [pricePerLitre, setPricePerLitre] = useState<number>(2.31); // fuel price
-  // const [distanceKm, setDistanceKm] = useState<number>(0); // distance to port
-  // const { oneWay, roundTrip } = useMemo(() => {
-  //   if (kmPerLitre <= 0) return { oneWay: NaN, roundTrip: NaN };
-  //   const litresOneWay = distanceKm / kmPerLitre;
-  //   const costOneWay = litresOneWay * pricePerLitre;
-  //   return { oneWay: costOneWay, roundTrip: costOneWay * 2 };
-  // }, [distanceKm, kmPerLitre, pricePerLitre]);
-
   return (
     <ReportError>
       <ResultsCard title={titleLabel} functionName="distanceToPort">
@@ -94,11 +85,6 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
           const furthestMpa = data.portDistances.reduce((prev, current) =>
             prev.distance > current.distance ? prev : current,
           );
-
-          // setDistanceKm(data.portDistances[0].distance);
-
-          // const num = (e: ChangeEvent<HTMLInputElement>) =>
-          //   parseFloat(e.target.value) || 0;
 
           return (
             <>
@@ -142,40 +128,13 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
                   portDistances={data.portDistances}
                 />
               </Collapse>
-              {/* {!isCollection && (
+              {!isCollection && (
                 <Collapse title="Fuel Cost Estimator">
-                  <FieldRow style={{ justifyContent: "space-around" }}>
-                    <Label>
-                      Fuel efficiency (km/L)
-                      <NumberInput
-                        step="0.1"
-                        min="0"
-                        value={kmPerLitre}
-                        onChange={(e) => setKmPerLitre(num(e))}
-                      />
-                    </Label>
-
-                    <Label>
-                      Fuel price ($FJD/L)
-                      <NumberInput
-                        step="0.01"
-                        min="0"
-                        value={pricePerLitre}
-                        onChange={(e) => setPricePerLitre(num(e))}
-                      />
-                    </Label>
-                  </FieldRow>
-                  <VerticalSpacer />
-
-                  {!isNaN(oneWay) && (
-                    <>
-                      Cost of travel may be near <b>${oneWay.toFixed(2)} FJD</b>{" "}
-                      one-way, and <b>${roundTrip.toFixed(2)} FJD</b>{" "}
-                      round-trip.
-                    </>
-                  )}
+                  <FuelCostEstimator
+                    distanceKm={data.portDistances[0].distance}
+                  />
                 </Collapse>
-              )} */}
+              )}
               {isCollection && (
                 <Collapse title="Show by MPA">
                   {genDistanceTable(data)}
