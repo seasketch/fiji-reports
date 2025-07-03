@@ -12,7 +12,7 @@ import {
   isFeature,
   toFeatureArray,
 } from "@seasketch/geoprocessing";
-import fijiEez from "./fiji_planning_region.json" with { type: "json" };
+import fijiEez from "./fijiEezUnclean.json" with { type: "json" };
 
 /**
  * Preprocessor takes a Polygon feature/sketch and returns the portion that
@@ -30,14 +30,9 @@ export async function clipToOceanEez(
 
   const sketchUnclean = makeUnclean(feature, -170, 360) as Feature;
 
-  // The Fiji EEZ crosses the antimeridian
-  // To keep the sketch a simple polygon, we need make our EEZ clipping coordinates
-  // extend positively beyond the antimeridian
-  const fijiEezUnclean = makeUnclean(fijiEez as FeatureCollection, -170, 360);
-
   const keepInsideEez: FeatureClipOperation = {
     operation: "intersection",
-    clipFeatures: toFeatureArray(fijiEezUnclean) as Feature<
+    clipFeatures: toFeatureArray(fijiEez as FeatureCollection) as Feature<
       Polygon | MultiPolygon
     >[],
   };

@@ -38,7 +38,6 @@ const BaseReport = () => {
       </div>
       <ReportPage hidden={!enableAllTabs && tab !== "VIABILITY"}>
         <SizeCard />
-        <GfwCard />
         <DistanceToPort />
         <DistanceToShore />
         <SketchAttributesCard autoHide />
