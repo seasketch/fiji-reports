@@ -40,7 +40,7 @@ export const Sites: React.FunctionComponent = () => {
           <ReportError>
             <p>
               <Trans i18nKey="Sites 1">
-                This plan contains <Pill>{stations.toString()}</Pill> dive sites
+                This plan contains <Pill>{stations.toString()}</Pill> dive site
                 {stations === 1 ? "" : "s"} in <Pill>{islands.toString()}</Pill>{" "}
                 island{islands === 1 ? "" : "s"}.
               </Trans>
