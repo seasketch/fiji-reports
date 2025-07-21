@@ -838,5 +838,17 @@
         "layerId": "xiXx9ljIv"
       }
     ]
+  },
+  {
+    "metricId": "sites",
+    "type": "countOverlap",
+    "layerId": "pdZ8qAqGI",
+    "classes": [
+      {
+        "classId": "sites",
+        "display": "Sites",
+        "datasourceId": "sites"
+      }
+    ]
   }
 ]

@@ -17,12 +17,14 @@ import { Depth } from "../components/Depth.js";
 import { HydrothermalVents } from "../components/HydrothermalVents.js";
 import { DistanceToPort } from "../components/DistanceToPort.js";
 import { DistanceToShore } from "../components/DistanceToShore.js";
+import { Sites } from "../components/Sites.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
   const { t } = useTranslation();
   const segments = [
     { id: "VIABILITY", label: t("Viability") },
+    { id: "EXPEDITION", label: t("Expedition") },
     { id: "REPRESENTATION", label: t("Representation") },
   ];
   const [tab, setTab] = useState<string>("VIABILITY");
@@ -42,6 +44,9 @@ const BaseReport = () => {
         <DistanceToShore />
         <Gfw />
         <SketchAttributesCard autoHide />
+      </ReportPage>
+      <ReportPage hidden={!enableAllTabs && tab !== "EXPEDITION"}>
+        <Sites />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <Depth />

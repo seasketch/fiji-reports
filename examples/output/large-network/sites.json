@@ -1,0 +1,72 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "islands",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 1
+    },
+    {
+      "geographyId": null,
+      "metricId": "stations",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 10
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "VBA_59",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_57",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_60",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_55",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_62",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_62",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_58",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_62",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_62",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    },
+    {
+      "station_id": "VBA_56",
+      "island": "Vanau Balavu",
+      "sketchName": "vanua"
+    }
+  ]
+}

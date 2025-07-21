@@ -1,0 +1,112 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "islands",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 3
+    },
+    {
+      "geographyId": null,
+      "metricId": "stations",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 18
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "TAV_34",
+      "island": "Taveuni",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "TAV_35",
+      "island": "Taveuni",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_25",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_26",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_27",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_24",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_29",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_32",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_28",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_31",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_33",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "CKE_30",
+      "island": "Caukadrove East",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "LAU_43",
+      "island": "Laucala",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "TAV_38",
+      "island": "Taveuni",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "LAU_41",
+      "island": "Laucala",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "TAV_39",
+      "island": "Taveuni",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "TAV_36",
+      "island": "Taveuni",
+      "sketchName": "cross_antimeridian"
+    },
+    {
+      "station_id": "TAV_37",
+      "island": "Taveuni",
+      "sketchName": "cross_antimeridian"
+    }
+  ]
+}

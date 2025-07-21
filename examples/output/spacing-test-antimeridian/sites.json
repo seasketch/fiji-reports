@@ -1,0 +1,21 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "islands",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 0
+    },
+    {
+      "geographyId": null,
+      "metricId": "stations",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 0
+    }
+  ],
+  "stations": []
+}
