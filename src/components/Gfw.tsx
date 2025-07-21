@@ -1,56 +1,49 @@
 import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
-  ClassTable,
   Collapse,
+  LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTable,
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
 import {
+  flattenBySketchAllClass,
   GeogProp,
   Metric,
   MetricGroup,
+  metricsWithSketchId,
   ReportResult,
   SketchProperties,
-  flattenBySketchAllClass,
-  metricsWithSketchId,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
-import project from "../../project/projectClient.js";
+import projectClient from "../../project/projectClient.js";
+import { GfwLineChart } from "./GfwLineChart.js";
 
 /**
- * Global Fishing Watch report
+ * Gfw component
  */
-export const GfwCard: React.FunctionComponent<GeogProp> = (props) => {
+export const Gfw: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
-  const curGeography = project.getGeographyById(props.geographyId, {
+  const curGeography = projectClient.getGeographyById(props.geographyId, {
     fallbackGroup: "default-boundary",
   });
 
-  // Metrics
-  const metricGroup = project.getMetricGroup("gfw", t);
-  const precalcMetrics = project.getPrecalcMetrics(
+  // Labels
+  const titleLabel = t("Fishing Effort - Global Fishing Watch");
+  const mapLabel = t("Show Fishing Effort 2024 On Map");
+
+  const metricGroup = projectClient.getMetricGroup("gfw");
+  const precalcMetrics = projectClient.getPrecalcMetrics(
     metricGroup,
     "sum",
     curGeography.geographyId,
   );
 
-  // Labels
-  const titleLabel = t("Fishing Effort");
-  const mapLabel = t("Map");
-  const withinLabel = t("Within Plan");
-  const percWithinLabel = t("% Within Plan");
-  const unitsLabel = t("hours");
-
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="gfw"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-    >
+    <ResultsCard title={titleLabel} functionName="gfw">
       {(data: ReportResult) => {
         const percMetricIdName = `${metricGroup.metricId}Perc`;
 
@@ -61,64 +54,40 @@ export const GfwCard: React.FunctionComponent<GeogProp> = (props) => {
         const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
           metricIdOverride: percMetricIdName,
         });
-        const metrics = [...valueMetrics, ...percentMetrics];
 
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
+        const percentLineData = percentMetrics.map((m) => ({
+          year: Number(m.classId),
+          value: m.value,
+        }));
 
         return (
           <ReportError>
             <p>
-              <Trans i18nKey="GfwCard 1">
-                This report summarizes this plan's overlap with apparent fishing
-                effort in 2022.
+              <Trans i18nKey="Gfw 1">
+                This report summarizes the percentage of fishing effort
+                contained within this plan from 2018-2024, based on data from
+                Global Fishing Watch.
               </Trans>
             </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              objective={objectives}
-              columnConfig={[
-                {
-                  columnLabel: " ",
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: "integer",
-                  valueLabel: unitsLabel,
-                  chartOptions: {
-                    showTitle: true,
-                  },
-                  width: 20,
-                },
-                {
-                  columnLabel: percWithinLabel,
-                  type: "metricChart",
-                  metricId: percMetricIdName,
-                  valueFormatter: "percent",
-                  chartOptions: {
-                    showTitle: true,
-                  },
-                  width: 40,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
+            <LayerToggle
+              label={mapLabel}
+              layerId={
+                metricGroup.classes.find(
+                  (curClass) => curClass.classId === "2024",
+                )?.layerId
+              }
             />
+
+            {data.metrics.some((d) => d.value !== 0) ? (
+              <GfwLineChart data={percentLineData} />
+            ) : (
+              <p
+                style={{ color: "#888", fontStyle: "italic", margin: "20px 0" }}
+              >
+                No fishing effort in plan
+              </p>
+            )}
 
             {isCollection && childProperties && (
               <Collapse title={t("Show by Sketch")}>
@@ -132,7 +101,7 @@ export const GfwCard: React.FunctionComponent<GeogProp> = (props) => {
             )}
 
             <Collapse title={t("Learn More")}>
-              <Trans i18nKey="GfwCard - learn more">
+              <Trans i18nKey="Gfw - learn more">
                 <p>
                   ℹ️ Overview: Global Fishing Watch's apparent fishing effort is
                   based on transmissions broadcast using the automatic
@@ -141,13 +110,12 @@ export const GfwCard: React.FunctionComponent<GeogProp> = (props) => {
                   fishing effort is calculated for any area by summarizing the
                   fishing hours for all fishing vessels in that area.
                 </p>
-                <p>🗺️ Source Data: Global Fishing Watch 2022</p>
+                <p>🗺️ Source Data: Global Fishing Watch</p>
                 <p>
                   📈 Report: This report calculates the sum of apparent fishing
                   effort within the plan. This value is divided by the total sum
                   of apparent fishing effort to obtain the % contained within
-                  the plan. If the plan includes multiple areas that overlap,
-                  the overlap is only counted once.
+                  the plan.
                 </p>
               </Trans>
             </Collapse>

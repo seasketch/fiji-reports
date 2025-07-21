@@ -4,11 +4,9 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
-  rasterMetrics,
   isRasterDatasource,
   loadCog,
+  rasterMetrics,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
@@ -20,23 +18,13 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * gfw: A geoprocessing function that calculates overlap metrics for raster datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * gfw: A geoprocessing function that calculates degree heating weeks
  */
 export async function gfw(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
   // Split sketch as antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
 
@@ -67,7 +55,6 @@ export async function gfw(
           (metrics): Metric => ({
             ...metrics,
             classId: curClass.classId,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),

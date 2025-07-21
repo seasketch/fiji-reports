@@ -1,21 +1,31 @@
 import { $ } from "zx";
-import {
-  Datasource,
-  isInternalRasterDatasource,
-} from "@seasketch/geoprocessing";
 import datasources from "../../project/datasources.json" with { type: "json" };
+import project from "../../project/projectClient.js";
 
-const gfwDs = ["gfw_longline", "gfw_purseseine"];
+const mgs = ["gfw"];
 
-gfwDs.forEach(async (ds) => {
-  const config = (datasources as Datasource[]).find(
-    (d) => d.datasourceId === ds,
-  )!;
+mgs.forEach((mg) => {
+  console.log(`Reimporting ${mg}`);
 
-  if (!isInternalRasterDatasource(config))
-    throw new Error("Expected internal raster datasource");
+  project.getMetricGroup(mg).classes.forEach(async (curClass) => {
+    const datasource = datasources.find(
+      (d) => d.datasourceId === curClass.datasourceId,
+    );
 
-  const dst = "data/dist/" + config.datasourceId + ".tif";
-  await $`rm ${dst}`;
-  await $`gdal_translate -b ${config.band} -r nearest --config GDAL_PAM_ENABLED NO --config GDAL_CACHEMAX 500 -co COMPRESS=LZW -co NUM_THREADS=ALL_CPUS -of COG -stats ${config.src} ${dst}`;
+    if (!datasource) throw new Error(`Datasource ${curClass} not found`);
+
+    const src = datasource?.src;
+
+    const warpDst = "data/dist/" + datasource.datasourceId + "_4326.tif";
+
+    const dst = "data/dist/" + datasource.datasourceId + ".tif";
+
+    await $`gdalwarp -t_srs "EPSG:4326" -dstnodata ${datasource?.noDataValue} --config GDAL_PAM_ENABLED NO --config GDAL_CACHEMAX 500 -wm 500 -multi -wo NUM_THREADS=ALL_CPUS ${src} ${warpDst}`;
+
+    await $`gdal_translate -b ${datasource?.band} -r nearest --config GDAL_PAM_ENABLED NO --config GDAL_CACHEMAX 500 -co COMPRESS=LZW -co NUM_THREADS=ALL_CPUS -of COG -stats ${warpDst} ${dst}`;
+
+    await $`rm ${warpDst}`;
+
+    console.log(`Finished reimporting ${datasource.datasourceId}`);
+  });
 });

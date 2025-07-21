@@ -1,32 +1,32 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "77760",
       "groupId": "band-0",
-      "value": 1193.94014,
+      "value": 1287.810001,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "77761",
       "groupId": "band-0",
-      "value": 50.921528,
+      "value": 1.16,
       "extra": {
         "sketchName": "vanua"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "77762",
       "groupId": "band-0",
       "value": 0,
@@ -35,20 +35,20 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "77763",
       "groupId": "band-0",
-      "value": 1143.018612,
+      "value": 1286.650001,
       "extra": {
         "sketchName": "southwest"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "77764",
       "groupId": "band-0",
       "value": 0,
@@ -57,32 +57,32 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "77760",
       "groupId": "band-0",
-      "value": 0,
+      "value": 657.100001,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "77761",
       "groupId": "band-0",
-      "value": 0,
+      "value": 0.21,
       "extra": {
         "sketchName": "vanua"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "77762",
       "groupId": "band-0",
       "value": 0,
@@ -91,20 +91,300 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "77763",
       "groupId": "band-0",
-      "value": 0,
+      "value": 656.890001,
       "extra": {
         "sketchName": "southwest"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
+      "sketchId": "77764",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "77760",
+      "groupId": "band-0",
+      "value": 1152.030002,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "77761",
+      "groupId": "band-0",
+      "value": 13.9,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "77762",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "77763",
+      "groupId": "band-0",
+      "value": 1138.130002,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "77764",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "77760",
+      "groupId": "band-0",
+      "value": 674.35,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "77761",
+      "groupId": "band-0",
+      "value": 17.72,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "77762",
+      "groupId": "band-0",
+      "value": 1.54,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "77763",
+      "groupId": "band-0",
+      "value": 655.09,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "77764",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "77760",
+      "groupId": "band-0",
+      "value": 31.38,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "77761",
+      "groupId": "band-0",
+      "value": 3.69,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "77762",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "77763",
+      "groupId": "band-0",
+      "value": 27.69,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "77764",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "77760",
+      "groupId": "band-0",
+      "value": 592.079996,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "77761",
+      "groupId": "band-0",
+      "value": 40.019998,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "77762",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "77763",
+      "groupId": "band-0",
+      "value": 552.059998,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "77764",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "rotuma"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "77760",
+      "groupId": "band-0",
+      "value": 1859.419995,
+      "extra": {
+        "sketchName": "large-network",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "77761",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "vanua"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "77762",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "moce"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "77763",
+      "groupId": "band-0",
+      "value": 1859.419995,
+      "extra": {
+        "sketchName": "southwest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
       "sketchId": "77764",
       "groupId": "band-0",
       "value": 0,

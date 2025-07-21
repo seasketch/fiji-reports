@@ -1,69 +1,239 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "79005",
       "groupId": "band-0",
-      "value": 146.128889,
+      "value": 176.820001,
       "extra": {
         "sketchName": "hydrothermalVents"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "79006",
       "groupId": "band-0",
-      "value": 146.128889,
+      "value": 176.820001,
       "extra": {
         "sketchName": "ventsOverlap",
         "isCollection": true
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "79007",
       "groupId": "band-0",
-      "value": 146.128889,
+      "value": 176.820001,
       "extra": {
         "sketchName": "hydrothermalVents (copy)"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "79005",
       "groupId": "band-0",
-      "value": 0,
+      "value": 82.83,
       "extra": {
         "sketchName": "hydrothermalVents"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "79006",
       "groupId": "band-0",
-      "value": 0,
+      "value": 82.83,
       "extra": {
         "sketchName": "ventsOverlap",
         "isCollection": true
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "79007",
       "groupId": "band-0",
-      "value": 0,
+      "value": 82.83,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "79005",
+      "groupId": "band-0",
+      "value": 87.31,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "79006",
+      "groupId": "band-0",
+      "value": 87.31,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "79007",
+      "groupId": "band-0",
+      "value": 87.31,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "79005",
+      "groupId": "band-0",
+      "value": 130.73,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "79006",
+      "groupId": "band-0",
+      "value": 130.73,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "79007",
+      "groupId": "band-0",
+      "value": 130.73,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "79005",
+      "groupId": "band-0",
+      "value": 11,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "79006",
+      "groupId": "band-0",
+      "value": 11,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "79007",
+      "groupId": "band-0",
+      "value": 11,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "79005",
+      "groupId": "band-0",
+      "value": 48.81,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "79006",
+      "groupId": "band-0",
+      "value": 48.81,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "79007",
+      "groupId": "band-0",
+      "value": 48.81,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "79005",
+      "groupId": "band-0",
+      "value": 76.34,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "79006",
+      "groupId": "band-0",
+      "value": 76.34,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "79007",
+      "groupId": "band-0",
+      "value": 76.34,
       "extra": {
         "sketchName": "hydrothermalVents (copy)"
       }

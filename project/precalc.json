@@ -386,6 +386,62 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "gfw_2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 8.4304
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 7.8806
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 6.5166
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2021-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 6.0397
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2022-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 6.478
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2023-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 5.8974
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2024-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 6.0872
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
@@ -1786,6 +1842,62 @@
   {
     "geographyId": "eez",
     "metricId": "count",
+    "classId": "gfw_2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1108050
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1108050
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1108050
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_2021-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1108050
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_2022-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1108050
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_2023-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1108050
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "gfw_2024-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1108050
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
@@ -2802,6 +2914,62 @@
   {
     "geographyId": "eez",
     "metricId": "sum",
+    "classId": "gfw_2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 139191.299966
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 130131.259943
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 104966.359845
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_2021-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 89532.799873
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_2022-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 89421.559968
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_2023-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 73146.049939
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "gfw_2024-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 85494.260149
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
@@ -2814,6 +2982,62 @@
     "sketchId": null,
     "groupId": "band-0",
     "value": 466.93986
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 84304
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 78806
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 65166
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_2021-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 60397
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_2022-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 64780
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_2023-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 58974
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "gfw_2024-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 60872
   },
   {
     "geographyId": "eez",

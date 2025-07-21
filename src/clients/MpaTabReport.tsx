@@ -7,7 +7,7 @@ import {
 } from "@seasketch/geoprocessing/client-ui";
 import Translator from "../components/TranslatorAsync.js";
 import { SizeCard } from "../components/SizeCard.js";
-import { GfwCard } from "../components/GfwCard.js";
+import { Gfw } from "../components/Gfw.js";
 import { EbsaCard } from "../components/EbsaCard.js";
 import { GeomorphologyCard } from "../components/GeomorphologyCard.js";
 import { DeepwaterBioregionsCard } from "../components/DeepwaterBioregionsCard.js";
@@ -40,6 +40,7 @@ const BaseReport = () => {
         <SizeCard />
         <DistanceToPort />
         <DistanceToShore />
+        <Gfw />
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>

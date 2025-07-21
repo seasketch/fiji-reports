@@ -17,16 +17,46 @@
     "type": "sumOverlap",
     "classes": [
       {
-        "classId": "gfw_longline",
-        "display": "Longline",
-        "datasourceId": "gfw_longline",
-        "layerId": "Wz50Gusmm"
+        "classId": "2018",
+        "datasourceId": "gfw_2018",
+        "display": "2018",
+        "layerId": "uKguM6QM7"
       },
       {
-        "classId": "gfw_purseseine",
-        "display": "Purse Seine",
-        "datasourceId": "gfw_purseseine",
-        "layerId": "mIzHfvMFe"
+        "classId": "2019",
+        "datasourceId": "gfw_2019",
+        "display": "2019",
+        "layerId": "AytwOrRdU"
+      },
+      {
+        "classId": "2020",
+        "datasourceId": "gfw_2020",
+        "display": "2020",
+        "layerId": "6dliMjE8F"
+      },
+      {
+        "classId": "2021",
+        "datasourceId": "gfw_2021",
+        "display": "2021",
+        "layerId": "7YBrXPucO"
+      },
+      {
+        "classId": "2022",
+        "datasourceId": "gfw_2022",
+        "display": "2022",
+        "layerId": "1nQ1Ix18f"
+      },
+      {
+        "classId": "2023",
+        "datasourceId": "gfw_2023",
+        "display": "2023",
+        "layerId": "0xkVBBiLY"
+      },
+      {
+        "classId": "2024",
+        "datasourceId": "gfw_2024",
+        "display": "2024",
+        "layerId": "LEluekKT5"
       }
     ]
   },

@@ -1,21 +1,21 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "101153",
       "groupId": "band-0",
-      "value": 422.08125,
+      "value": 1507.569997,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "101154",
       "groupId": "band-0",
       "value": 0,
@@ -24,32 +24,32 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_longline",
+      "classId": "2018",
       "sketchId": "101155",
       "groupId": "band-0",
-      "value": 422.08125,
+      "value": 1507.569997,
       "extra": {
         "sketchName": "b"
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "101153",
       "groupId": "band-0",
-      "value": 0,
+      "value": 1122.169999,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "101154",
       "groupId": "band-0",
       "value": 0,
@@ -58,12 +58,182 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "gfw",
-      "classId": "gfw_purseseine",
+      "classId": "2019",
       "sketchId": "101155",
       "groupId": "band-0",
-      "value": 0,
+      "value": 1122.169999,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "101153",
+      "groupId": "band-0",
+      "value": 699.48,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "101154",
+      "groupId": "band-0",
+      "value": 1.65,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "101155",
+      "groupId": "band-0",
+      "value": 697.83,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "101153",
+      "groupId": "band-0",
+      "value": 82.18,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "101154",
+      "groupId": "band-0",
+      "value": 0.29,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "101155",
+      "groupId": "band-0",
+      "value": 81.89,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "101153",
+      "groupId": "band-0",
+      "value": 1301.170007,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "101154",
+      "groupId": "band-0",
+      "value": 155.650007,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "101155",
+      "groupId": "band-0",
+      "value": 1145.52,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "101153",
+      "groupId": "band-0",
+      "value": 642.160002,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "101154",
+      "groupId": "band-0",
+      "value": 93.240001,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "101155",
+      "groupId": "band-0",
+      "value": 548.920001,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "101153",
+      "groupId": "band-0",
+      "value": 330.65,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "101154",
+      "groupId": "band-0",
+      "value": 26.37,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "101155",
+      "groupId": "band-0",
+      "value": 304.279999,
       "extra": {
         "sketchName": "b"
       }
