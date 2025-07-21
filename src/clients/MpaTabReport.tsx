@@ -18,6 +18,7 @@ import { HydrothermalVents } from "../components/HydrothermalVents.js";
 import { DistanceToPort } from "../components/DistanceToPort.js";
 import { DistanceToShore } from "../components/DistanceToShore.js";
 import { Sites } from "../components/Sites.js";
+import { FishDensity } from "../components/FishDensity.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -47,6 +48,7 @@ const BaseReport = () => {
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "EXPEDITION"}>
         <Sites />
+        <FishDensity />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <Depth />

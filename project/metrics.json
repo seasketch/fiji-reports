@@ -850,5 +850,482 @@
         "datasourceId": "sites"
       }
     ]
+  },
+  {
+    "metricId": "fishDensity",
+    "type": "countOverlap",
+    "datasourceId": "fishDensity",
+    "classes": [
+      {
+        "classId": "total_fish_density",
+        "display": "Total",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Herbivore/Detritivore",
+        "display": "Herbivore/Detritivore",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Lower-carnivore",
+        "display": "Lower-carnivore",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Planktivore",
+        "display": "Planktivore",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Shark",
+        "display": "Shark",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Top-predator",
+        "display": "Top-predator",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Acanthuridae",
+        "display": "Acanthuridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Aetobatidae",
+        "display": "Aetobatidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Antennariidae",
+        "display": "Antennariidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Anthiadidae",
+        "display": "Anthiadidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Apogonidae",
+        "display": "Apogonidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Atherinidae",
+        "display": "Atherinidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Aulostomidae",
+        "display": "Aulostomidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Balistidae",
+        "display": "Balistidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Belonidae",
+        "display": "Belonidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Blenniidae",
+        "display": "Blenniidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Bothidae",
+        "display": "Bothidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Caesionidae",
+        "display": "Caesionidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Callionymidae",
+        "display": "Callionymidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Carangidae",
+        "display": "Carangidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Carcharhinidae",
+        "display": "Carcharhinidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Centriscidae",
+        "display": "Centriscidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Chaetodontidae",
+        "display": "Chaetodontidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Chanidae",
+        "display": "Chanidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Cheilodactylidae",
+        "display": "Cheilodactylidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Chirocentridae",
+        "display": "Chirocentridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Cirrhitidae",
+        "display": "Cirrhitidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Clupeidae",
+        "display": "Clupeidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Congridae",
+        "display": "Congridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Dasyatidae",
+        "display": "Dasyatidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Diodontidae",
+        "display": "Diodontidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Drepaneidae",
+        "display": "Drepaneidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Echeneidae",
+        "display": "Echeneidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Engraulidae",
+        "display": "Engraulidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Ephippidae",
+        "display": "Ephippidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Fistularidae",
+        "display": "Fistularidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Gerreidae",
+        "display": "Gerreidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Ginglymostomatidae",
+        "display": "Ginglymostomatidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Gobiidae",
+        "display": "Gobiidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Haemulidae",
+        "display": "Haemulidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Hemiramphidae",
+        "display": "Hemiramphidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Holocentridae",
+        "display": "Holocentridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Istiophoridae",
+        "display": "Istiophoridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Kuhliidae",
+        "display": "Kuhliidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Kyphosidae",
+        "display": "Kyphosidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Labridae",
+        "display": "Labridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Labridae_Scarinae",
+        "display": "Labridae_Scarinae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Leiognathidae",
+        "display": "Leiognathidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Lethrinidae",
+        "display": "Lethrinidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Lutjanidae",
+        "display": "Lutjanidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Malacanthidae",
+        "display": "Malacanthidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Megalopidae",
+        "display": "Megalopidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Microdesmidae",
+        "display": "Microdesmidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Monacanthidae",
+        "display": "Monacanthidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Monodactylidae",
+        "display": "Monodactylidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Mugilidae",
+        "display": "Mugilidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Mullidae",
+        "display": "Mullidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Muraenesocidae",
+        "display": "Muraenesocidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Muraenidae",
+        "display": "Muraenidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Nematistidae",
+        "display": "Nematistidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Nemipteridae",
+        "display": "Nemipteridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Ophichthidae",
+        "display": "Ophichthidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Ophidiidae",
+        "display": "Ophidiidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Oplegnathidae",
+        "display": "Oplegnathidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Ostraciidae",
+        "display": "Ostraciidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Paralichthyidae",
+        "display": "Paralichthyidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Pempheridae",
+        "display": "Pempheridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Pentacerotidae",
+        "display": "Pentacerotidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Pinguipedidae",
+        "display": "Pinguipedidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Platycephalidae",
+        "display": "Platycephalidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Plesiopidae",
+        "display": "Plesiopidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Plotosidae",
+        "display": "Plotosidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Polynemidae",
+        "display": "Polynemidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Pomacanthidae",
+        "display": "Pomacanthidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Pomacentridae",
+        "display": "Pomacentridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Priacanthidae",
+        "display": "Priacanthidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Pristigasteridae",
+        "display": "Pristigasteridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Pseudochromidae",
+        "display": "Pseudochromidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Rhinobatidae",
+        "display": "Rhinobatidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Scatophagidae",
+        "display": "Scatophagidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Sciaenidae",
+        "display": "Sciaenidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Scombridae",
+        "display": "Scombridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Scorpaenidae",
+        "display": "Scorpaenidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Serranidae",
+        "display": "Serranidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Siganidae",
+        "display": "Siganidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Sphyraenidae",
+        "display": "Sphyraenidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Sphyrnidae",
+        "display": "Sphyrnidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Synanceiidae",
+        "display": "Synanceiidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Synodontidae",
+        "display": "Synodontidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Terapontidae",
+        "display": "Terapontidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Tetraodontidae",
+        "display": "Tetraodontidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Trichiuridae",
+        "display": "Trichiuridae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Tripterygiidae",
+        "display": "Tripterygiidae",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Zanclidae",
+        "display": "Zanclidae",
+        "layerId": "lhsUXPscp"
+      }
+    ]
   }
 ]
