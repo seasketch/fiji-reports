@@ -29,7 +29,6 @@ export const Sites: React.FunctionComponent = () => {
   return (
     <ResultsCard title={titleLabel} functionName="sites">
       {(data: SiteReportResult) => {
-        console.log(data);
         // Get metric values
         const stations =
           data.metrics.find((m) => m.metricId === "stations")?.value || 0;
@@ -47,7 +46,7 @@ export const Sites: React.FunctionComponent = () => {
             </p>
 
             <LayerToggle
-              layerId="snBC9o_nH"
+              layerId="pdZ8qAqGI"
               label={t("Show Dive Sites on Map")}
             />
 
