@@ -79,6 +79,37 @@ export const FishBiomass: React.FunctionComponent = () => {
               label="Show Total Fish Biomass On Map"
             />
 
+            <ClassTable
+              rows={averageMetrics.filter((m) =>
+                trophicGroups.includes(m.classId),
+              )}
+              metricGroup={metricGroup}
+              columnConfig={[
+                {
+                  columnLabel: trophicLabel,
+                  type: "class",
+                  width: 30,
+                },
+                {
+                  columnLabel: averageLabel,
+                  type: "metricValue",
+                  metricId: metricGroup.metricId,
+                  valueFormatter: (val) => Number(val).toFixed(1),
+                  chartOptions: {
+                    showTitle: true,
+                  },
+                  valueLabel: "g/m²",
+                  colStyle: { textAlign: "center" },
+                  width: 40,
+                },
+                {
+                  columnLabel: mapLabel,
+                  type: "layerToggle",
+                  width: 10,
+                },
+              ]}
+            />
+
             <Collapse title={t("Show By Family")}>
               <ClassTable
                 rows={averageMetrics.filter(
@@ -104,39 +135,6 @@ export const FishBiomass: React.FunctionComponent = () => {
                     valueLabel: "g/m²",
                     colStyle: { textAlign: "center" },
                     width: 50,
-                  },
-                  {
-                    columnLabel: mapLabel,
-                    type: "layerToggle",
-                    width: 10,
-                  },
-                ]}
-              />
-            </Collapse>
-
-            <Collapse title={t("Show By Trophic Group")}>
-              <ClassTable
-                rows={averageMetrics.filter((m) =>
-                  trophicGroups.includes(m.classId),
-                )}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: trophicLabel,
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: averageLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) => Number(val).toFixed(1),
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    valueLabel: "g/m²",
-                    colStyle: { textAlign: "center" },
-                    width: 40,
                   },
                   {
                     columnLabel: mapLabel,

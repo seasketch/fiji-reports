@@ -20,6 +20,7 @@ import { DistanceToShore } from "../components/DistanceToShore.js";
 import { Sites } from "../components/Sites.js";
 import { FishDensity } from "../components/FishDensity.js";
 import { FishBiomass } from "../components/FishBiomass.js";
+import { JuvenileCoralDensity } from "../components/JuvenileCoralDensity.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -51,6 +52,7 @@ const BaseReport = () => {
         <Sites />
         <FishDensity />
         <FishBiomass />
+        <JuvenileCoralDensity />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <Depth />

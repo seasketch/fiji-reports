@@ -17,33 +17,24 @@ import { MetricGroup } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
 
-const trophicGroups = [
-  "Herbivore/Detritivore",
-  "Lower-carnivore",
-  "Planktivore",
-  "Shark",
-  "Top-predator",
-];
-
 /**
- * FishDensity component
+ * JuvenileCoralDensity component
  */
-export const FishDensity: React.FunctionComponent = () => {
+export const JuvenileCoralDensity: React.FunctionComponent = () => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
 
   // Metrics
-  const metricGroup = project.getMetricGroup("fishDensity", t);
+  const metricGroup = project.getMetricGroup("juvenileCoralDensity", t);
 
   // Labels
-  const titleLabel = t("Fish Density");
-  const fishLabel = t("Fish Family");
-  const trophicLabel = t("Trophic Group");
+  const titleLabel = t("Juvenile Coral Density");
+  const fishLabel = t("Coral Genus");
   const mapLabel = t("Map");
-  const averageLabel = t("Average Fish Density");
+  const averageLabel = t("Average Juvenile Coral Density");
 
   return (
-    <ResultsCard title={titleLabel} functionName="fishDensity">
+    <ResultsCard title={titleLabel} functionName="juvenileCoralDensity">
       {(data: Station[]) => {
         const averages = data.find((s) => s.station_id === "averages");
         const averageMetrics = averages
@@ -62,61 +53,24 @@ export const FishDensity: React.FunctionComponent = () => {
         return (
           <ReportError>
             <KeySection>
-              <Trans i18nKey="FishDensity 1">
+              <Trans i18nKey="JuvenileCoralDensity 1">
                 This plan has an average total fish density of{" "}
-                <Pill>
-                  {Number(averages?.total_fish_density).toFixed(1)} indv/m²
-                </Pill>
+                <Pill>{Number(averages?.total).toFixed(1)} indv/m²</Pill>
               </Trans>
             </KeySection>
 
             <LayerToggle
               layerId={
                 metricGroup.classes.find(
-                  (curClass) => curClass.classId === "total_fish_density",
+                  (curClass) => curClass.classId === "total",
                 )?.layerId
               }
-              label="Show Total Fish Density On Map"
+              label="Show Total Juvenile Coral Density On Map"
             />
 
-            <ClassTable
-              rows={averageMetrics.filter((m) =>
-                trophicGroups.includes(m.classId),
-              )}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: trophicLabel,
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: averageLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (val) => Number(val).toFixed(1),
-                  chartOptions: {
-                    showTitle: true,
-                  },
-                  valueLabel: "indv/m²",
-                  colStyle: { textAlign: "center" },
-                  width: 40,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
-
-            <Collapse title={t("Show By Family")}>
+            <Collapse title={t("Show By Coral Genus")}>
               <ClassTable
-                rows={averageMetrics.filter(
-                  (m) =>
-                    m.classId !== "total_fish_density" &&
-                    !trophicGroups.includes(m.classId),
-                )}
+                rows={averageMetrics.filter((m) => m.classId !== "total")}
                 metricGroup={metricGroup}
                 columnConfig={[
                   {
@@ -168,16 +122,16 @@ export const FishDensity: React.FunctionComponent = () => {
             )}
 
             <Collapse title={t("Learn More")}>
-              <Trans i18nKey="FishDensity - learn more">
+              <Trans i18nKey="JuvenileCoralDensity - learn more">
                 <p>
-                  ℹ️ Overview: Total fish density, by site, from the Fiji
+                  ℹ️ Overview: Juvenile coral density, by site, from the Fiji
                   expedition.
                 </p>
                 <p>🗺️ Source Data: Fiji Expedition</p>
                 <p>
-                  📈 Report: This report calculates the average fish density
-                  within the plan by averaging the fish density results of
-                  individual dive sites within the area.
+                  📈 Report: This report calculates the average juvenile coral
+                  density within the plan by averaging the juvenile coral
+                  density results of individual dive sites within the area.
                 </p>
               </Trans>
             </Collapse>

@@ -1343,5 +1343,86 @@
         "layerId": "rgiD8Gz9q"
       }
     ]
+  },
+  {
+    "metricId": "juvenileCoralDensity",
+    "type": "countOverlap",
+    "datasourceId": "juvenile_coral_density",
+    "classes": [
+      {
+        "classId": "total",
+        "display": "Total",
+        "layerId": "2bBD55NP8"
+      },
+      {
+        "classId": "Acanth",
+        "display": "Acanthastrea",
+        "layerId": "kNNaoKoe6"
+      },
+      {
+        "classId": "Acro",
+        "display": "Acropora",
+        "layerId": "27m5DUk3O"
+      },
+      { "classId": "Astreo", "display": "Astreopora", "layerId": "_niido8pv" },
+      { "classId": "Caulas", "display": "Caulastrea", "layerId": "Od4GrZ0p1" },
+      {
+        "classId": "Cmorph",
+        "display": "Echinomorpha",
+        "layerId": "bq20TVriu"
+      },
+      { "classId": "Cyclos", "display": "Cycloseris", "layerId": "JGCZANn6j" },
+      { "classId": "Cyphas", "display": "Cyphastrea", "layerId": "UYyH0LLla" },
+      { "classId": "Diploa", "display": "Diploastrea", "layerId": "Q_Gkw3CCr" },
+      { "classId": "Echinop", "display": "Echinopora", "layerId": "Vq4MAkvSq" },
+      {
+        "classId": "Ecnphyl",
+        "display": "Echinophyllia",
+        "layerId": "s8zZhyWE8"
+      },
+      { "classId": "Euphyl", "display": "Euphyllia", "layerId": "CLrtQbMY7" },
+      { "classId": "Favia", "display": "Dipsastrea", "layerId": "oru6Un3Sy" },
+      { "classId": "Favite", "display": "Favites", "layerId": "zzBREMN8y" },
+      { "classId": "Fire", "display": "Millepora", "layerId": "GM7cfEVNM" },
+      { "classId": "Fungia", "display": "Fungia", "layerId": "jOYlEkwXs" },
+      { "classId": "Galaxe", "display": "Galaxea", "layerId": "xqEjx3iuz" },
+      {
+        "classId": "Gardin",
+        "display": "Gardineroseris",
+        "layerId": "GAVk7YLCM"
+      },
+      { "classId": "Gonias", "display": "Goniastrea", "layerId": "KNvcTxAgy" },
+      { "classId": "Hydnop", "display": "Hydnophora", "layerId": "vvGBlRPwy" },
+      { "classId": "Isopor", "display": "Isopora", "layerId": "s0mp2E65c" },
+      { "classId": "Lepta", "display": "Leptastrea", "layerId": "RrdJ2QP2j" },
+      { "classId": "Leptor", "display": "Leptoria", "layerId": "YJ4TeJpeb" },
+      { "classId": "Leptos", "display": "Leptoseris", "layerId": "yFlmieGNp" },
+      { "classId": "Lobo", "display": "Lobophyllia", "layerId": "lynYBccMa" },
+      { "classId": "Meruli", "display": "Merulina", "layerId": "LewgW863v" },
+      { "classId": "Montas", "display": "Astrea", "layerId": "JsFdtxN50" },
+      { "classId": "Monti", "display": "Montipora", "layerId": "T60fiAaMR" },
+      { "classId": "Mycedi", "display": "Mycedium", "layerId": "QlQNGuPU7" },
+      { "classId": "Pachys", "display": "Pachyseris", "layerId": "rvQflxpR3" },
+      { "classId": "Pavo", "display": "Pavona", "layerId": "Yvu6QR4Xk" },
+      { "classId": "Pectin", "display": "Pectinia", "layerId": "nQa7l8d_1" },
+      { "classId": "Platyg", "display": "Platygyra", "layerId": "8Czh7bbif" },
+      { "classId": "Pocill", "display": "Pocillopora", "layerId": "bcTVH57Lv" },
+      { "classId": "Porit", "display": "Porites", "layerId": "R9MZY441h" },
+      { "classId": "Psammo", "display": "Psammocora", "layerId": "IYuEPrBdF" },
+      {
+        "classId": "Sandal",
+        "display": "Sandalolitha",
+        "layerId": "Ys3O4wlQ0"
+      },
+      { "classId": "Seriat", "display": "Seriatopora", "layerId": "J08eTzPHV" },
+      {
+        "classId": "Sponge",
+        "display": "Cantharellus",
+        "layerId": "KAqx8ggqx"
+      },
+      { "classId": "Stylop", "display": "Stylophora", "layerId": "5oHFiX65l" },
+      { "classId": "Symphy", "display": "Symphyllia", "layerId": "2pLkITifq" },
+      { "classId": "Turbin", "display": "Turbinaria", "layerId": "GTvbAqQnG" }
+    ]
   }
 ]

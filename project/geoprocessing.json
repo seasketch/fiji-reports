@@ -24,6 +24,7 @@
     "src/functions/distanceToShore.ts",
     "src/functions/sites.ts",
     "src/functions/fishDensity.ts",
-    "src/functions/fishBiomass.ts"
+    "src/functions/fishBiomass.ts",
+    "src/functions/juvenileCoralDensity.ts"
   ]
 }
