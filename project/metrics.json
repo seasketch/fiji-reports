@@ -1471,5 +1471,192 @@
         "layerId": "dqiihBKBm"
       }
     ]
+  },
+  {
+    "metricId": "invertPresence",
+    "type": "countOverlap",
+    "datasourceId": "invert_presence",
+    "classes": [
+      {
+        "classId": "Tridacna sp",
+        "display": "Tridacna sp.",
+        "layerId": "qFvKXFcsC"
+      },
+      {
+        "classId": "Tridacna mbalavuana",
+        "display": "Tridacna mbalavuana",
+        "layerId": "E9GLeIfL7"
+      },
+      {
+        "classId": "Tridacna crocea",
+        "display": "Tridacna crocea",
+        "layerId": "1Imu8lD8k"
+      },
+      {
+        "classId": "Tridacna squamosa",
+        "display": "Tridacna squamosa",
+        "layerId": "KH0ftydJM"
+      },
+      {
+        "classId": "Tridacna maxima",
+        "display": "Tridacna maxima",
+        "layerId": "8fPrFj6TE"
+      },
+      {
+        "classId": "Tridacna gigas",
+        "display": "Tridacna gigas",
+        "layerId": "BkB206H9c"
+      },
+      {
+        "classId": "Tridacna derasa",
+        "display": "Tridacna derasa",
+        "layerId": "P5YzE1SuD"
+      },
+      {
+        "classId": "Octopus sp",
+        "display": "Octopus sp.",
+        "layerId": "wrI9zyLhP"
+      },
+      {
+        "classId": "Octopus cyanea",
+        "display": "Octopus cyanea",
+        "layerId": "ezgsnSEzN"
+      },
+      {
+        "classId": "Panulirus versicolor",
+        "display": "Panulirus versicolor",
+        "layerId": "Oa6j6kqWp"
+      },
+      {
+        "classId": "Turbo marmoratus",
+        "display": "Turbo marmoratus",
+        "layerId": "caRCx82fg"
+      },
+      {
+        "classId": "Charonia tritonis",
+        "display": "Charonia tritonis",
+        "layerId": "RhLQt6Rz8"
+      },
+      {
+        "classId": "Rochia nilotica",
+        "display": "Rochia nilotica",
+        "layerId": "_ljAPEAaq"
+      },
+      {
+        "classId": "Thelenota anax",
+        "display": "Thelenota anax",
+        "layerId": "TmVtk20aH"
+      },
+      {
+        "classId": "Thelenota ananas",
+        "display": "Thelenota ananas",
+        "layerId": "lNI4e6d_x"
+      },
+      {
+        "classId": "Stichopus vastus",
+        "display": "Stichopus vastus",
+        "layerId": "RoMGqlz5B"
+      },
+      {
+        "classId": "Stichopus hermannii",
+        "display": "Stichopus hermannii",
+        "layerId": "OyVRb1Vm2"
+      },
+      {
+        "classId": "Stichopus chloronatus",
+        "display": "Stichopus chloronatus",
+        "layerId": "0uJlt0Hdo"
+      },
+      {
+        "classId": "Holothuria whitmaei",
+        "display": "Holothuria whitmaei",
+        "layerId": "SPeX4JCwo"
+      },
+      {
+        "classId": "Holothuria fuscogilva",
+        "display": "Holothuria fuscogilva",
+        "layerId": "OS2cuBoru"
+      },
+      {
+        "classId": "Holothuria edulis",
+        "display": "Holothuria edulis",
+        "layerId": "xZYfzsFa7"
+      },
+      {
+        "classId": "Holothuria atra",
+        "display": "Holothuria atra",
+        "layerId": "fwztEQAyf"
+      },
+      {
+        "classId": "Bohadschia vitiensis",
+        "display": "Bohadschia vitiensis",
+        "layerId": "LAj2IrVyB"
+      },
+      {
+        "classId": "Actinopyga palauensis",
+        "display": "Actinopyga palauensis",
+        "layerId": "swD50SzDJ"
+      },
+      {
+        "classId": "Actinopyga miliaris",
+        "display": "Actinopyga miliaris",
+        "layerId": "VumTeESYc"
+      },
+      {
+        "classId": "Actinopyga mauritiana",
+        "display": "Actinopyga mauritiana",
+        "layerId": "KaZZwIfGN"
+      },
+      {
+        "classId": "Actinopyga lecanora",
+        "display": "Actinopyga lecanora",
+        "layerId": "q5X632S5J"
+      },
+      {
+        "classId": "Actinopyga echinites",
+        "display": "Actinopyga echinites",
+        "layerId": "E0qoDlUFf"
+      },
+      {
+        "classId": "Pearsonothuria graeffei",
+        "display": "Pearsonothuria graeffei",
+        "layerId": "rO0lO_wAj"
+      },
+      {
+        "classId": "Holothuria fuscopunctata",
+        "display": "Holothuria fuscopunctata",
+        "layerId": "cCyJ72vKe"
+      },
+      {
+        "classId": "Bohadschia argus",
+        "display": "Bohadschia argus",
+        "layerId": "F_7vBpZ2K"
+      },
+      {
+        "classId": "Culcita novaeguineae",
+        "display": "Culcita novaeguineae",
+        "layerId": "aXiEXXMiQ"
+      },
+      {
+        "classId": "Acanthaster planci",
+        "display": "Acanthaster planci",
+        "layerId": "xdTRrp48i"
+      },
+      {
+        "classId": "Echinostrephus aciculatus",
+        "display": "Echinostrephus aciculatus",
+        "layerId": "MxotfXYYM"
+      },
+      {
+        "classId": "Echinometra mathaei",
+        "display": "Echinometra mathaei",
+        "layerId": "_uAVNDyZR"
+      },
+      {
+        "classId": "Diadema setosum",
+        "display": "Diadema setosum",
+        "layerId": "2eIk9Zl8s"
+      }
+    ]
   }
 ]

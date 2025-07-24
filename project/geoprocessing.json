@@ -26,6 +26,7 @@
     "src/functions/fishDensity.ts",
     "src/functions/fishBiomass.ts",
     "src/functions/juvenileCoralDensity.ts",
-    "src/functions/benthicCover.ts"
+    "src/functions/benthicCover.ts",
+    "src/functions/invertPresence.ts"
   ]
 }
