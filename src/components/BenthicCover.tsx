@@ -4,16 +4,19 @@ import {
   ClassTable,
   Collapse,
   Column,
+  DataDownload,
   LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTableStyled,
   Table,
+  ToolbarCard,
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
 import { MetricGroup } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
  * BenthicCover component
@@ -31,7 +34,7 @@ export const BenthicCover: React.FunctionComponent = () => {
   const averageLabel = t("Average Benthic Cover %");
 
   return (
-    <ResultsCard title={titleLabel} functionName="benthicCover">
+    <ResultsCard title={titleLabel} functionName="benthicCover" useChildCard>
       {(data: Station[]) => {
         const averages = data.find((s) => s.station_id === "averages");
         const averageMetrics = averages
@@ -49,86 +52,107 @@ export const BenthicCover: React.FunctionComponent = () => {
 
         return (
           <ReportError>
-            <Trans i18nKey="BenthicCover 1">
-              This report estimates the percentage of benthic habitats within
-              this area of interest.
-            </Trans>
-
-            <LayerToggle
-              layerId={
-                metricGroup.classes.find(
-                  (curClass) => curClass.classId === "total",
-                )?.layerId
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <>
+                  <DataDownload
+                    filename="BenthicCover"
+                    data={data}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                </>
               }
-              label="Show Total Fish Biomass On Map"
-            />
+            >
+              <Trans i18nKey="BenthicCover 1">
+                This report estimates the percentage of benthic habitats within
+                this area of interest.
+              </Trans>
 
-            <ClassTable
-              rows={averageMetrics}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: titleLabel,
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: averageLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (value) =>
-                    (typeof value === "number" ? value.toFixed(2) : value) +
-                    "%",
-                  chartOptions: {
-                    showTitle: true,
+              <LayerToggle
+                layerId={
+                  metricGroup.classes.find(
+                    (curClass) => curClass.classId === "total",
+                  )?.layerId
+                }
+                label="Show Total Fish Biomass On Map"
+              />
+
+              <ClassTable
+                rows={averageMetrics}
+                metricGroup={metricGroup}
+                columnConfig={[
+                  {
+                    columnLabel: titleLabel,
+                    type: "class",
+                    width: 30,
                   },
-                  colStyle: { textAlign: "center" },
-                  width: 40,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: averageLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: (value) =>
+                      (typeof value === "number" ? value.toFixed(2) : value) +
+                      "%",
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    colStyle: { textAlign: "center" },
+                    width: 40,
+                  },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            <Collapse title={t("Show by Station")}>
-              {genSketchTable(
-                data.filter(
-                  (s) => s.station_id && s.station_id.startsWith("station:"),
-                ),
-                metricGroup,
-                t,
-              )}
-            </Collapse>
-
-            {isCollection && (
-              <Collapse title={t("Show by Sketch")}>
+              <Collapse title={t("Show by Station")}>
                 {genSketchTable(
                   data.filter(
-                    (s) => s.station_id && s.station_id.startsWith("sketch:"),
+                    (s) => s.station_id && s.station_id.startsWith("station:"),
                   ),
                   metricGroup,
                   t,
                 )}
               </Collapse>
-            )}
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="FishBiomass - learn more">
-                <p>
-                  ℹ️ Overview: Total fish biomass, by site, from the Fiji
-                  expedition.
-                </p>
-                <p>🗺️ Source Data: Fiji Expedition</p>
-                <p>
-                  📈 Report: This report calculates the average fish biomass
-                  within the plan by averaging the fish biomass results of
-                  individual dive sites within the area.
-                </p>
-              </Trans>
-            </Collapse>
+              {isCollection && (
+                <Collapse title={t("Show by Sketch")}>
+                  {genSketchTable(
+                    data.filter(
+                      (s) => s.station_id && s.station_id.startsWith("sketch:"),
+                    ),
+                    metricGroup,
+                    t,
+                  )}
+                </Collapse>
+              )}
+
+              <Collapse title={t("Learn More")}>
+                <Trans i18nKey="FishBiomass - learn more">
+                  <p>
+                    ℹ️ Overview: Total fish biomass, by site, from the Fiji
+                    expedition.
+                  </p>
+                  <p>🗺️ Source Data: Fiji Expedition</p>
+                  <p>
+                    📈 Report: This report calculates the average fish biomass
+                    within the plan by averaging the fish biomass results of
+                    individual dive sites within the area.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ToolbarCard>
           </ReportError>
         );
       }}

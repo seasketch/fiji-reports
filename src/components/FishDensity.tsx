@@ -12,10 +12,13 @@ import {
   SketchClassTableStyled,
   Table,
   useSketchProperties,
+  ToolbarCard,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import { MetricGroup } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 const trophicGroups = [
   "Herbivore/Detritivore",
@@ -43,7 +46,7 @@ export const FishDensity: React.FunctionComponent = () => {
   const averageLabel = t("Average Fish Density");
 
   return (
-    <ResultsCard title={titleLabel} functionName="fishDensity">
+    <ResultsCard title={titleLabel} functionName="fishDensity" useChildCard>
       {(data: Station[]) => {
         const averages = data.find((s) => s.station_id === "averages");
         const averageMetrics = averages
@@ -61,68 +64,52 @@ export const FishDensity: React.FunctionComponent = () => {
 
         return (
           <ReportError>
-            <KeySection>
-              <Trans i18nKey="FishDensity 1">
-                This plan has an average total fish density of{" "}
-                <Pill>
-                  {Number(averages?.total_fish_density).toFixed(1)} indv/m²
-                </Pill>
-              </Trans>
-            </KeySection>
-
-            <LayerToggle
-              layerId={
-                metricGroup.classes.find(
-                  (curClass) => curClass.classId === "total_fish_density",
-                )?.layerId
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <DataDownload
+                  filename="FishDensity"
+                  data={data}
+                  formats={["csv", "json"]}
+                  placement="left-start"
+                  titleElement={
+                    <Download
+                      size={18}
+                      color="#999"
+                      style={{ cursor: "pointer" }}
+                    />
+                  }
+                />
               }
-              label="Show Total Fish Density On Map"
-            />
+            >
+              <KeySection>
+                <Trans i18nKey="FishDensity 1">
+                  This plan has an average total fish density of{" "}
+                  <Pill>
+                    {Number(averages?.total_fish_density).toFixed(1)} indv/m²
+                  </Pill>
+                </Trans>
+              </KeySection>
 
-            <ClassTable
-              rows={averageMetrics.filter((m) =>
-                trophicGroups.includes(m.classId),
-              )}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: trophicLabel,
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: averageLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (val) => Number(val).toFixed(1),
-                  chartOptions: {
-                    showTitle: true,
-                  },
-                  valueLabel: "indv/m²",
-                  colStyle: { textAlign: "center" },
-                  width: 40,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+              <LayerToggle
+                layerId={
+                  metricGroup.classes.find(
+                    (curClass) => curClass.classId === "total_fish_density",
+                  )?.layerId
+                }
+                label="Show Total Fish Density On Map"
+              />
 
-            <Collapse title={t("Show By Family")}>
               <ClassTable
-                rows={averageMetrics.filter(
-                  (m) =>
-                    m.classId !== "total_fish_density" &&
-                    !trophicGroups.includes(m.classId),
+                rows={averageMetrics.filter((m) =>
+                  trophicGroups.includes(m.classId),
                 )}
                 metricGroup={metricGroup}
                 columnConfig={[
                   {
-                    columnLabel: fishLabel,
+                    columnLabel: trophicLabel,
                     type: "class",
-                    width: 20,
+                    width: 30,
                   },
                   {
                     columnLabel: averageLabel,
@@ -134,7 +121,7 @@ export const FishDensity: React.FunctionComponent = () => {
                     },
                     valueLabel: "indv/m²",
                     colStyle: { textAlign: "center" },
-                    width: 50,
+                    width: 40,
                   },
                   {
                     columnLabel: mapLabel,
@@ -143,44 +130,79 @@ export const FishDensity: React.FunctionComponent = () => {
                   },
                 ]}
               />
-            </Collapse>
 
-            <Collapse title={t("Show by Station")}>
-              {genSketchTable(
-                data.filter(
-                  (s) => s.station_id && s.station_id.startsWith("station:"),
-                ),
-                metricGroup,
-                t,
-              )}
-            </Collapse>
+              <Collapse title={t("Show By Family")}>
+                <ClassTable
+                  rows={averageMetrics.filter(
+                    (m) =>
+                      m.classId !== "total_fish_density" &&
+                      !trophicGroups.includes(m.classId),
+                  )}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: fishLabel,
+                      type: "class",
+                      width: 20,
+                    },
+                    {
+                      columnLabel: averageLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val) => Number(val).toFixed(1),
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      valueLabel: "indv/m²",
+                      colStyle: { textAlign: "center" },
+                      width: 50,
+                    },
+                    {
+                      columnLabel: mapLabel,
+                      type: "layerToggle",
+                      width: 10,
+                    },
+                  ]}
+                />
+              </Collapse>
 
-            {isCollection && (
-              <Collapse title={t("Show by Sketch")}>
+              <Collapse title={t("Show by Station")}>
                 {genSketchTable(
                   data.filter(
-                    (s) => s.station_id && s.station_id.startsWith("sketch:"),
+                    (s) => s.station_id && s.station_id.startsWith("station:"),
                   ),
                   metricGroup,
                   t,
                 )}
               </Collapse>
-            )}
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="FishDensity - learn more">
-                <p>
-                  ℹ️ Overview: Total fish density, by site, from the Fiji
-                  expedition.
-                </p>
-                <p>🗺️ Source Data: Fiji Expedition</p>
-                <p>
-                  📈 Report: This report calculates the average fish density
-                  within the plan by averaging the fish density results of
-                  individual dive sites within the area.
-                </p>
-              </Trans>
-            </Collapse>
+              {isCollection && (
+                <Collapse title={t("Show by Sketch")}>
+                  {genSketchTable(
+                    data.filter(
+                      (s) => s.station_id && s.station_id.startsWith("sketch:"),
+                    ),
+                    metricGroup,
+                    t,
+                  )}
+                </Collapse>
+              )}
+
+              <Collapse title={t("Learn More")}>
+                <Trans i18nKey="FishDensity - learn more">
+                  <p>
+                    ℹ️ Overview: Total fish density, by site, from the Fiji
+                    expedition.
+                  </p>
+                  <p>🗺️ Source Data: Fiji Expedition</p>
+                  <p>
+                    📈 Report: This report calculates the average fish density
+                    within the plan by averaging the fish density results of
+                    individual dive sites within the area.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ToolbarCard>
           </ReportError>
         );
       }}

@@ -3,12 +3,12 @@ import { Trans, useTranslation } from "react-i18next";
 import {
   ClassTable,
   Collapse,
-  LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTable,
-  ToolbarCard,
   useSketchProperties,
+  ToolbarCard,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   GeogProp,
@@ -19,17 +19,17 @@ import {
   flattenBySketchAllClass,
   metricsWithSketchId,
   roundDecimalFormat,
+  sortMetrics,
   squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
- * Deepwater Bioregions report
+ * Geomorphology report
  */
-export const DeepwaterBioregionsCard: React.FunctionComponent<GeogProp> = (
-  props,
-) => {
+export const Geomorphology: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -37,7 +37,7 @@ export const DeepwaterBioregionsCard: React.FunctionComponent<GeogProp> = (
   });
 
   // Metrics
-  const metricGroup = project.getMetricGroup("deepwaterBioregions", t);
+  const metricGroup = project.getMetricGroup("geomorphology", t);
   const precalcMetrics = project.getPrecalcMetrics(
     metricGroup,
     "area",
@@ -45,16 +45,16 @@ export const DeepwaterBioregionsCard: React.FunctionComponent<GeogProp> = (
   );
 
   // Labels
-  const titleLabel = t("Deepwater Bioregions");
+  const titleLabel = t("Geomorphology");
+  const mapLabel = t("Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
   const unitsLabel = t("km²");
-  const mapLabel = t("Show on Map");
 
   return (
     <ResultsCard
       title={titleLabel}
-      functionName="deepwaterBioregions"
+      functionName="geomorphology"
       extraParams={{ geographyIds: [curGeography.geographyId] }}
       useChildCard
     >
@@ -84,29 +84,37 @@ export const DeepwaterBioregionsCard: React.FunctionComponent<GeogProp> = (
             <ToolbarCard
               title={titleLabel}
               items={
-                <LayerToggle
-                  layerId={metricGroup.layerId}
-                  label={mapLabel}
-                  simple
+                <DataDownload
+                  filename="Geomorphology"
+                  data={data.metrics}
+                  formats={["csv", "json"]}
+                  placement="left-start"
+                  titleElement={
+                    <Download
+                      size={18}
+                      color="#999"
+                      style={{ cursor: "pointer" }}
+                    />
+                  }
                 />
               }
             >
               <p>
-                <Trans i18nKey="DeepwaterBioregionsCard 1">
-                  This report summarizes this plan's overlap with Fiji's
-                  deepwater bioregions.
+                <Trans i18nKey="Geomorphology 1">
+                  This report summarizes this plan's overlap with geomorphic
+                  features in Fiji's EEZ.
                 </Trans>
               </p>
 
               <ClassTable
-                rows={metrics}
+                rows={sortMetrics(metrics, ["groupId"])}
                 metricGroup={metricGroup}
                 objective={objectives}
                 columnConfig={[
                   {
-                    columnLabel: titleLabel,
+                    columnLabel: " ",
                     type: "class",
-                    width: 55,
+                    width: 30,
                   },
                   {
                     columnLabel: withinLabel,
@@ -130,6 +138,11 @@ export const DeepwaterBioregionsCard: React.FunctionComponent<GeogProp> = (
                     },
                     width: 40,
                   },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
                 ]}
               />
 
@@ -145,29 +158,7 @@ export const DeepwaterBioregionsCard: React.FunctionComponent<GeogProp> = (
               )}
 
               <Collapse title={t("Learn More")}>
-                <Trans i18nKey="DeepwaterBioregionsCard - learn more">
-                  <p>
-                    ℹ️ Overview: Thirty, mainly physical, environmental
-                    variables were assessed to be adequately comprehensive and
-                    reliable to be included in the analysis. These data were
-                    allocated to over 140,000 grid cells of 20x20 km across the
-                    Southwest Pacific. K-means and then hierarchical cluster
-                    analyses were then conducted to identify groups of
-                    analytical units that contained similar environmental
-                    conditions. The number of clusters was determined by
-                    examining the dendrogram and setting a similarity value that
-                    aligned with a natural break in similarity.
-                  </p>
-                  <p>
-                    See the report{" "}
-                    <a
-                      href="http://macbio-pacific.info/wp-content/uploads/2018/03/MACBIO-Bioregions-Report_Digital.pdf"
-                      target="_blank"
-                    >
-                      here
-                    </a>
-                    .
-                  </p>
+                <Trans i18nKey="Geomorphology - learn more">
                   <p>
                     🗺️ Source Data:{" "}
                     <a
@@ -179,12 +170,12 @@ export const DeepwaterBioregionsCard: React.FunctionComponent<GeogProp> = (
                   </p>
                   <p>
                     📈 Report: This report calculates the total area of each
-                    deepwater bioregion within the plan. This value is divided
-                    by the total area of each deepwater bioregion to obtain the
-                    % contained within the plan. Overlap of sketches is not
-                    handled, and overlapping areas will be double counted if
-                    drawn. Reach out to the developers if sketch overlap needs
-                    to be accounted for.
+                    geomorphological feature within the plan. This value is
+                    divided by the total area of each geomorphological feature
+                    to obtain the % contained within the plan. Overlap of
+                    sketches is not handled, and overlapping areas will be
+                    double counted if drawn. Reach out to the developers if
+                    sketch overlap needs to be accounted for.
                   </p>
                 </Trans>
               </Collapse>

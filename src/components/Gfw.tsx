@@ -7,6 +7,8 @@ import {
   ResultsCard,
   SketchClassTable,
   useSketchProperties,
+  ToolbarCard,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   flattenBySketchAllClass,
@@ -20,6 +22,7 @@ import {
 } from "@seasketch/geoprocessing/client-core";
 import projectClient from "../../project/projectClient.js";
 import { GfwLineChart } from "./GfwLineChart.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
  * Gfw component
@@ -43,7 +46,7 @@ export const Gfw: React.FunctionComponent<GeogProp> = (props) => {
   );
 
   return (
-    <ResultsCard title={titleLabel} functionName="gfw">
+    <ResultsCard title={titleLabel} functionName="gfw" useChildCard>
       {(data: ReportResult) => {
         const percMetricIdName = `${metricGroup.metricId}Perc`;
 
@@ -62,63 +65,87 @@ export const Gfw: React.FunctionComponent<GeogProp> = (props) => {
 
         return (
           <ReportError>
-            <p>
-              <Trans i18nKey="Gfw 1">
-                This report summarizes the percentage of fishing effort
-                contained within this plan from 2018-2024, based on data from
-                Global Fishing Watch.
-              </Trans>
-            </p>
-
-            <LayerToggle
-              label={mapLabel}
-              layerId={
-                metricGroup.classes.find(
-                  (curClass) => curClass.classId === "2024",
-                )?.layerId
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <DataDownload
+                  filename="Gfw"
+                  data={data.metrics}
+                  formats={["csv", "json"]}
+                  placement="left-start"
+                  titleElement={
+                    <Download
+                      size={18}
+                      color="#999"
+                      style={{ cursor: "pointer" }}
+                    />
+                  }
+                />
               }
-            />
-
-            {data.metrics.some((d) => d.value !== 0) ? (
-              <GfwLineChart data={percentLineData} />
-            ) : (
-              <p
-                style={{ color: "#888", fontStyle: "italic", margin: "20px 0" }}
-              >
-                No fishing effort in plan
+            >
+              <p>
+                <Trans i18nKey="Gfw 1">
+                  This report summarizes the percentage of fishing effort
+                  contained within this plan from 2018-2024, based on data from
+                  Global Fishing Watch.
+                </Trans>
               </p>
-            )}
 
-            {isCollection && childProperties && (
-              <Collapse title={t("Show by Sketch")}>
-                {genSketchTable(
-                  data,
-                  metricGroup,
-                  precalcMetrics,
-                  childProperties,
-                )}
+              <LayerToggle
+                label={mapLabel}
+                layerId={
+                  metricGroup.classes.find(
+                    (curClass) => curClass.classId === "2024",
+                  )?.layerId
+                }
+              />
+
+              {data.metrics.some((d) => d.value !== 0) ? (
+                <GfwLineChart data={percentLineData} />
+              ) : (
+                <p
+                  style={{
+                    color: "#888",
+                    fontStyle: "italic",
+                    margin: "20px 0",
+                  }}
+                >
+                  No fishing effort in plan
+                </p>
+              )}
+
+              {isCollection && childProperties && (
+                <Collapse title={t("Show by Sketch")}>
+                  {genSketchTable(
+                    data,
+                    metricGroup,
+                    precalcMetrics,
+                    childProperties,
+                  )}
+                </Collapse>
+              )}
+
+              <Collapse title={t("Learn More")}>
+                <Trans i18nKey="Gfw - learn more">
+                  <p>
+                    ℹ️ Overview: Global Fishing Watch's apparent fishing effort
+                    is based on transmissions broadcast using the automatic
+                    identification system (AIS). After identifying fishing
+                    vessels and detecting fishing positions in the AIS data,
+                    apparent fishing effort is calculated for any area by
+                    summarizing the fishing hours for all fishing vessels in
+                    that area.
+                  </p>
+                  <p>🗺️ Source Data: Global Fishing Watch</p>
+                  <p>
+                    📈 Report: This report calculates the sum of apparent
+                    fishing effort within the plan. This value is divided by the
+                    total sum of apparent fishing effort to obtain the %
+                    contained within the plan.
+                  </p>
+                </Trans>
               </Collapse>
-            )}
-
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="Gfw - learn more">
-                <p>
-                  ℹ️ Overview: Global Fishing Watch's apparent fishing effort is
-                  based on transmissions broadcast using the automatic
-                  identification system (AIS). After identifying fishing vessels
-                  and detecting fishing positions in the AIS data, apparent
-                  fishing effort is calculated for any area by summarizing the
-                  fishing hours for all fishing vessels in that area.
-                </p>
-                <p>🗺️ Source Data: Global Fishing Watch</p>
-                <p>
-                  📈 Report: This report calculates the sum of apparent fishing
-                  effort within the plan. This value is divided by the total sum
-                  of apparent fishing effort to obtain the % contained within
-                  the plan.
-                </p>
-              </Trans>
-            </Collapse>
+            </ToolbarCard>
           </ReportError>
         );
       }}

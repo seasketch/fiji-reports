@@ -8,11 +8,14 @@ import {
   LayerToggle,
   VerticalSpacer,
   SketchClassTable,
+  ReportError,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import { BathymetryResults } from "../functions/bathymetry.js";
 import { Trans, useTranslation } from "react-i18next";
 import projectClient from "../../project/projectClient.js";
 import { MetricGroup } from "@seasketch/geoprocessing";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 const formatDepth = (val: number) => {
   if (!val || val > 0) return "0m";
@@ -24,8 +27,8 @@ export const Depth: React.FunctionComponent = () => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const mg = projectClient.getMetricGroup("bathymetry", t);
-  const mapLabel = t("Show On Map");
   const title = t("Depth");
+  const mapLabel = t("Show On Map");
 
   return (
     <div style={{ breakInside: "avoid" }}>
@@ -36,53 +39,70 @@ export const Depth: React.FunctionComponent = () => {
             : data[0];
 
           return (
-            <ToolbarCard
-              title={title}
-              items={[
-                <LayerToggle layerId={mg.layerId} label={mapLabel} simple />,
-              ]}
-            >
-              <VerticalSpacer />
-              <KeySection
-                style={{ display: "flex", justifyContent: "space-around" }}
+            <ReportError>
+              <ToolbarCard
+                title={title}
+                items={
+                  <>
+                    <LayerToggle layerId={mg.layerId} label={mapLabel} simple />
+                    <DataDownload
+                      filename="Depth"
+                      data={data}
+                      formats={["csv", "json"]}
+                      placement="left-start"
+                      titleElement={
+                        <Download
+                          size={18}
+                          color="#999"
+                          style={{ cursor: "pointer" }}
+                        />
+                      }
+                    />
+                  </>
+                }
               >
-                <span>
-                  {t("Min")}:{" "}
-                  <b>
-                    {overallStats ? formatDepth(overallStats.max) : t("N/A")}
-                  </b>
-                </span>
-                {overallStats && overallStats?.mean ? (
+                <VerticalSpacer />
+                <KeySection
+                  style={{ display: "flex", justifyContent: "space-around" }}
+                >
                   <span>
-                    {t("Avg")}: <b>{formatDepth(overallStats.mean)}</b>
+                    {t("Min")}:{" "}
+                    <b>
+                      {overallStats ? formatDepth(overallStats.max) : t("N/A")}
+                    </b>
                   </span>
-                ) : (
-                  <></>
+                  {overallStats && overallStats?.mean ? (
+                    <span>
+                      {t("Avg")}: <b>{formatDepth(overallStats.mean)}</b>
+                    </span>
+                  ) : (
+                    <></>
+                  )}
+                  <span>
+                    {t("Max")}:{" "}
+                    <b>
+                      {overallStats ? formatDepth(overallStats.min) : t("N/A")}
+                    </b>
+                  </span>
+                </KeySection>
+
+                {isCollection && (
+                  <Collapse title={t("Show by MPA")}>
+                    {genBathymetryTable(data, mg)}
+                  </Collapse>
                 )}
-                <span>
-                  {t("Max")}:{" "}
-                  <b>
-                    {overallStats ? formatDepth(overallStats.min) : t("N/A")}
-                  </b>
-                </span>
-              </KeySection>
 
-              {isCollection && (
-                <Collapse title={t("Show by MPA")}>
-                  {genBathymetryTable(data, mg)}
+                <Collapse title={t("Learn More")}>
+                  <Trans i18nKey="Depth Card - Learn more">
+                    <p>🗺️ Source Data: GEBCO 2024</p>
+                    <p>
+                      📈 Report: Calculates the minimum, average, and maximum
+                      ocean depth within the selected MPA(s).
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="Depth Card - Learn more">
-                  <p>🗺️ Source Data: GEBCO 2024</p>
-                  <p>
-                    📈 Report: Calculates the minimum, average, and maximum
-                    ocean depth within the selected MPA(s).
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
+              </ToolbarCard>
+            </ReportError>
           );
         }}
       </ResultsCard>

@@ -15,6 +15,8 @@ import {
   Table,
   useSketchProperties,
   VerticalSpacer,
+  ToolbarCard,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import { select, scaleLinear, extent, geoTransform, geoPath, line } from "d3";
 import {
@@ -29,6 +31,7 @@ import landData from "../../data/bin/landShrunk.01.json" with { type: "json" };
 import ports from "../functions/ports.json" with { type: "json" };
 import { styled } from "styled-components";
 import { FuelCostEstimator } from "../util/FuelCostEstimator.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 interface DistanceToPortMapProps {
   sketch: Sketch<Polygon | MultiPolygon>[];
@@ -80,14 +83,35 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
 
   return (
     <ReportError>
-      <ResultsCard title={titleLabel} functionName="distanceToPort">
+      <ResultsCard
+        title={titleLabel}
+        functionName="distanceToPort"
+        useChildCard
+      >
         {(data: DistanceToPortMapProps) => {
           const furthestMpa = data.portDistances.reduce((prev, current) =>
             prev.distance > current.distance ? prev : current,
           );
 
           return (
-            <>
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <DataDownload
+                  filename="DistanceToPort"
+                  data={data.portDistances}
+                  formats={["csv", "json"]}
+                  placement="left-start"
+                  titleElement={
+                    <Download
+                      size={18}
+                      color="#999"
+                      style={{ cursor: "pointer" }}
+                    />
+                  }
+                />
+              }
+            >
               Reducing the distance to the nearest port can help improve
               enforcibility.
               <VerticalSpacer />
@@ -149,7 +173,7 @@ export const DistanceToPort: React.FunctionComponent<any> = (props) => {
                   </p>
                 </Trans>
               </Collapse>
-            </>
+            </ToolbarCard>
           );
         }}
       </ResultsCard>

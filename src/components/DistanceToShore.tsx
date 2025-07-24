@@ -10,9 +10,12 @@ import {
   Table,
   useSketchProperties,
   VerticalSpacer,
+  ToolbarCard,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import { Metric } from "@seasketch/geoprocessing/client-core";
 import { styled } from "styled-components";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 export const DistanceToShore: React.FunctionComponent<any> = (props) => {
   const { t } = useTranslation();
@@ -21,13 +24,34 @@ export const DistanceToShore: React.FunctionComponent<any> = (props) => {
 
   return (
     <ReportError>
-      <ResultsCard title={titleLabel} functionName="distanceToShore">
+      <ResultsCard
+        title={titleLabel}
+        functionName="distanceToShore"
+        useChildCard
+      >
         {(data: Metric[]) => {
           const minDist = Math.min(...data.map((d) => d.value));
           const maxDist = Math.max(...data.map((d) => d.value));
 
           return (
-            <>
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <DataDownload
+                  filename="DistanceToShore"
+                  data={data}
+                  formats={["csv", "json"]}
+                  placement="left-start"
+                  titleElement={
+                    <Download
+                      size={18}
+                      color="#999"
+                      style={{ cursor: "pointer" }}
+                    />
+                  }
+                />
+              }
+            >
               {!isCollection ? (
                 <>
                   <VerticalSpacer />
@@ -59,7 +83,7 @@ export const DistanceToShore: React.FunctionComponent<any> = (props) => {
                   </p>
                 </Trans>
               </Collapse>
-            </>
+            </ToolbarCard>
           );
         }}
       </ResultsCard>

@@ -11,16 +11,18 @@ import {
   Table,
   ToolbarCard,
   useSketchProperties,
+  DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import project from "../../project/projectClient.js";
 import { SpRichnessResults } from "../util/overlapPolygonStats.js";
 import { styled } from "styled-components";
 import { TFunction } from "i18next";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
  * Benthic Richness report
  */
-export const BenthicRichnessCard: React.FunctionComponent = () => {
+export const BenthicRichness: React.FunctionComponent = () => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const metricGroup = project.getMetricGroup("benthicRichness", t);
@@ -42,15 +44,30 @@ export const BenthicRichnessCard: React.FunctionComponent = () => {
             <ToolbarCard
               title={titleLabel}
               items={
-                <LayerToggle
-                  layerId={metricGroup.layerId}
-                  label={mapLabel}
-                  simple
-                />
+                <>
+                  <LayerToggle
+                    layerId={metricGroup.layerId}
+                    label={mapLabel}
+                    simple
+                  />
+                  <DataDownload
+                    filename="BenthicRichness"
+                    data={metricResults}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                </>
               }
             >
               <p>
-                <Trans i18nKey="BenthicRichnessCard 1">
+                <Trans i18nKey="BenthicRichness 1">
                   This report summarizes species richness within this plan.
                 </Trans>
               </p>
@@ -87,7 +104,7 @@ export const BenthicRichnessCard: React.FunctionComponent = () => {
               )}
 
               <Collapse title={t("Learn More")}>
-                <Trans i18nKey="BenthicRichnessCard - learn more">
+                <Trans i18nKey="BenthicRichness - learn more">
                   <p>
                     🗺️ Source Data:{" "}
                     <a

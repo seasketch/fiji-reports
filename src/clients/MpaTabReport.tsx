@@ -6,13 +6,12 @@ import {
   SketchAttributesCard,
 } from "@seasketch/geoprocessing/client-ui";
 import Translator from "../components/TranslatorAsync.js";
-import { SizeCard } from "../components/SizeCard.js";
+import { Size } from "../components/Size.js";
 import { Gfw } from "../components/Gfw.js";
-import { EbsaCard } from "../components/EbsaCard.js";
-import { GeomorphologyCard } from "../components/GeomorphologyCard.js";
-import { DeepwaterBioregionsCard } from "../components/DeepwaterBioregionsCard.js";
-import { BenthicRichnessCard } from "../components/BenthicRichnessCard.js";
-import { SumaCard } from "../components/SumaCard.js";
+import { Ebsa } from "../components/Ebsa.js";
+import { Geomorphology } from "../components/Geomorphology.js";
+import { DeepwaterBioregions } from "../components/DeepwaterBioregions.js";
+import { Suma } from "../components/Suma.js";
 import { Depth } from "../components/Depth.js";
 import { HydrothermalVents } from "../components/HydrothermalVents.js";
 import { DistanceToPort } from "../components/DistanceToPort.js";
@@ -22,6 +21,7 @@ import { FishDensity } from "../components/FishDensity.js";
 import { FishBiomass } from "../components/FishBiomass.js";
 import { JuvenileCoralDensity } from "../components/JuvenileCoralDensity.js";
 import { BenthicCover } from "../components/BenthicCover.js";
+import { BenthicRichness } from "../components/BenthicRichness.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -43,7 +43,7 @@ const BaseReport = () => {
         />
       </div>
       <ReportPage hidden={!enableAllTabs && tab !== "VIABILITY"}>
-        <SizeCard />
+        <Size />
         <DistanceToPort />
         <DistanceToShore />
         <Gfw />
@@ -58,12 +58,12 @@ const BaseReport = () => {
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <Depth />
-        <EbsaCard />
-        <SumaCard />
+        <Ebsa />
+        <Suma />
         <HydrothermalVents />
-        <GeomorphologyCard />
-        <DeepwaterBioregionsCard />
-        <BenthicRichnessCard />
+        <Geomorphology />
+        <DeepwaterBioregions />
+        <BenthicRichness />
       </ReportPage>
     </>
   );

@@ -3,30 +3,37 @@ import { Trans, useTranslation } from "react-i18next";
 import {
   ClassTable,
   Collapse,
+  KeySection,
+  LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTable,
   useSketchProperties,
+  VerticalSpacer,
   ToolbarCard,
   DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   GeogProp,
+  Metric,
   MetricGroup,
   ReportResult,
   SketchProperties,
   flattenBySketchAllClass,
   metricsWithSketchId,
+  percentWithEdge,
+  roundDecimalFormat,
+  roundLower,
+  squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
-import precalcMetrics from "../../data/precalc/precalcHydrothermalVents.json" with { type: "json" };
 import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
- * Hydrothermal Vents report
+ * Special Unique Marine Areas (SUMAs) report
  */
-export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
+export const Suma: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -34,24 +41,32 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
   });
 
   // Metrics
-  const metricGroup = project.getMetricGroup("hydrothermalVents", t);
+  const metricGroup = project.getMetricGroup("suma", t);
+  const precalcMetrics = project.getPrecalcMetrics(
+    metricGroup,
+    "area",
+    curGeography.geographyId,
+  );
 
   // Labels
-  const titleLabel = t("Hydrothermal Vents");
-  const mapLabel = t("Map");
+  const titleLabel = t("Special Unique Marine Areas (SUMAs)");
+  const mapLabel = t("Show SUMAs On Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
+  const unitsLabel = t("km²");
 
   return (
     <ResultsCard
       title={titleLabel}
-      functionName="hydrothermalVents"
+      functionName="suma"
       extraParams={{ geographyIds: [curGeography.geographyId] }}
       useChildCard
     >
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+      {(data: { totalValue: number; metrics: Metric[] }) => {
+        const totalValue = data.totalValue;
+        const totalSUMAs = 148263414428.76416; // From QGIS
 
+        const percMetricIdName = `${metricGroup.metricId}Perc`;
         const valueMetrics = metricsWithSketchId(
           data.metrics.filter((m) => m.metricId === metricGroup.metricId),
           [id],
@@ -76,7 +91,7 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
               title={titleLabel}
               items={
                 <DataDownload
-                  filename="HydrothermalVents"
+                  filename="Suma"
                   data={data.metrics}
                   formats={["csv", "json"]}
                   placement="left-start"
@@ -91,11 +106,26 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
               }
             >
               <p>
-                <Trans i18nKey="HydrothermalVents 1">
-                  This report summarizes the number of hydrothermal vents within
-                  the plan.
+                <Trans i18nKey="Suma 1">
+                  This report summarizes the Special Unique Marine Areas (SUMAs)
+                  contained within this plan.
                 </Trans>
               </p>
+
+              <LayerToggle layerId={metricGroup.layerId} label={mapLabel} />
+
+              <VerticalSpacer />
+
+              <KeySection>
+                {t("This plan contains")}{" "}
+                <b>
+                  {roundLower(squareMeterToKilometer(totalValue))} {unitsLabel}
+                </b>
+                {" of SUMAs, "}
+                {t("which is")}{" "}
+                <b>{percentWithEdge(totalValue / totalSUMAs)}</b>{" "}
+                {t("of total SUMA area.")}
+              </KeySection>
 
               <ClassTable
                 rows={metrics}
@@ -103,15 +133,17 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
                 objective={objectives}
                 columnConfig={[
                   {
-                    columnLabel: " ",
+                    columnLabel: t("Name"),
                     type: "class",
-                    width: 30,
+                    width: 50,
                   },
                   {
                     columnLabel: withinLabel,
                     type: "metricValue",
                     metricId: metricGroup.metricId,
-                    valueFormatter: "integer",
+                    valueFormatter: (val) =>
+                      roundDecimalFormat(squareMeterToKilometer(Number(val))),
+                    valueLabel: unitsLabel,
                     chartOptions: {
                       showTitle: true,
                     },
@@ -125,30 +157,40 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
                     chartOptions: {
                       showTitle: true,
                     },
-                    width: 40,
-                  },
-                  {
-                    columnLabel: mapLabel,
-                    type: "layerToggle",
-                    width: 10,
+                    width: 30,
                   },
                 ]}
               />
 
               {isCollection && childProperties && (
                 <Collapse title={t("Show by Sketch")}>
-                  {genSketchTable(data, metricGroup, childProperties)}
+                  {genSketchTable(
+                    data,
+                    metricGroup,
+                    precalcMetrics,
+                    childProperties,
+                  )}
                 </Collapse>
               )}
 
               <Collapse title={t("Learn More")}>
-                <Trans i18nKey="HydrothermalVents - learn more">
+                <Trans i18nKey="Suma - learn more">
                   <p>
-                    📈 Report: This report calculates the total number of
-                    hydrothermal vents within the plan. This value is divided by
-                    the total number of hydrothermal vents to obtain the %
-                    contained within the plan. If the plan includes multiple
-                    areas that overlap, the overlap is only counted once.
+                    ℹ️ Overview:{" "}
+                    <a
+                      href="https://macbio-pacific.info/Resources/biophysically-special-unique-marine-areas-of-fiji/"
+                      target="_blank"
+                    >
+                      Biophysically Special, Unique Marine Areas of Fiji Report
+                    </a>
+                  </p>
+                  <p>
+                    📈 Report: This report calculates the total area of SUMAs
+                    within the plan. This value is divided by the total area of
+                    SUMAs to obtain the % contained within the plan. Overlap of
+                    sketches is not handled, and overlapping areas will be
+                    double counted if drawn. Reach out to the developers if
+                    sketch overlap needs to be accounted for.
                   </p>
                 </Trans>
               </Collapse>
@@ -163,20 +205,26 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
 const genSketchTable = (
   data: ReportResult,
   metricGroup: MetricGroup,
+  precalcMetrics: Metric[],
   childProperties: SketchProperties[],
 ) => {
   const childSketchIds = childProperties
     ? childProperties.map((skp) => skp.id)
     : [];
   // Build agg metric objects for each child sketch in collection with percValue for each class
-  const childSketchMetrics = metricsWithSketchId(
-    data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-    childSketchIds,
+  const childSketchMetrics = toPercentMetric(
+    metricsWithSketchId(
+      data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+      childSketchIds,
+    ),
+    precalcMetrics,
   );
   const sketchRows = flattenBySketchAllClass(
     childSketchMetrics,
     metricGroup.classes,
     childProperties,
   );
-  return <SketchClassTable rows={sketchRows} metricGroup={metricGroup} />;
+  return (
+    <SketchClassTable rows={sketchRows} metricGroup={metricGroup} formatPerc />
+  );
 };
