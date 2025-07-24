@@ -629,14 +629,15 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/expedition/coral/juvenile_coral_density.fgb",
-    "layerName": "juvenile_coral_density",
-    "geo_type": "vector",
     "datasourceId": "juvenile_coral_density",
+    "geo_type": "vector",
     "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "juvenile_coral_density",
     "classKeys": [],
     "created": "2025-07-23T21:46:33.653Z",
     "lastUpdated": "2025-07-23T21:46:33.653Z",
+    "src": "data/src/expedition/coral/juvenile_coral_density.fgb",
     "propertiesToKeep": [
       "station_id",
       "Acanth",
@@ -709,6 +710,28 @@
       "Unk_mas",
       "Unk_ta",
       "total"
+    ],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/expedition/benthic-cover/benthic_cover_percent_group.fgb",
+    "layerName": "benthic_cover_percent_group",
+    "geo_type": "vector",
+    "datasourceId": "benthicCover",
+    "formats": ["fgb"],
+    "classKeys": [],
+    "created": "2025-07-23T22:40:47.900Z",
+    "lastUpdated": "2025-07-23T22:40:47.900Z",
+    "propertiesToKeep": [
+      "station_id",
+      "Calcified Macroalgae",
+      "CCA",
+      "Cyanobacteria",
+      "Hard Coral",
+      "Invertebrate",
+      "Macroalgae",
+      "Other",
+      "Turf"
     ],
     "explodeMulti": true,
     "precalc": false

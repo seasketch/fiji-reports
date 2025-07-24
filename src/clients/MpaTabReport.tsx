@@ -21,6 +21,7 @@ import { Sites } from "../components/Sites.js";
 import { FishDensity } from "../components/FishDensity.js";
 import { FishBiomass } from "../components/FishBiomass.js";
 import { JuvenileCoralDensity } from "../components/JuvenileCoralDensity.js";
+import { BenthicCover } from "../components/BenthicCover.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -53,6 +54,7 @@ const BaseReport = () => {
         <FishDensity />
         <FishBiomass />
         <JuvenileCoralDensity />
+        <BenthicCover />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <Depth />

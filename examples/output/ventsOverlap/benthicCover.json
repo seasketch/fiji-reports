@@ -1,0 +1,35 @@
+[
+  {
+    "station_id": "sketch:hydrothermalVents (copy)",
+    "Calcified Macroalgae": "",
+    "CCA": "",
+    "Cyanobacteria": "",
+    "Hard Coral": "",
+    "Invertebrate": "",
+    "Macroalgae": "",
+    "Other": "",
+    "Turf": ""
+  },
+  {
+    "station_id": "sketch:hydrothermalVents",
+    "Calcified Macroalgae": "",
+    "CCA": "",
+    "Cyanobacteria": "",
+    "Hard Coral": "",
+    "Invertebrate": "",
+    "Macroalgae": "",
+    "Other": "",
+    "Turf": ""
+  },
+  {
+    "station_id": "averages",
+    "Calcified Macroalgae": null,
+    "CCA": null,
+    "Cyanobacteria": null,
+    "Hard Coral": null,
+    "Invertebrate": null,
+    "Macroalgae": null,
+    "Other": null,
+    "Turf": null
+  }
+]

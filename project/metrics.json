@@ -1424,5 +1424,52 @@
       { "classId": "Symphy", "display": "Symphyllia", "layerId": "2pLkITifq" },
       { "classId": "Turbin", "display": "Turbinaria", "layerId": "GTvbAqQnG" }
     ]
+  },
+  {
+    "metricId": "benthicCover",
+    "type": "countOverlap",
+    "datasourceId": "benthicCover",
+    "classes": [
+      {
+        "classId": "Calcified Macroalgae",
+        "display": "Calcified Macroalgae",
+        "layerId": "2RYb8u9ES"
+      },
+      {
+        "classId": "CCA",
+        "display": "Crustose Coralline Algae",
+        "layerId": "epd3RP_eX"
+      },
+      {
+        "classId": "Cyanobacteria",
+        "display": "Cyanobacteria",
+        "layerId": "muTVDOZi_"
+      },
+      {
+        "classId": "Hard Coral",
+        "display": "Hard Coral",
+        "layerId": "B7Lg9ORkn"
+      },
+      {
+        "classId": "Invertebrate",
+        "display": "Invertebrate",
+        "layerId": "udgHAvDeX"
+      },
+      {
+        "classId": "Macroalgae",
+        "display": "Macroalgae",
+        "layerId": "xs_80ynlJ"
+      },
+      {
+        "classId": "Other",
+        "display": "Other",
+        "layerId": "rRce4dvra"
+      },
+      {
+        "classId": "Turf",
+        "display": "Turf",
+        "layerId": "dqiihBKBm"
+      }
+    ]
   }
 ]

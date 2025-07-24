@@ -1,0 +1,200 @@
+[
+  {
+    "station_id": "station:TAV_34",
+    "Calcified Macroalgae": 13.231,
+    "CCA": 5.949,
+    "Cyanobacteria": 1.436,
+    "Hard Coral": 10.872,
+    "Invertebrate": 1.333,
+    "Macroalgae": 0.205,
+    "Other": 0.308,
+    "Turf": 66.667
+  },
+  {
+    "station_id": "station:TAV_35",
+    "Calcified Macroalgae": 14.634,
+    "CCA": 19.707,
+    "Cyanobacteria": 8.488,
+    "Hard Coral": 17.268,
+    "Invertebrate": 1.366,
+    "Macroalgae": 0.878,
+    "Other": 0,
+    "Turf": 37.659
+  },
+  {
+    "station_id": "station:CKE_25",
+    "Calcified Macroalgae": 17.674,
+    "CCA": 17.581,
+    "Cyanobacteria": 9.116,
+    "Hard Coral": 24.465,
+    "Invertebrate": 2.791,
+    "Macroalgae": 5.023,
+    "Other": 0.372,
+    "Turf": 22.977
+  },
+  {
+    "station_id": "station:CKE_26",
+    "Calcified Macroalgae": 22.3,
+    "CCA": 25,
+    "Cyanobacteria": 0.7,
+    "Hard Coral": 24.9,
+    "Invertebrate": 1.7,
+    "Macroalgae": 3.8,
+    "Other": 1,
+    "Turf": 20.6
+  },
+  {
+    "station_id": "station:CKE_27",
+    "Calcified Macroalgae": 4.286,
+    "CCA": 19.429,
+    "Cyanobacteria": 0,
+    "Hard Coral": 22.667,
+    "Invertebrate": 0.667,
+    "Macroalgae": 0.095,
+    "Other": 1.143,
+    "Turf": 51.714
+  },
+  {
+    "station_id": "station:CKE_24",
+    "Calcified Macroalgae": 24.316,
+    "CCA": 13.158,
+    "Cyanobacteria": 2.526,
+    "Hard Coral": 23.158,
+    "Invertebrate": 7.895,
+    "Macroalgae": 2,
+    "Other": 0.211,
+    "Turf": 26.737
+  },
+  {
+    "station_id": "station:CKE_29",
+    "Calcified Macroalgae": 9.13,
+    "CCA": 18.348,
+    "Cyanobacteria": 0.522,
+    "Hard Coral": 28.087,
+    "Invertebrate": 6.957,
+    "Macroalgae": 5.739,
+    "Other": 0.435,
+    "Turf": 30.783
+  },
+  {
+    "station_id": "station:CKE_28",
+    "Calcified Macroalgae": 8.718,
+    "CCA": 9.333,
+    "Cyanobacteria": 0.821,
+    "Hard Coral": 24.513,
+    "Invertebrate": 2.256,
+    "Macroalgae": 1.026,
+    "Other": 2.359,
+    "Turf": 50.974
+  },
+  {
+    "station_id": "station:CKE_31",
+    "Calcified Macroalgae": 5.091,
+    "CCA": 7.455,
+    "Cyanobacteria": 3.182,
+    "Hard Coral": 30,
+    "Invertebrate": 6.636,
+    "Macroalgae": 0.636,
+    "Other": 0.091,
+    "Turf": 46.909
+  },
+  {
+    "station_id": "station:CKE_33",
+    "Calcified Macroalgae": 10,
+    "CCA": 13.545,
+    "Cyanobacteria": 0.545,
+    "Hard Coral": 38.545,
+    "Invertebrate": 2.909,
+    "Macroalgae": 3.182,
+    "Other": 2.273,
+    "Turf": 29
+  },
+  {
+    "station_id": "station:LAU_43",
+    "Calcified Macroalgae": 6.146,
+    "CCA": 26.244,
+    "Cyanobacteria": 4.585,
+    "Hard Coral": 12.683,
+    "Invertebrate": 7.024,
+    "Macroalgae": 2.829,
+    "Other": 1.659,
+    "Turf": 38.829
+  },
+  {
+    "station_id": "station:TAV_38",
+    "Calcified Macroalgae": 11.022,
+    "CCA": 13.156,
+    "Cyanobacteria": 0.889,
+    "Hard Coral": 29.956,
+    "Invertebrate": 1.333,
+    "Macroalgae": 0.089,
+    "Other": 3.2,
+    "Turf": 40.356
+  },
+  {
+    "station_id": "station:LAU_41",
+    "Calcified Macroalgae": 8.39,
+    "CCA": 23.902,
+    "Cyanobacteria": 9.171,
+    "Hard Coral": 22.341,
+    "Invertebrate": 1.171,
+    "Macroalgae": 0.098,
+    "Other": 0.488,
+    "Turf": 34.439
+  },
+  {
+    "station_id": "station:TAV_39",
+    "Calcified Macroalgae": 17.048,
+    "CCA": 16,
+    "Cyanobacteria": 2,
+    "Hard Coral": 17.143,
+    "Invertebrate": 2.476,
+    "Macroalgae": 0.571,
+    "Other": 0.476,
+    "Turf": 44.286
+  },
+  {
+    "station_id": "station:TAV_36",
+    "Calcified Macroalgae": 19.61,
+    "CCA": 14.634,
+    "Cyanobacteria": 1.854,
+    "Hard Coral": 19.024,
+    "Invertebrate": 2.146,
+    "Macroalgae": 0.488,
+    "Other": 2.732,
+    "Turf": 39.512
+  },
+  {
+    "station_id": "station:TAV_37",
+    "Calcified Macroalgae": 40.6,
+    "CCA": 6.9,
+    "Cyanobacteria": 0.2,
+    "Hard Coral": 15.4,
+    "Invertebrate": 2.2,
+    "Macroalgae": 1.6,
+    "Other": 2.1,
+    "Turf": 31
+  },
+  {
+    "station_id": "sketch:cross_antimeridian",
+    "Calcified Macroalgae": 14.51225,
+    "CCA": 15.646312500000002,
+    "Cyanobacteria": 2.8771875000000002,
+    "Hard Coral": 22.563875000000003,
+    "Invertebrate": 3.17875,
+    "Macroalgae": 1.7661874999999998,
+    "Other": 1.1779375,
+    "Turf": 38.277625
+  },
+  {
+    "station_id": "averages",
+    "Calcified Macroalgae": 14.51225,
+    "CCA": 15.646312500000002,
+    "Cyanobacteria": 2.8771875000000002,
+    "Hard Coral": 22.563875000000003,
+    "Invertebrate": 3.17875,
+    "Macroalgae": 1.7661874999999998,
+    "Other": 1.1779375,
+    "Turf": 38.277625
+  }
+]
