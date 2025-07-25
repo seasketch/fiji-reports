@@ -1,0 +1,45 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "coral_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "fish_family_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "invert_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    }
+  ],
+  "stations": [],
+  "perSketch": [
+    {
+      "sketchId": 101155,
+      "sketchName": "b",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 0,
+      "invert_genus_richness": 0
+    },
+    {
+      "sketchId": 101154,
+      "sketchName": "a",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 0,
+      "invert_genus_richness": 0
+    }
+  ]
+}

@@ -23,6 +23,7 @@ import { JuvenileCoralDensity } from "../components/JuvenileCoralDensity.js";
 import { BenthicCover } from "../components/BenthicCover.js";
 import { BenthicRichness } from "../components/BenthicRichness.js";
 import { InvertPresence } from "../components/InvertPresence.js";
+import { TaxaRichness } from "../components/TaxaRichness.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -57,6 +58,7 @@ const BaseReport = () => {
         <JuvenileCoralDensity />
         <BenthicCover />
         <InvertPresence />
+        <TaxaRichness />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <Depth />

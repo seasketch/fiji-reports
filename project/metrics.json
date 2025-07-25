@@ -1658,5 +1658,29 @@
         "layerId": "2eIk9Zl8s"
       }
     ]
+  },
+  {
+    "metricId": "taxaRichness",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "classId": "coral_genus_richness",
+        "display": "Coral Genus",
+        "datasourceId": "coral_genus_richness",
+        "layerId": "v9JKA9ZkE"
+      },
+      {
+        "classId": "fish_family_richness",
+        "display": "Fish Family",
+        "datasourceId": "fish_family_richness",
+        "layerId": "ykqhEoZOm"
+      },
+      {
+        "classId": "invert_genus_richness",
+        "display": "Invertebrate Genus",
+        "datasourceId": "invert_genus_richness",
+        "layerId": "RzG3wcEC8"
+      }
+    ]
   }
 ]

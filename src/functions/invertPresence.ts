@@ -48,7 +48,7 @@ export async function invertPresence(
     ),
   );
 
-  // 1. Overall presence (id: 'total')
+  // Overall presence
   const overall: Pt = { id: "total" };
   metricGroup.classes.forEach((curClass) => {
     // If any province point in the sketch has this species 'present'
@@ -58,7 +58,7 @@ export async function invertPresence(
     overall[curClass.classId] = present ? "true" : "false";
   });
 
-  // 2. Per province (id: 'province:NAME'), just copy the data for each point in the sketch
+  // Per province
   const provinceRows: Pt[] = featuresInSketch.map((feature) => {
     const row: Pt = { id: `province:${feature.properties.province}` };
     metricGroup.classes.forEach((curClass) => {
@@ -68,7 +68,7 @@ export async function invertPresence(
     return row;
   });
 
-  // 3. Per sketch (id: 'sketch:NAME'), for SketchCollection only
+  // Per sketch
   let sketchRows: Pt[] = [];
   if (sketch.type === "FeatureCollection" && Array.isArray(sketch.features)) {
     sketchRows = sketch.features.map((sk) => {

@@ -787,5 +787,44 @@
       "Diadema setosum"
     ],
     "explodeMulti": true
+  },
+  {
+    "datasourceId": "coral_genus_richness",
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "juvenile_coral_genus_richness",
+    "classKeys": [],
+    "created": "2025-07-25T18:22:36.985Z",
+    "lastUpdated": "2025-07-25T18:22:36.985Z",
+    "src": "data/src/expedition/coral/juvenile_coral_genus_richness.fgb",
+    "propertiesToKeep": ["station_id", "coral_genus_richness"],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "fish_family_richness",
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "fish_family_richness",
+    "classKeys": [],
+    "created": "2025-07-25T18:23:37.330Z",
+    "lastUpdated": "2025-07-25T18:23:37.330Z",
+    "src": "data/src/expedition/fish/fish_family_richness.fgb",
+    "propertiesToKeep": ["station_id", "fish_family_richness"],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/expedition/invertebrates/invert_genus_richness.fgb",
+    "layerName": "invert_genus_richness",
+    "geo_type": "vector",
+    "datasourceId": "invert_genus_richness",
+    "formats": ["fgb"],
+    "classKeys": [],
+    "created": "2025-07-25T18:24:09.268Z",
+    "lastUpdated": "2025-07-25T18:24:09.268Z",
+    "propertiesToKeep": ["station_id", "invert_genus_richness"],
+    "explodeMulti": true,
+    "precalc": false
   }
 ]

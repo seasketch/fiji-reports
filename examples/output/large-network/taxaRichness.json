@@ -1,0 +1,102 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "coral_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 14.428571428571429
+    },
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "fish_family_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 19.666666666666668
+    },
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "invert_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 5.166666666666667
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "VBA_59",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 23,
+      "invert_genus_richness": 7
+    },
+    {
+      "station_id": "VBA_57",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 22,
+      "invert_genus_richness": 12
+    },
+    {
+      "station_id": "VBA_60",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 20,
+      "invert_genus_richness": 2
+    },
+    {
+      "station_id": "VBA_55",
+      "coral_genus_richness": 19,
+      "fish_family_richness": 16,
+      "invert_genus_richness": 7
+    },
+    {
+      "station_id": "VBA_62",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 0,
+      "invert_genus_richness": 0
+    },
+    {
+      "station_id": "VBA_58",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 18,
+      "invert_genus_richness": 2
+    },
+    {
+      "station_id": "VBA_56",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 19,
+      "invert_genus_richness": 1
+    }
+  ],
+  "perSketch": [
+    {
+      "sketchId": 77764,
+      "sketchName": "rotuma",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 0,
+      "invert_genus_richness": 0
+    },
+    {
+      "sketchId": 77761,
+      "sketchName": "vanua",
+      "coral_genus_richness": 14.428571428571429,
+      "fish_family_richness": 19.666666666666668,
+      "invert_genus_richness": 5.166666666666667
+    },
+    {
+      "sketchId": 77763,
+      "sketchName": "southwest",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 0,
+      "invert_genus_richness": 0
+    },
+    {
+      "sketchId": 77762,
+      "sketchName": "moce",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 0,
+      "invert_genus_richness": 0
+    }
+  ]
+}

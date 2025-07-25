@@ -1,0 +1,147 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "coral_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 10.833333333333334
+    },
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "fish_family_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 16.333333333333332
+    },
+    {
+      "geographyId": null,
+      "metricId": "taxaRichness",
+      "classId": "invert_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 4.611111111111111
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "TAV_34",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 14,
+      "invert_genus_richness": 3
+    },
+    {
+      "station_id": "TAV_35",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 18,
+      "invert_genus_richness": 4
+    },
+    {
+      "station_id": "CKE_25",
+      "coral_genus_richness": 8,
+      "fish_family_richness": 12,
+      "invert_genus_richness": 3
+    },
+    {
+      "station_id": "CKE_26",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 16,
+      "invert_genus_richness": 6
+    },
+    {
+      "station_id": "CKE_27",
+      "coral_genus_richness": 8,
+      "fish_family_richness": 15,
+      "invert_genus_richness": 3
+    },
+    {
+      "station_id": "CKE_24",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 18,
+      "invert_genus_richness": 5
+    },
+    {
+      "station_id": "CKE_29",
+      "coral_genus_richness": 17,
+      "fish_family_richness": 18,
+      "invert_genus_richness": 5
+    },
+    {
+      "station_id": "CKE_32",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 20,
+      "invert_genus_richness": 7
+    },
+    {
+      "station_id": "CKE_28",
+      "coral_genus_richness": 9,
+      "fish_family_richness": 17,
+      "invert_genus_richness": 5
+    },
+    {
+      "station_id": "CKE_31",
+      "coral_genus_richness": 9,
+      "fish_family_richness": 15,
+      "invert_genus_richness": 6
+    },
+    {
+      "station_id": "CKE_33",
+      "coral_genus_richness": 9,
+      "fish_family_richness": 17,
+      "invert_genus_richness": 5
+    },
+    {
+      "station_id": "CKE_30",
+      "coral_genus_richness": 7,
+      "fish_family_richness": 20,
+      "invert_genus_richness": 6
+    },
+    {
+      "station_id": "LAU_43",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 17,
+      "invert_genus_richness": 4
+    },
+    {
+      "station_id": "TAV_38",
+      "coral_genus_richness": 8,
+      "fish_family_richness": 15,
+      "invert_genus_richness": 6
+    },
+    {
+      "station_id": "LAU_41",
+      "coral_genus_richness": 19,
+      "fish_family_richness": 15,
+      "invert_genus_richness": 4
+    },
+    {
+      "station_id": "TAV_39",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 14,
+      "invert_genus_richness": 4
+    },
+    {
+      "station_id": "TAV_36",
+      "coral_genus_richness": 7,
+      "fish_family_richness": 18,
+      "invert_genus_richness": 5
+    },
+    {
+      "station_id": "TAV_37",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 15,
+      "invert_genus_richness": 2
+    }
+  ],
+  "perSketch": [
+    {
+      "sketchId": 78746,
+      "sketchName": "cross_antimeridian",
+      "coral_genus_richness": 10.833333333333334,
+      "fish_family_richness": 16.333333333333332,
+      "invert_genus_richness": 4.611111111111111
+    }
+  ]
+}

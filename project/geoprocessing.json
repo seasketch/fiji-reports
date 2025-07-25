@@ -27,6 +27,7 @@
     "src/functions/fishBiomass.ts",
     "src/functions/juvenileCoralDensity.ts",
     "src/functions/benthicCover.ts",
-    "src/functions/invertPresence.ts"
+    "src/functions/invertPresence.ts",
+    "src/functions/taxaRichness.ts"
   ]
 }

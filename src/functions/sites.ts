@@ -64,8 +64,6 @@ export async function sites(
     url,
   )) as Feature<Point, SiteProperties>[];
 
-  console.log(features.length + " features loaded from datasource");
-
   // Get unique counts and feature properties
   let stations = 0;
   const uniqueIslands = new Set<string>();
