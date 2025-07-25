@@ -24,6 +24,7 @@ import { BenthicCover } from "../components/BenthicCover.js";
 import { BenthicRichness } from "../components/BenthicRichness.js";
 import { InvertPresence } from "../components/InvertPresence.js";
 import { TaxaRichness } from "../components/TaxaRichness.js";
+import { WaterQuality } from "../components/WaterQuality.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -59,6 +60,7 @@ const BaseReport = () => {
         <BenthicCover />
         <InvertPresence />
         <TaxaRichness />
+        <WaterQuality />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <Depth />

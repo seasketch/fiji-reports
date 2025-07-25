@@ -1,0 +1,93 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "waterQuality",
+      "classId": "waterQuality",
+      "sketchId": null,
+      "groupId": null,
+      "value": 0.9679444444444445
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "TAV_34",
+      "d15n": 1.127
+    },
+    {
+      "station_id": "TAV_35",
+      "d15n": 0.45
+    },
+    {
+      "station_id": "CKE_23",
+      "d15n": 0.96
+    },
+    {
+      "station_id": "CKE_22",
+      "d15n": 0.99
+    },
+    {
+      "station_id": "TAV_39",
+      "d15n": 0.5
+    },
+    {
+      "station_id": "TAV_36",
+      "d15n": 1.057
+    },
+    {
+      "station_id": "TAV_37",
+      "d15n": 0.793
+    },
+    {
+      "station_id": "KIB_61",
+      "d15n": -0.153
+    },
+    {
+      "station_id": "KIB_63",
+      "d15n": 0.427
+    },
+    {
+      "station_id": "VBA_59",
+      "d15n": 1.89
+    },
+    {
+      "station_id": "VBA_57",
+      "d15n": 0.847
+    },
+    {
+      "station_id": "VBA_60",
+      "d15n": 1.483
+    },
+    {
+      "station_id": "VBA_55",
+      "d15n": 0.59
+    },
+    {
+      "station_id": "KNC_66",
+      "d15n": 1.453
+    },
+    {
+      "station_id": "KNC_64",
+      "d15n": 1.933
+    },
+    {
+      "station_id": "KNC_65",
+      "d15n": 1.373
+    },
+    {
+      "station_id": "VBA_58",
+      "d15n": 1.193
+    },
+    {
+      "station_id": "VBA_56",
+      "d15n": 0.51
+    }
+  ],
+  "perSketchAverages": [
+    {
+      "sketchId": "75741",
+      "sketchName": "mpa",
+      "average": 0.9679444444444445
+    }
+  ]
+}

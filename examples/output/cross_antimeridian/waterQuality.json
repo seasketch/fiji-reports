@@ -1,0 +1,93 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "waterQuality",
+      "classId": "waterQuality",
+      "sketchId": null,
+      "groupId": null,
+      "value": 0.8361111111111111
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "TAV_34",
+      "d15n": 1.127
+    },
+    {
+      "station_id": "TAV_35",
+      "d15n": 0.45
+    },
+    {
+      "station_id": "CKE_25",
+      "d15n": 0.727
+    },
+    {
+      "station_id": "CKE_26",
+      "d15n": 1.607
+    },
+    {
+      "station_id": "CKE_27",
+      "d15n": 1.003
+    },
+    {
+      "station_id": "CKE_24",
+      "d15n": 0.713
+    },
+    {
+      "station_id": "CKE_29",
+      "d15n": 1.1
+    },
+    {
+      "station_id": "CKE_32",
+      "d15n": 0.997
+    },
+    {
+      "station_id": "CKE_28",
+      "d15n": 0.973
+    },
+    {
+      "station_id": "CKE_31",
+      "d15n": 0.97
+    },
+    {
+      "station_id": "CKE_33",
+      "d15n": 0.8
+    },
+    {
+      "station_id": "CKE_30",
+      "d15n": 0.793
+    },
+    {
+      "station_id": "LAU_43",
+      "d15n": 0.69
+    },
+    {
+      "station_id": "TAV_38",
+      "d15n": 0.793
+    },
+    {
+      "station_id": "LAU_41",
+      "d15n": -0.043
+    },
+    {
+      "station_id": "TAV_39",
+      "d15n": 0.5
+    },
+    {
+      "station_id": "TAV_36",
+      "d15n": 1.057
+    },
+    {
+      "station_id": "TAV_37",
+      "d15n": 0.793
+    }
+  ],
+  "perSketchAverages": [
+    {
+      "sketchId": "78746",
+      "sketchName": "cross_antimeridian",
+      "average": 0.8361111111111111
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "waterQuality",
+      "classId": "waterQuality",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    }
+  ],
+  "stations": [],
+  "perSketchAverages": [
+    {
+      "sketchId": "101155",
+      "sketchName": "b",
+      "average": 0
+    },
+    {
+      "sketchId": "101154",
+      "sketchName": "a",
+      "average": 0
+    }
+  ]
+}

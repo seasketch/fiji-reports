@@ -1,0 +1,189 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "waterQuality",
+      "classId": "waterQuality",
+      "sketchId": null,
+      "groupId": null,
+      "value": 1.4572142857142856
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "KUB_37",
+      "d15n": 0.81
+    },
+    {
+      "station_id": "KUB_39",
+      "d15n": 1.057
+    },
+    {
+      "station_id": "WAA_17",
+      "d15n": 0.53
+    },
+    {
+      "station_id": "WAA_19",
+      "d15n": 0.923
+    },
+    {
+      "station_id": "KUB_41",
+      "d15n": 1.62
+    },
+    {
+      "station_id": "WAA_16",
+      "d15n": 0.89
+    },
+    {
+      "station_id": "KUB_42",
+      "d15n": 0.707
+    },
+    {
+      "station_id": "MAK_21",
+      "d15n": 0.997
+    },
+    {
+      "station_id": "DAW_49",
+      "d15n": 1.33
+    },
+    {
+      "station_id": "DAW_50",
+      "d15n": 0.823
+    },
+    {
+      "station_id": "DAW_46",
+      "d15n": 1.245
+    },
+    {
+      "station_id": "DAW_45",
+      "d15n": 1.653
+    },
+    {
+      "station_id": "DAW_47",
+      "d15n": 1.303
+    },
+    {
+      "station_id": "DAW_57",
+      "d15n": 1.587
+    },
+    {
+      "station_id": "DAW_48",
+      "d15n": 1.85
+    },
+    {
+      "station_id": "KUB_44",
+      "d15n": 1.243
+    },
+    {
+      "station_id": "MAK_18",
+      "d15n": 1.203
+    },
+    {
+      "station_id": "DAW_55",
+      "d15n": 1.583
+    },
+    {
+      "station_id": "DAW_51",
+      "d15n": 1.9
+    },
+    {
+      "station_id": "MAK_20",
+      "d15n": 0.9
+    },
+    {
+      "station_id": "BAP_73",
+      "d15n": 2.795
+    },
+    {
+      "station_id": "DAW_58",
+      "d15n": 1.453
+    },
+    {
+      "station_id": "YAS_94",
+      "d15n": 1.403
+    },
+    {
+      "station_id": "YAS_97",
+      "d15n": 1.763
+    },
+    {
+      "station_id": "BAP_60",
+      "d15n": 2.51
+    },
+    {
+      "station_id": "DAW_56",
+      "d15n": 1.547
+    },
+    {
+      "station_id": "BAP_71",
+      "d15n": 2.023
+    },
+    {
+      "station_id": "DAW_59",
+      "d15n": 1.747
+    },
+    {
+      "station_id": "DAW_52",
+      "d15n": 1.017
+    },
+    {
+      "station_id": "BAP_61",
+      "d15n": 1.873
+    },
+    {
+      "station_id": "BAP_66",
+      "d15n": 1.827
+    },
+    {
+      "station_id": "YAS_95",
+      "d15n": 1.007
+    },
+    {
+      "station_id": "YAS_93",
+      "d15n": 1.573
+    },
+    {
+      "station_id": "YAS_92",
+      "d15n": 2.435
+    },
+    {
+      "station_id": "BAP_65",
+      "d15n": 1.68
+    },
+    {
+      "station_id": "BAP_64",
+      "d15n": 2.273
+    },
+    {
+      "station_id": "BAP_70",
+      "d15n": 1.457
+    },
+    {
+      "station_id": "YAS_89",
+      "d15n": 1.293
+    },
+    {
+      "station_id": "BAP_74",
+      "d15n": 1.303
+    },
+    {
+      "station_id": "YAS_90",
+      "d15n": 0.903
+    },
+    {
+      "station_id": "YAS_91",
+      "d15n": 1.61
+    },
+    {
+      "station_id": "BAP_72",
+      "d15n": 1.557
+    }
+  ],
+  "perSketchAverages": [
+    {
+      "sketchId": "112904",
+      "sketchName": "invertTest",
+      "average": 1.4572142857142856
+    }
+  ]
+}

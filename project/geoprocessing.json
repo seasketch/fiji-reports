@@ -28,6 +28,7 @@
     "src/functions/juvenileCoralDensity.ts",
     "src/functions/benthicCover.ts",
     "src/functions/invertPresence.ts",
-    "src/functions/taxaRichness.ts"
+    "src/functions/taxaRichness.ts",
+    "src/functions/waterQuality.ts"
   ]
 }

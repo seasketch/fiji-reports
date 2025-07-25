@@ -1,0 +1,25 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "waterQuality",
+      "classId": "waterQuality",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    }
+  ],
+  "stations": [],
+  "perSketchAverages": [
+    {
+      "sketchId": "79007",
+      "sketchName": "hydrothermalVents (copy)",
+      "average": 0
+    },
+    {
+      "sketchId": "79005",
+      "sketchName": "hydrothermalVents",
+      "average": 0
+    }
+  ]
+}

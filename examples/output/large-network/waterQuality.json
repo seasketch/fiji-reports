@@ -1,0 +1,60 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "waterQuality",
+      "classId": "waterQuality",
+      "sketchId": null,
+      "groupId": null,
+      "value": 1.0855
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "VBA_59",
+      "d15n": 1.89
+    },
+    {
+      "station_id": "VBA_57",
+      "d15n": 0.847
+    },
+    {
+      "station_id": "VBA_60",
+      "d15n": 1.483
+    },
+    {
+      "station_id": "VBA_55",
+      "d15n": 0.59
+    },
+    {
+      "station_id": "VBA_58",
+      "d15n": 1.193
+    },
+    {
+      "station_id": "VBA_56",
+      "d15n": 0.51
+    }
+  ],
+  "perSketchAverages": [
+    {
+      "sketchId": "77764",
+      "sketchName": "rotuma",
+      "average": 0
+    },
+    {
+      "sketchId": "77761",
+      "sketchName": "vanua",
+      "average": 1.0855
+    },
+    {
+      "sketchId": "77763",
+      "sketchName": "southwest",
+      "average": 0
+    },
+    {
+      "sketchId": "77762",
+      "sketchName": "moce",
+      "average": 0
+    }
+  ]
+}

@@ -815,16 +815,29 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/expedition/invertebrates/invert_genus_richness.fgb",
-    "layerName": "invert_genus_richness",
-    "geo_type": "vector",
     "datasourceId": "invert_genus_richness",
+    "geo_type": "vector",
     "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "invert_genus_richness",
     "classKeys": [],
     "created": "2025-07-25T18:24:09.268Z",
     "lastUpdated": "2025-07-25T18:24:09.268Z",
+    "src": "data/src/expedition/invertebrates/invert_genus_richness.fgb",
     "propertiesToKeep": ["station_id", "invert_genus_richness"],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/expedition/water-quality/d15n.fgb",
+    "layerName": "d15n",
+    "geo_type": "vector",
+    "datasourceId": "waterQuality",
+    "formats": ["fgb"],
+    "classKeys": [],
+    "created": "2025-07-25T19:21:38.349Z",
+    "lastUpdated": "2025-07-25T19:21:38.349Z",
+    "propertiesToKeep": ["station_id", "d15n"],
     "explodeMulti": true,
-    "precalc": false
+    "precalc": true
   }
 ]
