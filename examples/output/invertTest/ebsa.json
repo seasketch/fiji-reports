@@ -1,0 +1,48 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 8162557671.797629,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "ebsa",
+      "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    }
+  ]
+}

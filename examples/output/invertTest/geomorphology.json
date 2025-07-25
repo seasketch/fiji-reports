@@ -1,0 +1,191 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_basins",
+      "sketchId": "112904",
+      "groupId": "Basins",
+      "value": 649168903.836657,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_bridges",
+      "sketchId": "112904",
+      "groupId": "Bridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_canyons",
+      "sketchId": "112904",
+      "groupId": "Canyons",
+      "value": 1536500671.954702,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_escarpments",
+      "sketchId": "112904",
+      "groupId": "Escarpments",
+      "value": 2141241623.248452,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_guyots",
+      "sketchId": "112904",
+      "groupId": "Guyots",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_plateaus",
+      "sketchId": "112904",
+      "groupId": "Plateaus",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_ridges",
+      "sketchId": "112904",
+      "groupId": "Ridges",
+      "value": 315627.812095,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_riftvalleys",
+      "sketchId": "112904",
+      "groupId": "Rift Valleys",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_seamounts",
+      "sketchId": "112904",
+      "groupId": "Seamounts",
+      "value": 153998581.573239,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_shelf",
+      "sketchId": "112904",
+      "groupId": "Shelf",
+      "value": 8135435637.810535,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_slope",
+      "sketchId": "112904",
+      "groupId": "Slope",
+      "value": 6164400545.344419,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_spreadingridges",
+      "sketchId": "112904",
+      "groupId": "Spreading Ridges",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_trenches",
+      "sketchId": "112904",
+      "groupId": "Trenches",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "geo_troughs",
+      "sketchId": "112904",
+      "groupId": "Troughs",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Hills",
+      "sketchId": "112904",
+      "groupId": "Abyss (Hills)",
+      "value": 7717423.048023,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Mountains",
+      "sketchId": "112904",
+      "groupId": "Abyss (Mountains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plains",
+      "sketchId": "112904",
+      "groupId": "Abyss (Plains)",
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    }
+  ]
+}

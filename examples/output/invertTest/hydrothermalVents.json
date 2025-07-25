@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "hydrothermalVents",
+      "classId": "hydrothermalVents",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    }
+  ]
+}
