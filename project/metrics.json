@@ -1694,5 +1694,61 @@
         "layerId": "aFSO2pWGP"
       }
     ]
+  },
+  {
+    "metricId": "dhw",
+    "type": "sumOverlap",
+    "classes": [
+      {
+        "classId": "2015",
+        "datasourceId": "dhw_2015",
+        "display": "2015"
+      },
+      {
+        "classId": "2016",
+        "datasourceId": "dhw_2016",
+        "display": "2016"
+      },
+      {
+        "classId": "2017",
+        "datasourceId": "dhw_2017",
+        "display": "2017"
+      },
+      {
+        "classId": "2018",
+        "datasourceId": "dhw_2018",
+        "display": "2018"
+      },
+      {
+        "classId": "2019",
+        "datasourceId": "dhw_2019",
+        "display": "2019"
+      },
+      {
+        "classId": "2020",
+        "datasourceId": "dhw_2020",
+        "display": "2020"
+      },
+      {
+        "classId": "2021",
+        "datasourceId": "dhw_2021",
+        "display": "2021"
+      },
+      {
+        "classId": "2022",
+        "datasourceId": "dhw_2022",
+        "display": "2022"
+      },
+      {
+        "classId": "2023",
+        "datasourceId": "dhw_2023",
+        "display": "2023"
+      },
+      {
+        "classId": "2024",
+        "datasourceId": "dhw_2024",
+        "display": "2024"
+      }
+    ]
   }
 ]

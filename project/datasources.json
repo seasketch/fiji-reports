@@ -828,16 +828,126 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/expedition/water-quality/d15n.fgb",
-    "layerName": "d15n",
-    "geo_type": "vector",
     "datasourceId": "waterQuality",
+    "geo_type": "vector",
     "formats": ["fgb"],
+    "precalc": true,
+    "layerName": "d15n",
     "classKeys": [],
     "created": "2025-07-25T19:21:38.349Z",
     "lastUpdated": "2025-07-25T19:21:38.349Z",
+    "src": "data/src/expedition/water-quality/d15n.fgb",
     "propertiesToKeep": ["station_id", "d15n"],
-    "explodeMulti": true,
-    "precalc": true
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "dhw_2015",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 31,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:44:24.056Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2016",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 32,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:44:31.414Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2017",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 33,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:44:37.726Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2018",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 34,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:44:44.345Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2019",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 35,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:44:50.734Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2020",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 36,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:44:57.410Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2021",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 37,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:45:03.817Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2022",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 38,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:45:10.108Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2023",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 39,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:45:15.927Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2024",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 40,
+    "created": "2025-07-29T21:39:10.399Z",
+    "lastUpdated": "2025-07-29T21:45:20.883Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
   }
 ]

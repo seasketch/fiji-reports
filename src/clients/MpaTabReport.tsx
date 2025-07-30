@@ -25,6 +25,7 @@ import { BenthicRichness } from "../components/BenthicRichness.js";
 import { InvertPresence } from "../components/InvertPresence.js";
 import { TaxaRichness } from "../components/TaxaRichness.js";
 import { WaterQuality } from "../components/WaterQuality.js";
+import { Dhw } from "../components/Dhw.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -70,6 +71,7 @@ const BaseReport = () => {
         <Geomorphology />
         <DeepwaterBioregions />
         <BenthicRichness />
+        <Dhw />
       </ReportPage>
     </>
   );
