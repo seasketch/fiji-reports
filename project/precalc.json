@@ -2986,6 +2986,54 @@
   {
     "geographyId": "eez",
     "metricId": "valid",
+    "classId": "bleachingAlerts-1",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 86
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "bleachingAlerts-2",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 14380
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "bleachingAlerts-3",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 19679
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "bleachingAlerts-4",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 15730
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "bleachingAlerts-5",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 5040
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "bleachingAlerts-6",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 6
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",

@@ -1750,5 +1750,45 @@
         "display": "2024"
       }
     ]
+  },
+  {
+    "metricId": "bleachingAlerts",
+    "type": "countOverlap",
+    "datasourceId": "bleachingAlerts",
+    "layerId": "fOgMJSW5J",
+    "classes": [
+      {
+        "classId": "0",
+        "display": "No Stress"
+      },
+      {
+        "classId": "1",
+        "display": "Bleaching Watch"
+      },
+      {
+        "classId": "2",
+        "display": "Bleaching Warning"
+      },
+      {
+        "classId": "3",
+        "display": "Bleaching Alert Level 1"
+      },
+      {
+        "classId": "4",
+        "display": "Bleaching Alert Level 2"
+      },
+      {
+        "classId": "5",
+        "display": "Bleaching Alert Level 3"
+      },
+      {
+        "classId": "6",
+        "display": "Bleaching Alert Level 4"
+      },
+      {
+        "classId": "7",
+        "display": "Bleaching Alert Level 5"
+      }
+    ]
   }
 ]

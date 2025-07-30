@@ -1,0 +1,92 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "0",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "1",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "2",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 12,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "3",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 299,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "4",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 10,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "5",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "6",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "7",
+      "sketchId": "78746",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    }
+  ]
+}
