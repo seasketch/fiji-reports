@@ -1790,5 +1790,38 @@
         "display": "Bleaching Alert Level 5"
       }
     ]
+  },
+  {
+    "metricId": "benthicACA",
+    "type": "areaOverlap",
+    "datasourceId": "benthicACA",
+    "classKey": "class",
+    "layerId": "gHwdWV1iS",
+    "classes": [
+      {
+        "classId": "Coral/Algae",
+        "display": "Coral/Algae"
+      },
+      {
+        "classId": "Microalgal Mats",
+        "display": "Microalgal Mats"
+      },
+      {
+        "classId": "Rock",
+        "display": "Rock"
+      },
+      {
+        "classId": "Rubble",
+        "display": "Rubble"
+      },
+      {
+        "classId": "Sand",
+        "display": "Sand"
+      },
+      {
+        "classId": "Seagrass",
+        "display": "Seagrass"
+      }
+    ]
   }
 ]

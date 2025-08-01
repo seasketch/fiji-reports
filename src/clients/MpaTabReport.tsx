@@ -27,6 +27,7 @@ import { TaxaRichness } from "../components/TaxaRichness.js";
 import { WaterQuality } from "../components/WaterQuality.js";
 import { Dhw } from "../components/Dhw.js";
 import { BleachingAlerts } from "../components/BleachingAlerts.js";
+import { BenthicACA } from "../components/BenthicACA.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -74,6 +75,7 @@ const BaseReport = () => {
         <BenthicRichness />
         <Dhw />
         <BleachingAlerts />
+        <BenthicACA />
       </ReportPage>
     </>
   );
