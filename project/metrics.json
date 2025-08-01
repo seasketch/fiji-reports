@@ -1823,5 +1823,18 @@
         "display": "Seagrass"
       }
     ]
+  },
+  {
+    "metricId": "marxan",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "datasourceId": "marxan_inshore",
+        "classId": "SSOLN",
+        "classKey": "SSOLN",
+        "display": "Marxan",
+        "layerId": "aFSO2pWGP"
+      }
+    ]
   }
 ]

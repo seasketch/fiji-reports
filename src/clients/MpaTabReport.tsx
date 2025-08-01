@@ -28,6 +28,7 @@ import { WaterQuality } from "../components/WaterQuality.js";
 import { Dhw } from "../components/Dhw.js";
 import { BleachingAlerts } from "../components/BleachingAlerts.js";
 import { BenthicACA } from "../components/BenthicACA.js";
+import { Marxan } from "../components/Marxan.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -53,6 +54,7 @@ const BaseReport = () => {
         <DistanceToPort />
         <DistanceToShore />
         <Gfw />
+        <Marxan />
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "EXPEDITION"}>

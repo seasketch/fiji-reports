@@ -963,15 +963,28 @@
     "src": "data/src/Data_Received/CoralReefWatch/baa_2024.tif"
   },
   {
-    "src": "data/src/Data_Received/AllenCoralAtlas/benthic.gpkg",
-    "layerName": "Fijian Exclusive Economic Zone",
-    "geo_type": "vector",
     "datasourceId": "benthicACA",
+    "geo_type": "vector",
     "formats": ["fgb"],
+    "precalc": true,
+    "layerName": "Fijian Exclusive Economic Zone",
     "classKeys": ["class"],
     "created": "2025-07-31T18:16:49.807Z",
     "lastUpdated": "2025-07-31T18:16:49.807Z",
+    "src": "data/src/Data_Received/AllenCoralAtlas/benthic.gpkg",
     "propertiesToKeep": ["class"],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/Data_Received/Prioritization/marxan_inshore_singlepart.fgb",
+    "layerName": "marxan_inshore_singlepart",
+    "geo_type": "vector",
+    "datasourceId": "marxan_inshore",
+    "formats": ["fgb"],
+    "classKeys": [],
+    "created": "2025-08-01T20:49:12.563Z",
+    "lastUpdated": "2025-08-01T20:49:12.563Z",
+    "propertiesToKeep": ["SSOLN"],
     "explodeMulti": true,
     "precalc": true
   }

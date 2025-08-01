@@ -1,0 +1,24 @@
+[
+  {
+    "sketchId": "79007",
+    "sketchName": "hydrothermalVents (copy)",
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  {
+    "sketchId": "79005",
+    "sketchName": "hydrothermalVents",
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  {
+    "sketchId": "79006",
+    "sketchName": "ventsOverlap",
+    "isCollection": true,
+    "min": null,
+    "max": null,
+    "mean": null
+  }
+]

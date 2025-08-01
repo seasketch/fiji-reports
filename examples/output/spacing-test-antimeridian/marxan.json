@@ -1,0 +1,24 @@
+[
+  {
+    "sketchId": "101155",
+    "sketchName": "b",
+    "min": 4,
+    "max": 5,
+    "mean": 4.5
+  },
+  {
+    "sketchId": "101154",
+    "sketchName": "a",
+    "min": 0,
+    "max": 10,
+    "mean": 0.7
+  },
+  {
+    "sketchId": "101153",
+    "sketchName": "spacing-test-antimeridian",
+    "isCollection": true,
+    "min": 1,
+    "max": 10,
+    "mean": 1.5
+  }
+]

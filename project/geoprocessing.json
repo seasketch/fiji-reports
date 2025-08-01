@@ -32,6 +32,7 @@
     "src/functions/waterQuality.ts",
     "src/functions/dhw.ts",
     "src/functions/bleachingAlerts.ts",
-    "src/functions/benthicACA.ts"
+    "src/functions/benthicACA.ts",
+    "src/functions/marxan.ts"
   ]
 }
