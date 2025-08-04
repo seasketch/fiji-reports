@@ -69,7 +69,7 @@ export const Marxan: React.FunctionComponent = () => {
               </p>
 
               <LayerToggle
-                layerId={"aFSO2pWGP"}
+                layerId={"794A0SDQ3"}
                 label={t("Show Inshore Priority Areas")}
               />
               <LayerToggle

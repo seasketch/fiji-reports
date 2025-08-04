@@ -29,6 +29,7 @@ import { Dhw } from "../components/Dhw.js";
 import { BleachingAlerts } from "../components/BleachingAlerts.js";
 import { BenthicACA } from "../components/BenthicACA.js";
 import { Marxan } from "../components/Marxan.js";
+import { PristineSeas } from "../components/PristineSeas.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -78,6 +79,7 @@ const BaseReport = () => {
         <Dhw />
         <BleachingAlerts />
         <BenthicACA />
+        <PristineSeas />
       </ReportPage>
     </>
   );

@@ -1,0 +1,28 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "biodiversity",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 0.9490314636911664
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "carbon",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 0.8092966250010899
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "food",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 0.968701788357326
+    }
+  ]
+}

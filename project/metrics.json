@@ -1835,5 +1835,29 @@
         "display": "Priority Areas"
       }
     ]
+  },
+  {
+    "metricId": "pristineSeas",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "datasourceId": "pristineSeas_carbon",
+        "classId": "carbon",
+        "display": "Carbon",
+        "layerId": "Wi3LG24Ad"
+      },
+      {
+        "datasourceId": "pristineSeas_biodiversity",
+        "classId": "biodiversity",
+        "display": "Biodiversity",
+        "layerId": "rHuO2TrpD"
+      },
+      {
+        "datasourceId": "pristineSeas_food",
+        "classId": "food",
+        "display": "Food",
+        "layerId": "xrImj6Kw1"
+      }
+    ]
   }
 ]

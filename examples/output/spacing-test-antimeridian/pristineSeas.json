@@ -1,0 +1,85 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "biodiversity",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 0.8078450858592987,
+      "extra": {
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "biodiversity",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "biodiversity",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0.8078450858592987
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "carbon",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 0.25017062983533833,
+      "extra": {
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "carbon",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "carbon",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0.25017062983533833
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "food",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 0.7851972132921219,
+      "extra": {
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "food",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "food",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0.7851972132921219
+    }
+  ]
+}
