@@ -8,7 +8,11 @@ import {
   SketchCollection,
   toSketchArray,
 } from "@seasketch/geoprocessing/client-core";
-import { featureCollection, truncate as truncateGeom } from "@turf/turf";
+import {
+  booleanIntersects,
+  featureCollection,
+  truncate as truncateGeom,
+} from "@turf/turf";
 
 export interface SpRichnessResults {
   sketchId: string;
@@ -83,7 +87,7 @@ export async function overlapPolygonStats(
       if (
         featProperty &&
         feature.properties &&
-        feature.properties[featProperty]
+        feature.properties[featProperty] !== undefined
       ) {
         return feature.properties[featProperty];
       }
@@ -124,7 +128,7 @@ export const intersectRichness = (
 
   featuresB.forEach((curFeature, index) => {
     // Optimization: can this be done with turf.booleanIntersects?
-    const rem = clip(featureCollection([featureA, curFeature]), "intersection");
+    const rem = booleanIntersects(featureA, curFeature);
 
     if (!rem) return 0;
 

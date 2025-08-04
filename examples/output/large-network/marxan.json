@@ -2,37 +2,37 @@
   {
     "sketchId": "77764",
     "sketchName": "rotuma",
-    "min": null,
-    "max": null,
-    "mean": null
+    "min": 0,
+    "max": 10,
+    "mean": 6.6
   },
   {
     "sketchId": "77761",
     "sketchName": "vanua",
-    "min": null,
-    "max": null,
-    "mean": null
+    "min": 0,
+    "max": 10,
+    "mean": 4.7
   },
   {
     "sketchId": "77763",
     "sketchName": "southwest",
-    "min": null,
-    "max": null,
-    "mean": null
+    "min": 0,
+    "max": 8,
+    "mean": 4.3
   },
   {
     "sketchId": "77762",
     "sketchName": "moce",
-    "min": null,
-    "max": null,
-    "mean": null
+    "min": 5,
+    "max": 10,
+    "mean": 7.7
   },
   {
     "sketchId": "77760",
     "sketchName": "large-network",
     "isCollection": true,
-    "min": null,
-    "max": null,
-    "mean": null
+    "min": 0,
+    "max": 10,
+    "mean": 5
   }
 ]

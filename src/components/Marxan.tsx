@@ -45,11 +45,6 @@ export const Marxan: React.FunctionComponent = () => {
               title={titleLabel}
               items={
                 <>
-                  <LayerToggle
-                    layerId={metricGroup.layerId}
-                    label={mapLabel}
-                    simple
-                  />
                   <DataDownload
                     filename="marxan"
                     data={metricResults}
@@ -72,6 +67,15 @@ export const Marxan: React.FunctionComponent = () => {
                 range of <Pill>{overallStats.min}</Pill> to{" "}
                 <Pill>{overallStats.max}</Pill>.
               </p>
+
+              <LayerToggle
+                layerId={"aFSO2pWGP"}
+                label={t("Show Inshore Priority Areas")}
+              />
+              <LayerToggle
+                layerId={"thx4JZZtC"}
+                label={t("Show Offshore Priority Areas")}
+              />
 
               {isCollection && (
                 <Collapse title={t("Show by Sketch")}>

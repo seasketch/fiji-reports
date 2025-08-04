@@ -4,9 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
-  Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
 } from "@seasketch/geoprocessing";
@@ -27,19 +24,8 @@ export async function marxan(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<SpRichnessResults[]> {
   const splitSketch = splitSketchAntimeridian(sketch);
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
 
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("marxan");

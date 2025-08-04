@@ -1829,11 +1829,10 @@
     "type": "countOverlap",
     "classes": [
       {
-        "datasourceId": "marxan_inshore",
+        "datasourceId": "marxan",
         "classId": "SSOLN",
         "classKey": "SSOLN",
-        "display": "Marxan",
-        "layerId": "aFSO2pWGP"
+        "display": "Priority Areas"
       }
     ]
   }
