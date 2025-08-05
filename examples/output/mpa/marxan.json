@@ -1,9 +1,125 @@
-[
-  {
-    "sketchId": "75741",
-    "sketchName": "mpa",
-    "min": 0,
-    "max": 10,
-    "mean": 4.3
-  }
-]
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "0",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 7547787937.57229,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "1",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 4629194374.766851,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "10",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 224873886.406189,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "2",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 3598161936.324453,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "3",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 642181989.098176,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "4",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 615158455.713052,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "5",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 196890286.798295,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "6",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 416621614.764605,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "7",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 246873938.401612,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "8",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 175634983.503865,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "9",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 933874450.553052,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    }
+  ]
+}

@@ -1,9 +1,125 @@
-[
-  {
-    "sketchId": "78746",
-    "sketchName": "cross_antimeridian",
-    "min": 0,
-    "max": 10,
-    "mean": 3.6
-  }
-]
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "0",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 3376072753.913329,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "1",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2768089888.03192,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "10",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 22410767.38947,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "2",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 1210887520.301886,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "3",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 118147044.695214,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "4",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 346311244.289877,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "5",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 62636685.639664,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "6",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 254862984.125118,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "7",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 69054107.380006,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "8",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 7209012.954343,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "9",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 21243799.484033,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    }
+  ]
+}

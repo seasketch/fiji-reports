@@ -1,24 +1,378 @@
-[
-  {
-    "sketchId": "79007",
-    "sketchName": "hydrothermalVents (copy)",
-    "min": 6,
-    "max": 10,
-    "mean": 7.4
-  },
-  {
-    "sketchId": "79005",
-    "sketchName": "hydrothermalVents",
-    "min": 6,
-    "max": 10,
-    "mean": 7.4
-  },
-  {
-    "sketchId": "79006",
-    "sketchName": "ventsOverlap",
-    "isCollection": true,
-    "min": 6,
-    "max": 10,
-    "mean": 7.4
-  }
-]
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "0",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "0",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "0",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "1",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "1",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "1",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "10",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 474339521.634985,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "10",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 474339521.634985,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "10",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 474339521.634985,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "2",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "2",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "2",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "3",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "3",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "3",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "4",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "4",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "4",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "5",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "5",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "5",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "6",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 18919774.972475,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "6",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 18919774.972475,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "6",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 18919774.972475,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "7",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 60014851.178372,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "7",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 60014851.178372,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "7",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 60014851.178372,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "8",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 80224293.704511,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "8",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 80224293.704511,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "8",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 80224293.704511,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "9",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "9",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "9",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    }
+  ]
+}

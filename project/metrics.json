@@ -1827,12 +1827,52 @@
   {
     "metricId": "marxan",
     "type": "countOverlap",
+    "datasourceId": "marxan",
+    "classKey": "SSOLN",
     "classes": [
       {
-        "datasourceId": "marxan",
-        "classId": "SSOLN",
-        "classKey": "SSOLN",
-        "display": "Priority Areas"
+        "classId": "0",
+        "display": "0"
+      },
+      {
+        "classId": "1",
+        "display": "1"
+      },
+      {
+        "classId": "2",
+        "display": "2"
+      },
+      {
+        "classId": "3",
+        "display": "3"
+      },
+      {
+        "classId": "4",
+        "display": "4"
+      },
+      {
+        "classId": "5",
+        "display": "5"
+      },
+      {
+        "classId": "6",
+        "display": "6"
+      },
+      {
+        "classId": "7",
+        "display": "7"
+      },
+      {
+        "classId": "8",
+        "display": "8"
+      },
+      {
+        "classId": "9",
+        "display": "9"
+      },
+      {
+        "classId": "10",
+        "display": "10"
       }
     ]
   },

@@ -1,9 +1,125 @@
-[
-  {
-    "sketchId": "112904",
-    "sketchName": "invertTest",
-    "min": 0,
-    "max": 10,
-    "mean": 4.5
-  }
-]
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "0",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 5972553353.320121,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "1",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 1662021592.402126,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "10",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 1041209919.31371,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "2",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 1859245372.10164,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "3",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 997704524.761278,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "4",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 693671253.22921,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "5",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 311229407.570289,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "6",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 351753648.143049,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "7",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 244086015.920452,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "8",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 254150345.116355,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "marxan",
+      "classId": "9",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 1105250972.67283,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    }
+  ]
+}

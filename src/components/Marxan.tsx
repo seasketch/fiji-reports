@@ -2,42 +2,79 @@ import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
   Collapse,
-  Column,
-  KeySection,
   LayerToggle,
   ReportError,
-  ReportTableStyled,
   ResultsCard,
-  Table,
   ToolbarCard,
   useSketchProperties,
   DataDownload,
   Pill,
+  SketchClassTable,
+  Table,
 } from "@seasketch/geoprocessing/client-ui";
-import project from "../../project/projectClient.js";
-import { SpRichnessResults } from "../util/overlapPolygonStats.js";
-import { styled } from "styled-components";
-import { TFunction } from "i18next";
 import { Download } from "@styled-icons/bootstrap/Download";
+import { TFunction } from "i18next";
+import {
+  Metric,
+  ReportResult,
+  MetricGroup,
+  SketchProperties,
+  flattenBySketchAllClass,
+  metricsWithSketchId,
+  roundDecimal,
+} from "@seasketch/geoprocessing/client-core";
+import project from "../../project/projectClient.js";
+
+// Calculate weighted average and min/max from marxan metrics
+const calculateMarxanStats = (metrics: Metric[]) => {
+  if (!metrics || metrics.length === 0) {
+    return { min: 0, max: 0, mean: 0 };
+  }
+
+  // Convert classId to numbers and calculate weighted average
+  const totalArea = metrics.reduce((sum, metric) => sum + metric.value, 0);
+  const weightedSum = metrics.reduce((sum, metric) => {
+    const rating = parseFloat(metric.classId || "-1");
+    if (rating === -1) throw new Error("Invalid rating, check marxan metrics");
+    return sum + rating * metric.value;
+  }, 0);
+
+  const mean = totalArea > 0 ? weightedSum / totalArea : 0;
+
+  // Find min and max ratings (only for metrics with non-zero area)
+  const ratings = metrics
+    .filter((metric) => metric.value > 0) // Only consider metrics with area > 0
+    .map((metric) => (metric.classId ? parseFloat(metric.classId) : 0))
+    .filter((rating) => !isNaN(rating));
+
+  if (ratings.length === 0) {
+    return { min: 0, max: 0, mean: 0 };
+  }
+
+  const min = Math.min(...ratings);
+  const max = Math.max(...ratings);
+
+  return { min, max, mean };
+};
 
 /**
  * Marxan report
  */
 export const Marxan: React.FunctionComponent = () => {
   const { t } = useTranslation();
-  const [{ isCollection }] = useSketchProperties();
+  const [{ isCollection, id, childProperties }] = useSketchProperties();
   const metricGroup = project.getMetricGroup("marxan", t);
 
   // Labels
   const titleLabel = t("Prioritization");
-  const mapLabel = t("Show on Map");
 
   return (
     <ResultsCard title={titleLabel} functionName="marxan" useChildCard>
-      {(metricResults: SpRichnessResults[]) => {
-        const overallStats = isCollection
-          ? metricResults.find((s) => s.isCollection)!
-          : metricResults[0];
+      {(data: ReportResult) => {
+        // Calculate overall stats from all metrics
+        const overallStats = calculateMarxanStats(
+          data.metrics.filter((m) => m.sketchId === id),
+        );
 
         return (
           <ReportError>
@@ -47,7 +84,7 @@ export const Marxan: React.FunctionComponent = () => {
                 <>
                   <DataDownload
                     filename="marxan"
-                    data={metricResults}
+                    data={data.metrics}
                     formats={["csv", "json"]}
                     placement="left-start"
                     titleElement={
@@ -63,8 +100,8 @@ export const Marxan: React.FunctionComponent = () => {
             >
               <p>
                 This area of interest has an average prioritization score of{" "}
-                <Pill>{overallStats.mean}</Pill>, and contains areas within the
-                range of <Pill>{overallStats.min}</Pill> to{" "}
+                <Pill>{overallStats.mean.toFixed(2)}</Pill>, and contains areas
+                within the range of <Pill>{overallStats.min}</Pill> to{" "}
                 <Pill>{overallStats.max}</Pill>.
               </p>
 
@@ -77,9 +114,9 @@ export const Marxan: React.FunctionComponent = () => {
                 label={t("Show Offshore Priority Areas")}
               />
 
-              {isCollection && (
+              {isCollection && childProperties && (
                 <Collapse title={t("Show by Sketch")}>
-                  {genRichnessTable(metricResults, t)}
+                  {genSketchSummary(data, metricGroup, childProperties, t)}
                 </Collapse>
               )}
 
@@ -102,37 +139,47 @@ export const Marxan: React.FunctionComponent = () => {
   );
 };
 
-export const RichnessTableStyled = styled(ReportTableStyled)`
-  width: 100%;
-  overflow-x: auto;
-  font-size: 12px;
+// Generate summary table with min, mean, max for each sketch
+const genSketchSummary = (
+  data: ReportResult,
+  metricGroup: MetricGroup,
+  childProperties: SketchProperties[],
+  t: TFunction,
+) => {
+  const childSketchIds = childProperties
+    ? childProperties.map((skp) => skp.id)
+    : [];
 
-  th:first-child,
-  td:first-child {
-    min-width: 140px;
-    position: sticky;
-    left: 0;
-    text-align: left;
-    background: #efefef;
-  }
+  // Calculate stats for each sketch
+  const sketchStats = childSketchIds.map((sketchId) => {
+    const sketchMetrics = data.metrics.filter(
+      (m) => m.metricId === metricGroup.metricId && m.sketchId === sketchId,
+    );
+    const stats = calculateMarxanStats(sketchMetrics);
+    const sketchName =
+      childProperties.find((sp) => sp.id === sketchId)?.name || sketchId;
 
-  th,
-  td {
-    text-align: center;
-    white-space: nowrap;
-  }
-`;
+    return {
+      sketchId,
+      sketchName,
+      min: stats.min,
+      max: stats.max,
+      mean: stats.mean,
+    };
+  });
 
-export const genRichnessTable = (data: SpRichnessResults[], t: TFunction) => (
-  <RichnessTableStyled>
+  return (
     <Table
       columns={[
-        { Header: t("MPA"), accessor: "sketchName" },
+        { Header: t("Sketch"), accessor: "sketchName" },
         { Header: t("Min"), accessor: "min" },
         { Header: t("Avg"), accessor: "mean" },
         { Header: t("Max"), accessor: "max" },
       ]}
-      data={data.filter((s) => !s.isCollection)}
+      data={sketchStats.map((stat) => ({
+        ...stat,
+        mean: stat.mean.toFixed(2),
+      }))}
     />
-  </RichnessTableStyled>
-);
+  );
+};
