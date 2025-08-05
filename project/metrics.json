@@ -1899,5 +1899,67 @@
         "layerId": "xrImj6Kw1"
       }
     ]
+  },
+  {
+    "metricId": "mangroves",
+    "type": "areaOverlap",
+    "layerId": "Xm_YFyIjr",
+    "classes": [
+      {
+        "datasourceId": "gmw_1996",
+        "classId": "1996",
+        "display": "1996"
+      },
+      {
+        "datasourceId": "gmw_2007",
+        "classId": "2007",
+        "display": "2007"
+      },
+      {
+        "datasourceId": "gmw_2008",
+        "classId": "2008",
+        "display": "2008"
+      },
+      {
+        "datasourceId": "gmw_2009",
+        "classId": "2009",
+        "display": "2009"
+      },
+      {
+        "datasourceId": "gmw_2010",
+        "classId": "2010",
+        "display": "2010"
+      },
+      {
+        "datasourceId": "gmw_2015",
+        "classId": "2015",
+        "display": "2015"
+      },
+      {
+        "datasourceId": "gmw_2016",
+        "classId": "2016",
+        "display": "2016"
+      },
+      {
+        "datasourceId": "gmw_2017",
+        "classId": "2017",
+        "display": "2017"
+      },
+      {
+        "datasourceId": "gmw_2018",
+        "classId": "2018",
+        "display": "2018"
+      },
+      {
+        "datasourceId": "gmw_2019",
+        "classId": "2019",
+        "display": "2019"
+      },
+      {
+        "datasourceId": "gmw_2020",
+        "classId": "2020",
+        "display": "2020"
+      }
+    ]
   }
 ]

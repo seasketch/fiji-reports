@@ -30,6 +30,7 @@ import { BleachingAlerts } from "../components/BleachingAlerts.js";
 import { BenthicACA } from "../components/BenthicACA.js";
 import { Marxan } from "../components/Marxan.js";
 import { PristineSeas } from "../components/PristineSeas.js";
+import { Mangroves } from "../components/Mangroves.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -80,6 +81,7 @@ const BaseReport = () => {
         <BleachingAlerts />
         <BenthicACA />
         <PristineSeas />
+        <Mangroves />
       </ReportPage>
     </>
   );

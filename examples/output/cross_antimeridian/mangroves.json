@@ -1,0 +1,125 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "1996",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2924897.084192,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2007",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 3018654.714278,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2008",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 3082004.271296,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2009",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 3153135.805228,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2010",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 3053201.930672,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2015",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2971177.789836,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2016",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2823850.226503,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2017",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2768369.691707,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2018",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2728216.601459,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2019",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2711347.758607,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2020",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 2703494.949574,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    }
+  ]
+}

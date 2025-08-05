@@ -4,42 +4,41 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
+  getFirstFromParam,
   DefaultExtraParams,
-  Feature,
-  isVectorDatasource,
-  getFeaturesForSketchBBoxes,
+  rasterMetrics,
+  isRasterDatasource,
+  loadCog,
   overlapPolygonArea,
+  getFeaturesForSketchBBoxes,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
   Metric,
   ReportResult,
+  isVectorDatasource,
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * marxan: A geoprocessing function that calculates overlap metrics for vector datasources
+ * mangroves: A geoprocessing function that calculates overlap metrics for raster datasources
  * @param sketch - A sketch or collection of sketches
  * @param extraParams
  * @returns Calculated metrics and a null sketch
  */
-export async function marxan(
+export async function mangroves(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
 ): Promise<ReportResult> {
+  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
   const splitSketch = splitSketchAntimeridian(sketch);
 
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
-
   // Calculate overlap metrics for each class in metric group
-  const metricGroup = project.getMetricGroup("marxan");
-  const metrics = (
+  const metricGroup = project.getMetricGroup("mangroves");
+  const metrics: Metric[] = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
         const ds = project.getMetricGroupDatasource(metricGroup, {
@@ -47,43 +46,23 @@ export async function marxan(
         });
         if (!isVectorDatasource(ds))
           throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
+
         const url = project.getDatasourceUrl(ds);
 
-        // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(splitSketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
+        const features = await getFeaturesForSketchBBoxes<
+          Polygon | MultiPolygon
+        >(splitSketch, url);
 
-        // Get classKey for current data class
-        const classKey = project.getMetricGroupClassKey(metricGroup, {
-          classId: curClass.classId,
-        });
-
-        let finalFeatures: Feature<Polygon | MultiPolygon>[] = [];
-        if (classKey === undefined)
-          // Use all features
-          finalFeatures = features;
-        else {
-          // Filter to features that are a member of this class
-          finalFeatures = features.filter(
-            (feat) =>
-              feat.geometry &&
-              feat.properties &&
-              String(feat.properties[classKey]) === curClass.classId,
-          );
-        }
-
-        // Calculate overlap metrics
+        // Run raster analysis
         const overlapResult = await overlapPolygonArea(
           metricGroup.metricId,
-          finalFeatures,
+          features,
           splitSketch,
         );
 
         return overlapResult.map(
-          (metric): Metric => ({
-            ...metric,
+          (metrics): Metric => ({
+            ...metrics,
             classId: curClass.classId,
           }),
         );
@@ -96,8 +75,8 @@ export async function marxan(
   };
 }
 
-export default new GeoprocessingHandler(marxan, {
-  title: "marxan",
+export default new GeoprocessingHandler(mangroves, {
+  title: "mangroves",
   description: "",
   timeout: 500, // seconds
   memory: 1024, // megabytes

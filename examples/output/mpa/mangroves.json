@@ -1,0 +1,125 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "1996",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1855417.067926,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2007",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1774178.684352,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2008",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1767589.018029,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2009",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1736319.055994,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2010",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1802432.593414,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2015",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1938175.687398,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2016",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 2059468.854045,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2017",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1869591.460049,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2018",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1770806.726171,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2019",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1846731.175441,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "mangroves",
+      "classId": "2020",
+      "sketchId": "75741",
+      "groupId": null,
+      "value": 1866852.239019,
+      "extra": {
+        "sketchName": "mpa"
+      }
+    }
+  ]
+}
