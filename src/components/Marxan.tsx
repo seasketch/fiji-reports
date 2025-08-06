@@ -9,7 +9,6 @@ import {
   useSketchProperties,
   DataDownload,
   Pill,
-  SketchClassTable,
   Table,
 } from "@seasketch/geoprocessing/client-ui";
 import { Download } from "@styled-icons/bootstrap/Download";
@@ -19,9 +18,6 @@ import {
   ReportResult,
   MetricGroup,
   SketchProperties,
-  flattenBySketchAllClass,
-  metricsWithSketchId,
-  roundDecimal,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 
