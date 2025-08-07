@@ -12,7 +12,7 @@ import {
   isFeature,
   toFeatureArray,
 } from "@seasketch/geoprocessing";
-import fijiEez from "./fijiEezUnclean.json" with { type: "json" };
+import fijiEez from "./eez_v11_clippingLayer.json" with { type: "json" };
 
 /**
  * Preprocessor takes a Polygon feature/sketch and returns the portion that

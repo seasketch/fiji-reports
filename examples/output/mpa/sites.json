@@ -2,11 +2,11 @@
   "metrics": [
     {
       "geographyId": null,
-      "metricId": "islands",
+      "metricId": "provinces",
       "classId": null,
       "sketchId": null,
       "groupId": null,
-      "value": 6
+      "value": 2
     },
     {
       "geographyId": null,
@@ -20,112 +20,112 @@
   "stations": [
     {
       "station_id": "TAV_34",
-      "island": "Taveuni",
+      "province": "Cakaudrove",
       "sketchName": "mpa"
     },
     {
       "station_id": "TAV_35",
-      "island": "Taveuni",
+      "province": "Cakaudrove",
       "sketchName": "mpa"
     },
     {
       "station_id": "CKE_23",
-      "island": "Caukadrove East",
+      "province": "Cakaudrove",
       "sketchName": "mpa"
     },
     {
       "station_id": "CKE_22",
-      "island": "Caukadrove East",
+      "province": "Cakaudrove",
       "sketchName": "mpa"
     },
     {
       "station_id": "TAV_39",
-      "island": "Taveuni",
+      "province": "Cakaudrove",
       "sketchName": "mpa"
     },
     {
       "station_id": "TAV_36",
-      "island": "Taveuni",
+      "province": "Cakaudrove",
       "sketchName": "mpa"
     },
     {
       "station_id": "TAV_37",
-      "island": "Taveuni",
+      "province": "Cakaudrove",
       "sketchName": "mpa"
     },
     {
       "station_id": "KIB_61",
-      "island": "Kibobo Islets",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "KIB_63",
-      "island": "Kibobo Islets",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_59",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_57",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_60",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_55",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "KNC_66",
-      "island": "Kanacea",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "KNC_64",
-      "island": "Kanacea",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "KNC_65",
-      "island": "Kanecea",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_62",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_62",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_58",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_62",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_62",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     },
     {
       "station_id": "VBA_56",
-      "island": "Vanau Balavu",
+      "province": "Lau",
       "sketchName": "mpa"
     }
   ]

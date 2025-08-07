@@ -2,7 +2,7 @@
   "metrics": [
     {
       "geographyId": null,
-      "metricId": "islands",
+      "metricId": "provinces",
       "classId": null,
       "sketchId": null,
       "groupId": null,

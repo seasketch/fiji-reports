@@ -116,7 +116,7 @@ export const BenthicCover: React.FunctionComponent = () => {
                 ]}
               />
 
-              <Collapse title={t("Show by Station")}>
+              <Collapse title={t("Show by Dive Site")}>
                 {genSketchTable(
                   data.filter(
                     (s) => s.station_id && s.station_id.startsWith("station:"),

@@ -9,7 +9,6 @@ import {
   getFeaturesForSketchBBoxes,
   createMetric,
   toSketchArray,
-  splitFeatureAntimeridian,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
@@ -24,13 +23,13 @@ import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 interface SiteProperties {
   station_id?: string;
-  island?: string;
+  province?: string;
 }
 
 interface SiteReportResult extends ReportResult {
   stations: {
     station_id: string;
-    island: string;
+    province: string;
     sketchName: string;
   }[];
 }
@@ -66,10 +65,10 @@ export async function sites(
 
   // Get unique counts and feature properties
   let stations = 0;
-  const uniqueIslands = new Set<string>();
+  const uniqueprovinces = new Set<string>();
   const featureProperties: {
     station_id: string;
-    island: string;
+    province: string;
     sketchName: string;
   }[] = [];
 
@@ -86,11 +85,11 @@ export async function sites(
     if (containingSketch) {
       const props = feature.properties || {};
       if (props.station_id) stations++;
-      if (props.island) uniqueIslands.add(props.island);
+      if (props.province) uniqueprovinces.add(props.province);
 
       featureProperties.push({
         station_id: props.station_id || "",
-        island: props.island || "",
+        province: props.province || "",
         sketchName: containingSketch.properties?.name || "",
       });
     }
@@ -103,8 +102,8 @@ export async function sites(
       value: stations,
     }),
     createMetric({
-      metricId: "islands",
-      value: uniqueIslands.size,
+      metricId: "provinces",
+      value: uniqueprovinces.size,
     }),
   ];
 

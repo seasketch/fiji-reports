@@ -2,11 +2,11 @@
   "metrics": [
     {
       "geographyId": null,
-      "metricId": "islands",
+      "metricId": "provinces",
       "classId": null,
       "sketchId": null,
       "groupId": null,
-      "value": 6
+      "value": 4
     },
     {
       "geographyId": null,
@@ -20,247 +20,247 @@
   "stations": [
     {
       "station_id": "KUB_37",
-      "island": "Kubuna",
+      "province": "Tailevu",
       "sketchName": "invertTest"
     },
     {
       "station_id": "KUB_39",
-      "island": "Kubuna",
+      "province": "Tailevu",
       "sketchName": "invertTest"
     },
     {
       "station_id": "KUB_40",
-      "island": "Kubuna",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "WAA_17",
-      "island": "Wakaya",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "WAA_19",
-      "island": "Wakaya",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "KUB_41",
-      "island": "Kubuna",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "WAA_16",
-      "island": "Wakaya",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "KUB_42",
-      "island": "Kubuna",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "MAK_21",
-      "island": "Makogai",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_49",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_50",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_46",
-      "island": "Dawasamu",
+      "province": "Tailevu",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_45",
-      "island": "Dawasamu",
+      "province": "Tailevu",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_47",
-      "island": "Dawasamu",
+      "province": "Tailevu",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_57",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_48",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "KUB_44",
-      "island": "Kubuna",
+      "province": "Tailevu",
       "sketchName": "invertTest"
     },
     {
       "station_id": "MAK_18",
-      "island": "Makogai",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_55",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_51",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "MAK_20",
-      "island": "Makogai",
+      "province": "Lomaiviti",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_73",
-      "island": "Ba",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_58",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_94",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_97",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_60",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_56",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_71",
-      "island": "Ba",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_59",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_52",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_69",
-      "island": "Ba",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_61",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_67",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_68",
-      "island": "Ba",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_63",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "DAW_54",
-      "island": "Dawasamu",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_66",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_62",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_95",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_93",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_92",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_65",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_64",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_70",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_89",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_74",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_90",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "YAS_91",
-      "island": "Yasawa",
+      "province": "Ba",
       "sketchName": "invertTest"
     },
     {
       "station_id": "BAP_72",
-      "island": "Ba",
+      "province": "Ra",
       "sketchName": "invertTest"
     }
   ]

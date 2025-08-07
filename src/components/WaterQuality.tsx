@@ -88,7 +88,7 @@ export const WaterQuality: React.FunctionComponent = () => {
               ]}
             />
 
-            <Collapse title={t("Show By Station")}>
+            <Collapse title={t("Show By Dive Site")}>
               {genSketchTable(data, metricGroup, t)}
             </Collapse>
 

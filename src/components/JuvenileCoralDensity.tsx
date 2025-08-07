@@ -32,7 +32,7 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
 
   // Labels
   const titleLabel = t("Juvenile Coral Density");
-  const fishLabel = t("Coral Genus");
+  const coralLabel = t("Coral Genus");
   const mapLabel = t("Map");
   const averageLabel = t("Average Juvenile Coral Density");
 
@@ -79,7 +79,7 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
             >
               <KeySection>
                 <Trans i18nKey="JuvenileCoralDensity 1">
-                  This plan has an average total fish density of{" "}
+                  This plan has an average juvenile coral density of{" "}
                   <Pill>{Number(averages?.total).toFixed(1)} indv/m²</Pill>
                 </Trans>
               </KeySection>
@@ -99,7 +99,7 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
                   metricGroup={metricGroup}
                   columnConfig={[
                     {
-                      columnLabel: fishLabel,
+                      columnLabel: coralLabel,
                       type: "class",
                       width: 20,
                     },
@@ -124,7 +124,7 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
                 />
               </Collapse>
 
-              <Collapse title={t("Show by Station")}>
+              <Collapse title={t("Show by Dive Site")}>
                 {genSketchTable(
                   data.filter(
                     (s) => s.station_id && s.station_id.startsWith("station:"),

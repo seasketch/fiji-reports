@@ -17,7 +17,7 @@ import { Download } from "@styled-icons/bootstrap/Download";
 interface SiteReportResult extends ReportResult {
   stations: {
     station_id: string;
-    island: string;
+    province: string;
     sketchName: string;
   }[];
 }
@@ -35,8 +35,8 @@ export const Sites: React.FunctionComponent = () => {
         // Get metric values
         const stations =
           data.metrics.find((m) => m.metricId === "stations")?.value || 0;
-        const islands =
-          data.metrics.find((m) => m.metricId === "islands")?.value || 0;
+        const provinces =
+          data.metrics.find((m) => m.metricId === "provinces")?.value || 0;
 
         return (
           <ReportError>
@@ -62,9 +62,9 @@ export const Sites: React.FunctionComponent = () => {
                 <Trans i18nKey="Sites 1">
                   This plan contains <Pill>{stations.toString()}</Pill> dive
                   site
-                  {stations === 1 ? "" : "s"} by{" "}
-                  <Pill>{islands.toString()}</Pill> island
-                  {islands === 1 ? "" : "s"}.
+                  {stations === 1 ? "" : "s"} in{" "}
+                  <Pill>{provinces.toString()}</Pill> province
+                  {provinces === 1 ? "" : "s"}.
                 </Trans>
               </p>
 
@@ -79,12 +79,12 @@ export const Sites: React.FunctionComponent = () => {
                     data={data.stations}
                     columns={[
                       {
-                        Header: t("Station ID"),
+                        Header: t("Dive Site"),
                         accessor: "station_id",
                       },
                       {
-                        Header: t("Island"),
-                        accessor: "island",
+                        Header: t("Province"),
+                        accessor: "province",
                       },
                       {
                         Header: t("Within Sketch"),

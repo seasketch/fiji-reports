@@ -2,7 +2,6 @@ import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
   Collapse,
-  Column,
   KeySection,
   LayerToggle,
   ReportError,

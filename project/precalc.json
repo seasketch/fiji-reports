@@ -117,7 +117,7 @@
     "classId": "deepwater_bioregions-Northern Hunga and Wallis plateaus and North Viti and Vanua Levu basin",
     "sketchId": null,
     "groupId": null,
-    "value": 55231974151.17417
+    "value": 55212539586.590324
   },
   {
     "geographyId": "eez",
@@ -157,7 +157,7 @@
     "classId": "deepwater_bioregions-Southeast Rotuma, Isle De Horne, Futuna,Samoa and Niuas plateau",
     "sketchId": null,
     "groupId": null,
-    "value": 63966823371.43207
+    "value": 63955017466.62116
   },
   {
     "geographyId": "eez",
@@ -181,7 +181,7 @@
     "classId": "deepwater_bioregions-total",
     "sketchId": null,
     "groupId": null,
-    "value": 1238486542962.109
+    "value": 1238455302492.714
   },
   {
     "geographyId": "eez",
@@ -237,7 +237,7 @@
     "classId": "eez-total",
     "sketchId": null,
     "groupId": null,
-    "value": 1299522008504.666
+    "value": 1287308586262.8218
   },
   {
     "geographyId": "eez",
@@ -245,7 +245,7 @@
     "classId": "geo_abyss-Hills",
     "sketchId": null,
     "groupId": null,
-    "value": 593834526389.5491
+    "value": 593821101675.3174
   },
   {
     "geographyId": "eez",
@@ -253,7 +253,7 @@
     "classId": "geo_abyss-Mountains",
     "sketchId": null,
     "groupId": null,
-    "value": 498294835097.47906
+    "value": 498278570803.55884
   },
   {
     "geographyId": "eez",
@@ -269,7 +269,7 @@
     "classId": "geo_abyss-total",
     "sketchId": null,
     "groupId": null,
-    "value": 1147608560040.9102
+    "value": 1147578871032.758
   },
   {
     "geographyId": "eez",
@@ -301,7 +301,7 @@
     "classId": "geo_escarpments-total",
     "sketchId": null,
     "groupId": null,
-    "value": 196370135848.86057
+    "value": 196361875635.52658
   },
   {
     "geographyId": "eez",
@@ -317,7 +317,7 @@
     "classId": "geo_plateaus-total",
     "sketchId": null,
     "groupId": null,
-    "value": 259525016332.34137
+    "value": 259505581839.25952
   },
   {
     "geographyId": "eez",
@@ -397,7 +397,7 @@
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 7.8806
+    "value": 7.8801
   },
   {
     "geographyId": "eez",
@@ -405,7 +405,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 6.5166
+    "value": 6.5163
   },
   {
     "geographyId": "eez",
@@ -413,7 +413,7 @@
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 6.0397
+    "value": 6.0395
   },
   {
     "geographyId": "eez",
@@ -421,7 +421,7 @@
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 6.478
+    "value": 6.4778
   },
   {
     "geographyId": "eez",
@@ -429,7 +429,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 5.8974
+    "value": 5.8973
   },
   {
     "geographyId": "eez",
@@ -1853,7 +1853,7 @@
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1108050
+    "value": 1097786
   },
   {
     "geographyId": "eez",
@@ -1861,7 +1861,7 @@
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1108050
+    "value": 1097786
   },
   {
     "geographyId": "eez",
@@ -1869,7 +1869,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1108050
+    "value": 1097786
   },
   {
     "geographyId": "eez",
@@ -1877,7 +1877,7 @@
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1108050
+    "value": 1097786
   },
   {
     "geographyId": "eez",
@@ -1885,7 +1885,7 @@
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1108050
+    "value": 1097786
   },
   {
     "geographyId": "eez",
@@ -1893,7 +1893,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1108050
+    "value": 1097786
   },
   {
     "geographyId": "eez",
@@ -1901,7 +1901,7 @@
     "classId": "gfw_2024-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1108050
+    "value": 1097786
   },
   {
     "geographyId": "eez",
@@ -1909,7 +1909,7 @@
     "classId": "gfw_longline-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 11086
+    "value": 10984
   },
   {
     "geographyId": "eez",
@@ -1917,7 +1917,7 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 11086
+    "value": 10984
   },
   {
     "geographyId": "eez",
@@ -2941,7 +2941,7 @@
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 130131.259943
+    "value": 130127.979943
   },
   {
     "geographyId": "eez",
@@ -2949,7 +2949,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 104966.359845
+    "value": 104964.689845
   },
   {
     "geographyId": "eez",
@@ -2957,7 +2957,7 @@
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 89532.799873
+    "value": 89528.759873
   },
   {
     "geographyId": "eez",
@@ -2965,7 +2965,7 @@
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 89421.559968
+    "value": 89419.699968
   },
   {
     "geographyId": "eez",
@@ -2973,7 +2973,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 73146.049939
+    "value": 73144.049939
   },
   {
     "geographyId": "eez",
@@ -3061,7 +3061,7 @@
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 78806
+    "value": 78801
   },
   {
     "geographyId": "eez",
@@ -3069,7 +3069,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 65166
+    "value": 65163
   },
   {
     "geographyId": "eez",
@@ -3077,7 +3077,7 @@
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 60397
+    "value": 60395
   },
   {
     "geographyId": "eez",
@@ -3085,7 +3085,7 @@
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 64780
+    "value": 64778
   },
   {
     "geographyId": "eez",
@@ -3093,7 +3093,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 58974
+    "value": 58973
   },
   {
     "geographyId": "eez",
