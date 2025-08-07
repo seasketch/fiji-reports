@@ -22,7 +22,6 @@ import {
   metricsWithSketchId,
   percentWithEdge,
   roundLower,
-  squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
@@ -54,7 +53,7 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
   const mapLabel = t("Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
-  const unitsLabel = t("km²");
+  const unitsLabel = t("ha");
 
   return (
     <ResultsCard
@@ -75,15 +74,6 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
         });
         const metrics = [...valueMetrics, ...percentMetrics];
 
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
-
         const areaMetric = firstMatchingMetric(
           data.metrics,
           (m) => m.sketchId === id && m.groupId === null,
@@ -92,9 +82,7 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
           precalcMetrics,
           (m) => m.groupId === null,
         );
-        const areaDisplay = roundLower(
-          squareMeterToKilometer(areaMetric.value),
-        );
+        const areaDisplay = roundLower(areaMetric.value / 10000);
         const percDisplay = percentWithEdge(
           areaMetric.value / totalAreaMetric.value,
         );
@@ -140,7 +128,6 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
               <ClassTable
                 rows={metrics}
                 metricGroup={metricGroup}
-                objective={objectives}
                 columnConfig={[
                   {
                     columnLabel: " ",
@@ -151,8 +138,7 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
                     columnLabel: withinLabel,
                     type: "metricValue",
                     metricId: metricGroup.metricId,
-                    valueFormatter: (v) =>
-                      roundLower(squareMeterToKilometer(Number(v))),
+                    valueFormatter: (v) => roundLower(Number(v) / 10000),
                     valueLabel: unitsLabel,
                     chartOptions: {
                       showTitle: true,

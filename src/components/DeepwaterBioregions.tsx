@@ -20,7 +20,6 @@ import {
   flattenBySketchAllClass,
   metricsWithSketchId,
   roundDecimalFormat,
-  squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
@@ -50,7 +49,7 @@ export const DeepwaterBioregions: React.FunctionComponent<GeogProp> = (
   const titleLabel = t("Deepwater Bioregions");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
-  const unitsLabel = t("km²");
+  const unitsLabel = t("ha");
   const mapLabel = t("Show on Map");
 
   return (
@@ -71,15 +70,6 @@ export const DeepwaterBioregions: React.FunctionComponent<GeogProp> = (
           metricIdOverride: percMetricIdName,
         });
         const metrics = [...valueMetrics, ...percentMetrics];
-
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
 
         return (
           <ReportError>
@@ -118,7 +108,6 @@ export const DeepwaterBioregions: React.FunctionComponent<GeogProp> = (
               <ClassTable
                 rows={metrics}
                 metricGroup={metricGroup}
-                objective={objectives}
                 columnConfig={[
                   {
                     columnLabel: titleLabel,
@@ -130,7 +119,7 @@ export const DeepwaterBioregions: React.FunctionComponent<GeogProp> = (
                     type: "metricValue",
                     metricId: metricGroup.metricId,
                     valueFormatter: (val) =>
-                      roundDecimalFormat(squareMeterToKilometer(Number(val))),
+                      roundDecimalFormat(Number(val) / 10000),
                     valueLabel: unitsLabel,
                     chartOptions: {
                       showTitle: true,

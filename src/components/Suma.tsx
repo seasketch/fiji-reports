@@ -24,7 +24,6 @@ import {
   percentWithEdge,
   roundDecimalFormat,
   roundLower,
-  squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
@@ -53,7 +52,7 @@ export const Suma: React.FunctionComponent<GeogProp> = (props) => {
   const mapLabel = t("Show SUMAs On Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
-  const unitsLabel = t("km²");
+  const unitsLabel = t("ha");
 
   return (
     <ResultsCard
@@ -75,15 +74,6 @@ export const Suma: React.FunctionComponent<GeogProp> = (props) => {
           metricIdOverride: percMetricIdName,
         });
         const metrics = [...valueMetrics, ...percentMetrics];
-
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
 
         return (
           <ReportError>
@@ -119,7 +109,7 @@ export const Suma: React.FunctionComponent<GeogProp> = (props) => {
               <KeySection>
                 {t("This plan contains")}{" "}
                 <b>
-                  {roundLower(squareMeterToKilometer(totalValue))} {unitsLabel}
+                  {roundLower(totalValue / 10000)} {unitsLabel}
                 </b>
                 {" of SUMAs, "}
                 {t("which is")}{" "}
@@ -130,7 +120,6 @@ export const Suma: React.FunctionComponent<GeogProp> = (props) => {
               <ClassTable
                 rows={metrics}
                 metricGroup={metricGroup}
-                objective={objectives}
                 columnConfig={[
                   {
                     columnLabel: t("Name"),
@@ -142,7 +131,7 @@ export const Suma: React.FunctionComponent<GeogProp> = (props) => {
                     type: "metricValue",
                     metricId: metricGroup.metricId,
                     valueFormatter: (val) =>
-                      roundDecimalFormat(squareMeterToKilometer(Number(val))),
+                      roundDecimalFormat(Number(val) / 10000),
                     valueLabel: unitsLabel,
                     chartOptions: {
                       showTitle: true,

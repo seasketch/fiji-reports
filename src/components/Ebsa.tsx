@@ -20,7 +20,6 @@ import {
   flattenBySketchAllClass,
   metricsWithSketchId,
   roundDecimalFormat,
-  squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
@@ -51,7 +50,7 @@ export const Ebsa: React.FunctionComponent<GeogProp> = (props) => {
   const mapLabel = t("Show EBSAs On Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
-  const unitsLabel = t("km²");
+  const unitsLabel = t("ha");
 
   return (
     <ResultsCard
@@ -71,15 +70,6 @@ export const Ebsa: React.FunctionComponent<GeogProp> = (props) => {
           metricIdOverride: percMetricIdName,
         });
         const metrics = [...valueMetrics, ...percentMetrics];
-
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
 
         return (
           <ReportError>
@@ -116,7 +106,6 @@ export const Ebsa: React.FunctionComponent<GeogProp> = (props) => {
               <ClassTable
                 rows={metrics}
                 metricGroup={metricGroup}
-                objective={objectives}
                 columnConfig={[
                   {
                     columnLabel: t("Name"),
@@ -128,7 +117,7 @@ export const Ebsa: React.FunctionComponent<GeogProp> = (props) => {
                     type: "metricValue",
                     metricId: metricGroup.metricId,
                     valueFormatter: (val) =>
-                      roundDecimalFormat(squareMeterToKilometer(Number(val))),
+                      roundDecimalFormat(Number(val) / 10000),
                     valueLabel: unitsLabel,
                     chartOptions: {
                       showTitle: true,

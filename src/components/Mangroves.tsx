@@ -12,7 +12,6 @@ import {
   ReportResult,
   firstMatchingMetric,
   percentWithEdge,
-  squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
@@ -39,7 +38,7 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
   };
   // Labels
   const titleLabel = t("Mangroves - Global Mangrove Watch");
-  const unitsLabel = t("km²");
+  const unitsLabel = t("ha");
 
   return (
     <ResultsCard
@@ -61,7 +60,7 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
             return m
               ? {
                   year: Number(cls.classId),
-                  area: squareMeterToKilometer(m.value),
+                  area: m.value / 10000,
                 }
               : null;
           })
@@ -98,10 +97,9 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
               <>
                 <KeySection>
                   In 2020, this area of interest contained{" "}
-                  {squareMeterToKilometer(valueMetric2020.value).toFixed(2)}{" "}
-                  {unitsLabel}, which was{" "}
-                  {percentWithEdge(percentMetric2020[0].value)} of Fiji's
-                  mangrove habitat.
+                  {(valueMetric2020.value / 10000).toFixed(2)} {unitsLabel},
+                  which was {percentWithEdge(percentMetric2020[0].value)} of
+                  Fiji's mangrove habitat.
                 </KeySection>
                 <LayerToggle
                   layerId={metricGroup.layerId}

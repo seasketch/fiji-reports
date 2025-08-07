@@ -17,7 +17,6 @@ import {
   SketchProperties,
   flattenBySketchAllClass,
   metricsWithSketchId,
-  squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
@@ -43,7 +42,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
   const titleLabel = t("Benthic Map - Allen Coral Atlas");
   const withinLabel = t("Within Area");
   const percWithinLabel = t("% Within Area");
-  const unitsLabel = t("km²");
+  const unitsLabel = t("ha");
 
   return (
     <ResultsCard
@@ -63,15 +62,6 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
         });
         const metrics = [...valueMetrics, ...percentMetrics];
 
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
-
         return (
           <ReportError>
             <p>
@@ -89,7 +79,6 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
             <ClassTable
               rows={metrics}
               metricGroup={metricGroup}
-              objective={objectives}
               columnConfig={[
                 {
                   columnLabel: t("Benthic Feature"),
@@ -100,8 +89,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
                   columnLabel: withinLabel,
                   type: "metricValue",
                   metricId: metricGroup.metricId,
-                  valueFormatter: (val) =>
-                    squareMeterToKilometer(Number(val)).toFixed(2),
+                  valueFormatter: (val) => (Number(val) / 10000).toFixed(2),
                   valueLabel: unitsLabel,
                   chartOptions: {
                     showTitle: true,

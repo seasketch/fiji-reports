@@ -101,7 +101,7 @@ export const MangrovesLineChart: React.FC<MangrovesLineChartProps> = ({
       .on("mouseover", function (event, d) {
         if (tooltip && ref.current) {
           tooltip.style.display = "block";
-          tooltip.innerHTML = `<b>Year:</b> ${d.year}<br/><b>Area:</b> ${d.area.toFixed(2)} km²`;
+          tooltip.innerHTML = `<b>Year:</b> ${d.year}<br/><b>Area:</b> ${d.area.toFixed(2)} ha`;
           d3.select(this).attr("fill", "#007a3d");
         }
       })
@@ -164,7 +164,7 @@ export const MangrovesLineChart: React.FC<MangrovesLineChartProps> = ({
       .attr("y", -margin.left + 18)
       .attr("fill", "#333")
       .style("font-size", "14px")
-      .text("Mangrove Area (km²)");
+      .text("Mangrove Area (ha)");
   }, [data, width, height]);
 
   return <svg ref={ref} />;
