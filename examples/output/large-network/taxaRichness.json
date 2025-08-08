@@ -14,7 +14,7 @@
       "classId": "fish_family_richness",
       "sketchId": null,
       "groupId": null,
-      "value": 19.666666666666668
+      "value": 16.857142857142858
     },
     {
       "geographyId": null,
@@ -81,7 +81,7 @@
       "sketchId": 77761,
       "sketchName": "vanua",
       "coral_genus_richness": 14.428571428571429,
-      "fish_family_richness": 19.666666666666668,
+      "fish_family_richness": 16.857142857142858,
       "invert_genus_richness": 5.166666666666667
     },
     {

@@ -14,7 +14,7 @@
       "classId": "fish_family_richness",
       "sketchId": null,
       "groupId": null,
-      "value": 18.166666666666668
+      "value": 17.210526315789473
     },
     {
       "geographyId": null,
@@ -146,7 +146,7 @@
       "sketchId": 75741,
       "sketchName": "mpa",
       "coral_genus_richness": 13,
-      "fish_family_richness": 18.166666666666668,
+      "fish_family_richness": 17.210526315789473,
       "invert_genus_richness": 4.944444444444445
     }
   ]

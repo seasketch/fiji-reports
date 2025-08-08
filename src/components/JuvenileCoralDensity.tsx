@@ -80,7 +80,7 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
               <KeySection>
                 <Trans i18nKey="JuvenileCoralDensity 1">
                   This plan has an average juvenile coral density of{" "}
-                  <Pill>{Number(averages?.total).toFixed(1)} indv/m²</Pill>
+                  <Pill>{Number(averages?.total).toFixed(1)} indv/ha</Pill>
                 </Trans>
               </KeySection>
 
@@ -111,7 +111,7 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
                       chartOptions: {
                         showTitle: true,
                       },
-                      valueLabel: "indv/m²",
+                      valueLabel: "indv/ha",
                       colStyle: { textAlign: "center" },
                       width: 50,
                     },
