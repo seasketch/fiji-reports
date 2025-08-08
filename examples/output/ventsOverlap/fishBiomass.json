@@ -1,7 +1,7 @@
 [
   {
     "station_id": "sketch:hydrothermalVents (copy)",
-    "toal_fish_biomass": "",
+    "total_fish_biomass": "",
     "Acanthuridae": "",
     "Aetobatidae": "",
     "Anthiadidae": "",
@@ -53,7 +53,7 @@
   },
   {
     "station_id": "sketch:hydrothermalVents",
-    "toal_fish_biomass": "",
+    "total_fish_biomass": "",
     "Acanthuridae": "",
     "Aetobatidae": "",
     "Anthiadidae": "",
@@ -105,7 +105,7 @@
   },
   {
     "station_id": "averages",
-    "toal_fish_biomass": null,
+    "total_fish_biomass": null,
     "Acanthuridae": null,
     "Aetobatidae": null,
     "Anthiadidae": null,

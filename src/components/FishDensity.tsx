@@ -86,7 +86,7 @@ export const FishDensity: React.FunctionComponent = () => {
                 <Trans i18nKey="FishDensity 1">
                   This plan has an average total fish density of{" "}
                   <Pill>
-                    {Number(averages?.total_fish_density).toFixed(1)} indv/m²
+                    {Number(averages?.total_fish_density).toFixed(1)} ind/ha
                   </Pill>
                 </Trans>
               </KeySection>
@@ -119,7 +119,7 @@ export const FishDensity: React.FunctionComponent = () => {
                     chartOptions: {
                       showTitle: true,
                     },
-                    valueLabel: "indv/m²",
+                    valueLabel: "ind/ha",
                     colStyle: { textAlign: "center" },
                     width: 40,
                   },
@@ -153,7 +153,7 @@ export const FishDensity: React.FunctionComponent = () => {
                       chartOptions: {
                         showTitle: true,
                       },
-                      valueLabel: "indv/m²",
+                      valueLabel: "ind/ha",
                       colStyle: { textAlign: "center" },
                       width: 50,
                     },

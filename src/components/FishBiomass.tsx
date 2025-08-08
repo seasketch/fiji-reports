@@ -86,7 +86,7 @@ export const FishBiomass: React.FunctionComponent = () => {
                 <Trans i18nKey="FishBiomass 1">
                   This plan has an average total fish biomass of{" "}
                   <Pill>
-                    {Number(averages?.toal_fish_biomass).toFixed(1)} g/m²
+                    {Number(averages?.total_fish_biomass).toFixed(1)} kg/ha
                   </Pill>
                 </Trans>
               </KeySection>
@@ -94,7 +94,7 @@ export const FishBiomass: React.FunctionComponent = () => {
               <LayerToggle
                 layerId={
                   metricGroup.classes.find(
-                    (curClass) => curClass.classId === "toal_fish_biomass",
+                    (curClass) => curClass.classId === "total_fish_biomass",
                   )?.layerId
                 }
                 label="Show Total Fish Biomass On Map"
@@ -119,7 +119,7 @@ export const FishBiomass: React.FunctionComponent = () => {
                     chartOptions: {
                       showTitle: true,
                     },
-                    valueLabel: "g/m²",
+                    valueLabel: "kg/ha",
                     colStyle: { textAlign: "center" },
                     width: 40,
                   },
@@ -135,7 +135,7 @@ export const FishBiomass: React.FunctionComponent = () => {
                 <ClassTable
                   rows={averageMetrics.filter(
                     (m) =>
-                      m.classId !== "toal_fish_biomass" &&
+                      m.classId !== "total_fish_biomass" &&
                       !trophicGroups.includes(m.classId),
                   )}
                   metricGroup={metricGroup}
@@ -153,7 +153,7 @@ export const FishBiomass: React.FunctionComponent = () => {
                       chartOptions: {
                         showTitle: true,
                       },
-                      valueLabel: "g/m²",
+                      valueLabel: "kg/ha",
                       colStyle: { textAlign: "center" },
                       width: 50,
                     },

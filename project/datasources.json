@@ -418,7 +418,7 @@
     "layerName": "fish_density",
     "classKeys": [],
     "created": "2025-07-21T20:44:51.703Z",
-    "lastUpdated": "2025-07-21T20:44:51.703Z",
+    "lastUpdated": "2025-08-08T18:52:47.267Z",
     "src": "data/src/expedition/fish/fish_density.fgb",
     "propertiesToKeep": [
       "station_id",
@@ -527,11 +527,11 @@
     "layerName": "fish_biomass",
     "classKeys": [],
     "created": "2025-07-21T21:18:26.119Z",
-    "lastUpdated": "2025-07-21T21:18:26.119Z",
+    "lastUpdated": "2025-08-08T18:52:47.321Z",
     "src": "data/src/expedition/fish/fish_biomass.fgb",
     "propertiesToKeep": [
       "station_id",
-      "toal_fish_biomass",
+      "total_fish_biomass",
       "Acanthuridae",
       "Aetobatidae",
       "Antennariidae",

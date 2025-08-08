@@ -1114,7 +1114,7 @@
     "datasourceId": "fish_biomass",
     "classes": [
       {
-        "classId": "toal_fish_biomass",
+        "classId": "total_fish_biomass",
         "display": "Total",
         "layerId": "3KZuQ6xEf"
       },
