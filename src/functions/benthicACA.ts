@@ -4,9 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
-  Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
   overlapPolygonArea,
@@ -20,68 +17,37 @@ import {
 } from "@seasketch/geoprocessing/client-core";
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
-/**
- * benthicACA: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
- */
+// Overlap benthic map from Allen Coral Atlas
 export async function benthicACA(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
   const splitSketch = splitSketchAntimeridian(sketch);
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
+  const metricGroup = project.getMetricGroup("benthicACA");
+  const ds = project.getMetricGroupDatasource(metricGroup);
+  if (!isVectorDatasource(ds))
+    throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
+  const url = project.getDatasourceUrl(ds);
 
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
+  const features = await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(
+    splitSketch,
+    url,
+  );
+  const classKey = project.getMetricGroupClassKey(metricGroup);
+  if (!classKey) throw new Error("No class key found");
 
   // Calculate overlap metrics for each class in metric group
-  const metricGroup = project.getMetricGroup("benthicACA");
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
-        const ds = project.getMetricGroupDatasource(metricGroup, {
-          classId: curClass.classId,
-        });
-        if (!isVectorDatasource(ds))
-          throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
-        const url = project.getDatasourceUrl(ds);
+        const finalFeatures = features.filter(
+          (feat) =>
+            feat.geometry &&
+            feat.properties &&
+            feat.properties[classKey] === curClass.classId,
+        );
 
-        // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(splitSketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
-
-        // Get classKey for current data class
-        const classKey = project.getMetricGroupClassKey(metricGroup, {
-          classId: curClass.classId,
-        });
-
-        let finalFeatures: Feature<Polygon | MultiPolygon>[] = [];
-        if (classKey === undefined)
-          // Use all features
-          finalFeatures = features;
-        else {
-          // Filter to features that are a member of this class
-          finalFeatures = features.filter(
-            (feat) =>
-              feat.geometry &&
-              feat.properties &&
-              feat.properties[classKey] === curClass.classId,
-          );
-        }
-
-        // Calculate overlap metrics
         const overlapResult = await overlapPolygonArea(
           metricGroup.metricId,
           finalFeatures,
@@ -92,7 +58,6 @@ export async function benthicACA(
           (metric): Metric => ({
             ...metric,
             classId: curClass.classId,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),

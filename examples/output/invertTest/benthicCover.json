@@ -539,17 +539,6 @@
     "Turf": 30.769
   },
   {
-    "station_id": "sketch:invertTest",
-    "Calcified Macroalgae": 5.743857142857143,
-    "CCA": 8.85304081632653,
-    "Cyanobacteria": 4.722999999999999,
-    "Hard Coral": 23.121734693877553,
-    "Invertebrate": 7.627857142857143,
-    "Macroalgae": 7.0605306122448965,
-    "Other": 5.676877551020411,
-    "Turf": 37.19322448979593
-  },
-  {
     "station_id": "averages",
     "Calcified Macroalgae": 5.743857142857143,
     "CCA": 8.85304081632653,

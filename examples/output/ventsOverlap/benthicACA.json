@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Coral/Algae",
       "sketchId": "79005",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Coral/Algae",
       "sketchId": "79006",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Coral/Algae",
       "sketchId": "79007",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Microalgal Mats",
       "sketchId": "79005",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Microalgal Mats",
       "sketchId": "79006",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Microalgal Mats",
       "sketchId": "79007",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Rock",
       "sketchId": "79005",
@@ -80,7 +80,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Rock",
       "sketchId": "79006",
@@ -92,7 +92,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Rock",
       "sketchId": "79007",
@@ -103,7 +103,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Rubble",
       "sketchId": "79005",
@@ -114,7 +114,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Rubble",
       "sketchId": "79006",
@@ -126,7 +126,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Rubble",
       "sketchId": "79007",
@@ -137,7 +137,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Sand",
       "sketchId": "79005",
@@ -148,7 +148,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Sand",
       "sketchId": "79006",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Sand",
       "sketchId": "79007",
@@ -171,7 +171,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Seagrass",
       "sketchId": "79005",
@@ -182,7 +182,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Seagrass",
       "sketchId": "79006",
@@ -194,7 +194,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "benthicACA",
       "classId": "Seagrass",
       "sketchId": "79007",

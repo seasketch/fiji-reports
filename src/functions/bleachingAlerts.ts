@@ -18,10 +18,7 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * bleachingAlerts: A geoprocessing function that calculates overlap metrics for raster datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap raster with bleaching alerts
  */
 export async function bleachingAlerts(
   sketch:
@@ -29,31 +26,22 @@ export async function bleachingAlerts(
     | SketchCollection<Polygon | MultiPolygon>,
 ): Promise<ReportResult> {
   const splitSketch = splitSketchAntimeridian(sketch);
-  // Calculate overlap metrics for each class in metric group
+
   const metricGroup = project.getMetricGroup("bleachingAlerts");
   const metrics: Metric[] = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
-        const ds = project.getMetricGroupDatasource(metricGroup, {
-          classId: curClass.classId,
-        });
+        const ds = project.getMetricGroupDatasource(metricGroup);
         if (!isRasterDatasource(ds))
           throw new Error(`Expected raster datasource for ${ds.datasourceId}`);
-
         const url = project.getDatasourceUrl(ds);
-
-        // Load raster metadata
         const raster = await loadCog(url);
 
-        // Run raster analysis
         const overlapResult = await rasterMetrics(raster, {
           metricId: metricGroup.metricId,
           feature: splitSketch,
-          ...(ds.measurementType === "quantitative" && { stats: ["valid"] }),
-          ...(ds.measurementType === "categorical" && {
-            categorical: true,
-            categoryMetricValues: [curClass.classId],
-          }),
+          categorical: true,
+          categoryMetricValues: [curClass.classId],
         });
 
         return overlapResult.map(

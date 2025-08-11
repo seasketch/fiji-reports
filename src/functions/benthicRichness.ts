@@ -15,10 +15,7 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * benthicRichness: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap polygons for benthic richness
  */
 export async function benthicRichness(
   sketch:

@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
       "sketchId": "101153",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
       "sketchId": "101154",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
       "sketchId": "101155",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
       "sketchId": "101153",
@@ -47,7 +47,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
       "sketchId": "101154",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
       "sketchId": "101155",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
       "sketchId": "101153",
@@ -81,7 +81,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
       "sketchId": "101154",
@@ -92,7 +92,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
       "sketchId": "101155",
@@ -103,7 +103,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
       "sketchId": "101153",
@@ -115,7 +115,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
       "sketchId": "101154",
@@ -126,7 +126,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "ebsa",
       "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
       "sketchId": "101155",

@@ -75,30 +75,24 @@
     "metricId": "ebsa",
     "type": "areaOverlap",
     "layerId": "hc3ec_Ibd",
+    "datasourceId": "ebsa",
+    "classKey": "ebsaname",
     "classes": [
       {
         "classId": "EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
-        "classKey": "ebsaname",
-        "display": "Vatu-i-Ra/Lomaiviti, Fiji",
-        "datasourceId": "ebsa"
+        "display": "Vatu-i-Ra/Lomaiviti, Fiji"
       },
       {
         "classId": "EBSA No. 5:  Kadavu and the Southern Lau Region",
-        "classKey": "ebsaname",
-        "display": "Kadavu and the Southern Lau Region",
-        "datasourceId": "ebsa"
+        "display": "Kadavu and the Southern Lau Region"
       },
       {
         "classId": "EBSA No: 22: Taveuni and Ringgold Islands",
-        "classKey": "ebsaname",
-        "display": "Taveuni and Ringgold Islands",
-        "datasourceId": "ebsa"
+        "display": "Taveuni and Ringgold Islands"
       },
       {
         "classId": "EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
-        "classKey": "ebsaname",
-        "display": "South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
-        "datasourceId": "ebsa"
+        "display": "South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau"
       }
     ]
   },

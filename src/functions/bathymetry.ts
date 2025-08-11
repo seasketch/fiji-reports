@@ -28,7 +28,6 @@ export interface BathymetryResults {
 export async function bathymetry(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>,
 ): Promise<BathymetryResults[]> {
-  // Clip portion of sketch outside geography features
   const splitSketch = splitSketchAntimeridian(sketch);
   const mg = project.getMetricGroup("bathymetry");
   const dsId = mg.datasourceId;
@@ -38,8 +37,8 @@ export async function bathymetry(
   const ds = project.getDatasourceById(dsId);
   const url = project.getDatasourceUrl(ds);
 
-  const raster = await loadCog(url);
-  const stats = await bathyStats(splitSketch, raster);
+  const bathymetry = await loadCog(url);
+  const stats = await bathyStats(splitSketch, bathymetry);
 
   if (!stats)
     throw new Error(`No stats returned for ${sketch.properties.name}`);
@@ -54,26 +53,16 @@ export async function bathyStats(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  /** Bathymetry raster */
-  raster: Georaster,
+  bathymetry: Georaster,
 ): Promise<BathymetryResults[]> {
   const features = toSketchArray(sketch);
 
   const sketchStats: BathymetryResults[] = await Promise.all(
     features.map(async (feature) => {
-      const finalFeat = toRasterProjection(raster, feature);
-      // If empty sketch (from subregional clipping)
-      if (!finalFeat.geometry.coordinates.length)
-        return {
-          min: null,
-          mean: null,
-          max: null,
-          units: "meters",
-          sketchName: finalFeat.properties.name,
-        };
+      const finalFeat = toRasterProjection(bathymetry, feature);
       try {
         const stats = (
-          await geoblaze.stats(raster, finalFeat, {
+          await geoblaze.stats(bathymetry, finalFeat, {
             calcMax: true,
             calcMean: true,
             calcMin: true,
@@ -126,9 +115,8 @@ function notNull(value: number): value is number {
 export default new GeoprocessingHandler(bathymetry, {
   title: "bathymetry",
   description: "calculates bathymetry within given sketch",
-  timeout: 500, // seconds
+  timeout: 500,
   executionMode: "async",
-  // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
   memory: 8192,
 });
