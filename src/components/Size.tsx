@@ -28,10 +28,7 @@ import project from "../../project/projectClient.js";
 import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
- * Size component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Size report
  */
 export const Size: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
@@ -56,12 +53,7 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="size"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-      useChildCard
-    >
+    <ResultsCard title={titleLabel} functionName="size" useChildCard>
       {(data: ReportResult) => {
         const percMetricIdName = `${metricGroup.metricId}Perc`;
 

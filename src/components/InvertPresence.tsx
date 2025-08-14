@@ -70,7 +70,7 @@ const invertPresenceGroups = {
 };
 
 /**
- * InvertPresence component
+ * Invertebrate Presence report
  */
 export const InvertPresence: React.FunctionComponent = () => {
   const { t } = useTranslation();

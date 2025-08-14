@@ -15,13 +15,13 @@ import {
   ToolbarCard,
   DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
-import { MetricGroup } from "@seasketch/geoprocessing/client-core";
+import { MetricGroup, roundLower } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
 import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
- * JuvenileCoralDensity component
+ * Juvenile Coral Density report
  */
 export const JuvenileCoralDensity: React.FunctionComponent = () => {
   const { t } = useTranslation();
@@ -79,8 +79,12 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
             >
               <KeySection>
                 <Trans i18nKey="JuvenileCoralDensity 1">
-                  This plan has an average juvenile coral density of{" "}
-                  <Pill>{Number(averages?.total).toFixed(1)} indv/ha</Pill>
+                  This area of interest has an average juvenile coral density of{" "}
+                  <Pill>
+                    {Number(averages?.total) &&
+                      roundLower(Number(averages?.total))}{" "}
+                    indv/ha
+                  </Pill>
                 </Trans>
               </KeySection>
 
@@ -107,7 +111,8 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
                       columnLabel: averageLabel,
                       type: "metricValue",
                       metricId: metricGroup.metricId,
-                      valueFormatter: (val) => Number(val).toFixed(1),
+                      valueFormatter: (val) =>
+                        Number(val) && roundLower(Number(val)),
                       chartOptions: {
                         showTitle: true,
                       },
@@ -175,7 +180,10 @@ const genSketchTable = (data: Station[], metricGroup: MetricGroup, t: any) => {
     metricGroup.classes.map((curClass) => ({
       Header: curClass.display,
       accessor: (row) => {
-        return Number(row[curClass.classId]).toFixed(1);
+        return (
+          Number(row[curClass.classId]) &&
+          roundLower(Number(row[curClass.classId]))
+        );
       },
       style: { textAlign: "center" },
     }));

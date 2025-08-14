@@ -56,7 +56,6 @@ export const DeepwaterBioregions: React.FunctionComponent<GeogProp> = (
     <ResultsCard
       title={titleLabel}
       functionName="deepwaterBioregions"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
       useChildCard
     >
       {(data: ReportResult) => {

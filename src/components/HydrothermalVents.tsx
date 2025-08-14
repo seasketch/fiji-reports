@@ -46,7 +46,6 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
     <ResultsCard
       title={titleLabel}
       functionName="hydrothermalVents"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
       useChildCard
     >
       {(data: ReportResult) => {
@@ -60,15 +59,6 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
           metricIdOverride: percMetricIdName,
         });
         const metrics = [...valueMetrics, ...percentMetrics];
-
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
 
         return (
           <ReportError>
@@ -100,7 +90,6 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
               <ClassTable
                 rows={metrics}
                 metricGroup={metricGroup}
-                objective={objectives}
                 columnConfig={[
                   {
                     columnLabel: " ",

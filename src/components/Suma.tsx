@@ -55,12 +55,7 @@ export const Suma: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="suma"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-      useChildCard
-    >
+    <ResultsCard title={titleLabel} functionName="suma" useChildCard>
       {(data: { totalValue: number; metrics: Metric[] }) => {
         const totalValue = data.totalValue;
         const totalSUMAs = 148263414428.76416; // From QGIS

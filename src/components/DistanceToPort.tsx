@@ -1,10 +1,4 @@
-import React, {
-  ChangeEvent,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import React, { useEffect, useRef } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
   Collapse,
@@ -42,39 +36,6 @@ interface DistanceToPortMapProps {
     path: any; // This is the path data returned by findShortestPath
   }[];
 }
-
-const FieldRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 0.5rem;
-`;
-
-const Label = styled.label`
-  display: flex;
-  flex-direction: column;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #444;
-`;
-
-const NumberInput = styled.input.attrs({ type: "number" })`
-  padding: 0.35rem 0.6rem;
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  border-radius: 6px;
-  border: 1px solid #d2d7dd;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
-  background: #fff;
-  width: 7rem;
-
-  /* focus state */
-  &:focus {
-    outline: none;
-    border-color: #1c90ff;
-    box-shadow: 0 0 0 2px rgba(28, 144, 255, 0.3);
-  }
-`;
 
 export const DistanceToPort: React.FunctionComponent<any> = (props) => {
   const { t } = useTranslation();

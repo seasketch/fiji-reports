@@ -51,12 +51,7 @@ export const Geomorphology: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="geomorphology"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-      useChildCard
-    >
+    <ResultsCard title={titleLabel} functionName="geomorphology" useChildCard>
       {(data: ReportResult) => {
         const percMetricIdName = `${metricGroup.metricId}Perc`;
 

@@ -2,19 +2,23 @@ import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
   Collapse,
+  DataDownload,
   KeySection,
   LayerToggle,
   ReportError,
   ResultsCard,
+  ToolbarCard,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   GeogProp,
   ReportResult,
   firstMatchingMetric,
   percentWithEdge,
+  roundDecimalFormat,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 import { MangrovesLineChart } from "./MangrovesLineChart.js";
 
 /**
@@ -41,11 +45,7 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="mangroves"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-    >
+    <ResultsCard title={titleLabel} functionName="mangroves" useChildCard>
       {(data: ReportResult) => {
         const percMetricIdName = `${metricGroup.metricId}Perc`;
 
@@ -86,51 +86,75 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
 
         return (
           <ReportError>
-            <p>
-              <Trans i18nKey="Mangroves 1">
-                This report summarizes overlap with mangrove extent, based on
-                Global Mangrove Watch data.
-              </Trans>
-            </p>
-
-            {data.metrics.some((d) => d.value !== 0) ? (
-              <>
-                <KeySection>
-                  In 2020, this area of interest contained{" "}
-                  {(valueMetric2020.value / 10000).toFixed(2)} {unitsLabel},
-                  which was {percentWithEdge(percentMetric2020[0].value)} of
-                  Fiji's mangrove habitat.
-                </KeySection>
-                <LayerToggle
-                  layerId={metricGroup.layerId}
-                  label={t("Show 2020 Mangrove Extent On Map")}
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <DataDownload
+                  filename="Mangroves"
+                  data={data.metrics}
+                  formats={["csv", "json"]}
+                  placement="left-start"
+                  titleElement={
+                    <Download
+                      size={18}
+                      color="#999"
+                      style={{ cursor: "pointer" }}
+                    />
+                  }
                 />
-                <MangrovesLineChart
-                  data={mangroveLineData}
-                  width={450}
-                  height={300}
-                />
-              </>
-            ) : (
-              <p
-                style={{ color: "#888", fontStyle: "italic", margin: "20px 0" }}
-              >
-                No mangroves contained in area of interest
+              }
+            >
+              <p>
+                <Trans i18nKey="Mangroves 1">
+                  This report summarizes overlap with mangrove extent, based on
+                  Global Mangrove Watch data.
+                </Trans>
               </p>
-            )}
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="Mangroves - learn more">
-                <p>🗺️ Source Data: Global Mangrove Watch</p>
-                <p>
-                  📈 Report: This report calculates the total area of mangroves
-                  within the zone. This value is divided by the total area of
-                  mangroves to obtain the % contained within the zone. Only
-                  mangroves which fall within the planning region are counted in
-                  this report.
+              {data.metrics.some((d) => d.value !== 0) ? (
+                <>
+                  <KeySection>
+                    In 2020, this area of interest contained{" "}
+                    {roundDecimalFormat(valueMetric2020.value / 10000)}{" "}
+                    {unitsLabel}, which was{" "}
+                    {percentWithEdge(percentMetric2020[0].value)} of Fiji's
+                    mangrove habitat.
+                  </KeySection>
+                  <LayerToggle
+                    layerId={metricGroup.layerId}
+                    label={t("Show 2020 Mangrove Extent On Map")}
+                  />
+                  <MangrovesLineChart
+                    data={mangroveLineData}
+                    width={450}
+                    height={300}
+                  />
+                </>
+              ) : (
+                <p
+                  style={{
+                    color: "#888",
+                    fontStyle: "italic",
+                    margin: "20px 0",
+                  }}
+                >
+                  No mangroves contained in area of interest
                 </p>
-              </Trans>
-            </Collapse>
+              )}
+
+              <Collapse title={t("Learn More")}>
+                <Trans i18nKey="Mangroves - learn more">
+                  <p>🗺️ Source Data: Global Mangrove Watch</p>
+                  <p>
+                    📈 Report: This report calculates the total area of
+                    mangroves within the zone. This value is divided by the
+                    total area of mangroves to obtain the % contained within the
+                    zone. Only mangroves which fall within the planning region
+                    are counted in this report.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ToolbarCard>
           </ReportError>
         );
       }}

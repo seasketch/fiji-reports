@@ -19,7 +19,7 @@ import { Station } from "../util/station.js";
 import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
- * BenthicCover component
+ * Expedition: Benthic Cover report
  */
 export const BenthicCover: React.FunctionComponent = () => {
   const { t } = useTranslation();

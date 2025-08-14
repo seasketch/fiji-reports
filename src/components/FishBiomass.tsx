@@ -15,7 +15,7 @@ import {
   ToolbarCard,
   DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
-import { MetricGroup } from "@seasketch/geoprocessing/client-core";
+import { MetricGroup, roundLower } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
 import { Download } from "@styled-icons/bootstrap/Download";
@@ -29,7 +29,7 @@ const trophicGroups = [
 ];
 
 /**
- * FishBiomass component
+ * Fish Biomass report
  */
 export const FishBiomass: React.FunctionComponent = () => {
   const { t } = useTranslation();
@@ -84,9 +84,11 @@ export const FishBiomass: React.FunctionComponent = () => {
             >
               <KeySection>
                 <Trans i18nKey="FishBiomass 1">
-                  This plan has an average total fish biomass of{" "}
+                  This area of interest has an average total fish biomass of{" "}
                   <Pill>
-                    {Number(averages?.total_fish_biomass).toFixed(1)} kg/ha
+                    {Number(averages?.total_fish_biomass) &&
+                      roundLower(Number(averages?.total_fish_biomass))}{" "}
+                    kg/ha
                   </Pill>
                 </Trans>
               </KeySection>
@@ -115,7 +117,8 @@ export const FishBiomass: React.FunctionComponent = () => {
                     columnLabel: averageLabel,
                     type: "metricValue",
                     metricId: metricGroup.metricId,
-                    valueFormatter: (val) => Number(val).toFixed(1),
+                    valueFormatter: (val) =>
+                      Number(val) && roundLower(Number(val)),
                     chartOptions: {
                       showTitle: true,
                     },
@@ -149,7 +152,8 @@ export const FishBiomass: React.FunctionComponent = () => {
                       columnLabel: averageLabel,
                       type: "metricValue",
                       metricId: metricGroup.metricId,
-                      valueFormatter: (val) => Number(val).toFixed(1),
+                      valueFormatter: (val) =>
+                        Number(val) && roundLower(Number(val)),
                       chartOptions: {
                         showTitle: true,
                       },
@@ -217,7 +221,10 @@ const genSketchTable = (data: Station[], metricGroup: MetricGroup, t: any) => {
     metricGroup.classes.map((curClass) => ({
       Header: curClass.display,
       accessor: (row) => {
-        return Number(row[curClass.classId]).toFixed(1);
+        return (
+          Number(row[curClass.classId]) &&
+          roundLower(Number(row[curClass.classId]))
+        );
       },
       style: { textAlign: "center" },
     }));

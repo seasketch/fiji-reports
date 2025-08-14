@@ -4,10 +4,12 @@ import {
   ClassTable,
   Collapse,
   Column,
+  DataDownload,
   ReportError,
   ResultsCard,
   SketchClassTableStyled,
   Table,
+  ToolbarCard,
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
 import {
@@ -15,6 +17,7 @@ import {
   ReportResult,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 interface WaterQualityReportResult extends ReportResult {
   stations: {
@@ -29,10 +32,7 @@ interface WaterQualityReportResult extends ReportResult {
 }
 
 /**
- * WaterQuality component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Water Quality report
  */
 export const WaterQuality: React.FunctionComponent = () => {
   const { t } = useTranslation();
@@ -47,68 +47,87 @@ export const WaterQuality: React.FunctionComponent = () => {
   const mapLabel = t("Map");
 
   return (
-    <ResultsCard title={titleLabel} functionName="waterQuality">
+    <ResultsCard title={titleLabel} functionName="waterQuality" useChildCard>
       {(data: WaterQualityReportResult) => {
         const metrics = data.metrics;
 
         return (
           <ReportError>
-            <p>
-              <Trans i18nKey="WaterQuality 1">
-                This report estimates the average Nitrogen-15 (δ15N) value
-                within the area of interest.
-              </Trans>
-            </p>
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <DataDownload
+                  filename="WaterQuality"
+                  data={data.metrics}
+                  formats={["csv", "json"]}
+                  placement="left-start"
+                  titleElement={
+                    <Download
+                      size={18}
+                      color="#999"
+                      style={{ cursor: "pointer" }}
+                    />
+                  }
+                />
+              }
+            >
+              <p>
+                <Trans i18nKey="WaterQuality 1">
+                  This report estimates the average Nitrogen-15 (δ15N) value
+                  within the area of interest.
+                </Trans>
+              </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: " ",
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (value) => Number(value).toFixed(2),
-                  chartOptions: {
-                    showTitle: true,
+              <ClassTable
+                rows={metrics}
+                metricGroup={metricGroup}
+                columnConfig={[
+                  {
+                    columnLabel: " ",
+                    type: "class",
+                    width: 30,
                   },
-                  colStyle: { textAlign: "center" },
-                  width: 50,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: withinLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: (value) => Number(value).toFixed(2),
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    colStyle: { textAlign: "center" },
+                    width: 50,
+                  },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            <Collapse title={t("Show By Dive Site")}>
-              {genSketchTable(data, metricGroup, t)}
-            </Collapse>
-
-            {isCollection && (
-              <Collapse title={t("Show by Sketch")}>
-                {genPerSketchTable(data, t)}
+              <Collapse title={t("Show By Dive Site")}>
+                {genSketchTable(data, metricGroup, t)}
               </Collapse>
-            )}
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="WaterQuality - learn more">
-                <p>🗺️ Source Data: Fiji Expedition</p>
-                <p>
-                  📈 Report: This report calculates the average Nitrogen-15
-                  (δ15N) value in the area of interest by averaging the δ15N
-                  values of individual water quality values of dive sites within
-                  the area.
-                </p>
-              </Trans>
-            </Collapse>
+              {isCollection && (
+                <Collapse title={t("Show by Sketch")}>
+                  {genPerSketchTable(data, t)}
+                </Collapse>
+              )}
+
+              <Collapse title={t("Learn More")}>
+                <Trans i18nKey="WaterQuality - learn more">
+                  <p>🗺️ Source Data: Fiji Expedition</p>
+                  <p>
+                    📈 Report: This report calculates the average Nitrogen-15
+                    (δ15N) value in the area of interest by averaging the δ15N
+                    values of individual water quality values of dive sites
+                    within the area.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ToolbarCard>
           </ReportError>
         );
       }}

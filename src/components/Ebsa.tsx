@@ -53,12 +53,7 @@ export const Ebsa: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="ebsa"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-      useChildCard
-    >
+    <ResultsCard title={titleLabel} functionName="ebsa" useChildCard>
       {(data: ReportResult) => {
         const percMetricIdName = `${metricGroup.metricId}Perc`;
 

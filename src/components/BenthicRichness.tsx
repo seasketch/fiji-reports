@@ -19,7 +19,7 @@ import { TFunction } from "i18next";
 import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
- * Benthic Richness report
+ * Expedition: Benthic Richness report
  */
 export const BenthicRichness: React.FunctionComponent = () => {
   const { t } = useTranslation();

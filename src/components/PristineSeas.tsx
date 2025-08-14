@@ -3,13 +3,14 @@ import { Trans, useTranslation } from "react-i18next";
 import {
   ClassTable,
   Collapse,
+  DataDownload,
   ReportError,
   ResultsCard,
   SketchClassTable,
+  ToolbarCard,
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
 import {
-  GeogProp,
   MetricGroup,
   ReportResult,
   SketchProperties,
@@ -18,19 +19,14 @@ import {
   roundDecimal,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
+import { Download } from "@styled-icons/bootstrap/Download";
 
 /**
- * PristineSeas component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Pristine Seas report
  */
-export const PristineSeas: React.FunctionComponent<GeogProp> = (props) => {
+export const PristineSeas: React.FunctionComponent = () => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
-  const curGeography = project.getGeographyById(props.geographyId, {
-    fallbackGroup: "default-boundary",
-  });
 
   // Metrics
   const metricGroup = project.getMetricGroup("pristineSeas", t);
@@ -41,11 +37,7 @@ export const PristineSeas: React.FunctionComponent<GeogProp> = (props) => {
   const withinLabel = t("Within Plan");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="pristineSeas"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-    >
+    <ResultsCard title={titleLabel} functionName="pristineSeas" useChildCard>
       {(data: ReportResult) => {
         const metrics = metricsWithSketchId(
           data.metrics.filter((m) => m.metricId === metricGroup.metricId),
@@ -54,65 +46,87 @@ export const PristineSeas: React.FunctionComponent<GeogProp> = (props) => {
 
         return (
           <ReportError>
-            <p>
-              <Trans i18nKey="PristineSeas 1">
-                This report summarizes this plan's overlap with Pristine Seas
-                prioritization framework, which informs areas of the ocean
-                suitable for biodiversity protection, food provision and carbon
-                storage.
-              </Trans>
-            </p>
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <>
+                  <DataDownload
+                    filename="PristineSeas"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                </>
+              }
+            >
+              <p>
+                <Trans i18nKey="PristineSeas 1">
+                  This report summarizes this plan's overlap with Pristine Seas
+                  prioritization framework, which informs areas of the ocean
+                  suitable for biodiversity protection, food provision and
+                  carbon storage.
+                </Trans>
+              </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: " ",
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (val) => {
-                    const num = Number(val);
-                    return isNaN(num) ? "N/A" : num.toFixed(2);
+              <ClassTable
+                rows={metrics}
+                metricGroup={metricGroup}
+                columnConfig={[
+                  {
+                    columnLabel: " ",
+                    type: "class",
+                    width: 30,
                   },
-                  chartOptions: {
-                    showTitle: true,
+                  {
+                    columnLabel: withinLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: (val) => {
+                      const num = Number(val);
+                      return isNaN(num) ? "N/A" : num.toFixed(2);
+                    },
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    width: 20,
                   },
-                  width: 20,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            {isCollection && childProperties && (
-              <Collapse title={t("Show by Sketch")}>
-                {genSketchTable(data, metricGroup, childProperties)}
+              {isCollection && childProperties && (
+                <Collapse title={t("Show by Sketch")}>
+                  {genSketchTable(data, metricGroup, childProperties)}
+                </Collapse>
+              )}
+
+              <Collapse title={t("Learn More")}>
+                <Trans i18nKey="PristineSeas - learn more">
+                  <p>
+                    🗺️ Source Data: Juan Mayorga, Pristine Seas Sala, E.,
+                    Mayorga, J., Bradley, D. et al. Protecting the global ocean
+                    for biodiversity, food and climate. Nature 592, 397-402
+                    (2021). https://doi.org/10.1038/s41586-021-03371-z Uploaded
+                    10/9/2024
+                  </p>
+                  <p>
+                    📈 Report: This report calculates the average food,
+                    biodiversity, and carbon rating within the plan.
+                  </p>
+                </Trans>
               </Collapse>
-            )}
-
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="PristineSeas - learn more">
-                <p>
-                  🗺️ Source Data: Juan Mayorga, Pristine Seas Sala, E., Mayorga,
-                  J., Bradley, D. et al. Protecting the global ocean for
-                  biodiversity, food and climate. Nature 592, 397-402 (2021).
-                  https://doi.org/10.1038/s41586-021-03371-z Uploaded 10/9/2024
-                </p>
-                <p>
-                  📈 Report: This report calculates the average food,
-                  biodiversity, and carbon rating within the plan.
-                </p>
-              </Trans>
-            </Collapse>
+            </ToolbarCard>
           </ReportError>
         );
       }}

@@ -11,7 +11,6 @@ import { benthicCover } from "./benthicCover.js";
 import { benthicRichness } from "./benthicRichness.js";
 import { bleachingAlerts } from "./bleachingAlerts.js";
 import handler, { clipToOceanEez } from "./clipToOceanEez.js";
-import { connectivity } from "./connectivity.js";
 import { deepwaterBioregions } from "./deepwaterBioregions.js";
 import { dhw } from "./dhw.js";
 import { distanceToPort } from "./distanceToPort.js";
@@ -65,7 +64,6 @@ const tests = [
   { name: "benthicCover", func: benthicCover },
   { name: "benthicRichness", func: benthicRichness },
   { name: "bleachingAlerts", func: bleachingAlerts },
-  { name: "connectivity", func: connectivity },
   { name: "deepwaterBioregions", func: deepwaterBioregions },
   { name: "dhw", func: dhw },
   { name: "distanceToPort", func: distanceToPort },
