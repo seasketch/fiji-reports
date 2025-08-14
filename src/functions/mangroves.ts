@@ -23,17 +23,13 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * mangroves: A geoprocessing function that calculates overlap metrics for raster datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap with mangrove areas
  */
 export async function mangroves(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
 ): Promise<ReportResult> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // Calculate overlap metrics for each class in metric group

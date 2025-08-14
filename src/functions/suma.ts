@@ -21,24 +21,13 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * suma: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap with Special Unique Marine Areas
  */
 export async function suma(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<{ totalValue: number; metrics: Metric[] }> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
-  // Split sketch as antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // First, get total value
@@ -59,10 +48,7 @@ export async function suma(
   )[0];
 
   const metricGroup = project.getMetricGroup("suma");
-  const dsId = metricGroup.datasourceId;
-  if (!dsId)
-    throw new Error(`Expected datasourceId for ${metricGroup.metricId}`);
-  const ds = project.getDatasourceById(dsId);
+  const ds = project.getMetricGroupDatasource(metricGroup);
   if (!isVectorDatasource(ds))
     throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
   const url = project.getDatasourceUrl(ds);
@@ -103,7 +89,6 @@ export async function suma(
           (metric): Metric => ({
             ...metric,
             classId: curClass.classId,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),

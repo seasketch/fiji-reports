@@ -4,8 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  DefaultExtraParams,
-  Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
   overlapPolygonArea,
@@ -20,10 +18,7 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * marxan: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap with MARXAN solution
  */
 export async function marxan(
   sketch:
@@ -31,48 +26,29 @@ export async function marxan(
     | SketchCollection<Polygon | MultiPolygon>,
 ): Promise<ReportResult> {
   const splitSketch = splitSketchAntimeridian(sketch);
+  const metricGroup = project.getMetricGroup("marxan");
 
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
+  const ds = project.getMetricGroupDatasource(metricGroup);
+  if (!isVectorDatasource(ds))
+    throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
+  const url = project.getDatasourceUrl(ds);
+  const features = await getFeaturesForSketchBBoxes<Polygon | MultiPolygon>(
+    splitSketch,
+    url,
+  );
+  const classKey = project.getMetricGroupClassKey(metricGroup);
+  if (!classKey) throw new Error("No class key found");
 
   // Calculate overlap metrics for each class in metric group
-  const metricGroup = project.getMetricGroup("marxan");
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
-        const ds = project.getMetricGroupDatasource(metricGroup, {
-          classId: curClass.classId,
-        });
-        if (!isVectorDatasource(ds))
-          throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
-        const url = project.getDatasourceUrl(ds);
-
-        // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(splitSketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
-
-        // Get classKey for current data class
-        const classKey = project.getMetricGroupClassKey(metricGroup, {
-          classId: curClass.classId,
-        });
-
-        let finalFeatures: Feature<Polygon | MultiPolygon>[] = [];
-        if (classKey === undefined)
-          // Use all features
-          finalFeatures = features;
-        else {
-          // Filter to features that are a member of this class
-          finalFeatures = features.filter(
-            (feat) =>
-              feat.geometry &&
-              feat.properties &&
-              String(feat.properties[classKey]) === curClass.classId,
-          );
-        }
+        const finalFeatures = features.filter(
+          (feat) =>
+            feat.geometry &&
+            feat.properties &&
+            String(feat.properties[classKey]) === curClass.classId,
+        );
 
         // Calculate overlap metrics
         const overlapResult = await overlapPolygonArea(

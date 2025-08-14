@@ -18,10 +18,7 @@ interface Pt {
 }
 
 /**
- * invertPresence: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap with invertebrate presence expedition data
  */
 export async function invertPresence(
   sketch:

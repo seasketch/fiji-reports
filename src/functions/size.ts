@@ -4,8 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
   overlapPolygonArea,
@@ -26,14 +24,7 @@ export async function size(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // Calculate overlap metrics for each class in metric group
@@ -65,7 +56,6 @@ export async function size(
           (metric): Metric => ({
             ...metric,
             classId: curClass.classId,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),
