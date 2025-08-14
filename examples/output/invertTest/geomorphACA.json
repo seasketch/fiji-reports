@@ -1,0 +1,114 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 155971249.402571,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 84268003.932421,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 158819412.015535,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 251685376.38737,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 19842159.210173,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 13087694.54609,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 337990.073929,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 86067817.579631,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 106847028.00291,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "112904",
+      "groupId": null,
+      "value": 270822428.455554,
+      "extra": {
+        "sketchName": "invertTest"
+      }
+    }
+  ]
+}

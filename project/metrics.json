@@ -1814,6 +1814,56 @@
       }
     ]
   },
+
+  {
+    "metricId": "geomorphACA",
+    "type": "areaOverlap",
+    "datasourceId": "geomorphACA",
+    "classKey": "class",
+    "layerId": "2aOwYhl4G",
+    "classes": [
+      {
+        "classId": "Terrestrial Reef Flat",
+        "display": "Terrestrial Reef Flat"
+      },
+      {
+        "classId": "Outer Reef Flat",
+        "display": "Outer Reef Flat"
+      },
+      {
+        "classId": "Back Reef Slope",
+        "display": "Back Reef Slope"
+      },
+      {
+        "classId": "Plateau",
+        "display": "Plateau"
+      },
+      {
+        "classId": "Reef Crest",
+        "display": "Reef Crest"
+      },
+      {
+        "classId": "Reef Slope",
+        "display": "Reef Slope"
+      },
+      {
+        "classId": "Inner Reef Flat",
+        "display": "Inner Reef Flat"
+      },
+      {
+        "classId": "Deep Lagoon",
+        "display": "Deep Lagoon"
+      },
+      {
+        "classId": "Sheltered Reef Slope",
+        "display": "Sheltered Reef Slope"
+      },
+      {
+        "classId": "Shallow Lagoon",
+        "display": "Shallow Lagoon"
+      }
+    ]
+  },
   {
     "metricId": "marxan",
     "type": "countOverlap",

@@ -1166,5 +1166,18 @@
     "src": "data/src/Data_Received/GlobalMangroveWatch/vectorfiles/gmw_2020.fgb",
     "propertiesToKeep": [],
     "explodeMulti": true
+  },
+  {
+    "datasourceId": "geomorphACA",
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "Fijian Exclusive Economic Zone",
+    "classKeys": ["class"],
+    "created": "2025-08-14T20:13:37.670Z",
+    "lastUpdated": "2025-08-14T21:14:09.137Z",
+    "src": "data/src/Data_Received/AllenCoralAtlas/geomorphic.gpkg",
+    "propertiesToKeep": ["class"],
+    "explodeMulti": true
   }
 ]

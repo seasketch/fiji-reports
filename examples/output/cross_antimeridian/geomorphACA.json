@@ -1,0 +1,114 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 17096160.889414,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 3235455.628804,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 31591847.857265,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 44758991.835361,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 1133603.672502,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 9288120.490593,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 5797958.650147,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 10840075.276081,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 11696006.873356,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "78746",
+      "groupId": null,
+      "value": 10770294.541366,
+      "extra": {
+        "sketchName": "cross_antimeridian"
+      }
+    }
+  ]
+}

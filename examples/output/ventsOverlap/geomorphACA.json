@@ -1,0 +1,344 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "ventsOverlap",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "hydrothermalVents (copy)"
+      }
+    }
+  ]
+}

@@ -31,6 +31,7 @@ import { size } from "./size.js";
 import { suma } from "./suma.js";
 import { taxaRichness } from "./taxaRichness.js";
 import { waterQuality } from "./waterQuality.js";
+import { geomorphACA } from "./geomorphACA.js";
 
 // Create standard smoke tests
 function createSmokeTest(
@@ -72,6 +73,7 @@ const tests = [
   { name: "fishBiomass", func: fishBiomass },
   { name: "fishDensity", func: fishDensity },
   { name: "geomorphology", func: geomorphology },
+  { name: "geomorphACA", func: geomorphACA, timeout: 500_000 },
   { name: "gfw", func: gfw },
   { name: "hydrothermalVents", func: hydrothermalVents },
   { name: "invertPresence", func: invertPresence },

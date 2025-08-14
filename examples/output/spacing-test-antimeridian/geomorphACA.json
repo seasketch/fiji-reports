@@ -1,0 +1,344 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 10850486.029532,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 10850486.029532,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 6450952.85116,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 6450952.85116,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 6076119.718028,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 6076119.718028,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 13968024.772674,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 13968024.772674,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 2877771.255503,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 2877771.255503,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 363576.836141,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 363576.836141,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 4275940.318152,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 4275940.318152,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 6013912.433906,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 6013912.433906,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "101153",
+      "groupId": null,
+      "value": 26056851.891052,
+      "extra": {
+        "sketchName": "spacing-test-antimeridian",
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "101154",
+      "groupId": null,
+      "value": 26056851.891052,
+      "extra": {
+        "sketchName": "a"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "101155",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "b"
+      }
+    }
+  ]
+}
