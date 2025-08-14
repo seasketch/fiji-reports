@@ -1192,17 +1192,6 @@
     {
       "geographyId": "eez",
       "metricId": "suma",
-      "classId": "Vuaqava Island Inland Lake",
-      "sketchId": "75741",
-      "groupId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "mpa"
-      }
-    },
-    {
-      "geographyId": "eez",
-      "metricId": "suma",
       "classId": "Wailagilala atoll",
       "sketchId": "75741",
       "groupId": null,

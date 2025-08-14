@@ -4,8 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
   Point,
@@ -21,24 +19,13 @@ import { overlapPoints } from "../util/overlapPoints.js";
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * hydrothermalVents: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap with hydrothermal vents
  */
 export async function hydrothermalVents(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
-  // Split sketch as antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // Calculate overlap metrics for each class in metric group
@@ -52,9 +39,10 @@ export async function hydrothermalVents(
         if (!isVectorDatasource(ds))
           throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
         const url = project.getDatasourceUrl(ds);
-
-        // Fetch features overlapping with sketch, if not already fetched
-        const features = await getFeaturesForSketchBBoxes<Point>(sketch, url);
+        const features = await getFeaturesForSketchBBoxes<Point>(
+          splitSketch,
+          url,
+        );
 
         // Calculate overlap metrics
         const overlapResult = await overlapPoints(
@@ -67,7 +55,6 @@ export async function hydrothermalVents(
           (metric): Metric => ({
             ...metric,
             classId: curClass.classId,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),

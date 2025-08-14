@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_basins",
       "sketchId": "78746",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_bridges",
       "sketchId": "78746",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_canyons",
       "sketchId": "78746",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_escarpments",
       "sketchId": "78746",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_guyots",
       "sketchId": "78746",
@@ -56,7 +56,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_plateaus",
       "sketchId": "78746",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_ridges",
       "sketchId": "78746",
@@ -78,7 +78,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_riftvalleys",
       "sketchId": "78746",
@@ -89,7 +89,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_seamounts",
       "sketchId": "78746",
@@ -100,7 +100,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_shelf",
       "sketchId": "78746",
@@ -111,7 +111,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_slope",
       "sketchId": "78746",
@@ -122,7 +122,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_spreadingridges",
       "sketchId": "78746",
@@ -133,7 +133,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_trenches",
       "sketchId": "78746",
@@ -144,7 +144,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "geo_troughs",
       "sketchId": "78746",
@@ -155,7 +155,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "Hills",
       "sketchId": "78746",
@@ -166,7 +166,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "Mountains",
       "sketchId": "78746",
@@ -177,7 +177,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "geomorphology",
       "classId": "Plains",
       "sketchId": "78746",

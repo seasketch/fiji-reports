@@ -33,16 +33,14 @@ export async function invertPresence(
 
   const metricGroup = project.getMetricGroup("invertPresence");
 
-  // Assume only one datasource for province points
   const ds = project.getMetricGroupDatasource(metricGroup);
   const url = project.getDatasourceUrl(ds);
-  const allFeatures = (await loadFgb(
-    url,
-    splitSketch.bbox || bbox(splitSketch),
-  )) as Feature<Point, Pt>[];
-
-  // Only keep features within the sketch
-  const featuresInSketch = allFeatures.filter((feature) =>
+  const features = (
+    (await loadFgb(url, splitSketch.bbox || bbox(splitSketch))) as Feature<
+      Point,
+      Pt
+    >[]
+  ).filter((feature) =>
     sketchArray.some((sk) =>
       booleanPointInPolygon(feature.geometry, sk.geometry),
     ),
@@ -51,15 +49,15 @@ export async function invertPresence(
   // Overall presence
   const overall: Pt = { id: "total" };
   metricGroup.classes.forEach((curClass) => {
-    // If any province point in the sketch has this species 'present'
-    const present = featuresInSketch.some(
+    overall[curClass.classId] = features.some(
       (f) => f.properties[curClass.classId] === "present",
-    );
-    overall[curClass.classId] = present ? "true" : "false";
+    )
+      ? "true"
+      : "false";
   });
 
   // Per province
-  const provinceRows: Pt[] = featuresInSketch.map((feature) => {
+  const provinceRows: Pt[] = features.map((feature) => {
     const row: Pt = { id: `province:${feature.properties.province}` };
     metricGroup.classes.forEach((curClass) => {
       row[curClass.classId] =
@@ -75,7 +73,7 @@ export async function invertPresence(
       const sketchId =
         sk.properties?.name || sk.properties?.id || "unknown_sketch";
       // Features in this sketch
-      const featuresInThisSketch = featuresInSketch.filter((f) =>
+      const featuresInThisSketch = features.filter((f) =>
         booleanPointInPolygon(f.geometry, sk.geometry),
       );
       const row: Pt = { id: `sketch:${sketchId}` };

@@ -4,8 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
   Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
@@ -21,23 +19,13 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * geomorphology: A geoprocessing function that calculates overlap metrics for vector datasources
- * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * Overlap with geomorphological features
  */
 export async function geomorphology(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
-  // Split sketch at antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
 
   const featuresByDatasource: Record<
@@ -95,7 +83,6 @@ export async function geomorphology(
             ...metric,
             classId: curClass.classId,
             groupId: curClass.display,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),

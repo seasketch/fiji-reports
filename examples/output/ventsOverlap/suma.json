@@ -3676,40 +3676,6 @@
     {
       "geographyId": "eez",
       "metricId": "suma",
-      "classId": "Vuaqava Island Inland Lake",
-      "sketchId": "79005",
-      "groupId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "hydrothermalVents"
-      }
-    },
-    {
-      "geographyId": "eez",
-      "metricId": "suma",
-      "classId": "Vuaqava Island Inland Lake",
-      "sketchId": "79006",
-      "groupId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "ventsOverlap",
-        "isCollection": true
-      }
-    },
-    {
-      "geographyId": "eez",
-      "metricId": "suma",
-      "classId": "Vuaqava Island Inland Lake",
-      "sketchId": "79007",
-      "groupId": null,
-      "value": 0,
-      "extra": {
-        "sketchName": "hydrothermalVents (copy)"
-      }
-    },
-    {
-      "geographyId": "eez",
-      "metricId": "suma",
       "classId": "Wailagilala atoll",
       "sketchId": "79005",
       "groupId": null,

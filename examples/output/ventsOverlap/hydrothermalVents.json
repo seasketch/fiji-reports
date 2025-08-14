@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "79005",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "79006",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "79007",

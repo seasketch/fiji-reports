@@ -18,14 +18,13 @@ import {
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 
 /**
- * gfw: A geoprocessing function that calculates degree heating weeks
+ * Overlap with Global Fishing Watch fishing effort
  */
 export async function gfw(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
 ): Promise<ReportResult> {
-  // Split sketch as antimeridian
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // Calculate overlap metrics for each class in metric group
@@ -38,10 +37,7 @@ export async function gfw(
         });
         if (!isRasterDatasource(ds))
           throw new Error(`Expected raster datasource for ${ds.datasourceId}`);
-
         const url = project.getDatasourceUrl(ds);
-
-        // Load raster metadata
         const raster = await loadCog(url);
 
         // Run raster analysis

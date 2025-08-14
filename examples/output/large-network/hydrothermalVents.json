@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "77760",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "77761",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "77762",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "77763",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "hydrothermalVents",
       "classId": "hydrothermalVents",
       "sketchId": "77764",
