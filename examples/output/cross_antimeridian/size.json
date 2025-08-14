@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "eez",
+      "geographyId": null,
       "metricId": "size",
       "classId": "eez",
       "sketchId": "78746",

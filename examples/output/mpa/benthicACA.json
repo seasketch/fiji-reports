@@ -17,7 +17,7 @@
       "classId": "Microalgal Mats",
       "sketchId": "75741",
       "groupId": null,
-      "value": 25296540.403668,
+      "value": 25296540.403666,
       "extra": {
         "sketchName": "mpa"
       }
@@ -28,7 +28,7 @@
       "classId": "Rock",
       "sketchId": "75741",
       "groupId": null,
-      "value": 80972196.892466,
+      "value": 80972196.892443,
       "extra": {
         "sketchName": "mpa"
       }
@@ -39,7 +39,7 @@
       "classId": "Rubble",
       "sketchId": "75741",
       "groupId": null,
-      "value": 61992368.932372,
+      "value": 61992368.932376,
       "extra": {
         "sketchName": "mpa"
       }

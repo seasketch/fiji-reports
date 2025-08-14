@@ -6,7 +6,7 @@
       "classId": "Back Reef Slope",
       "sketchId": "75741",
       "groupId": null,
-      "value": 64794081.588894,
+      "value": 64794081.588923,
       "extra": {
         "sketchName": "mpa"
       }
@@ -28,7 +28,7 @@
       "classId": "Inner Reef Flat",
       "sketchId": "75741",
       "groupId": null,
-      "value": 59564264.624028,
+      "value": 59564264.624024,
       "extra": {
         "sketchName": "mpa"
       }
@@ -39,7 +39,7 @@
       "classId": "Outer Reef Flat",
       "sketchId": "75741",
       "groupId": null,
-      "value": 108001884.017461,
+      "value": 108001884.017367,
       "extra": {
         "sketchName": "mpa"
       }
@@ -94,7 +94,7 @@
       "classId": "Sheltered Reef Slope",
       "sketchId": "75741",
       "groupId": null,
-      "value": 46119969.858092,
+      "value": 46119969.858091,
       "extra": {
         "sketchName": "mpa"
       }

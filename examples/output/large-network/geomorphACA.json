@@ -6,7 +6,7 @@
       "classId": "Back Reef Slope",
       "sketchId": "77760",
       "groupId": null,
-      "value": 21513706.76126,
+      "value": 21513706.761229,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -18,7 +18,7 @@
       "classId": "Back Reef Slope",
       "sketchId": "77761",
       "groupId": null,
-      "value": 20352762.742434,
+      "value": 20352762.742403,
       "extra": {
         "sketchName": "vanua"
       }
@@ -174,7 +174,7 @@
       "classId": "Outer Reef Flat",
       "sketchId": "77760",
       "groupId": null,
-      "value": 18773177.705607,
+      "value": 18773177.705428,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -186,7 +186,7 @@
       "classId": "Outer Reef Flat",
       "sketchId": "77761",
       "groupId": null,
-      "value": 16848133.93645,
+      "value": 16848133.936271,
       "extra": {
         "sketchName": "vanua"
       }

@@ -6,7 +6,7 @@
       "classId": "Back Reef Slope",
       "sketchId": "112904",
       "groupId": null,
-      "value": 155971249.402571,
+      "value": 155971249.402588,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -28,7 +28,7 @@
       "classId": "Inner Reef Flat",
       "sketchId": "112904",
       "groupId": null,
-      "value": 158819412.015535,
+      "value": 158819412.015531,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -39,7 +39,7 @@
       "classId": "Outer Reef Flat",
       "sketchId": "112904",
       "groupId": null,
-      "value": 251685376.38737,
+      "value": 251685376.387395,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -50,7 +50,7 @@
       "classId": "Plateau",
       "sketchId": "112904",
       "groupId": null,
-      "value": 19842159.210173,
+      "value": 19842159.210174,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -83,7 +83,7 @@
       "classId": "Shallow Lagoon",
       "sketchId": "112904",
       "groupId": null,
-      "value": 86067817.579631,
+      "value": 86067817.579629,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -94,7 +94,7 @@
       "classId": "Sheltered Reef Slope",
       "sketchId": "112904",
       "groupId": null,
-      "value": 106847028.00291,
+      "value": 106847028.002913,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -105,7 +105,7 @@
       "classId": "Terrestrial Reef Flat",
       "sketchId": "112904",
       "groupId": null,
-      "value": 270822428.455554,
+      "value": 270822428.455641,
       "extra": {
         "sketchName": "invertTest"
       }

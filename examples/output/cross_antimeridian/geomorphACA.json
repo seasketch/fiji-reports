@@ -28,7 +28,7 @@
       "classId": "Inner Reef Flat",
       "sketchId": "78746",
       "groupId": null,
-      "value": 31591847.857265,
+      "value": 31591847.857272,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -39,7 +39,7 @@
       "classId": "Outer Reef Flat",
       "sketchId": "78746",
       "groupId": null,
-      "value": 44758991.835361,
+      "value": 44758991.835386,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -94,7 +94,7 @@
       "classId": "Sheltered Reef Slope",
       "sketchId": "78746",
       "groupId": null,
-      "value": 11696006.873356,
+      "value": 11696006.873358,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
