@@ -38,28 +38,29 @@ function normalizeLongitude(coord: number[]): number[] {
 }
 
 // Normalize sketch coordinates
-function normalizeSketch(sketch: Sketch<Polygon | MultiPolygon>): Sketch<Polygon | MultiPolygon> {
+function normalizeSketch(
+  sketch: Sketch<Polygon | MultiPolygon>,
+): Sketch<Polygon | MultiPolygon> {
   if (sketch.geometry.type === "Polygon") {
     return {
       ...sketch,
       geometry: {
         ...sketch.geometry,
-        coordinates: sketch.geometry.coordinates.map(ring =>
-          ring.map(coord => normalizeLongitude(coord))
-        )
-      }
+        coordinates: sketch.geometry.coordinates.map((ring) =>
+          ring.map((coord) => normalizeLongitude(coord)),
+        ),
+      },
     };
-  } else { // MultiPolygon
+  } else {
+    // MultiPolygon
     return {
       ...sketch,
       geometry: {
         ...sketch.geometry,
-        coordinates: sketch.geometry.coordinates.map(poly =>
-          poly.map(ring =>
-            ring.map(coord => normalizeLongitude(coord))
-          )
-        )
-      }
+        coordinates: sketch.geometry.coordinates.map((poly) =>
+          poly.map((ring) => ring.map((coord) => normalizeLongitude(coord))),
+        ),
+      },
     };
   }
 }
@@ -81,7 +82,7 @@ export async function distanceToPort(
   console.log(sketch.properties.name);
 
   // Normalize sketch coordinates
-  const sketchArray = toSketchArray(sketch).map(sk => normalizeSketch(sk));
+  const sketchArray = toSketchArray(sketch).map((sk) => normalizeSketch(sk));
 
   // Load the graph
   const graph = graphlib.json.read(graphFile);
@@ -148,6 +149,11 @@ export async function distanceToPort(
 }
 
 // Extract exterior vertices
+// Note: We only use the exterior ring of any polygon.
+// This speeds up the function immensely when islands with
+// complex shorelines are holes in the sketch. Since the two
+// ports are on the large main island, this simplication creates
+// no issues unless the entire island were to be contained within a sketch.
 function extractVerticesFromPolygon(
   polygon: any,
   featureIndex: number,
@@ -174,7 +180,10 @@ async function addSketchesToGraph(
 
   const land = featureCollection(
     (landFile as FeatureCollection).features.filter((land) =>
-      booleanOverlap(bboxPolygon(bbox(land)), bboxPolygon(bbox(featureCollection(sketches)))),
+      booleanOverlap(
+        bboxPolygon(bbox(land)),
+        bboxPolygon(bbox(featureCollection(sketches))),
+      ),
     ),
   );
 
