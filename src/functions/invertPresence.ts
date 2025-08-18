@@ -39,8 +39,6 @@ export async function invertPresence(
       ),
   );
 
-  console.log(features);
-
   // Overall presence
   const overall: Pt = { id: "total" };
   metricGroup.classes.forEach((curClass) => {
