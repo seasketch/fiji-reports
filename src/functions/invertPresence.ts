@@ -32,16 +32,14 @@ export async function invertPresence(
 
   const ds = project.getMetricGroupDatasource(metricGroup);
   const url = project.getDatasourceUrl(ds);
-  const features = (
-    (await loadFgb(url, splitSketch.bbox || bbox(splitSketch))) as Feature<
-      Point,
-      Pt
-    >[]
-  ).filter((feature) =>
-    sketchArray.some((sk) =>
-      booleanPointInPolygon(feature.geometry, sk.geometry),
-    ),
+  const features = ((await loadFgb(url)) as Feature<Point, Pt>[]).filter(
+    (feature) =>
+      sketchArray.some((sk) =>
+        booleanPointInPolygon(feature.geometry, sk.geometry),
+      ),
   );
+
+  console.log(features);
 
   // Overall presence
   const overall: Pt = { id: "total" };
