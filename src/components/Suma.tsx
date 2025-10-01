@@ -32,7 +32,10 @@ import { Download } from "@styled-icons/bootstrap/Download";
 /**
  * Special Unique Marine Areas (SUMAs) report
  */
-export const Suma: React.FunctionComponent<GeogProp> = (props) => {
+export const Suma: React.FunctionComponent<{
+  printing: boolean;
+  geographyId?: string;
+}> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -55,134 +58,145 @@ export const Suma: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard title={titleLabel} functionName="suma" useChildCard>
-      {(data: { totalValue: number; metrics: Metric[] }) => {
-        const totalValue = data.totalValue;
-        const totalSUMAs = 148263414428.76416; // From QGIS
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="suma" useChildCard>
+        {(data: { totalValue: number; metrics: Metric[] }) => {
+          const totalValue = data.totalValue;
+          const totalSUMAs = 148263414428.76416; // From QGIS
 
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
-        const metrics = [...valueMetrics, ...percentMetrics];
+          const percMetricIdName = `${metricGroup.metricId}Perc`;
+          const valueMetrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
+          const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
+            metricIdOverride: percMetricIdName,
+          });
+          const metrics = [...valueMetrics, ...percentMetrics];
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="Suma"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="Suma"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                <p>
+                  <Trans i18nKey="Suma 1">
+                    This report summarizes the Special Unique Marine Areas
+                    (SUMAs) contained within this plan.
+                  </Trans>
+                </p>
+
+                <LayerToggle layerId={metricGroup.layerId} label={mapLabel} />
+
+                <VerticalSpacer />
+
+                <KeySection>
+                  {t("This plan contains")}{" "}
+                  <b>
+                    {roundLower(totalValue / 10000)} {unitsLabel}
+                  </b>
+                  {" of SUMAs, "}
+                  {t("which is")}{" "}
+                  <b>{percentWithEdge(totalValue / totalSUMAs)}</b>{" "}
+                  {t("of total SUMA area.")}
+                </KeySection>
+
+                <ClassTable
+                  rows={metrics.sort((a, b) => b.value - a.value)}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: t("Name"),
+                      type: "class",
+                      width: 50,
+                    },
+                    {
+                      columnLabel: withinLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val) =>
+                        roundDecimalFormat(Number(val) / 10000),
+                      valueLabel: unitsLabel,
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 20,
+                    },
+                    {
+                      columnLabel: percWithinLabel,
+                      type: "metricChart",
+                      metricId: percMetricIdName,
+                      valueFormatter: "percent",
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 30,
+                    },
+                  ]}
                 />
-              }
-            >
-              <p>
-                <Trans i18nKey="Suma 1">
-                  This report summarizes the Special Unique Marine Areas (SUMAs)
-                  contained within this plan.
-                </Trans>
-              </p>
 
-              <LayerToggle layerId={metricGroup.layerId} label={mapLabel} />
+                {isCollection && childProperties && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "Suma Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genSketchTable(
+                      data,
+                      metricGroup,
+                      precalcMetrics,
+                      childProperties,
+                    )}
+                  </Collapse>
+                )}
 
-              <VerticalSpacer />
-
-              <KeySection>
-                {t("This plan contains")}{" "}
-                <b>
-                  {roundLower(totalValue / 10000)} {unitsLabel}
-                </b>
-                {" of SUMAs, "}
-                {t("which is")}{" "}
-                <b>{percentWithEdge(totalValue / totalSUMAs)}</b>{" "}
-                {t("of total SUMA area.")}
-              </KeySection>
-
-              <ClassTable
-                rows={metrics}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: t("Name"),
-                    type: "class",
-                    width: 50,
-                  },
-                  {
-                    columnLabel: withinLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) =>
-                      roundDecimalFormat(Number(val) / 10000),
-                    valueLabel: unitsLabel,
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    width: 20,
-                  },
-                  {
-                    columnLabel: percWithinLabel,
-                    type: "metricChart",
-                    metricId: percMetricIdName,
-                    valueFormatter: "percent",
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    width: 30,
-                  },
-                ]}
-              />
-
-              {isCollection && childProperties && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genSketchTable(
-                    data,
-                    metricGroup,
-                    precalcMetrics,
-                    childProperties,
-                  )}
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "Suma Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="Suma - learn more">
+                    <p>
+                      ℹ️ Overview:{" "}
+                      <a
+                        href="https://macbio-pacific.info/Resources/biophysically-special-unique-marine-areas-of-fiji/"
+                        target="_blank"
+                      >
+                        Biophysically Special, Unique Marine Areas of Fiji
+                        Report
+                      </a>
+                    </p>
+                    <p>
+                      📈 Report: This report calculates the total area of SUMAs
+                      within the plan. This value is divided by the total area
+                      of SUMAs to obtain the % contained within the plan.
+                      Overlap of sketches is not handled, and overlapping areas
+                      will be double counted if drawn. Reach out to the
+                      developers if sketch overlap needs to be accounted for.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="Suma - learn more">
-                  <p>
-                    ℹ️ Overview:{" "}
-                    <a
-                      href="https://macbio-pacific.info/Resources/biophysically-special-unique-marine-areas-of-fiji/"
-                      target="_blank"
-                    >
-                      Biophysically Special, Unique Marine Areas of Fiji Report
-                    </a>
-                  </p>
-                  <p>
-                    📈 Report: This report calculates the total area of SUMAs
-                    within the plan. This value is divided by the total area of
-                    SUMAs to obtain the % contained within the plan. Overlap of
-                    sketches is not handled, and overlapping areas will be
-                    double counted if drawn. Reach out to the developers if
-                    sketch overlap needs to be accounted for.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

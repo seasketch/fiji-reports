@@ -12,7 +12,6 @@ import {
   DataDownload,
 } from "@seasketch/geoprocessing/client-ui";
 import {
-  GeogProp,
   Metric,
   MetricGroup,
   ReportResult,
@@ -28,7 +27,10 @@ import { Download } from "@styled-icons/bootstrap/Download";
 /**
  * Ecologically and Biologically Significant Areas (EBSAs) report
  */
-export const Ebsa: React.FunctionComponent<GeogProp> = (props) => {
+export const Ebsa: React.FunctionComponent<{
+  printing: boolean;
+  geographyId?: string;
+}> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -53,134 +55,145 @@ export const Ebsa: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard title={titleLabel} functionName="ebsa" useChildCard>
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="ebsa" useChildCard>
+        {(data: ReportResult) => {
+          const percMetricIdName = `${metricGroup.metricId}Perc`;
 
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
-        const metrics = [...valueMetrics, ...percentMetrics];
+          const valueMetrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
+          const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
+            metricIdOverride: percMetricIdName,
+          });
+          const metrics = [...valueMetrics, ...percentMetrics];
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="Ebsa"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="Ebsa"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                <p>
+                  <Trans i18nKey="Ebsa 1">
+                    Ecologically or Biologically Significant Marine Areas
+                    (EBSAs) are areas of the ocean that have special importance
+                    in terms of ecological and/or biological characteristics,
+                    for example, as essential habitats, food sources or breeding
+                    grounds for particular species.
+                  </Trans>
+                </p>
+
+                <LayerToggle layerId={metricGroup.layerId} label={mapLabel} />
+
+                <ClassTable
+                  rows={metrics}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: t("Name"),
+                      type: "class",
+                      width: 50,
+                    },
+                    {
+                      columnLabel: withinLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val) =>
+                        roundDecimalFormat(Number(val) / 10000),
+                      valueLabel: unitsLabel,
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 20,
+                    },
+                    {
+                      columnLabel: percWithinLabel,
+                      type: "metricChart",
+                      metricId: percMetricIdName,
+                      valueFormatter: "percent",
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 30,
+                    },
+                  ]}
                 />
-              }
-            >
-              <p>
-                <Trans i18nKey="Ebsa 1">
-                  Ecologically or Biologically Significant Marine Areas (EBSAs)
-                  are areas of the ocean that have special importance in terms
-                  of ecological and/or biological characteristics, for example,
-                  as essential habitats, food sources or breeding grounds for
-                  particular species.
-                </Trans>
-              </p>
 
-              <LayerToggle layerId={metricGroup.layerId} label={mapLabel} />
+                {isCollection && childProperties && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "Ebsa Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genSketchTable(
+                      data,
+                      metricGroup,
+                      precalcMetrics,
+                      childProperties,
+                    )}
+                  </Collapse>
+                )}
 
-              <ClassTable
-                rows={metrics}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: t("Name"),
-                    type: "class",
-                    width: 50,
-                  },
-                  {
-                    columnLabel: withinLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) =>
-                      roundDecimalFormat(Number(val) / 10000),
-                    valueLabel: unitsLabel,
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    width: 20,
-                  },
-                  {
-                    columnLabel: percWithinLabel,
-                    type: "metricChart",
-                    metricId: percMetricIdName,
-                    valueFormatter: "percent",
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    width: 30,
-                  },
-                ]}
-              />
-
-              {isCollection && childProperties && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genSketchTable(
-                    data,
-                    metricGroup,
-                    precalcMetrics,
-                    childProperties,
-                  )}
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "Ebsa Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="Ebsa - learn more">
+                    <p>
+                      ℹ️ Overview: The EBSA criteria are (1) uniqueness or
+                      rarity, (2) special importance for life history stages of
+                      species, (3) importance for threatened, endangered or
+                      declining species and/or habitats, (4) vulnerability,
+                      fragility, sensitivity, or slow recovery, (5) biological
+                      productivity, (6) biological diversity, and (7)
+                      naturalness. These areas can include seabed habitats from
+                      the coastline to deep ocean trenches, and can be located
+                      at a variety of depths in the water column from the
+                      surface to the abyss.
+                    </p>
+                    <p>
+                      🗺️ See More:{" "}
+                      <a
+                        href="https://www.cbd.int/marine/ebsa/booklet-01-wsp-en.pdf"
+                        target="_blank"
+                      >
+                        Ecologically or Biologically Significant Marine Areas:
+                        Western South Pacific
+                      </a>
+                    </p>
+                    <p>
+                      📈 Report: This report calculates the total area of each
+                      EBSA within the plan. This total is divided by the total
+                      area of each EBSA to obtain the % contained within the
+                      plan. Overlap of sketches is not handled, and overlapping
+                      areas will be double counted if drawn. Reach out to the
+                      developers if sketch overlap needs to be accounted for.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="Ebsa - learn more">
-                  <p>
-                    ℹ️ Overview: The EBSA criteria are (1) uniqueness or rarity,
-                    (2) special importance for life history stages of species,
-                    (3) importance for threatened, endangered or declining
-                    species and/or habitats, (4) vulnerability, fragility,
-                    sensitivity, or slow recovery, (5) biological productivity,
-                    (6) biological diversity, and (7) naturalness. These areas
-                    can include seabed habitats from the coastline to deep ocean
-                    trenches, and can be located at a variety of depths in the
-                    water column from the surface to the abyss.
-                  </p>
-                  <p>
-                    🗺️ See More:{" "}
-                    <a
-                      href="https://www.cbd.int/marine/ebsa/booklet-01-wsp-en.pdf"
-                      target="_blank"
-                    >
-                      Ecologically or Biologically Significant Marine Areas:
-                      Western South Pacific
-                    </a>
-                  </p>
-                  <p>
-                    📈 Report: This report calculates the total area of each
-                    EBSA within the plan. This total is divided by the total
-                    area of each EBSA to obtain the % contained within the plan.
-                    Overlap of sketches is not handled, and overlapping areas
-                    will be double counted if drawn. Reach out to the developers
-                    if sketch overlap needs to be accounted for.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

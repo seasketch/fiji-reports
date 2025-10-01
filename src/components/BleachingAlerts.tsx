@@ -185,7 +185,9 @@ const BleachingAlertsPieChart: React.FC<PieChartProps> = ({
 /**
  * Bleaching Alerts component
  */
-export const BleachingAlerts: React.FunctionComponent = () => {
+export const BleachingAlerts: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
 
   // Labels
@@ -196,81 +198,91 @@ export const BleachingAlerts: React.FunctionComponent = () => {
   const [{ id }] = useSketchProperties();
 
   return (
-    <ResultsCard title={titleLabel} functionName="bleachingAlerts" useChildCard>
-      {(data: ReportResult) => {
-        // Filter out metrics with zero values and prepare data for pie chart
-        const pieData = data.metrics
-          .filter((m) => m.value > 0 && m.sketchId === id)
-          .map((m) => ({
-            classId: m.classId!,
-            value: m.value,
-            display: displayMap[m.classId!],
-            color: colorMap[m.classId!],
-          }));
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard
+        title={titleLabel}
+        functionName="bleachingAlerts"
+        useChildCard
+      >
+        {(data: ReportResult) => {
+          // Filter out metrics with zero values and prepare data for pie chart
+          const pieData = data.metrics
+            .filter((m) => m.value > 0 && m.sketchId === id)
+            .map((m) => ({
+              classId: m.classId!,
+              value: m.value,
+              display: displayMap[m.classId!],
+              color: colorMap[m.classId!],
+            }));
 
-        return (
-          <ToolbarCard
-            title={titleLabel}
-            items={
-              <LayerToggle
-                label={mapLabel}
-                layerId={metricGroup.layerId}
-                simple
-              />
-            }
-          >
-            <ReportError>
-              <p>
-                <Trans i18nKey="BleachingAlerts 1">
-                  The following figure shows the area breakdown of maximum
-                  bleaching alert levels in your area of interest in 2024.
-                </Trans>
-              </p>
-
-              {pieData.length > 0 ? (
-                <BleachingAlertsPieChart data={pieData} />
-              ) : (
-                <p
-                  style={{
-                    color: "#888",
-                    fontStyle: "italic",
-                    margin: "20px 0",
-                  }}
-                >
-                  No bleaching alert data in area of interest
+          return (
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <LayerToggle
+                  label={mapLabel}
+                  layerId={metricGroup.layerId}
+                  simple
+                />
+              }
+            >
+              <ReportError>
+                <p>
+                  <Trans i18nKey="BleachingAlerts 1">
+                    The following figure shows the area breakdown of maximum
+                    bleaching alert levels in your area of interest in 2024.
+                  </Trans>
                 </p>
-              )}
 
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="BleachingAlerts - learn more">
-                  <p>
-                    ℹ️ Overview: The NOAA Coral Reef Watch (CRW) coral bleaching
-                    Bleaching Alert Area (BAA) values are coral bleaching heat
-                    stress levels. In the annual product, each pixel is given
-                    its maximum alert warning from 2024.
-                  </p>
-                  <img
-                    src="https://coralreefwatch.noaa.gov/product/5km/tutorial/media/baa_bleaching_alert_levels_updated_20240201.png"
-                    alt="NOAA Coral Reef Watch Bleaching Alert Levels"
+                {pieData.length > 0 ? (
+                  <BleachingAlertsPieChart data={pieData} />
+                ) : (
+                  <p
                     style={{
-                      maxWidth: "100%",
-                      height: "auto",
+                      color: "#888",
+                      fontStyle: "italic",
                       margin: "20px 0",
-                      border: "1px solid #ddd",
-                      borderRadius: "4px",
                     }}
-                  />
-                  <p>🗺️ Source Data: NOAA Coral Reef Watch</p>
-                  <p>
-                    📈 Report: This report summarizes the varying Bleaching
-                    Alert Areas within the area of interest.
+                  >
+                    No bleaching alert data in area of interest
                   </p>
-                </Trans>
-              </Collapse>
-            </ReportError>
-          </ToolbarCard>
-        );
-      }}
-    </ResultsCard>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "BleachingAlerts Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="BleachingAlerts - learn more">
+                    <p>
+                      ℹ️ Overview: The NOAA Coral Reef Watch (CRW) coral
+                      bleaching Bleaching Alert Area (BAA) values are coral
+                      bleaching heat stress levels. In the annual product, each
+                      pixel is given its maximum alert warning from 2024.
+                    </p>
+                    <img
+                      src="https://coralreefwatch.noaa.gov/product/5km/tutorial/media/baa_bleaching_alert_levels_updated_20240201.png"
+                      alt="NOAA Coral Reef Watch Bleaching Alert Levels"
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto",
+                        margin: "20px 0",
+                        border: "1px solid #ddd",
+                        borderRadius: "4px",
+                      }}
+                    />
+                    <p>🗺️ Source Data: NOAA Coral Reef Watch</p>
+                    <p>
+                      📈 Report: This report summarizes the varying Bleaching
+                      Alert Areas within the area of interest.
+                    </p>
+                  </Trans>
+                </Collapse>
+              </ReportError>
+            </ToolbarCard>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };

@@ -37,108 +37,131 @@ interface DistanceToPortMapProps {
   }[];
 }
 
-export const DistanceToPort: React.FunctionComponent<any> = (props) => {
+export const DistanceToPort: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const titleLabel = t("Distance To Port");
 
   return (
-    <ReportError>
-      <ResultsCard
-        title={titleLabel}
-        functionName="distanceToPort"
-        useChildCard
-      >
-        {(data: DistanceToPortMapProps) => {
-          const furthestMpa = data.portDistances.reduce((prev, current) =>
-            prev.distance > current.distance ? prev : current,
-          );
+    <div style={{ breakInside: "avoid" }}>
+      <ReportError>
+        <ResultsCard
+          title={titleLabel}
+          functionName="distanceToPort"
+          useChildCard
+        >
+          {(data: DistanceToPortMapProps) => {
+            const furthestMpa = data.portDistances.reduce((prev, current) =>
+              prev.distance > current.distance ? prev : current,
+            );
 
-          return (
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="DistanceToPort"
-                  data={data.portDistances}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
-                />
-              }
-            >
-              Reducing the distance to the nearest port can help improve
-              enforcibility.
-              <VerticalSpacer />
-              {!isCollection ? (
-                <KeySection>
-                  This MPA is{" "}
-                  <b>~{data.portDistances[0].distance.toFixed(0)} km</b> from
-                  the nearest port{" "}
-                  <b>
-                    {data.portDistances[0].port
-                      .toLowerCase()
-                      .replace(/\b\w/g, (char) => char.toUpperCase())}
-                  </b>
-                </KeySection>
-              ) : (
-                <KeySection>
-                  The furthest MPA,{" "}
-                  <b>
-                    {
-                      data.sketch.find(
-                        (sk) => sk.properties.id === furthestMpa.sketchId,
-                      )?.properties.name
+            return (
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="DistanceToPort"
+                    data={data.portDistances}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
                     }
-                  </b>
-                  , is <b>~{furthestMpa.distance.toFixed(0)} km</b> from the
-                  port{" "}
-                  <b>
-                    {furthestMpa.port
-                      .toLowerCase()
-                      .replace(/\b\w/g, (char) => char.toUpperCase())}
-                  </b>
-                  .
-                </KeySection>
-              )}
-              <Collapse title="Show Map">
-                <DistanceToPortMap
-                  sketch={data.sketch}
-                  portDistances={data.portDistances}
-                />
-              </Collapse>
-              {!isCollection && (
-                <Collapse title="Fuel Cost Estimator">
-                  <FuelCostEstimator
-                    distanceKm={data.portDistances[0].distance}
+                  />
+                }
+              >
+                Reducing the distance to the nearest port can help improve
+                enforcibility.
+                <VerticalSpacer />
+                {!isCollection ? (
+                  <KeySection>
+                    This MPA is{" "}
+                    <b>~{data.portDistances[0].distance.toFixed(0)} km</b> from
+                    the nearest port{" "}
+                    <b>
+                      {data.portDistances[0].port
+                        .toLowerCase()
+                        .replace(/\b\w/g, (char) => char.toUpperCase())}
+                    </b>
+                  </KeySection>
+                ) : (
+                  <KeySection>
+                    The furthest MPA,{" "}
+                    <b>
+                      {
+                        data.sketch.find(
+                          (sk) => sk.properties.id === furthestMpa.sketchId,
+                        )?.properties.name
+                      }
+                    </b>
+                    , is <b>~{furthestMpa.distance.toFixed(0)} km</b> from the
+                    port{" "}
+                    <b>
+                      {furthestMpa.port
+                        .toLowerCase()
+                        .replace(/\b\w/g, (char) => char.toUpperCase())}
+                    </b>
+                    .
+                  </KeySection>
+                )}
+                <Collapse
+                  title="Show Map"
+                  key={props.printing + "DistanceToPort Map Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <DistanceToPortMap
+                    sketch={data.sketch}
+                    portDistances={data.portDistances}
                   />
                 </Collapse>
-              )}
-              {isCollection && (
-                <Collapse title="Show by MPA">
-                  {genDistanceTable(data)}
+                {!isCollection && (
+                  <Collapse
+                    title="Fuel Cost Estimator"
+                    key={
+                      props.printing +
+                      "DistanceToPort Fuel Cost Estimator Collapse"
+                    }
+                    collapsed={!props.printing}
+                  >
+                    <FuelCostEstimator
+                      distanceKm={data.portDistances[0].distance}
+                    />
+                  </Collapse>
+                )}
+                {isCollection && (
+                  <Collapse
+                    title="Show by MPA"
+                    key={props.printing + "DistanceToPort MPA Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genDistanceTable(data)}
+                  </Collapse>
+                )}
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "DistanceToPort Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="DistanceToPort Card - Learn more">
+                    <p>🗺️ Source Data: World Port Index 2019</p>
+                    <p>
+                      📈 Report: Calculates the minimum distance over water
+                      between MPAs and the closest port.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="DistanceToPort Card - Learn more">
-                  <p>🗺️ Source Data: World Port Index 2019</p>
-                  <p>
-                    📈 Report: Calculates the minimum distance over water
-                    between MPAs and the closest port.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          );
-        }}
-      </ResultsCard>
-    </ReportError>
+              </ToolbarCard>
+            );
+          }}
+        </ResultsCard>
+      </ReportError>
+    </div>
   );
 };
 

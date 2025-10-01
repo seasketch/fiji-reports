@@ -23,7 +23,9 @@ import { Download } from "@styled-icons/bootstrap/Download";
 /**
  * Juvenile Coral Density report
  */
-export const JuvenileCoralDensity: React.FunctionComponent = () => {
+export const JuvenileCoralDensity: React.FunctionComponent<{
+  printing: boolean;
+}> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
 
@@ -37,139 +39,155 @@ export const JuvenileCoralDensity: React.FunctionComponent = () => {
   const averageLabel = t("Average Juvenile Coral Density");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="juvenileCoralDensity"
-      useChildCard
-    >
-      {(data: Station[]) => {
-        const averages = data.find((s) => s.station_id === "averages");
-        const averageMetrics = averages
-          ? Object.entries(averages)
-              .filter(([key]) => key !== "station_id")
-              .map(([classId, value]) => ({
-                value: value as number,
-                classId,
-                metricId: metricGroup.metricId,
-                geographyId: null,
-                sketchId: null,
-                groupId: null,
-              }))
-          : [];
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard
+        title={titleLabel}
+        functionName="juvenileCoralDensity"
+        useChildCard
+      >
+        {(data: Station[]) => {
+          const averages = data.find((s) => s.station_id === "averages");
+          const averageMetrics = averages
+            ? Object.entries(averages)
+                .filter(([key]) => key !== "station_id")
+                .map(([classId, value]) => ({
+                  value: value as number,
+                  classId,
+                  metricId: metricGroup.metricId,
+                  geographyId: null,
+                  sketchId: null,
+                  groupId: null,
+                }))
+            : [];
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="JuvenileCoralDensity"
-                  data={data}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
-                />
-              }
-            >
-              <KeySection>
-                <Trans i18nKey="JuvenileCoralDensity 1">
-                  This area of interest has an average juvenile coral density of{" "}
-                  <Pill>
-                    {Number(averages?.total) &&
-                      roundLower(Number(averages?.total))}{" "}
-                    indv/ha
-                  </Pill>
-                </Trans>
-              </KeySection>
-
-              <LayerToggle
-                layerId={
-                  metricGroup.classes.find(
-                    (curClass) => curClass.classId === "total",
-                  )?.layerId
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="JuvenileCoralDensity"
+                    data={data}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
                 }
-                label="Show Total Juvenile Coral Density On Map"
-              />
+              >
+                <KeySection>
+                  <Trans i18nKey="JuvenileCoralDensity 1">
+                    This area of interest has an average juvenile coral density
+                    of{" "}
+                    <Pill>
+                      {Number(averages?.total) &&
+                        roundLower(Number(averages?.total))}{" "}
+                      indv/ha
+                    </Pill>
+                  </Trans>
+                </KeySection>
 
-              <Collapse title={t("Show By Coral Genus")}>
-                <ClassTable
-                  rows={averageMetrics.filter((m) => m.classId !== "total")}
-                  metricGroup={metricGroup}
-                  columnConfig={[
-                    {
-                      columnLabel: coralLabel,
-                      type: "class",
-                      width: 20,
-                    },
-                    {
-                      columnLabel: averageLabel,
-                      type: "metricValue",
-                      metricId: metricGroup.metricId,
-                      valueFormatter: (val) =>
-                        Number(val) && roundLower(Number(val)),
-                      chartOptions: {
-                        showTitle: true,
-                      },
-                      valueLabel: "indv/ha",
-                      colStyle: { textAlign: "center" },
-                      width: 50,
-                    },
-                    {
-                      columnLabel: mapLabel,
-                      type: "layerToggle",
-                      width: 10,
-                    },
-                  ]}
+                <LayerToggle
+                  layerId={
+                    metricGroup.classes.find(
+                      (curClass) => curClass.classId === "total",
+                    )?.layerId
+                  }
+                  label="Show Total Juvenile Coral Density On Map"
                 />
-              </Collapse>
 
-              <Collapse title={t("Show by Dive Site")}>
-                {genSketchTable(
-                  data.filter(
-                    (s) => s.station_id && s.station_id.startsWith("station:"),
-                  ),
-                  metricGroup,
-                  t,
+                {!props.printing && (
+                  <Collapse title={t("Show By Coral Genus")}>
+                    <ClassTable
+                      rows={averageMetrics.filter((m) => m.classId !== "total")}
+                      metricGroup={metricGroup}
+                      columnConfig={[
+                        {
+                          columnLabel: coralLabel,
+                          type: "class",
+                          width: 20,
+                        },
+                        {
+                          columnLabel: averageLabel,
+                          type: "metricValue",
+                          metricId: metricGroup.metricId,
+                          valueFormatter: (val) =>
+                            Number(val) && roundLower(Number(val)),
+                          chartOptions: {
+                            showTitle: true,
+                          },
+                          valueLabel: "indv/ha",
+                          colStyle: { textAlign: "center" },
+                          width: 50,
+                        },
+                        {
+                          columnLabel: mapLabel,
+                          type: "layerToggle",
+                          width: 10,
+                        },
+                      ]}
+                    />
+                  </Collapse>
                 )}
-              </Collapse>
 
-              {isCollection && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genSketchTable(
-                    data.filter(
-                      (s) => s.station_id && s.station_id.startsWith("sketch:"),
-                    ),
-                    metricGroup,
-                    t,
-                  )}
+                {!props.printing && (
+                  <Collapse title={t("Show by Dive Site")}>
+                    {genSketchTable(
+                      data.filter(
+                        (s) =>
+                          s.station_id && s.station_id.startsWith("station:"),
+                      ),
+                      metricGroup,
+                      t,
+                    )}
+                  </Collapse>
+                )}
+
+                {!props.printing && isCollection && (
+                  <Collapse title={t("Show by Sketch")}>
+                    {genSketchTable(
+                      data.filter(
+                        (s) =>
+                          s.station_id && s.station_id.startsWith("sketch:"),
+                      ),
+                      metricGroup,
+                      t,
+                    )}
+                  </Collapse>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={
+                    props.printing + "JuvenileCoralDensity Learn More Collapse"
+                  }
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="JuvenileCoralDensity - learn more">
+                    <p>
+                      ℹ️ Overview: Juvenile coral density, by site, from the
+                      Fiji expedition.
+                    </p>
+                    <p>🗺️ Source Data: Fiji Expedition</p>
+                    <p>
+                      📈 Report: This report calculates the average juvenile
+                      coral density within the plan by averaging the juvenile
+                      coral density results of individual dive sites within the
+                      area.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="JuvenileCoralDensity - learn more">
-                  <p>
-                    ℹ️ Overview: Juvenile coral density, by site, from the Fiji
-                    expedition.
-                  </p>
-                  <p>🗺️ Source Data: Fiji Expedition</p>
-                  <p>
-                    📈 Report: This report calculates the average juvenile coral
-                    density within the plan by averaging the juvenile coral
-                    density results of individual dive sites within the area.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

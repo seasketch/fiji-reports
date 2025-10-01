@@ -38,7 +38,9 @@ interface RichnessReportResult extends ReportResult {
 /**
  * TaxaRichness component
  */
-export const TaxaRichness: React.FunctionComponent = () => {
+export const TaxaRichness: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
 
@@ -52,95 +54,109 @@ export const TaxaRichness: React.FunctionComponent = () => {
   const withinLabel = t("Average Richness");
 
   return (
-    <ResultsCard title={titleLabel} functionName="taxaRichness" useChildCard>
-      {(data: RichnessReportResult) => {
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="TaxaRichness"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
-                />
-              }
-            >
-              <p>
-                <Trans i18nKey="Richness 1">
-                  This report summarizes the richness of coral genera, fish
-                  families, and invertebrate species within the area of
-                  interest.
-                </Trans>
-              </p>
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="taxaRichness" useChildCard>
+        {(data: RichnessReportResult) => {
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="TaxaRichness"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                <p>
+                  <Trans i18nKey="Richness 1">
+                    This report summarizes the richness of coral genera, fish
+                    families, and invertebrate species within the area of
+                    interest.
+                  </Trans>
+                </p>
 
-              <ClassTable
-                rows={data.metrics}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: taxaLabel,
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: withinLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) => Number(val).toFixed(1),
-                    chartOptions: {
-                      showTitle: true,
+                <ClassTable
+                  rows={data.metrics}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: taxaLabel,
+                      type: "class",
+                      width: 30,
                     },
-                    colStyle: { textAlign: "center" },
-                    width: 20,
-                  },
-                  {
-                    columnLabel: mapLabel,
-                    type: "layerToggle",
-                    width: 10,
-                  },
-                ]}
-              />
+                    {
+                      columnLabel: withinLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val) => Number(val).toFixed(1),
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      colStyle: { textAlign: "center" },
+                      width: 20,
+                    },
+                    {
+                      columnLabel: mapLabel,
+                      type: "layerToggle",
+                      width: 10,
+                    },
+                  ]}
+                />
 
-              <Collapse title={t("Show By Dive Site")}>
-                {genSketchTable(data, metricGroup, t)}
-              </Collapse>
-
-              {isCollection && (
-                <Collapse title={t("Show By Sketch")}>
-                  {genPerSketchTable(data, metricGroup, t)}
+                <Collapse
+                  title={t("Show By Dive Site")}
+                  key={props.printing + "TaxaRichness Dive Site Collapse"}
+                  collapsed={!props.printing}
+                >
+                  {genSketchTable(data, metricGroup, t)}
                 </Collapse>
-              )}
 
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="Richness - learn more">
-                  <p>
-                    ℹ️ Overview: This report summarizes the richness of coral
-                    genera, fish families, and invertebrate species within the
-                    area of interest.
-                  </p>
-                  <p>🗺️ Source Data: Fiji Expedition</p>
-                  <p>
-                    📈 Report: This report calculates the average richness of
-                    coral genera, fish families, and invertebrate genera within
-                    the area of interest by averaging the richness results of
-                    individual dive sites within the area.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+                {isCollection && (
+                  <Collapse
+                    title={t("Show By Sketch")}
+                    key={props.printing + "TaxaRichness Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genPerSketchTable(data, metricGroup, t)}
+                  </Collapse>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "TaxaRichness Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="Richness - learn more">
+                    <p>
+                      ℹ️ Overview: This report summarizes the richness of coral
+                      genera, fish families, and invertebrate species within the
+                      area of interest.
+                    </p>
+                    <p>🗺️ Source Data: Fiji Expedition</p>
+                    <p>
+                      📈 Report: This report calculates the average richness of
+                      coral genera, fish families, and invertebrate genera
+                      within the area of interest by averaging the richness
+                      results of individual dive sites within the area.
+                    </p>
+                  </Trans>
+                </Collapse>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

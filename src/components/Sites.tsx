@@ -25,93 +25,105 @@ interface SiteReportResult extends ReportResult {
 /**
  * Dive Sites component
  */
-export const Sites: React.FunctionComponent = () => {
+export const Sites: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const titleLabel = t("Dive Sites");
 
   return (
-    <ResultsCard title={titleLabel} functionName="sites" useChildCard>
-      {(data: SiteReportResult) => {
-        // Get metric values
-        const stations =
-          data.metrics.find((m) => m.metricId === "stations")?.value || 0;
-        const provinces =
-          data.metrics.find((m) => m.metricId === "provinces")?.value || 0;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="sites" useChildCard>
+        {(data: SiteReportResult) => {
+          // Get metric values
+          const stations =
+            data.metrics.find((m) => m.metricId === "stations")?.value || 0;
+          const provinces =
+            data.metrics.find((m) => m.metricId === "provinces")?.value || 0;
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="Sites"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
-                />
-              }
-            >
-              <p>
-                <Trans i18nKey="Sites 1">
-                  This plan contains <Pill>{stations.toString()}</Pill> dive
-                  site
-                  {stations === 1 ? "" : "s"} in{" "}
-                  <Pill>{provinces.toString()}</Pill> province
-                  {provinces === 1 ? "" : "s"}.
-                </Trans>
-              </p>
-
-              <LayerToggle
-                layerId="pdZ8qAqGI"
-                label={t("Show Dive Sites on Map")}
-              />
-
-              <Collapse title={t("Dive Sites")}>
-                <SmallReportTableStyled>
-                  <Table
-                    data={data.stations}
-                    columns={[
-                      {
-                        Header: t("Dive Site"),
-                        accessor: "station_id",
-                      },
-                      {
-                        Header: t("Province"),
-                        accessor: "province",
-                      },
-                      {
-                        Header: t("Within Sketch"),
-                        accessor: "sketchName",
-                      },
-                    ]}
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="Sites"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
                   />
-                </SmallReportTableStyled>
-              </Collapse>
+                }
+              >
+                <p>
+                  <Trans i18nKey="Sites 1">
+                    This plan contains <Pill>{stations.toString()}</Pill> dive
+                    site
+                    {stations === 1 ? "" : "s"} in{" "}
+                    <Pill>{provinces.toString()}</Pill> province
+                    {provinces === 1 ? "" : "s"}.
+                  </Trans>
+                </p>
 
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="Sites - learn more">
-                  <p>
-                    ℹ️ Overview: This report shows the number of dive sites
-                    within this plan.
-                  </p>
-                  <p>
-                    🗺️ Source Data: The data comes from the dive sites dataset
-                    which contains information about sampling dive sites across
-                    Fiji.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+                <LayerToggle
+                  layerId="pdZ8qAqGI"
+                  label={t("Show Dive Sites on Map")}
+                />
+
+                <Collapse
+                  title={t("Dive Sites")}
+                  key={props.printing + "Sites Dive Sites Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <SmallReportTableStyled>
+                    <Table
+                      data={data.stations}
+                      columns={[
+                        {
+                          Header: t("Dive Site"),
+                          accessor: "station_id",
+                        },
+                        {
+                          Header: t("Province"),
+                          accessor: "province",
+                        },
+                        {
+                          Header: t("Within Sketch"),
+                          accessor: "sketchName",
+                        },
+                      ]}
+                    />
+                  </SmallReportTableStyled>
+                </Collapse>
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "Sites Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="Sites - learn more">
+                    <p>
+                      ℹ️ Overview: This report shows the number of dive sites
+                      within this plan.
+                    </p>
+                    <p>
+                      🗺️ Source Data: The data comes from the dive sites dataset
+                      which contains information about sampling dive sites
+                      across Fiji.
+                    </p>
+                  </Trans>
+                </Collapse>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };

@@ -34,7 +34,9 @@ interface WaterQualityReportResult extends ReportResult {
 /**
  * Water Quality report
  */
-export const WaterQuality: React.FunctionComponent = () => {
+export const WaterQuality: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
 
@@ -47,91 +49,105 @@ export const WaterQuality: React.FunctionComponent = () => {
   const mapLabel = t("Map");
 
   return (
-    <ResultsCard title={titleLabel} functionName="waterQuality" useChildCard>
-      {(data: WaterQualityReportResult) => {
-        const metrics = data.metrics;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="waterQuality" useChildCard>
+        {(data: WaterQualityReportResult) => {
+          const metrics = data.metrics;
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="WaterQuality"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
-                />
-              }
-            >
-              <p>
-                <Trans i18nKey="WaterQuality 1">
-                  This report estimates the average Nitrogen-15 (δ15N) value
-                  within the area of interest.
-                </Trans>
-              </p>
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="WaterQuality"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                <p>
+                  <Trans i18nKey="WaterQuality 1">
+                    This report estimates the average Nitrogen-15 (δ15N) value
+                    within the area of interest.
+                  </Trans>
+                </p>
 
-              <ClassTable
-                rows={metrics}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: " ",
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: withinLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (value) => Number(value).toFixed(2),
-                    chartOptions: {
-                      showTitle: true,
+                <ClassTable
+                  rows={metrics}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: " ",
+                      type: "class",
+                      width: 30,
                     },
-                    colStyle: { textAlign: "center" },
-                    width: 50,
-                  },
-                  {
-                    columnLabel: mapLabel,
-                    type: "layerToggle",
-                    width: 10,
-                  },
-                ]}
-              />
+                    {
+                      columnLabel: withinLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (value) => Number(value).toFixed(2),
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      colStyle: { textAlign: "center" },
+                      width: 50,
+                    },
+                    {
+                      columnLabel: mapLabel,
+                      type: "layerToggle",
+                      width: 10,
+                    },
+                  ]}
+                />
 
-              <Collapse title={t("Show By Dive Site")}>
-                {genSketchTable(data, metricGroup, t)}
-              </Collapse>
-
-              {isCollection && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genPerSketchTable(data, t)}
+                <Collapse
+                  title={t("Show By Dive Site")}
+                  key={props.printing + "WaterQuality Dive Site Collapse"}
+                  collapsed={!props.printing}
+                >
+                  {genSketchTable(data, metricGroup, t)}
                 </Collapse>
-              )}
 
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="WaterQuality - learn more">
-                  <p>🗺️ Source Data: Fiji Expedition</p>
-                  <p>
-                    📈 Report: This report calculates the average Nitrogen-15
-                    (δ15N) value in the area of interest by averaging the δ15N
-                    values of individual water quality values of dive sites
-                    within the area.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+                {isCollection && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "WaterQuality Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genPerSketchTable(data, t)}
+                  </Collapse>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "WaterQuality Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="WaterQuality - learn more">
+                    <p>🗺️ Source Data: Fiji Expedition</p>
+                    <p>
+                      📈 Report: This report calculates the average Nitrogen-15
+                      (δ15N) value in the area of interest by averaging the δ15N
+                      values of individual water quality values of dive sites
+                      within the area.
+                    </p>
+                  </Trans>
+                </Collapse>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

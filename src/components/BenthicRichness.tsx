@@ -21,7 +21,9 @@ import { Download } from "@styled-icons/bootstrap/Download";
 /**
  * Expedition: Benthic Richness report
  */
-export const BenthicRichness: React.FunctionComponent = () => {
+export const BenthicRichness: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const metricGroup = project.getMetricGroup("benthicRichness", t);
@@ -32,100 +34,114 @@ export const BenthicRichness: React.FunctionComponent = () => {
   const unitLabel = t("spp.");
 
   return (
-    <ResultsCard title={titleLabel} functionName="benthicRichness" useChildCard>
-      {(metricResults: SpRichnessResults[]) => {
-        const overallStats = isCollection
-          ? metricResults.find((s) => s.isCollection)!
-          : metricResults[0];
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard
+        title={titleLabel}
+        functionName="benthicRichness"
+        useChildCard
+      >
+        {(metricResults: SpRichnessResults[]) => {
+          const overallStats = isCollection
+            ? metricResults.find((s) => s.isCollection)!
+            : metricResults[0];
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <>
-                  <LayerToggle
-                    layerId={metricGroup.layerId}
-                    label={mapLabel}
-                    simple
-                  />
-                  <DataDownload
-                    filename="BenthicRichness"
-                    data={metricResults}
-                    formats={["csv", "json"]}
-                    placement="left-start"
-                    titleElement={
-                      <Download
-                        size={18}
-                        color="#999"
-                        style={{ cursor: "pointer" }}
-                      />
-                    }
-                  />
-                </>
-              }
-            >
-              <p>
-                <Trans i18nKey="BenthicRichness 1">
-                  This report summarizes species richness within this plan.
-                </Trans>
-              </p>
-
-              <KeySection
-                style={{ display: "flex", justifyContent: "space-around" }}
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <>
+                    <LayerToggle
+                      layerId={metricGroup.layerId}
+                      label={mapLabel}
+                      simple
+                    />
+                    <DataDownload
+                      filename="BenthicRichness"
+                      data={metricResults}
+                      formats={["csv", "json"]}
+                      placement="left-start"
+                      titleElement={
+                        <Download
+                          size={18}
+                          color="#999"
+                          style={{ cursor: "pointer" }}
+                        />
+                      }
+                    />
+                  </>
+                }
               >
-                <span>
-                  {t("Min")}:{" "}
-                  <b>
-                    {overallStats.min} {unitLabel}
-                  </b>
-                </span>
-                {overallStats!.mean && (
+                <p>
+                  <Trans i18nKey="BenthicRichness 1">
+                    This report summarizes species richness within this plan.
+                  </Trans>
+                </p>
+
+                <KeySection
+                  style={{ display: "flex", justifyContent: "space-around" }}
+                >
                   <span>
-                    {t("Avg")}:{" "}
+                    {t("Min")}:{" "}
                     <b>
-                      {overallStats.mean} {unitLabel}
+                      {overallStats.min} {unitLabel}
                     </b>
                   </span>
+                  {overallStats!.mean && (
+                    <span>
+                      {t("Avg")}:{" "}
+                      <b>
+                        {overallStats.mean} {unitLabel}
+                      </b>
+                    </span>
+                  )}
+                  <span>
+                    {t("Max")}:{" "}
+                    <b>
+                      {overallStats.max} {unitLabel}
+                    </b>
+                  </span>
+                </KeySection>
+
+                {isCollection && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "BenthicRichness Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genRichnessTable(metricResults, t)}
+                  </Collapse>
                 )}
-                <span>
-                  {t("Max")}:{" "}
-                  <b>
-                    {overallStats.max} {unitLabel}
-                  </b>
-                </span>
-              </KeySection>
 
-              {isCollection && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genRichnessTable(metricResults, t)}
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "BenthicRichness Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="BenthicRichness - learn more">
+                    <p>
+                      🗺️ Source Data:{" "}
+                      <a
+                        href="https://iucn.org/our-work/region/oceania"
+                        target="_blank"
+                      >
+                        IUCN
+                      </a>
+                    </p>
+                    <p>
+                      📈 Report: This report calculates the minimum, mean, and
+                      maximum benthic species counts within the plan. If the
+                      plan includes multiple areas that overlap, the overlap is
+                      only counted once.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="BenthicRichness - learn more">
-                  <p>
-                    🗺️ Source Data:{" "}
-                    <a
-                      href="https://iucn.org/our-work/region/oceania"
-                      target="_blank"
-                    >
-                      IUCN
-                    </a>
-                  </p>
-                  <p>
-                    📈 Report: This report calculates the minimum, mean, and
-                    maximum benthic species counts within the plan. If the plan
-                    includes multiple areas that overlap, the overlap is only
-                    counted once.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

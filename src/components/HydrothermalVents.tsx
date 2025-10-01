@@ -26,12 +26,11 @@ import { Download } from "@styled-icons/bootstrap/Download";
 /**
  * Hydrothermal Vents report
  */
-export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
+export const HydrothermalVents: React.FunctionComponent<{
+  printing: boolean;
+}> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
-  const curGeography = project.getGeographyById(props.geographyId, {
-    fallbackGroup: "default-boundary",
-  });
 
   // Metrics
   const metricGroup = project.getMetricGroup("hydrothermalVents", t);
@@ -43,109 +42,119 @@ export const HydrothermalVents: React.FunctionComponent<GeogProp> = (props) => {
   const percWithinLabel = t("% Within Plan");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="hydrothermalVents"
-      useChildCard
-    >
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard
+        title={titleLabel}
+        functionName="hydrothermalVents"
+        useChildCard
+      >
+        {(data: ReportResult) => {
+          const percMetricIdName = `${metricGroup.metricId}Perc`;
 
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
-        const metrics = [...valueMetrics, ...percentMetrics];
+          const valueMetrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
+          const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
+            metricIdOverride: percMetricIdName,
+          });
+          const metrics = [...valueMetrics, ...percentMetrics];
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="HydrothermalVents"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="HydrothermalVents"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                <p>
+                  <Trans i18nKey="HydrothermalVents 1">
+                    This report summarizes the number of hydrothermal vents
+                    within the plan.
+                  </Trans>
+                </p>
+
+                <ClassTable
+                  rows={metrics}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: " ",
+                      type: "class",
+                      width: 30,
+                    },
+                    {
+                      columnLabel: withinLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: "integer",
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 20,
+                    },
+                    {
+                      columnLabel: percWithinLabel,
+                      type: "metricChart",
+                      metricId: percMetricIdName,
+                      valueFormatter: "percent",
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 40,
+                    },
+                    {
+                      columnLabel: mapLabel,
+                      type: "layerToggle",
+                      width: 10,
+                    },
+                  ]}
                 />
-              }
-            >
-              <p>
-                <Trans i18nKey="HydrothermalVents 1">
-                  This report summarizes the number of hydrothermal vents within
-                  the plan.
-                </Trans>
-              </p>
 
-              <ClassTable
-                rows={metrics}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: " ",
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: withinLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: "integer",
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    width: 20,
-                  },
-                  {
-                    columnLabel: percWithinLabel,
-                    type: "metricChart",
-                    metricId: percMetricIdName,
-                    valueFormatter: "percent",
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    width: 40,
-                  },
-                  {
-                    columnLabel: mapLabel,
-                    type: "layerToggle",
-                    width: 10,
-                  },
-                ]}
-              />
+                {isCollection && childProperties && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "HydrothermalVents Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genSketchTable(data, metricGroup, childProperties)}
+                  </Collapse>
+                )}
 
-              {isCollection && childProperties && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genSketchTable(data, metricGroup, childProperties)}
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "HydrothermalVents Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="HydrothermalVents - learn more">
+                    <p>
+                      📈 Report: This report calculates the total number of
+                      hydrothermal vents within the plan. This value is divided
+                      by the total number of hydrothermal vents to obtain the %
+                      contained within the plan. If the plan includes multiple
+                      areas that overlap, the overlap is only counted once.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="HydrothermalVents - learn more">
-                  <p>
-                    📈 Report: This report calculates the total number of
-                    hydrothermal vents within the plan. This value is divided by
-                    the total number of hydrothermal vents to obtain the %
-                    contained within the plan. If the plan includes multiple
-                    areas that overlap, the overlap is only counted once.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

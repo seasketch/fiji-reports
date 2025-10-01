@@ -23,7 +23,9 @@ const formatDepth = (val: number) => {
   return `-${baseVal}m`;
 };
 
-export const Depth: React.FunctionComponent = () => {
+export const Depth: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const mg = projectClient.getMetricGroup("bathymetry", t);
@@ -87,12 +89,20 @@ export const Depth: React.FunctionComponent = () => {
                 </KeySection>
 
                 {isCollection && (
-                  <Collapse title={t("Show by MPA")}>
+                  <Collapse
+                    title={t("Show by MPA")}
+                    key={props.printing + "Depth MPA Collapse"}
+                    collapsed={!props.printing}
+                  >
                     {genBathymetryTable(data, mg)}
                   </Collapse>
                 )}
 
-                <Collapse title={t("Learn More")}>
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "Depth Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
                   <Trans i18nKey="Depth Card - Learn more">
                     <p>🗺️ Source Data: GEBCO 2024</p>
                     <p>

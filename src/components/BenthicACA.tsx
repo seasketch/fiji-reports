@@ -28,7 +28,9 @@ import precalcMetrics from "../../data/precalc/precalcBenthicACA.json" with { ty
 /**
  * Allen Coral Atlas, Benthic Map card
  */
-export const BenthicACA: React.FunctionComponent = () => {
+export const BenthicACA: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
 
@@ -42,124 +44,135 @@ export const BenthicACA: React.FunctionComponent = () => {
   const unitsLabel = t("ha");
 
   return (
-    <ResultsCard title={titleLabel} functionName="benthicACA" useChildCard>
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="benthicACA" useChildCard>
+        {(data: ReportResult) => {
+          const percMetricIdName = `${metricGroup.metricId}Perc`;
 
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
-        const metrics = [...valueMetrics, ...percentMetrics];
+          const valueMetrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
+          const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
+            metricIdOverride: percMetricIdName,
+          });
+          const metrics = [...valueMetrics, ...percentMetrics];
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <>
-                  <DataDownload
-                    filename="BenthicACA"
-                    data={data.metrics}
-                    formats={["csv", "json"]}
-                    placement="left-start"
-                    titleElement={
-                      <Download
-                        size={18}
-                        color="#999"
-                        style={{ cursor: "pointer" }}
-                      />
-                    }
-                  />
-                </>
-              }
-            >
-              <p>
-                <Trans i18nKey="BenthicACA 1">
-                  This report summarizes benthic features within the area of
-                  interest, based on Allen Coral Atlas data.
-                </Trans>
-              </p>
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <>
+                    <DataDownload
+                      filename="BenthicACA"
+                      data={data.metrics}
+                      formats={["csv", "json"]}
+                      placement="left-start"
+                      titleElement={
+                        <Download
+                          size={18}
+                          color="#999"
+                          style={{ cursor: "pointer" }}
+                        />
+                      }
+                    />
+                  </>
+                }
+              >
+                <p>
+                  <Trans i18nKey="BenthicACA 1">
+                    This report summarizes benthic features within the area of
+                    interest, based on Allen Coral Atlas data.
+                  </Trans>
+                </p>
 
-              <LayerToggle
-                layerId={metricGroup.layerId}
-                label={t("Show Benthic Features On Map")}
-              />
+                <LayerToggle
+                  layerId={metricGroup.layerId}
+                  label={t("Show Benthic Features On Map")}
+                />
 
-              <ClassTable
-                rows={metrics}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: t("Benthic Feature"),
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: withinLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) =>
-                      roundDecimalFormat(Number(val) / 10000),
-                    valueLabel: unitsLabel,
-                    chartOptions: {
-                      showTitle: true,
+                <ClassTable
+                  rows={metrics}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: t("Benthic Feature"),
+                      type: "class",
+                      width: 30,
                     },
-                    width: 20,
-                  },
-                  {
-                    columnLabel: percWithinLabel,
-                    type: "metricChart",
-                    metricId: percMetricIdName,
-                    valueFormatter: "percent",
-                    chartOptions: {
-                      showTitle: true,
+                    {
+                      columnLabel: withinLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val) =>
+                        roundDecimalFormat(Number(val) / 10000),
+                      valueLabel: unitsLabel,
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 20,
                     },
-                    width: 40,
-                  },
-                ]}
-              />
+                    {
+                      columnLabel: percWithinLabel,
+                      type: "metricChart",
+                      metricId: percMetricIdName,
+                      valueFormatter: "percent",
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 40,
+                    },
+                  ]}
+                />
 
-              {isCollection && childProperties && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genSketchTable(
-                    data,
-                    metricGroup,
-                    precalcMetrics,
-                    childProperties,
-                  )}
+                {isCollection && childProperties && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "BenthicACA MPA Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genSketchTable(
+                      data,
+                      metricGroup,
+                      precalcMetrics,
+                      childProperties,
+                    )}
+                  </Collapse>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "BenthicACA Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="BenthicACA - learn more">
+                    <p>
+                      ℹ️ Overview: The Allen Coral Atlas is a global-scale coral
+                      reef habitat mapping project that uses Planet Dove 3.7 m
+                      resolution daily satellite imagery (in combination with
+                      wave models and ecological data) to create consistent and
+                      high- detail global habitat maps to support reef-related
+                      science and conservation. Global Benthic Habitat Maps
+                      characterise different coral reef bottom types. These
+                      bottom types include communities of living organisms
+                      attached to the reef (benthos), as well as sediments and
+                      underlying substrate.
+                    </p>
+                    <p>
+                      📈 Report: This report calculates the total area of each
+                      benthic feature within the area of interest. This value is
+                      divided by the total area of each benthic feature to
+                      obtain the % contained within the area of interest.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="BenthicACA - learn more">
-                  <p>
-                    ℹ️ Overview: The Allen Coral Atlas is a global-scale coral
-                    reef habitat mapping project that uses Planet Dove 3.7 m
-                    resolution daily satellite imagery (in combination with wave
-                    models and ecological data) to create consistent and high-
-                    detail global habitat maps to support reef-related science
-                    and conservation. Global Benthic Habitat Maps characterise
-                    different coral reef bottom types. These bottom types
-                    include communities of living organisms attached to the reef
-                    (benthos), as well as sediments and underlying substrate.
-                  </p>
-                  <p>
-                    📈 Report: This report calculates the total area of each
-                    benthic feature within the area of interest. This value is
-                    divided by the total area of each benthic feature to obtain
-                    the % contained within the area of interest.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

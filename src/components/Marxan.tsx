@@ -56,7 +56,9 @@ const calculateMarxanStats = (metrics: Metric[]) => {
 /**
  * Marxan report
  */
-export const Marxan: React.FunctionComponent = () => {
+export const Marxan: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const metricGroup = project.getMetricGroup("marxan", t);
@@ -65,73 +67,83 @@ export const Marxan: React.FunctionComponent = () => {
   const titleLabel = t("Prioritization");
 
   return (
-    <ResultsCard title={titleLabel} functionName="marxan" useChildCard>
-      {(data: ReportResult) => {
-        // Calculate overall stats from all metrics
-        const overallStats = calculateMarxanStats(
-          data.metrics.filter((m) => m.sketchId === id),
-        );
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="marxan" useChildCard>
+        {(data: ReportResult) => {
+          // Calculate overall stats from all metrics
+          const overallStats = calculateMarxanStats(
+            data.metrics.filter((m) => m.sketchId === id),
+          );
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <>
-                  <DataDownload
-                    filename="marxan"
-                    data={data.metrics}
-                    formats={["csv", "json"]}
-                    placement="left-start"
-                    titleElement={
-                      <Download
-                        size={18}
-                        color="#999"
-                        style={{ cursor: "pointer" }}
-                      />
-                    }
-                  />
-                </>
-              }
-            >
-              <p>
-                This area of interest has an average prioritization score of{" "}
-                <Pill>{overallStats.mean.toFixed(2)}</Pill>, and contains areas
-                within the range of <Pill>{overallStats.min}</Pill> to{" "}
-                <Pill>{overallStats.max}</Pill>.
-              </p>
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <>
+                    <DataDownload
+                      filename="marxan"
+                      data={data.metrics}
+                      formats={["csv", "json"]}
+                      placement="left-start"
+                      titleElement={
+                        <Download
+                          size={18}
+                          color="#999"
+                          style={{ cursor: "pointer" }}
+                        />
+                      }
+                    />
+                  </>
+                }
+              >
+                <p>
+                  This area of interest has an average prioritization score of{" "}
+                  <Pill>{overallStats.mean.toFixed(2)}</Pill>, and contains
+                  areas within the range of <Pill>{overallStats.min}</Pill> to{" "}
+                  <Pill>{overallStats.max}</Pill>.
+                </p>
 
-              <LayerToggle
-                layerId={"794A0SDQ3"}
-                label={t("Show Inshore Priority Areas")}
-              />
-              <LayerToggle
-                layerId={"thx4JZZtC"}
-                label={t("Show Offshore Priority Areas")}
-              />
+                <LayerToggle
+                  layerId={"794A0SDQ3"}
+                  label={t("Show Inshore Priority Areas")}
+                />
+                <LayerToggle
+                  layerId={"thx4JZZtC"}
+                  label={t("Show Offshore Priority Areas")}
+                />
 
-              {isCollection && childProperties && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genSketchSummary(data, metricGroup, childProperties, t)}
+                {isCollection && childProperties && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "Marxan Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genSketchSummary(data, metricGroup, childProperties, t)}
+                  </Collapse>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "Marxan Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="marxan - learn more">
+                    <p>
+                      📈 Report: Prioritization scores are calculated using the
+                      Marxan software package, where the score shows the
+                      frequency of an area being selected in the prioritization.
+                      The range of scores is from 0 to 10, with 0 being the
+                      least prioritized and 10 being the most prioritized.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="marxan - learn more">
-                  <p>
-                    📈 Report: Prioritization scores are calculated using the
-                    Marxan software package, where the score shows the frequency
-                    of an area being selected in the prioritization. The range
-                    of scores is from 0 to 10, with 0 being the least
-                    prioritized and 10 being the most prioritized.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

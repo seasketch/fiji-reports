@@ -72,7 +72,9 @@ const invertPresenceGroups = {
 /**
  * Invertebrate Presence report
  */
-export const InvertPresence: React.FunctionComponent = () => {
+export const InvertPresence: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
 
@@ -81,135 +83,153 @@ export const InvertPresence: React.FunctionComponent = () => {
   const titleLabel = t("Invertebrate Presence");
 
   return (
-    <ResultsCard title={titleLabel} functionName="invertPresence" useChildCard>
-      {(data: Pt[]) => {
-        const overall = data.find((row) => row.id === "total");
-        if (!overall) return null;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard
+        title={titleLabel}
+        functionName="invertPresence"
+        useChildCard
+      >
+        {(data: Pt[]) => {
+          const overall = data.find((row) => row.id === "total");
+          if (!overall) return null;
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="InvertPresence"
-                  data={data}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
-                />
-              }
-            >
-              <p>
-                {data.some(
-                  (row) =>
-                    typeof row.id === "string" &&
-                    row.id.startsWith("province:"),
-                ) ? (
-                  <Trans i18nKey="InvertPresence 1">
-                    This report summarizes the presence of invertebrates within
-                    the plan.
-                  </Trans>
-                ) : (
-                  <p
-                    style={{
-                      color: "#888",
-                      fontStyle: "italic",
-                      margin: "20px 0",
-                    }}
-                  >
-                    No presence data falls within the plan.
-                  </p>
-                )}
-              </p>
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="InvertPresence"
+                    data={data}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                <p>
+                  {data.some(
+                    (row) =>
+                      typeof row.id === "string" &&
+                      row.id.startsWith("province:"),
+                  ) ? (
+                    <Trans i18nKey="InvertPresence 1">
+                      This report summarizes the presence of invertebrates
+                      within the plan.
+                    </Trans>
+                  ) : (
+                    <p
+                      style={{
+                        color: "#888",
+                        fontStyle: "italic",
+                        margin: "20px 0",
+                      }}
+                    >
+                      No presence data falls within the plan.
+                    </p>
+                  )}
+                </p>
 
-              {Object.entries(invertPresenceGroups).map(
-                ([groupName, speciesList]) => (
-                  <Collapse key={groupName} title={t(groupName)}>
-                    <ClassTable
-                      rows={classIds
-                        .filter((id) => speciesList.includes(id))
-                        .map((classId) => ({
-                          classId,
-                          value: overall[classId] === "true" ? 1 : 0,
-                          metricId: metricGroup.metricId,
-                          geographyId: null,
-                          sketchId: null,
-                          groupId: null,
-                        }))}
-                      metricGroup={metricGroup}
-                      columnConfig={[
-                        {
-                          columnLabel: "Species",
-                          type: "class",
-                          colStyle: { fontStyle: "italic" },
-                          width: 50,
-                        },
-                        {
-                          columnLabel: "Present",
-                          type: "metricValue",
-                          metricId: metricGroup.metricId,
-                          valueFormatter: (val) => (val === 1 ? "✓" : " "),
-                          chartOptions: {
-                            showTitle: true,
+                {Object.entries(invertPresenceGroups).map(
+                  ([groupName, speciesList]) => (
+                    <Collapse key={groupName} title={t(groupName)}>
+                      <ClassTable
+                        rows={classIds
+                          .filter((id) => speciesList.includes(id))
+                          .map((classId) => ({
+                            classId,
+                            value: overall[classId] === "true" ? 1 : 0,
+                            metricId: metricGroup.metricId,
+                            geographyId: null,
+                            sketchId: null,
+                            groupId: null,
+                          }))}
+                        metricGroup={metricGroup}
+                        columnConfig={[
+                          {
+                            columnLabel: "Species",
+                            type: "class",
+                            colStyle: { fontStyle: "italic" },
+                            width: 50,
                           },
-                          valueLabel: "",
-                          colStyle: { textAlign: "center" },
-                          width: 30,
-                        },
-                        {
-                          columnLabel: "Map",
-                          type: "layerToggle",
-                          width: 20,
-                        },
-                      ]}
-                    />
-                  </Collapse>
-                ),
-              )}
-
-              <Collapse title={t("Show by Province")}>
-                {genSketchTable(
-                  data.filter((s) => s.id && s.id.startsWith("province:")),
-                  metricGroup,
-                  t,
+                          {
+                            columnLabel: "Present",
+                            type: "metricValue",
+                            metricId: metricGroup.metricId,
+                            valueFormatter: (val) => (val === 1 ? "✓" : " "),
+                            chartOptions: {
+                              showTitle: true,
+                            },
+                            valueLabel: "",
+                            colStyle: { textAlign: "center" },
+                            width: 30,
+                          },
+                          {
+                            columnLabel: "Map",
+                            type: "layerToggle",
+                            width: 20,
+                          },
+                        ]}
+                      />
+                    </Collapse>
+                  ),
                 )}
-              </Collapse>
 
-              {isCollection && (
-                <Collapse title={t("Show by Sketch")}>
+                <Collapse
+                  title={t("Show by Province")}
+                  key={props.printing + "InvertPresence Province Collapse"}
+                  collapsed={!props.printing}
+                >
                   {genSketchTable(
-                    data.filter((s) => s.id && s.id.startsWith("sketch:")),
+                    data.filter((s) => s.id && s.id.startsWith("province:")),
                     metricGroup,
                     t,
                   )}
                 </Collapse>
-              )}
 
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="InvertPresence - learn more">
-                  <p>
-                    ℹ️ Overview: Invertebrate Presence, by site, from the Fiji
-                    expedition.
-                  </p>
-                  <p>🗺️ Source Data: Fiji Expedition</p>
-                  <p>
-                    📈 Report: This report shows the presence of
-                    macroinvertebrate species within the plan.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+                {isCollection && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "InvertPresence Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genSketchTable(
+                      data.filter((s) => s.id && s.id.startsWith("sketch:")),
+                      metricGroup,
+                      t,
+                    )}
+                  </Collapse>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "InvertPresence Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="InvertPresence - learn more">
+                    <p>
+                      ℹ️ Overview: Invertebrate Presence, by site, from the Fiji
+                      expedition.
+                    </p>
+                    <p>🗺️ Source Data: Fiji Expedition</p>
+                    <p>
+                      📈 Report: This report shows the presence of
+                      macroinvertebrate species within the plan.
+                    </p>
+                  </Trans>
+                </Collapse>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

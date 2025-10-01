@@ -27,7 +27,10 @@ import { Download } from "@styled-icons/bootstrap/Download";
 /**
  * Gfw component
  */
-export const Gfw: React.FunctionComponent<GeogProp> = (props) => {
+export const Gfw: React.FunctionComponent<{
+  printing: boolean;
+  geographyId?: string;
+}> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = projectClient.getGeographyById(props.geographyId, {
@@ -46,110 +49,120 @@ export const Gfw: React.FunctionComponent<GeogProp> = (props) => {
   );
 
   return (
-    <ResultsCard title={titleLabel} functionName="gfw" useChildCard>
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="gfw" useChildCard>
+        {(data: ReportResult) => {
+          const percMetricIdName = `${metricGroup.metricId}Perc`;
 
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
+          const valueMetrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
+          const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
+            metricIdOverride: percMetricIdName,
+          });
 
-        const percentLineData = percentMetrics.map((m) => ({
-          year: Number(m.classId),
-          value: m.value,
-        }));
+          const percentLineData = percentMetrics.map((m) => ({
+            year: Number(m.classId),
+            value: m.value,
+          }));
 
-        return (
-          <ReportError>
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="Gfw"
-                  data={data.metrics}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
+          return (
+            <ReportError>
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="Gfw"
+                    data={data.metrics}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                <p>
+                  <Trans i18nKey="Gfw 1">
+                    This report summarizes the percentage of fishing effort
+                    contained within this plan from 2018-2024, based on data
+                    from Global Fishing Watch.
+                  </Trans>
+                </p>
+
+                <LayerToggle
+                  label={mapLabel}
+                  layerId={
+                    metricGroup.classes.find(
+                      (curClass) => curClass.classId === "2024",
+                    )?.layerId
                   }
                 />
-              }
-            >
-              <p>
-                <Trans i18nKey="Gfw 1">
-                  This report summarizes the percentage of fishing effort
-                  contained within this plan from 2018-2024, based on data from
-                  Global Fishing Watch.
-                </Trans>
-              </p>
 
-              <LayerToggle
-                label={mapLabel}
-                layerId={
-                  metricGroup.classes.find(
-                    (curClass) => curClass.classId === "2024",
-                  )?.layerId
-                }
-              />
+                {data.metrics.some((d) => d.value !== 0) ? (
+                  <GfwLineChart data={percentLineData} />
+                ) : (
+                  <p
+                    style={{
+                      color: "#888",
+                      fontStyle: "italic",
+                      margin: "20px 0",
+                    }}
+                  >
+                    No fishing effort in plan
+                  </p>
+                )}
 
-              {data.metrics.some((d) => d.value !== 0) ? (
-                <GfwLineChart data={percentLineData} />
-              ) : (
-                <p
-                  style={{
-                    color: "#888",
-                    fontStyle: "italic",
-                    margin: "20px 0",
-                  }}
+                {isCollection && childProperties && (
+                  <Collapse
+                    title={t("Show by Sketch")}
+                    key={props.printing + "Gfw Sketch Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genSketchTable(
+                      data,
+                      metricGroup,
+                      precalcMetrics,
+                      childProperties,
+                    )}
+                  </Collapse>
+                )}
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "Gfw Learn More Collapse"}
+                  collapsed={!props.printing}
                 >
-                  No fishing effort in plan
-                </p>
-              )}
-
-              {isCollection && childProperties && (
-                <Collapse title={t("Show by Sketch")}>
-                  {genSketchTable(
-                    data,
-                    metricGroup,
-                    precalcMetrics,
-                    childProperties,
-                  )}
+                  <Trans i18nKey="Gfw - learn more">
+                    <p>
+                      ℹ️ Overview: Global Fishing Watch's apparent fishing
+                      effort is based on transmissions broadcast using the
+                      automatic identification system (AIS). After identifying
+                      fishing vessels and detecting fishing positions in the AIS
+                      data, apparent fishing effort is calculated for any area
+                      by summarizing the fishing hours for all fishing vessels
+                      in that area.
+                    </p>
+                    <p>🗺️ Source Data: Global Fishing Watch</p>
+                    <p>
+                      📈 Report: This report calculates the sum of apparent
+                      fishing effort within the plan. This value is divided by
+                      the total sum of apparent fishing effort to obtain the %
+                      contained within the plan.
+                    </p>
+                  </Trans>
                 </Collapse>
-              )}
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="Gfw - learn more">
-                  <p>
-                    ℹ️ Overview: Global Fishing Watch's apparent fishing effort
-                    is based on transmissions broadcast using the automatic
-                    identification system (AIS). After identifying fishing
-                    vessels and detecting fishing positions in the AIS data,
-                    apparent fishing effort is calculated for any area by
-                    summarizing the fishing hours for all fishing vessels in
-                    that area.
-                  </p>
-                  <p>🗺️ Source Data: Global Fishing Watch</p>
-                  <p>
-                    📈 Report: This report calculates the sum of apparent
-                    fishing effort within the plan. This value is divided by the
-                    total sum of apparent fishing effort to obtain the %
-                    contained within the plan.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              </ToolbarCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

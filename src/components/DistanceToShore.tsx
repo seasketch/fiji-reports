@@ -17,77 +17,89 @@ import { Metric } from "@seasketch/geoprocessing/client-core";
 import { styled } from "styled-components";
 import { Download } from "@styled-icons/bootstrap/Download";
 
-export const DistanceToShore: React.FunctionComponent<any> = (props) => {
+export const DistanceToShore: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const titleLabel = t("Distance To Shore");
 
   return (
-    <ReportError>
-      <ResultsCard
-        title={titleLabel}
-        functionName="distanceToShore"
-        useChildCard
-      >
-        {(data: Metric[]) => {
-          const minDist = Math.min(...data.map((d) => d.value));
-          const maxDist = Math.max(...data.map((d) => d.value));
+    <div style={{ breakInside: "avoid" }}>
+      <ReportError>
+        <ResultsCard
+          title={titleLabel}
+          functionName="distanceToShore"
+          useChildCard
+        >
+          {(data: Metric[]) => {
+            const minDist = Math.min(...data.map((d) => d.value));
+            const maxDist = Math.max(...data.map((d) => d.value));
 
-          return (
-            <ToolbarCard
-              title={titleLabel}
-              items={
-                <DataDownload
-                  filename="DistanceToShore"
-                  data={data}
-                  formats={["csv", "json"]}
-                  placement="left-start"
-                  titleElement={
-                    <Download
-                      size={18}
-                      color="#999"
-                      style={{ cursor: "pointer" }}
-                    />
-                  }
-                />
-              }
-            >
-              {!isCollection ? (
-                <>
-                  <VerticalSpacer />
-                  This MPA is <Pill>{data[0].value.toFixed(1)} km</Pill> from
-                  shore.
-                </>
-              ) : (
-                <KeySection
-                  style={{ display: "flex", justifyContent: "space-around" }}
-                >
-                  <span>
-                    {t("Min")}: <b>{minDist.toFixed(1)} km</b>
-                  </span>
-                  <span>
-                    {t("Max")}: <b>{maxDist.toFixed(1)} km</b>
-                  </span>
-                </KeySection>
-              )}
-              {isCollection && (
-                <Collapse title="Show by MPA">
-                  {genDistanceTable(data)}
-                </Collapse>
-              )}
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="DistanceToShore Card - Learn more">
-                  <p>
-                    📈 Report: Calculates the minimum distance from each MPA to
+            return (
+              <ToolbarCard
+                title={titleLabel}
+                items={
+                  <DataDownload
+                    filename="DistanceToShore"
+                    data={data}
+                    formats={["csv", "json"]}
+                    placement="left-start"
+                    titleElement={
+                      <Download
+                        size={18}
+                        color="#999"
+                        style={{ cursor: "pointer" }}
+                      />
+                    }
+                  />
+                }
+              >
+                {!isCollection ? (
+                  <>
+                    <VerticalSpacer />
+                    This MPA is <Pill>{data[0].value.toFixed(1)} km</Pill> from
                     shore.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ToolbarCard>
-          );
-        }}
-      </ResultsCard>
-    </ReportError>
+                  </>
+                ) : (
+                  <KeySection
+                    style={{ display: "flex", justifyContent: "space-around" }}
+                  >
+                    <span>
+                      {t("Min")}: <b>{minDist.toFixed(1)} km</b>
+                    </span>
+                    <span>
+                      {t("Max")}: <b>{maxDist.toFixed(1)} km</b>
+                    </span>
+                  </KeySection>
+                )}
+                {isCollection && (
+                  <Collapse
+                    title="Show by MPA"
+                    key={props.printing + "DistanceToShore MPA Collapse"}
+                    collapsed={!props.printing}
+                  >
+                    {genDistanceTable(data)}
+                  </Collapse>
+                )}
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "DistanceToShore Learn More Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="DistanceToShore Card - Learn more">
+                    <p>
+                      📈 Report: Calculates the minimum distance from each MPA
+                      to shore.
+                    </p>
+                  </Trans>
+                </Collapse>
+              </ToolbarCard>
+            );
+          }}
+        </ResultsCard>
+      </ReportError>
+    </div>
   );
 };
 
