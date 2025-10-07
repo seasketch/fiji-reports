@@ -64,7 +64,7 @@ export const Marxan: React.FunctionComponent<{ printing: boolean }> = (
   const metricGroup = project.getMetricGroup("marxan", t);
 
   // Labels
-  const titleLabel = t("Prioritization");
+  const titleLabel = t("Marxan Prioritization");
 
   return (
     <div style={{ breakInside: "avoid" }}>

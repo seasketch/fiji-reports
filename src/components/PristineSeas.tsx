@@ -34,7 +34,7 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
   const metricGroup = project.getMetricGroup("pristineSeas", t);
 
   // Labels
-  const titleLabel = t("Pristine Seas");
+  const titleLabel = t("Pristine Seas Prioritization");
   const mapLabel = t("Map");
   const withinLabel = t("Within Plan");
 

@@ -44,6 +44,7 @@ const BaseReport = () => {
     { id: "VIABILITY", label: t("Viability") },
     { id: "EXPEDITION", label: t("Expedition") },
     { id: "REPRESENTATION", label: t("Representation") },
+    { id: "PRIORITIZATION", label: t("Prioritization") },
   ];
   const [tab, setTab] = useState<string>("VIABILITY");
 
@@ -130,7 +131,6 @@ const BaseReport = () => {
           <DistanceToPort printing={isPrinting} />
           <DistanceToShore printing={isPrinting} />
           <Gfw printing={isPrinting} />
-          <Marxan printing={isPrinting} />
           {!isPrinting && <SketchAttributesCard autoHide />}{" "}
         </ReportPage>
         <ReportPage hidden={!isPrinting && tab !== "EXPEDITION"}>
@@ -155,8 +155,11 @@ const BaseReport = () => {
           <BleachingAlerts printing={isPrinting} />
           <BenthicACA printing={isPrinting} />
           <GeomorphACA printing={isPrinting} />
-          <PristineSeas printing={isPrinting} />
           <Mangroves printing={isPrinting} />
+        </ReportPage>
+        <ReportPage hidden={!isPrinting && tab !== "PRIORITIZATION"}>
+          <Marxan printing={isPrinting} />
+          <PristineSeas printing={isPrinting} />
         </ReportPage>
       </div>
     </>
