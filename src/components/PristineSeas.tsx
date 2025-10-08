@@ -36,7 +36,7 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
   // Labels
   const titleLabel = t("Pristine Seas Prioritization");
   const mapLabel = t("Map");
-  const withinLabel = t("Within Plan");
+  const withinLabel = t("Average");
 
   return (
     <div style={{ breakInside: "avoid" }}>

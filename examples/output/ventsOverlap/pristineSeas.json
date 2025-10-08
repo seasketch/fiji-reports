@@ -6,7 +6,7 @@
       "classId": "biodiversity",
       "sketchId": "79005",
       "groupId": null,
-      "value": null
+      "value": 0.4900764773289363
     },
     {
       "geographyId": null,
@@ -14,7 +14,7 @@
       "classId": "biodiversity",
       "sketchId": "79006",
       "groupId": null,
-      "value": 0,
+      "value": 0.4900764773289363,
       "extra": {
         "isCollection": true
       }
@@ -25,7 +25,7 @@
       "classId": "biodiversity",
       "sketchId": "79007",
       "groupId": null,
-      "value": null
+      "value": 0.4900764773289363
     },
     {
       "geographyId": null,
@@ -33,7 +33,7 @@
       "classId": "carbon",
       "sketchId": "79005",
       "groupId": null,
-      "value": null
+      "value": 0.6091739024434771
     },
     {
       "geographyId": null,
@@ -41,7 +41,7 @@
       "classId": "carbon",
       "sketchId": "79006",
       "groupId": null,
-      "value": 0,
+      "value": 0.6091739024434771,
       "extra": {
         "isCollection": true
       }
@@ -52,7 +52,7 @@
       "classId": "carbon",
       "sketchId": "79007",
       "groupId": null,
-      "value": null
+      "value": 0.6091739024434771
     },
     {
       "geographyId": null,
@@ -60,7 +60,7 @@
       "classId": "food",
       "sketchId": "79005",
       "groupId": null,
-      "value": null
+      "value": 0.26088638036024003
     },
     {
       "geographyId": null,
@@ -68,7 +68,7 @@
       "classId": "food",
       "sketchId": "79006",
       "groupId": null,
-      "value": 0,
+      "value": 0.26088638036024003,
       "extra": {
         "isCollection": true
       }
@@ -79,7 +79,7 @@
       "classId": "food",
       "sketchId": "79007",
       "groupId": null,
-      "value": null
+      "value": 0.26088638036024003
     }
   ]
 }

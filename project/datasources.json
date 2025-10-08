@@ -997,8 +997,8 @@
     "band": 1,
     "noDataValue": -3.4e38,
     "created": "2025-08-04T21:04:08.483Z",
-    "lastUpdated": "2025-08-04T21:04:08.483Z",
-    "src": "data/src/Data_Received/PristineSeas/carbon_ranking_raster.tif"
+    "lastUpdated": "2025-10-08T23:42:34.750Z",
+    "src": "data/src/Data_Received/PristineSeas/5km/carbon.tif"
   },
   {
     "datasourceId": "pristineSeas_biodiversity",
@@ -1009,8 +1009,8 @@
     "band": 1,
     "noDataValue": -3.4e38,
     "created": "2025-08-04T21:04:56.515Z",
-    "lastUpdated": "2025-08-04T21:04:56.515Z",
-    "src": "data/src/Data_Received/PristineSeas/bio_ranking_raster.tif"
+    "lastUpdated": "2025-10-08T23:42:39.463Z",
+    "src": "data/src/Data_Received/PristineSeas/5km/biodiversity.tif"
   },
   {
     "datasourceId": "pristineSeas_food",
@@ -1021,8 +1021,8 @@
     "band": 1,
     "noDataValue": -3.4e38,
     "created": "2025-08-04T21:05:14.557Z",
-    "lastUpdated": "2025-08-04T21:05:14.557Z",
-    "src": "data/src/Data_Received/PristineSeas/food_ranking_raster_a2.tif"
+    "lastUpdated": "2025-10-08T23:42:45.399Z",
+    "src": "data/src/Data_Received/PristineSeas/5km/food.tif"
   },
   {
     "datasourceId": "gmw_1996",
@@ -1179,5 +1179,17 @@
     "src": "data/src/Data_Received/AllenCoralAtlas/geomorphic.gpkg",
     "propertiesToKeep": ["class"],
     "explodeMulti": true
+  },
+  {
+    "datasourceId": "pristineSeas_combined",
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": -3.4028235e38,
+    "created": "2025-10-08T22:43:43.344Z",
+    "lastUpdated": "2025-10-08T22:43:43.344Z",
+    "src": "data/src/Data_Received/PristineSeas/combined-ranking/triple-benefit.tif"
   }
 ]

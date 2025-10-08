@@ -6,7 +6,7 @@
       "classId": "biodiversity",
       "sketchId": "77760",
       "groupId": null,
-      "value": 0.21829160777005283,
+      "value": 0.2717807991967016,
       "extra": {
         "isCollection": true
       }
@@ -17,7 +17,7 @@
       "classId": "biodiversity",
       "sketchId": "77761",
       "groupId": null,
-      "value": null
+      "value": 0.886924794260061
     },
     {
       "geographyId": null,
@@ -25,7 +25,7 @@
       "classId": "biodiversity",
       "sketchId": "77762",
       "groupId": null,
-      "value": null
+      "value": 0.9705976843833923
     },
     {
       "geographyId": null,
@@ -33,7 +33,7 @@
       "classId": "biodiversity",
       "sketchId": "77763",
       "groupId": null,
-      "value": 0.21829160777005283
+      "value": 0.24596189510267652
     },
     {
       "geographyId": null,
@@ -41,7 +41,7 @@
       "classId": "biodiversity",
       "sketchId": "77764",
       "groupId": null,
-      "value": null
+      "value": 0.6529182381927967
     },
     {
       "geographyId": null,
@@ -49,7 +49,7 @@
       "classId": "carbon",
       "sketchId": "77760",
       "groupId": null,
-      "value": 0.4961972615935586,
+      "value": 0.4853917878111801,
       "extra": {
         "isCollection": true
       }
@@ -60,7 +60,7 @@
       "classId": "carbon",
       "sketchId": "77761",
       "groupId": null,
-      "value": null
+      "value": 0.7288214643046541
     },
     {
       "geographyId": null,
@@ -68,7 +68,7 @@
       "classId": "carbon",
       "sketchId": "77762",
       "groupId": null,
-      "value": null
+      "value": 0.14805826544761658
     },
     {
       "geographyId": null,
@@ -76,7 +76,7 @@
       "classId": "carbon",
       "sketchId": "77763",
       "groupId": null,
-      "value": 0.4961972615935586
+      "value": 0.47524251948021656
     },
     {
       "geographyId": null,
@@ -84,7 +84,7 @@
       "classId": "carbon",
       "sketchId": "77764",
       "groupId": null,
-      "value": null
+      "value": 0.6681007966399193
     },
     {
       "geographyId": null,
@@ -92,7 +92,7 @@
       "classId": "food",
       "sketchId": "77760",
       "groupId": null,
-      "value": 0.28978059508583764,
+      "value": 0.30866477071753423,
       "extra": {
         "isCollection": true
       }
@@ -103,7 +103,7 @@
       "classId": "food",
       "sketchId": "77761",
       "groupId": null,
-      "value": null
+      "value": 0.9589643388424279
     },
     {
       "geographyId": null,
@@ -111,7 +111,7 @@
       "classId": "food",
       "sketchId": "77762",
       "groupId": null,
-      "value": null
+      "value": 0.9576712250709534
     },
     {
       "geographyId": null,
@@ -119,7 +119,7 @@
       "classId": "food",
       "sketchId": "77763",
       "groupId": null,
-      "value": 0.28978059508583764
+      "value": 0.2853619445745161
     },
     {
       "geographyId": null,
@@ -127,7 +127,7 @@
       "classId": "food",
       "sketchId": "77764",
       "groupId": null,
-      "value": null
+      "value": 0.33649159129709005
     }
   ]
 }

@@ -21,13 +21,13 @@ import {
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 
-// Calculate weighted average and min/max from marxan metrics
+// Calculate weighted average and min/max from marxan
 const calculateMarxanStats = (metrics: Metric[]) => {
   if (!metrics || metrics.length === 0) {
     return { min: 0, max: 0, mean: 0 };
   }
 
-  // Convert classId to numbers and calculate weighted average
+  // Calculate weighted average
   const totalArea = metrics.reduce((sum, metric) => sum + metric.value, 0);
   const weightedSum = metrics.reduce((sum, metric) => {
     const rating = parseFloat(metric.classId || "-1");
@@ -37,18 +37,18 @@ const calculateMarxanStats = (metrics: Metric[]) => {
 
   const mean = totalArea > 0 ? weightedSum / totalArea : 0;
 
-  // Find min and max ratings (only for metrics with non-zero area)
-  const ratings = metrics
+  // Find min and max
+  const allValues = metrics
     .filter((metric) => metric.value > 0) // Only consider metrics with area > 0
     .map((metric) => (metric.classId ? parseFloat(metric.classId) : 0))
     .filter((rating) => !isNaN(rating));
 
-  if (ratings.length === 0) {
+  if (allValues.length === 0) {
     return { min: 0, max: 0, mean: 0 };
   }
 
-  const min = Math.min(...ratings);
-  const max = Math.max(...ratings);
+  const min = Math.min(...allValues);
+  const max = Math.max(...allValues);
 
   return { min, max, mean };
 };
@@ -70,7 +70,6 @@ export const Marxan: React.FunctionComponent<{ printing: boolean }> = (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="marxan" useChildCard>
         {(data: ReportResult) => {
-          // Calculate overall stats from all metrics
           const overallStats = calculateMarxanStats(
             data.metrics.filter((m) => m.sketchId === id),
           );

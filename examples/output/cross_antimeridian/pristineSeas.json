@@ -6,7 +6,7 @@
       "classId": "biodiversity",
       "sketchId": "78746",
       "groupId": null,
-      "value": 0.8877167999744415
+      "value": 0.9013270630037843
     },
     {
       "geographyId": null,
@@ -14,7 +14,7 @@
       "classId": "carbon",
       "sketchId": "78746",
       "groupId": null,
-      "value": 0.7783400118350983
+      "value": 0.79861243458217
     },
     {
       "geographyId": null,
@@ -22,7 +22,7 @@
       "classId": "food",
       "sketchId": "78746",
       "groupId": null,
-      "value": 0.9580123722553253
+      "value": 0.9591432624849779
     }
   ]
 }

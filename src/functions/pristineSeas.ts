@@ -6,22 +6,22 @@ import {
   toSketchArray,
   toRasterProjection,
   isSketchCollection,
-  MultiPolygon,
   isRasterDatasource,
 } from "@seasketch/geoprocessing";
 import { loadCog } from "@seasketch/geoprocessing/dataproviders";
-import { mean } from "simple-statistics";
 import project from "../../project/projectClient.js";
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
 import {
   Metric,
   ReportResult,
+  createMetric,
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
 
 // @ts-expect-error no types
-import geoblaze, { Georaster } from "geoblaze";
+import geoblaze from "geoblaze";
+import { featureCollection } from "@turf/turf";
 
 export async function pristineSeas(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>,
@@ -32,6 +32,8 @@ export async function pristineSeas(
   const metricGroup = project.getMetricGroup("pristineSeas");
   const allMetrics: Metric[] = [];
 
+  const sketchArray = toSketchArray(splitSketch);
+
   await Promise.all(
     metricGroup.classes.map(async (curClass) => {
       const ds = project.getMetricGroupDatasource(metricGroup, {
@@ -40,32 +42,83 @@ export async function pristineSeas(
       if (!isRasterDatasource(ds))
         throw new Error(`Expected raster datasource for ${ds.datasourceId}`);
       const url = project.getDatasourceUrl(ds);
-
       const raster = await loadCog(url);
 
-      // Calculate metrics for individual sketches
-      const sketchMetrics = await calculateSketchMetrics(
-        splitSketch,
-        raster,
-        metricGroup.metricId,
-        curClass.classId,
+      const metrics: Metric[] = await Promise.all(
+        sketchArray.map(async (sketch) => {
+          const finalFeat = toRasterProjection(raster, sketch);
+          if (!finalFeat.geometry.coordinates.length)
+            throw new Error("No coordinates found for sketch");
+
+          try {
+            const stats = (
+              await geoblaze.stats(raster, finalFeat, {
+                calcMean: true,
+              })
+            )[0];
+            console.log(stats);
+            return createMetric({
+              metricId: metricGroup.metricId,
+              classId: curClass.classId,
+              value: stats.mean || NaN,
+              sketchId: sketch.properties.id,
+            });
+          } catch (err) {
+            if (err === "No Values were found in the given geometry")
+              return createMetric({
+                metricId: metricGroup.metricId,
+                classId: curClass.classId,
+                value: NaN,
+                sketchId: sketch.properties.id,
+              });
+            else {
+              throw err;
+            }
+          }
+        }),
       );
-      allMetrics.push(...sketchMetrics);
+
+      allMetrics.push(...metrics);
 
       // Calculate overall mean for the collection (only if it's a sketch collection)
       if (isSketchCollection(splitSketch)) {
-        const overallMean = await calculateOverallMean(splitSketch, raster);
-        allMetrics.push({
-          metricId: metricGroup.metricId,
-          classId: curClass.classId,
-          value: overallMean,
-          geographyId: null,
-          sketchId: sketch.properties.id,
-          groupId: null,
-          extra: {
-            isCollection: true,
-          },
-        });
+        const collection = featureCollection(
+          sketchArray.map((sk) => toRasterProjection(raster, sk)),
+        );
+        try {
+          const stats = (
+            await geoblaze.stats(raster, collection, {
+              calcMean: true,
+            })
+          )[0];
+          allMetrics.push({
+            metricId: metricGroup.metricId,
+            classId: curClass.classId,
+            value: stats.mean || NaN,
+            geographyId: null,
+            sketchId: sketch.properties.id,
+            groupId: null,
+            extra: {
+              isCollection: true,
+            },
+          });
+        } catch (err) {
+          if (err === "No Values were found in the given geometry")
+            allMetrics.push({
+              metricId: metricGroup.metricId,
+              classId: curClass.classId,
+              value: NaN,
+              geographyId: null,
+              sketchId: sketch.properties.id,
+              groupId: null,
+              extra: {
+                isCollection: true,
+              },
+            });
+          else {
+            throw err;
+          }
+        }
       }
     }),
   );
@@ -73,110 +126,6 @@ export async function pristineSeas(
   return {
     metrics: sortMetrics(rekeyMetrics(allMetrics)),
   };
-}
-
-/**
- * Calculate metrics for individual sketches
- */
-async function calculateSketchMetrics(
-  sketch:
-    | Sketch<Polygon | MultiPolygon>
-    | SketchCollection<Polygon | MultiPolygon>,
-  raster: Georaster,
-  metricId: string,
-  classId: string,
-): Promise<Metric[]> {
-  const features = toSketchArray(sketch);
-
-  const sketchMetrics: Metric[] = await Promise.all(
-    features.map(async (feature) => {
-      const finalFeat = toRasterProjection(raster, feature);
-      if (!finalFeat.geometry.coordinates.length) {
-        return {
-          metricId,
-          classId,
-          value: NaN,
-          geographyId: null,
-          sketchId: feature.properties.id || null,
-          groupId: null,
-        };
-      }
-
-      try {
-        const stats = (
-          await geoblaze.stats(raster, finalFeat, {
-            calcMean: true,
-          })
-        )[0];
-        return {
-          metricId,
-          classId,
-          value: stats.mean || NaN,
-          geographyId: null,
-          sketchId: feature.properties.id || null,
-          groupId: null,
-        };
-      } catch (err) {
-        if (err === "No Values were found in the given geometry") {
-          return {
-            metricId,
-            classId,
-            value: NaN,
-            geographyId: null,
-            sketchId: feature.properties.id || null,
-            groupId: null,
-          };
-        } else {
-          throw err;
-        }
-      }
-    }),
-  );
-
-  return sketchMetrics;
-}
-
-/**
- * Calculate the overall mean of all sketches for a given raster
- */
-async function calculateOverallMean(
-  sketch:
-    | Sketch<Polygon | MultiPolygon>
-    | SketchCollection<Polygon | MultiPolygon>,
-  raster: Georaster,
-): Promise<number> {
-  const features = toSketchArray(sketch);
-
-  const sketchMeans: number[] = await Promise.all(
-    features.map(async (feature) => {
-      const finalFeat = toRasterProjection(raster, feature);
-      if (!finalFeat.geometry.coordinates.length) {
-        return null;
-      }
-
-      try {
-        const stats = (
-          await geoblaze.stats(raster, finalFeat, {
-            calcMean: true,
-          })
-        )[0];
-        return stats.mean;
-      } catch (err) {
-        if (err === "No Values were found in the given geometry") {
-          return null;
-        } else {
-          throw err;
-        }
-      }
-    }),
-  );
-
-  // Filter out null values and calculate overall mean
-  const validMeans = sketchMeans.filter(
-    (value): value is number => value !== null && value !== undefined,
-  );
-
-  return validMeans.length > 0 ? mean(validMeans) : 0;
 }
 
 export default new GeoprocessingHandler(pristineSeas, {
