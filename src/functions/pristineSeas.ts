@@ -23,14 +23,24 @@ import {
 import geoblaze from "geoblaze";
 import { featureCollection } from "@turf/turf";
 
+export interface HistogramData {
+  value: number;
+  count: number;
+}
+
+export interface PristineSeasReportResult extends ReportResult {
+  histogram?: HistogramData[];
+}
+
 export async function pristineSeas(
   sketch: Sketch<Polygon> | SketchCollection<Polygon>,
-): Promise<ReportResult> {
+): Promise<PristineSeasReportResult> {
   const splitSketch = splitSketchAntimeridian(sketch);
 
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("pristineSeas");
   const allMetrics: Metric[] = [];
+  let histogramData: HistogramData[] | undefined;
 
   const sketchArray = toSketchArray(splitSketch);
 
@@ -44,6 +54,45 @@ export async function pristineSeas(
       const url = project.getDatasourceUrl(ds);
       const raster = await loadCog(url);
 
+      // Calculate histogram for multi class
+      if (curClass.classId === "multi") {
+        try {
+          const finalFeat = toRasterProjection(raster, splitSketch);
+          // Get raw histogram data
+          const histogram = await geoblaze.histogram(raster, finalFeat, {
+            scaleType: "nominal",
+          });
+
+          console.log(histogram);
+          if (histogram && histogram[0]) {
+            // Create 20 bins from 0 to 1 (each bin is 0.05 wide)
+            const numBins = 20;
+            const binSize = 1 / numBins;
+            const bins = new Array(numBins).fill(0);
+
+            // Distribute raw histogram values into our 20 bins
+            Object.entries(histogram[0]).forEach(([valueStr, count]) => {
+              const value = parseFloat(valueStr);
+              if (!isNaN(value) && value >= 0 && value <= 1) {
+                // Determine which bin this value belongs to
+                let binIndex = Math.floor(value / binSize);
+                // Handle edge case where value === 1.0
+                if (binIndex >= numBins) binIndex = numBins - 1;
+                bins[binIndex] += count as number;
+              }
+            });
+
+            // Create histogram data with bin ranges
+            histogramData = bins.map((count, index) => ({
+              value: Math.round((index * binSize + binSize / 2) * 1000) / 1000, // Use bin midpoint, rounded to 3 decimals
+              count: count,
+            }));
+          }
+        } catch (err) {
+          console.log("Histogram calculation failed:", err);
+        }
+      }
+
       const metrics: Metric[] = await Promise.all(
         sketchArray.map(async (sketch) => {
           const finalFeat = toRasterProjection(raster, sketch);
@@ -56,7 +105,6 @@ export async function pristineSeas(
                 calcMean: true,
               })
             )[0];
-            console.log(stats);
             return createMetric({
               metricId: metricGroup.metricId,
               classId: curClass.classId,
@@ -125,6 +173,7 @@ export async function pristineSeas(
 
   return {
     metrics: sortMetrics(rekeyMetrics(allMetrics)),
+    histogram: histogramData,
   };
 }
 

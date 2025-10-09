@@ -4,6 +4,8 @@ import {
   ClassTable,
   Collapse,
   DataDownload,
+  KeySection,
+  LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTable,
@@ -20,6 +22,8 @@ import {
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Download } from "@styled-icons/bootstrap/Download";
+import { PristineSeasHistogram } from "./PristineSeasHistogram.js";
+import type { PristineSeasReportResult } from "../functions/pristineSeas.js";
 
 /**
  * Pristine Seas report
@@ -41,9 +45,12 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
   return (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="pristineSeas" useChildCard>
-        {(data: ReportResult) => {
+        {(data: PristineSeasReportResult) => {
           const metrics = metricsWithSketchId(
-            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            data.metrics.filter(
+              (m) =>
+                m.metricId === metricGroup.metricId && m.classId !== "multi",
+            ),
             [id],
           );
 
@@ -78,9 +85,40 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
                   </Trans>
                 </p>
 
+                <KeySection>
+                  <p>
+                    This area has an average triple-benefit score of{" "}
+                    <b>
+                      {data.metrics
+                        .find((m) => m.classId === "multi" && m.sketchId === id)
+                        ?.value.toFixed(2)}
+                    </b>
+                    .
+                  </p>
+                </KeySection>
+
+                <LayerToggle
+                  layerId={
+                    metricGroup.classes.find((c) => c.classId === "multi")
+                      ?.layerId
+                  }
+                  label={t("Show Triple-Benefit Layer on Map")}
+                />
+
+                {data.histogram && data.histogram.length > 0 && (
+                  <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+                    <PristineSeasHistogram data={data.histogram} />
+                  </div>
+                )}
+
                 <ClassTable
                   rows={metrics}
-                  metricGroup={metricGroup}
+                  metricGroup={{
+                    ...metricGroup,
+                    classes: metricGroup.classes.filter(
+                      (c) => c.classId !== "multi",
+                    ),
+                  }}
                   columnConfig={[
                     {
                       columnLabel: " ",
@@ -160,7 +198,7 @@ const genSketchTable = (
     childSketchIds,
   ).map((m) => ({
     ...m,
-    value: m.value === null ? null : roundDecimal(Number(m.value), 2),
+    value: m.value === null ? -1 : roundDecimal(Number(m.value), 2),
   }));
   const sketchRows = flattenBySketchAllClass(
     childSketchMetrics,

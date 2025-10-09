@@ -80,6 +80,115 @@
       "sketchId": "79007",
       "groupId": null,
       "value": 0.26088638036024003
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "79005",
+      "groupId": null,
+      "value": 0.4372702978906177
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "79006",
+      "groupId": null,
+      "value": 0.4372702978906177,
+      "extra": {
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "79007",
+      "groupId": null,
+      "value": 0.4372702978906177
+    }
+  ],
+  "histogram": [
+    {
+      "value": 0.025,
+      "count": 0
+    },
+    {
+      "value": 0.075,
+      "count": 0
+    },
+    {
+      "value": 0.125,
+      "count": 0
+    },
+    {
+      "value": 0.175,
+      "count": 0
+    },
+    {
+      "value": 0.225,
+      "count": 0
+    },
+    {
+      "value": 0.275,
+      "count": 23
+    },
+    {
+      "value": 0.325,
+      "count": 4
+    },
+    {
+      "value": 0.375,
+      "count": 0
+    },
+    {
+      "value": 0.425,
+      "count": 0
+    },
+    {
+      "value": 0.475,
+      "count": 0
+    },
+    {
+      "value": 0.525,
+      "count": 0
+    },
+    {
+      "value": 0.575,
+      "count": 0
+    },
+    {
+      "value": 0.625,
+      "count": 0
+    },
+    {
+      "value": 0.675,
+      "count": 0
+    },
+    {
+      "value": 0.725,
+      "count": 15
+    },
+    {
+      "value": 0.775,
+      "count": 0
+    },
+    {
+      "value": 0.825,
+      "count": 0
+    },
+    {
+      "value": 0.875,
+      "count": 0
+    },
+    {
+      "value": 0.925,
+      "count": 0
+    },
+    {
+      "value": 0.975,
+      "count": 0
     }
   ]
 }

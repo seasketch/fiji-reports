@@ -128,6 +128,131 @@
       "sketchId": "77764",
       "groupId": null,
       "value": 0.33649159129709005
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "77760",
+      "groupId": null,
+      "value": 0.2456160601517909,
+      "extra": {
+        "isCollection": true
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "77761",
+      "groupId": null,
+      "value": 0.9484699480938461
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "77762",
+      "groupId": null,
+      "value": 0.9627472758293152
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "77763",
+      "groupId": null,
+      "value": 0.21935778184455781
+    },
+    {
+      "geographyId": null,
+      "metricId": "pristineSeas",
+      "classId": "multi",
+      "sketchId": "77764",
+      "groupId": null,
+      "value": 0.3769751489162445
+    }
+  ],
+  "histogram": [
+    {
+      "value": 0.025,
+      "count": 0
+    },
+    {
+      "value": 0.075,
+      "count": 0
+    },
+    {
+      "value": 0.125,
+      "count": 0
+    },
+    {
+      "value": 0.175,
+      "count": 1457
+    },
+    {
+      "value": 0.225,
+      "count": 12
+    },
+    {
+      "value": 0.275,
+      "count": 0
+    },
+    {
+      "value": 0.325,
+      "count": 0
+    },
+    {
+      "value": 0.375,
+      "count": 0
+    },
+    {
+      "value": 0.425,
+      "count": 0
+    },
+    {
+      "value": 0.475,
+      "count": 0
+    },
+    {
+      "value": 0.525,
+      "count": 0
+    },
+    {
+      "value": 0.575,
+      "count": 0
+    },
+    {
+      "value": 0.625,
+      "count": 0
+    },
+    {
+      "value": 0.675,
+      "count": 0
+    },
+    {
+      "value": 0.725,
+      "count": 0
+    },
+    {
+      "value": 0.775,
+      "count": 0
+    },
+    {
+      "value": 0.825,
+      "count": 2
+    },
+    {
+      "value": 0.875,
+      "count": 69
+    },
+    {
+      "value": 0.925,
+      "count": 55
+    },
+    {
+      "value": 0.975,
+      "count": 1
     }
   ]
 }

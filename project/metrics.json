@@ -1794,7 +1794,7 @@
       },
       {
         "classId": "Microalgal Mats",
-        "display": "Microalgal Mats"
+        "display": "Microalgal Mats (Turf Algae)"
       },
       {
         "classId": "Rock",
@@ -1937,6 +1937,12 @@
         "classId": "food",
         "display": "Food",
         "layerId": "xrImj6Kw1"
+      },
+      {
+        "datasourceId": "pristineSeas_multi",
+        "classId": "multi",
+        "display": "Multi",
+        "layerId": "56FMqDTP4"
       }
     ]
   },
