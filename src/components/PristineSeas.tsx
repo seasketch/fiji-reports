@@ -163,11 +163,10 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
                 >
                   <Trans i18nKey="PristineSeas - learn more">
                     <p>
-                      🗺️ Source Data: Juan Mayorga, Pristine Seas Sala, E.,
-                      Mayorga, J., Bradley, D. et al. Protecting the global
-                      ocean for biodiversity, food and climate. Nature 592,
-                      397-402 (2021). https://doi.org/10.1038/s41586-021-03371-z
-                      Uploaded 10/9/2024
+                      🗺️ Source Data: Sala, E., Mayorga, J., Bradley, D. et al.
+                      Protecting the global ocean for biodiversity, food and
+                      climate. Nature 592, 397-402 (2021).
+                      https://doi.org/10.1038/s41586-021-03371-z
                     </p>
                     <p>
                       📈 Report: This report calculates the average food,
