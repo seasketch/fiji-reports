@@ -6,6 +6,7 @@ import {
   DataDownload,
   KeySection,
   LayerToggle,
+  Pill,
   ReportError,
   ResultsCard,
   SketchClassTable,
@@ -60,6 +61,14 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
                 title={titleLabel}
                 items={
                   <>
+                    <LayerToggle
+                      layerId={
+                        metricGroup.classes.find((c) => c.classId === "multi")
+                          ?.layerId
+                      }
+                      label={t("Show on Map")}
+                      simple
+                    />
                     <DataDownload
                       filename="PristineSeas"
                       data={data.metrics}
@@ -80,71 +89,69 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
                   <Trans i18nKey="PristineSeas 1">
                     This report summarizes this plan's overlap with Pristine
                     Seas prioritization framework, which informs areas of the
-                    ocean suitable for biodiversity protection, food provision
+                    ocean suitable for biodiversity protection, food provision,
                     and carbon storage.
                   </Trans>
                 </p>
 
-                <KeySection>
-                  <p>
-                    This area has an average triple-benefit score of{" "}
-                    <b>
-                      {data.metrics
-                        .find((m) => m.classId === "multi" && m.sketchId === id)
-                        ?.value.toFixed(2)}
-                    </b>
-                    .
-                  </p>
-                </KeySection>
-
-                <LayerToggle
-                  layerId={
-                    metricGroup.classes.find((c) => c.classId === "multi")
-                      ?.layerId
-                  }
-                  label={t("Show Triple-Benefit Layer on Map")}
-                />
+                <p>
+                  This area has an average triple-benefit score of{" "}
+                  <Pill>
+                    {data.metrics
+                      .find((m) => m.classId === "multi" && m.sketchId === id)
+                      ?.value.toFixed(2)}
+                  </Pill>
+                </p>
 
                 {data.histogram && data.histogram.length > 0 && (
                   <div style={{ marginTop: "20px", marginBottom: "20px" }}>
-                    <PristineSeasHistogram data={data.histogram} />
+                    <PristineSeasHistogram
+                      data={data.histogram}
+                      average={
+                        data.metrics.find(
+                          (m) => m.classId === "multi" && m.sketchId === id,
+                        )?.value
+                      }
+                    />
                   </div>
                 )}
 
-                <ClassTable
-                  rows={metrics}
-                  metricGroup={{
-                    ...metricGroup,
-                    classes: metricGroup.classes.filter(
-                      (c) => c.classId !== "multi",
-                    ),
-                  }}
-                  columnConfig={[
-                    {
-                      columnLabel: " ",
-                      type: "class",
-                      width: 30,
-                    },
-                    {
-                      columnLabel: withinLabel,
-                      type: "metricValue",
-                      metricId: metricGroup.metricId,
-                      valueFormatter: (val) => {
-                        const num = Number(val);
-                        return isNaN(num) ? "N/A" : num.toFixed(2);
+                <Collapse title={t("Show By Individual Benefit")}>
+                  <ClassTable
+                    rows={metrics}
+                    metricGroup={{
+                      ...metricGroup,
+                      classes: metricGroup.classes.filter(
+                        (c) => c.classId !== "multi",
+                      ),
+                    }}
+                    columnConfig={[
+                      {
+                        columnLabel: t("Benefit"),
+                        type: "class",
+                        width: 30,
                       },
-                      chartOptions: {
-                        showTitle: true,
+                      {
+                        columnLabel: withinLabel,
+                        type: "metricValue",
+                        metricId: metricGroup.metricId,
+                        valueFormatter: (val) => {
+                          const num = Number(val);
+                          return isNaN(num) ? "N/A" : num.toFixed(2);
+                        },
+                        chartOptions: {
+                          showTitle: true,
+                        },
+                        width: 20,
                       },
-                      width: 20,
-                    },
-                    {
-                      columnLabel: mapLabel,
-                      type: "layerToggle",
-                      width: 10,
-                    },
-                  ]}
-                />
+                      {
+                        columnLabel: mapLabel,
+                        type: "layerToggle",
+                        width: 10,
+                      },
+                    ]}
+                  />
+                </Collapse>
 
                 {isCollection && childProperties && (
                   <Collapse
@@ -163,10 +170,17 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
                 >
                   <Trans i18nKey="PristineSeas - learn more">
                     <p>
+                      ℹ️ Overview: In the triple-benefit score, the three
+                      benefits are weighted equally. Areas ranked between 0.95-1
+                      correspond to the most important 5% of the ocean. Areas
+                      ranked between 0.9-1, correspond to the most important 10%
+                      of the ocean, and so on.
+                    </p>
+                    <p>
                       🗺️ Source Data: Sala, E., Mayorga, J., Bradley, D. et al.
                       Protecting the global ocean for biodiversity, food and
                       climate. Nature 592, 397-402 (2021).
-                      https://doi.org/10.1038/s41586-021-03371-z
+                      https://doi.org/10.1038/s41586-021-03371-z.
                     </p>
                     <p>
                       📈 Report: This report calculates the average food,

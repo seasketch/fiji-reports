@@ -1923,19 +1923,19 @@
       {
         "datasourceId": "pristineSeas_carbon",
         "classId": "carbon",
-        "display": "Carbon",
+        "display": "Carbon Storage",
         "layerId": "Wi3LG24Ad"
       },
       {
         "datasourceId": "pristineSeas_biodiversity",
         "classId": "biodiversity",
-        "display": "Biodiversity",
+        "display": "Biodiversity Protection",
         "layerId": "rHuO2TrpD"
       },
       {
         "datasourceId": "pristineSeas_food",
         "classId": "food",
-        "display": "Food",
+        "display": "Food Provision",
         "layerId": "xrImj6Kw1"
       },
       {

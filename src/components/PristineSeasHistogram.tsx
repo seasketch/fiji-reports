@@ -4,12 +4,14 @@ import { HistogramData } from "../functions/pristineSeas.js";
 
 interface PristineSeasHistogramProps {
   data: HistogramData[];
+  average?: number;
   width?: number;
   height?: number;
 }
 
 export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
   data,
+  average,
   width = 450,
   height = 200,
 }) => {
@@ -84,7 +86,41 @@ export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
       .attr("rx", 4)
       .attr("ry", 4)
       .attr("opacity", 0.9);
-  }, [data, width, height]);
+
+    // Draw average line if provided
+    if (average !== undefined && average !== null && !isNaN(average)) {
+      const avgX = xLinear(average);
+
+      // Draw vertical line
+      svg
+        .append("line")
+        .attr("x1", avgX)
+        .attr("x2", avgX)
+        .attr("y1", 0)
+        .attr("y2", h)
+        .attr("stroke", "grey")
+        .attr("stroke-width", 2)
+        .attr("stroke-dasharray", "4,4");
+
+      // Add label
+      const labelText = `Average: ${average.toFixed(2)}`;
+      const labelPadding = 10;
+
+      // Position label on right if average < 0.5, left if average >= 0.5
+      const labelX = average < 0.5 ? avgX + labelPadding : avgX - labelPadding;
+      const textAnchor = average < 0.5 ? "start" : "end";
+
+      svg
+        .append("text")
+        .attr("x", labelX)
+        .attr("y", 8)
+        .attr("text-anchor", textAnchor)
+        .style("font-size", "12px")
+        .style("font-weight", "bold")
+        .style("fill", "grey")
+        .text(labelText);
+    }
+  }, [data, average, width, height]);
 
   return <svg ref={ref}></svg>;
 };
