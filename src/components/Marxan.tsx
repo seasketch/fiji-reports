@@ -20,6 +20,7 @@ import {
   SketchProperties,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
+import { MarxanHistogram } from "./MarxanHistogram.js";
 
 // Calculate weighted average and min/max from marxan
 const calculateMarxanStats = (metrics: Metric[]) => {
@@ -111,6 +112,31 @@ export const Marxan: React.FunctionComponent<{ printing: boolean }> = (
                   layerId={"thx4JZZtC"}
                   label={t("Show Offshore Priority Areas")}
                 />
+
+                {(() => {
+                  // Prepare histogram data
+                  const sketchMetrics = data.metrics.filter(
+                    (m) => m.sketchId === id,
+                  );
+                  const histogramData = sketchMetrics
+                    .map((m) => ({
+                      rating: parseFloat(m.classId || "0"),
+                      area: m.value,
+                    }))
+                    .filter((d) => !isNaN(d.rating))
+                    .sort((a, b) => a.rating - b.rating);
+
+                  return (
+                    histogramData.length > 0 && (
+                      <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+                        <MarxanHistogram
+                          data={histogramData}
+                          average={overallStats.mean}
+                        />
+                      </div>
+                    )
+                  );
+                })()}
 
                 {isCollection && childProperties && (
                   <Collapse

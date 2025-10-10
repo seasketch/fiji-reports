@@ -1,15 +1,19 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
-import { HistogramData } from "../functions/pristineSeas.js";
 
-interface PristineSeasHistogramProps {
-  data: HistogramData[];
+export interface MarxanHistogramData {
+  rating: number;
+  area: number;
+}
+
+interface MarxanHistogramProps {
+  data: MarxanHistogramData[];
   average?: number;
   width?: number;
   height?: number;
 }
 
-export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
+export const MarxanHistogram: React.FC<MarxanHistogramProps> = ({
   data,
   average,
   width = 450,
@@ -20,9 +24,9 @@ export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
   useEffect(() => {
     if (!data || data.length === 0) return;
 
-    // Check if all counts are zero (no data to display)
-    const totalCount = data.reduce((sum, d) => sum + d.count, 0);
-    if (totalCount === 0) return;
+    // Check if all areas are zero
+    const totalArea = data.reduce((sum, d) => sum + d.area, 0);
+    if (totalArea === 0) return;
 
     const margin = { top: 20, right: 20, bottom: 50, left: 20 };
     const w = width - margin.left - margin.right;
@@ -41,31 +45,55 @@ export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
     // Scales
     const x = d3
       .scaleBand()
-      .domain(data.map((d) => d.value.toString()))
+      .domain(data.map((d) => d.rating.toString()))
       .range([0, w])
       .padding(0.1);
 
     const y = d3
       .scaleLinear()
-      .domain([0, d3.max(data, (d) => d.count) ?? 0])
+      .domain([0, d3.max(data, (d) => d.area) ?? 0])
       .nice()
       .range([h, 0]);
 
-    // Create a linear scale for the x-axis ticks (0 to 1)
-    const xLinear = d3.scaleLinear().domain([0, 1]).range([0, w]);
+    // X axis - position ticks at center of each bar
+    const xAxis = svg.append("g").attr("transform", `translate(0,${h})`);
 
-    // X axis - show ticks at every 0.1
-    svg
-      .append("g")
-      .attr("transform", `translate(0,${h})`)
-      .call(
-        d3
-          .axisBottom(xLinear)
-          .ticks(10)
-          .tickFormat((d) => Number(d).toFixed(1)),
-      )
-      .selectAll("text")
-      .style("text-anchor", "middle");
+    // Add tick marks and labels for each data point
+    data.forEach((d) => {
+      const xPos = (x(d.rating.toString()) ?? 0) + x.bandwidth() / 2;
+
+      // Tick line
+      xAxis
+        .append("line")
+        .attr("x1", xPos)
+        .attr("x2", xPos)
+        .attr("y1", 0)
+        .attr("y2", 6)
+        .attr("stroke", "#000")
+        .attr("opacity", 1);
+
+      // Tick label
+      xAxis
+        .append("text")
+        .attr("x", xPos)
+        .attr("y", 9)
+        .attr("dy", "0.71em")
+        .attr("fill", "#000")
+        .style("text-anchor", "middle")
+        .style("font-size", "10px")
+        .style("font-family", "sans-serif")
+        .text(d.rating.toString());
+    });
+
+    // Add axis line (domain line)
+    xAxis
+      .append("line")
+      .attr("x1", 0)
+      .attr("x2", w)
+      .attr("y1", 0)
+      .attr("y2", 0)
+      .attr("stroke", "#000")
+      .attr("opacity", 1);
 
     // X axis label
     svg
@@ -73,7 +101,7 @@ export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
       .attr("transform", `translate(${w / 2},${h + margin.bottom - 5})`)
       .style("text-anchor", "middle")
       .style("font-size", "12px")
-      .text("Triple-Benefit Score");
+      .text("Prioritization Score");
 
     // Bars
     svg
@@ -82,10 +110,10 @@ export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
       .enter()
       .append("rect")
       .attr("class", "bar")
-      .attr("x", (d) => x(d.value.toString()) ?? 0)
-      .attr("y", (d) => y(d.count))
+      .attr("x", (d) => x(d.rating.toString()) ?? 0)
+      .attr("y", (d) => y(d.area))
       .attr("width", x.bandwidth())
-      .attr("height", (d) => h - y(d.count))
+      .attr("height", (d) => h - y(d.area))
       .attr("fill", "#A8D5F2")
       .attr("rx", 4)
       .attr("ry", 4)
@@ -93,6 +121,8 @@ export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
 
     // Draw average line if provided
     if (average !== undefined && average !== null && !isNaN(average)) {
+      // Create a linear scale for positioning the average line
+      const xLinear = d3.scaleLinear().domain([0, 10]).range([0, w]);
       const avgX = xLinear(average);
 
       // Draw vertical line
@@ -110,9 +140,9 @@ export const PristineSeasHistogram: React.FC<PristineSeasHistogramProps> = ({
       const labelText = `Average: ${average.toFixed(2)}`;
       const labelPadding = 10;
 
-      // Position label on right if average < 0.5, left if average >= 0.5
-      const labelX = average < 0.5 ? avgX + labelPadding : avgX - labelPadding;
-      const textAnchor = average < 0.5 ? "start" : "end";
+      // Position label on right if average < 5, left if average >= 5
+      const labelX = average < 5 ? avgX + labelPadding : avgX - labelPadding;
+      const textAnchor = average < 5 ? "start" : "end";
 
       svg
         .append("text")

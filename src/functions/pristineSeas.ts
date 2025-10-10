@@ -63,8 +63,11 @@ export async function pristineSeas(
             scaleType: "nominal",
           });
 
-          console.log(histogram);
-          if (histogram && histogram[0]) {
+          if (
+            histogram &&
+            histogram[0] &&
+            Object.keys(histogram[0]).length > 0
+          ) {
             // Create 20 bins from 0 to 1 (each bin is 0.05 wide)
             const numBins = 20;
             const binSize = 1 / numBins;
@@ -82,11 +85,15 @@ export async function pristineSeas(
               }
             });
 
-            // Create histogram data with bin ranges
-            histogramData = bins.map((count, index) => ({
-              value: Math.round((index * binSize + binSize / 2) * 1000) / 1000, // Use bin midpoint, rounded to 3 decimals
-              count: count,
-            }));
+            // Only create histogram data if we have actual values
+            const totalCount = bins.reduce((sum, count) => sum + count, 0);
+            if (totalCount > 0) {
+              histogramData = bins.map((count, index) => ({
+                value:
+                  Math.round((index * binSize + binSize / 2) * 1000) / 1000, // Use bin midpoint, rounded to 3 decimals
+                count: count,
+              }));
+            }
           }
         } catch (err) {
           console.log("Histogram calculation failed:", err);
