@@ -121,11 +121,15 @@ export const MarxanHistogram: React.FC<MarxanHistogramProps> = ({
 
     // Draw average line if provided
     if (average !== undefined && average !== null && !isNaN(average)) {
-      // Create a linear scale for positioning the average line
-      const xLinear = d3.scaleLinear().domain([0, 10]).range([0, w]);
-      const avgX = xLinear(average);
+      const floorRating = Math.floor(average);
+      const ceilRating = Math.ceil(average);
+      const fraction = average - floorRating;
 
-      // Draw vertical line
+      const floorX = (x(floorRating.toString()) ?? 0) + x.bandwidth() / 2;
+      const ceilX = (x(ceilRating.toString()) ?? 0) + x.bandwidth() / 2;
+      const avgX = floorX + (ceilX - floorX) * fraction;
+
+      // Average line
       svg
         .append("line")
         .attr("x1", avgX)
@@ -136,11 +140,9 @@ export const MarxanHistogram: React.FC<MarxanHistogramProps> = ({
         .attr("stroke-width", 2)
         .attr("stroke-dasharray", "4,4");
 
-      // Add label
+      // Average label
       const labelText = `Average: ${average.toFixed(2)}`;
       const labelPadding = 10;
-
-      // Position label on right if average < 5, left if average >= 5
       const labelX = average < 5 ? avgX + labelPadding : avgX - labelPadding;
       const textAnchor = average < 5 ? "start" : "end";
 
