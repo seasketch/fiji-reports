@@ -59,10 +59,10 @@ export async function bathyStats(
 
   const sketchStats: BathymetryResults[] = await Promise.all(
     features.map(async (feature) => {
-      const finalFeat = toRasterProjection(bathymetry, feature);
+      //const finalFeat = toRasterProjection(bathymetry, feature);
       try {
         const stats = (
-          await geoblaze.stats(bathymetry, finalFeat, {
+          await geoblaze.stats(bathymetry, feature, {
             calcMax: true,
             calcMean: true,
             calcMin: true,
@@ -73,7 +73,7 @@ export async function bathyStats(
           max: stats.max,
           mean: stats.mean,
           units: "meters",
-          sketchName: finalFeat.properties.name,
+          sketchName: feature.properties.name,
         };
       } catch (err) {
         if (err === "No Values were found in the given geometry") {
@@ -82,7 +82,7 @@ export async function bathyStats(
             mean: null,
             max: null,
             units: "meters",
-            sketchName: finalFeat.properties.name,
+            sketchName: feature.properties.name,
           };
         } else {
           throw err;

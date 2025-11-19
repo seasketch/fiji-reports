@@ -6,7 +6,7 @@
       "classId": "Coral/Algae",
       "sketchId": "112904",
       "groupId": null,
-      "value": 383183519.554329,
+      "value": 383183519.554088,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -28,7 +28,7 @@
       "classId": "Rock",
       "sketchId": "112904",
       "groupId": null,
-      "value": 213245821.360961,
+      "value": 213245821.361,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -39,7 +39,7 @@
       "classId": "Rubble",
       "sketchId": "112904",
       "groupId": null,
-      "value": 157460577.17215,
+      "value": 157460577.172123,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -50,7 +50,7 @@
       "classId": "Sand",
       "sketchId": "112904",
       "groupId": null,
-      "value": 85872090.210593,
+      "value": 85872090.210619,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -61,7 +61,7 @@
       "classId": "Seagrass",
       "sketchId": "112904",
       "groupId": null,
-      "value": 172630327.761671,
+      "value": 172630327.761643,
       "extra": {
         "sketchName": "invertTest"
       }

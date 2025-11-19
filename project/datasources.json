@@ -2,9 +2,7 @@
   {
     "datasourceId": "eez",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "eez_v11",
     "classKeys": [],
@@ -17,27 +15,23 @@
   {
     "datasourceId": "gfw_purseseine",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.402823e+38,
+    "noDataValue": -3.402823e38,
     "created": "2025-02-07T00:15:16.689Z",
-    "lastUpdated": "2025-02-07T00:58:09.831Z",
+    "lastUpdated": "2025-11-18T18:30:11.670Z",
     "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Purse_seine/GFW_Fiji_purseseine.tif"
   },
   {
     "datasourceId": "gfw_longline",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.40282e+38,
+    "noDataValue": -3.40282e38,
     "created": "2025-02-07T01:11:30.460Z",
     "lastUpdated": "2025-02-07T01:11:30.460Z",
     "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Economic Data/Global Fish Watch/Longline/GFW_Fiji_longline.tif"
@@ -45,14 +39,10 @@
   {
     "datasourceId": "ebsa",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "EBSAs",
-    "classKeys": [
-      "ebsaname"
-    ],
+    "classKeys": ["ebsaname"],
     "created": "2025-02-07T18:08:15.764Z",
     "lastUpdated": "2025-03-17T18:18:09.889Z",
     "src": "data/src/Data_Received/IUCN/Fiji Consulatations Data Transfer/Ecologically and biologically siginificant areas (EBSAs)/EBSAs.shp",
@@ -62,9 +52,7 @@
   {
     "datasourceId": "geo_basins",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_offshore_basins",
     "classKeys": [],
@@ -77,9 +65,7 @@
   {
     "datasourceId": "geo_bridges",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_offshore_bridges",
     "classKeys": [],
@@ -92,9 +78,7 @@
   {
     "datasourceId": "geo_canyons",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_offshore_canyons",
     "classKeys": [],
@@ -107,9 +91,7 @@
   {
     "datasourceId": "geo_guyots",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_offshore_guyots",
     "classKeys": [],
@@ -122,9 +104,7 @@
   {
     "datasourceId": "geo_plateaus",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_offshore_plateaus",
     "classKeys": [],
@@ -137,9 +117,7 @@
   {
     "datasourceId": "geo_trenches",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_offshore_trench",
     "classKeys": [],
@@ -152,9 +130,7 @@
   {
     "datasourceId": "geo_ridges",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_ridges",
     "classKeys": [],
@@ -167,9 +143,7 @@
   {
     "datasourceId": "geo_shelf",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_shelf_classification",
     "classKeys": [],
@@ -182,9 +156,7 @@
   {
     "datasourceId": "geo_riftvalleys",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Rift Valleys",
     "classKeys": [],
@@ -197,9 +169,7 @@
   {
     "datasourceId": "geo_spreadingridges",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Spreading Ridges",
     "classKeys": [],
@@ -212,9 +182,7 @@
   {
     "datasourceId": "geo_troughs",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Troughs",
     "classKeys": [],
@@ -227,45 +195,33 @@
   {
     "datasourceId": "deepwater_bioregions",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Revised_Deepwater_Bioregions_Fj",
-    "classKeys": [
-      "Draft_name"
-    ],
+    "classKeys": ["Draft_name"],
     "created": "2025-02-07T23:29:40.204Z",
     "lastUpdated": "2025-02-07T23:29:40.204Z",
     "src": "data/src/Analytics/Reports/deepwater_bioregions/Revised_Deepwater_Bioregions_Fj.shp",
-    "propertiesToKeep": [
-      "Draft_name"
-    ],
+    "propertiesToKeep": ["Draft_name"],
     "explodeMulti": true
   },
   {
     "datasourceId": "benthicRichness",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "ECO_benthic_species_richness",
     "classKeys": [],
     "created": "2025-02-13T23:59:46.579Z",
     "lastUpdated": "2025-02-13T23:59:46.579Z",
     "src": "data/src/Data_Received/Geopackage/fiji_v1.gpkg",
-    "propertiesToKeep": [
-      "DeepSpCoun"
-    ],
+    "propertiesToKeep": ["DeepSpCoun"],
     "explodeMulti": true
   },
   {
     "datasourceId": "geo_slope",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Slope.geojson",
     "classKeys": [],
@@ -278,9 +234,7 @@
   {
     "datasourceId": "geo_seamounts",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Seamounts_360",
     "classKeys": [],
@@ -293,9 +247,7 @@
   {
     "datasourceId": "geo_escarpments",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Escarpment_ 360",
     "classKeys": [],
@@ -308,47 +260,33 @@
   {
     "datasourceId": "geo_abyss",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Abyssal_Classification_360",
-    "classKeys": [
-      "Class"
-    ],
+    "classKeys": ["Class"],
     "created": "2025-03-17T17:46:36.435Z",
     "lastUpdated": "2025-03-17T17:46:36.435Z",
     "src": "data/src/Analytics/Reports/geomorphology/Abyssal_Classification_360.fgb",
-    "propertiesToKeep": [
-      "Class"
-    ],
+    "propertiesToKeep": ["Class"],
     "explodeMulti": true
   },
   {
     "datasourceId": "suma",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Fiji Special Unique Marine Areas (SUMA)",
-    "classKeys": [
-      "Site_Name"
-    ],
+    "classKeys": ["Site_Name"],
     "created": "2025-03-17T18:52:38.388Z",
     "lastUpdated": "2025-03-17T18:52:38.388Z",
     "src": "data/src/Data_Received/IUCN/MSP_Consultations/SeaSketch_GIS_Data_Package/Boundaries_Biological Data/Fiji Special Unique Marine Areas (SUMA).shp",
-    "propertiesToKeep": [
-      "Site_Name"
-    ],
+    "propertiesToKeep": ["Site_Name"],
     "explodeMulti": true
   },
   {
     "datasourceId": "suma_dissolved",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "suma_dissolved",
     "classKeys": [],
@@ -361,22 +299,18 @@
   {
     "datasourceId": "bathymetry",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 1,
     "created": "2025-03-18T17:20:05.424Z",
-    "lastUpdated": "2025-03-18T17:22:15.682Z",
+    "lastUpdated": "2025-11-19T18:49:09.481Z",
     "src": "data/src/Analytics/Reports/bathymetry/fiji_GEBCO_bathymetry.tif"
   },
   {
     "datasourceId": "hydrothermal_vents",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "Fiji Hydrothermal Vents",
     "classKeys": [],
@@ -389,9 +323,7 @@
   {
     "datasourceId": "gfw_2018",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -402,9 +334,7 @@
   {
     "datasourceId": "gfw_2019",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -415,9 +345,7 @@
   {
     "datasourceId": "gfw_2020",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -428,9 +356,7 @@
   {
     "datasourceId": "gfw_2021",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -441,9 +367,7 @@
   {
     "datasourceId": "gfw_2022",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -454,9 +378,7 @@
   {
     "datasourceId": "gfw_2023",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -467,9 +389,7 @@
   {
     "datasourceId": "gfw_2024",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -480,27 +400,20 @@
   {
     "datasourceId": "sites",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "20250213_Fiji_2023_Expedition_Sites",
     "classKeys": [],
     "created": "2025-07-21T18:53:31.800Z",
     "lastUpdated": "2025-08-07T17:44:42.375Z",
     "src": "data/src/expedition/sites/sites_by_province.geojson",
-    "propertiesToKeep": [
-      "province",
-      "station_id"
-    ],
+    "propertiesToKeep": ["province", "station_id"],
     "explodeMulti": true
   },
   {
     "datasourceId": "fishDensity",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "fish_density",
     "classKeys": [],
@@ -609,9 +522,7 @@
   {
     "datasourceId": "fish_biomass",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "fish_biomass",
     "classKeys": [],
@@ -720,9 +631,7 @@
   {
     "datasourceId": "juvenile_coral_density",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "juvenile_coral_density",
     "classKeys": [],
@@ -807,9 +716,7 @@
   {
     "datasourceId": "benthicCover",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "benthic_cover_percent_group",
     "classKeys": [],
@@ -832,9 +739,7 @@
   {
     "datasourceId": "invert_presence",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "invert_presence",
     "classKeys": [],
@@ -886,81 +791,59 @@
   {
     "datasourceId": "coral_genus_richness",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "juvenile_coral_genus_richness",
     "classKeys": [],
     "created": "2025-07-25T18:22:36.985Z",
     "lastUpdated": "2025-08-08T19:08:29.245Z",
     "src": "data/src/expedition/coral/juvenile_coral_genus_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "coral_genus_richness"
-    ],
+    "propertiesToKeep": ["station_id", "coral_genus_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "fish_family_richness",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "fish_family_richness",
     "classKeys": [],
     "created": "2025-07-25T18:23:37.330Z",
     "lastUpdated": "2025-08-08T19:08:29.312Z",
     "src": "data/src/expedition/fish/fish_family_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "fish_family_richness"
-    ],
+    "propertiesToKeep": ["station_id", "fish_family_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "invert_genus_richness",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "invert_genus_richness",
     "classKeys": [],
     "created": "2025-07-25T18:24:09.268Z",
     "lastUpdated": "2025-08-08T19:08:29.398Z",
     "src": "data/src/expedition/invertebrates/invert_genus_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "invert_genus_richness"
-    ],
+    "propertiesToKeep": ["station_id", "invert_genus_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "waterQuality",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "d15n",
     "classKeys": [],
     "created": "2025-07-25T19:21:38.349Z",
     "lastUpdated": "2025-07-25T19:21:38.349Z",
     "src": "data/src/expedition/water-quality/d15n.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "d15n"
-    ],
+    "propertiesToKeep": ["station_id", "d15n"],
     "explodeMulti": true
   },
   {
     "datasourceId": "dhw_2015",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 31,
@@ -971,9 +854,7 @@
   {
     "datasourceId": "dhw_2016",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 32,
@@ -984,9 +865,7 @@
   {
     "datasourceId": "dhw_2017",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 33,
@@ -997,9 +876,7 @@
   {
     "datasourceId": "dhw_2018",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 34,
@@ -1010,9 +887,7 @@
   {
     "datasourceId": "dhw_2019",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 35,
@@ -1023,9 +898,7 @@
   {
     "datasourceId": "dhw_2020",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 36,
@@ -1036,9 +909,7 @@
   {
     "datasourceId": "dhw_2021",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 37,
@@ -1049,9 +920,7 @@
   {
     "datasourceId": "dhw_2022",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 38,
@@ -1062,9 +931,7 @@
   {
     "datasourceId": "dhw_2023",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 39,
@@ -1075,9 +942,7 @@
   {
     "datasourceId": "dhw_2024",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 40,
@@ -1088,9 +953,7 @@
   {
     "datasourceId": "bleachingAlerts",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "categorical",
     "band": 1,
@@ -1102,49 +965,37 @@
   {
     "datasourceId": "benthicACA",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "Fijian Exclusive Economic Zone",
-    "classKeys": [
-      "class"
-    ],
+    "classKeys": ["class"],
     "created": "2025-07-31T18:16:49.807Z",
     "lastUpdated": "2025-07-31T18:16:49.807Z",
     "src": "data/src/Data_Received/AllenCoralAtlas/benthic.gpkg",
-    "propertiesToKeep": [
-      "class"
-    ],
+    "propertiesToKeep": ["class"],
     "explodeMulti": true
   },
   {
     "datasourceId": "marxan",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "marxan",
     "classKeys": [],
     "created": "2025-08-01T20:49:12.563Z",
     "lastUpdated": "2025-08-04T19:47:46.848Z",
     "src": "data/src/Data_Received/Prioritization/marxan.fgb",
-    "propertiesToKeep": [
-      "SSOLN"
-    ],
+    "propertiesToKeep": ["SSOLN"],
     "explodeMulti": true
   },
   {
     "datasourceId": "pristineSeas_carbon",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.4e+38,
+    "noDataValue": -3.4e38,
     "created": "2025-08-04T21:04:08.483Z",
     "lastUpdated": "2025-10-08T23:42:34.750Z",
     "src": "data/src/Data_Received/PristineSeas/5km/carbon.tif"
@@ -1152,13 +1003,11 @@
   {
     "datasourceId": "pristineSeas_biodiversity",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.4e+38,
+    "noDataValue": -3.4e38,
     "created": "2025-08-04T21:04:56.515Z",
     "lastUpdated": "2025-10-08T23:42:39.463Z",
     "src": "data/src/Data_Received/PristineSeas/5km/biodiversity.tif"
@@ -1166,13 +1015,11 @@
   {
     "datasourceId": "pristineSeas_food",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.4e+38,
+    "noDataValue": -3.4e38,
     "created": "2025-08-04T21:05:14.557Z",
     "lastUpdated": "2025-10-08T23:42:45.399Z",
     "src": "data/src/Data_Received/PristineSeas/5km/food.tif"
@@ -1180,9 +1027,7 @@
   {
     "datasourceId": "gmw_1996",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_1996",
     "classKeys": [],
@@ -1195,9 +1040,7 @@
   {
     "datasourceId": "gmw_2007",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2007",
     "classKeys": [],
@@ -1210,9 +1053,7 @@
   {
     "datasourceId": "gmw_2008",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2008",
     "classKeys": [],
@@ -1225,9 +1066,7 @@
   {
     "datasourceId": "gmw_2009",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2009",
     "classKeys": [],
@@ -1240,9 +1079,7 @@
   {
     "datasourceId": "gmw_2010",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2010",
     "classKeys": [],
@@ -1255,9 +1092,7 @@
   {
     "datasourceId": "gmw_2015",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2015",
     "classKeys": [],
@@ -1270,9 +1105,7 @@
   {
     "datasourceId": "gmw_2016",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2016",
     "classKeys": [],
@@ -1285,9 +1118,7 @@
   {
     "datasourceId": "gmw_2017",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2017",
     "classKeys": [],
@@ -1300,9 +1131,7 @@
   {
     "datasourceId": "gmw_2018",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2018",
     "classKeys": [],
@@ -1315,9 +1144,7 @@
   {
     "datasourceId": "gmw_2019",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2019",
     "classKeys": [],
@@ -1330,9 +1157,7 @@
   {
     "datasourceId": "gmw_2020",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "gmw_2020",
     "classKeys": [],
@@ -1345,32 +1170,24 @@
   {
     "datasourceId": "geomorphACA",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "Fijian Exclusive Economic Zone",
-    "classKeys": [
-      "class"
-    ],
+    "classKeys": ["class"],
     "created": "2025-08-14T20:13:37.670Z",
     "lastUpdated": "2025-08-14T21:14:09.137Z",
     "src": "data/src/Data_Received/AllenCoralAtlas/geomorphic.gpkg",
-    "propertiesToKeep": [
-      "class"
-    ],
+    "propertiesToKeep": ["class"],
     "explodeMulti": true
   },
   {
     "datasourceId": "pristineSeas_combined",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
-    "noDataValue": -3.4028235e+38,
+    "noDataValue": -3.4028235e38,
     "created": "2025-10-08T22:43:43.344Z",
     "lastUpdated": "2025-10-08T22:43:43.344Z",
     "src": "data/src/Data_Received/PristineSeas/combined-ranking/triple-benefit.tif"
@@ -1378,9 +1195,7 @@
   {
     "datasourceId": "pristineSeas_multi",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,

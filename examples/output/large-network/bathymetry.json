@@ -2,33 +2,33 @@
   {
     "min": -1431,
     "max": 101,
-    "mean": -361.19347826086954,
+    "mean": -354.5605633802817,
     "units": "meters",
     "sketchName": "rotuma"
   },
   {
     "min": -985,
-    "max": 66,
-    "mean": -97.09052161558758,
+    "max": 59,
+    "mean": -95.86003543406733,
     "units": "meters",
     "sketchName": "vanua"
   },
   {
-    "min": -4780,
+    "min": -4787,
     "max": -3315,
-    "mean": -4470.439608894411,
+    "mean": -4470.664309947849,
     "units": "meters",
     "sketchName": "southwest"
   },
   {
     "min": -42,
     "max": 22,
-    "mean": -24.198347107438018,
+    "mean": -24.79591836734694,
     "units": "meters",
     "sketchName": "moce"
   },
   {
-    "min": -4780,
+    "min": -4787,
     "max": 0,
     "units": "meters",
     "sketchName": "large-network",

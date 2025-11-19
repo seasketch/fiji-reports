@@ -6,7 +6,7 @@
       "classId": "Coral/Algae",
       "sketchId": "78746",
       "groupId": null,
-      "value": 40165627.825563,
+      "value": 40165627.82563,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -28,7 +28,7 @@
       "classId": "Rock",
       "sketchId": "78746",
       "groupId": null,
-      "value": 37098268.98154,
+      "value": 37098268.981554,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -50,7 +50,7 @@
       "classId": "Sand",
       "sketchId": "78746",
       "groupId": null,
-      "value": 18260493.606044,
+      "value": 18260493.606067,
       "extra": {
         "sketchName": "cross_antimeridian"
       }

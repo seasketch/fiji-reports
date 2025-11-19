@@ -6,7 +6,7 @@
       "classId": "eez",
       "sketchId": "79005",
       "groupId": null,
-      "value": 633441066.570027,
+      "value": 633440860.4247334,
       "extra": {
         "sketchName": "hydrothermalVents"
       }
@@ -17,7 +17,7 @@
       "classId": "eez",
       "sketchId": "79006",
       "groupId": null,
-      "value": 1266882133.140054,
+      "value": 633440860.4247334,
       "extra": {
         "sketchName": "ventsOverlap",
         "isCollection": true
@@ -29,7 +29,7 @@
       "classId": "eez",
       "sketchId": "79007",
       "groupId": null,
-      "value": 633441066.570027,
+      "value": 633440860.4247334,
       "extra": {
         "sketchName": "hydrothermalVents (copy)"
       }
