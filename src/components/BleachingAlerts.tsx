@@ -96,7 +96,7 @@ const BleachingAlertsPieChart: React.FC<PieChartProps> = ({
         const percentage = Math.round(
           (d.value / d3.sum(data, (d) => d.value)) * 100,
         );
-        return percentage > 0 ? percentage + "%" : "";
+        return percentage > 7.5 ? percentage + "%" : "";
       });
   }, [data, width, height]);
 
