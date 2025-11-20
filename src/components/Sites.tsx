@@ -10,6 +10,7 @@ import {
   Table,
   ToolbarCard,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import { ReportResult } from "@seasketch/geoprocessing/client-core";
 import { Download } from "@styled-icons/bootstrap/Download";
@@ -34,12 +35,15 @@ export const Sites: React.FunctionComponent<{ printing: boolean }> = (
   return (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="sites" useChildCard>
-        {(data: SiteReportResult) => {
+        {(result: SiteReportResult) => {
+          if (!result || !result.metrics || !Array.isArray(result.metrics))
+            return <Skeleton />;
+
           // Get metric values
           const stations =
-            data.metrics.find((m) => m.metricId === "stations")?.value || 0;
+            result.metrics.find((m) => m.metricId === "stations")?.value || 0;
           const provinces =
-            data.metrics.find((m) => m.metricId === "provinces")?.value || 0;
+            result.metrics.find((m) => m.metricId === "provinces")?.value || 0;
 
           return (
             <ReportError>
@@ -48,7 +52,7 @@ export const Sites: React.FunctionComponent<{ printing: boolean }> = (
                 items={
                   <DataDownload
                     filename="Sites"
-                    data={data.metrics}
+                    data={result.metrics}
                     formats={["csv", "json"]}
                     placement="left-start"
                     titleElement={
@@ -83,7 +87,7 @@ export const Sites: React.FunctionComponent<{ printing: boolean }> = (
                 >
                   <SmallReportTableStyled>
                     <Table
-                      data={data.stations}
+                      data={result.stations}
                       columns={[
                         {
                           Header: t("Dive Site"),

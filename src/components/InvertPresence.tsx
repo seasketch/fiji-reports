@@ -11,6 +11,7 @@ import {
   useSketchProperties,
   ToolbarCard,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import { MetricGroup } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
@@ -89,8 +90,9 @@ export const InvertPresence: React.FunctionComponent<{ printing: boolean }> = (
         functionName="invertPresence"
         useChildCard
       >
-        {(data: Pt[]) => {
-          const overall = data.find((row) => row.id === "total");
+        {(invertPt: Pt[]) => {
+          if (!invertPt || !Array.isArray(invertPt)) return <Skeleton />;
+          const overall = invertPt.find((row) => row.id === "total");
           if (!overall) return null;
 
           return (
@@ -100,7 +102,7 @@ export const InvertPresence: React.FunctionComponent<{ printing: boolean }> = (
                 items={
                   <DataDownload
                     filename="InvertPresence"
-                    data={data}
+                    data={invertPt}
                     formats={["csv", "json"]}
                     placement="left-start"
                     titleElement={
@@ -114,7 +116,7 @@ export const InvertPresence: React.FunctionComponent<{ printing: boolean }> = (
                 }
               >
                 <p>
-                  {data.some(
+                  {invertPt.some(
                     (row) =>
                       typeof row.id === "string" &&
                       row.id.startsWith("province:"),
@@ -187,7 +189,9 @@ export const InvertPresence: React.FunctionComponent<{ printing: boolean }> = (
                   collapsed={!props.printing}
                 >
                   {genSketchTable(
-                    data.filter((s) => s.id && s.id.startsWith("province:")),
+                    invertPt.filter(
+                      (s) => s.id && s.id.startsWith("province:"),
+                    ),
                     metricGroup,
                     t,
                   )}
@@ -200,7 +204,9 @@ export const InvertPresence: React.FunctionComponent<{ printing: boolean }> = (
                     collapsed={!props.printing}
                   >
                     {genSketchTable(
-                      data.filter((s) => s.id && s.id.startsWith("sketch:")),
+                      invertPt.filter(
+                        (s) => s.id && s.id.startsWith("sketch:"),
+                      ),
                       metricGroup,
                       t,
                     )}

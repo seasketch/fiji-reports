@@ -8,6 +8,7 @@ import {
   LayerToggle,
   ReportError,
   ResultsCard,
+  Skeleton,
   SketchClassTableStyled,
   Table,
   ToolbarCard,
@@ -17,6 +18,7 @@ import { MetricGroup } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
 import { Download } from "@styled-icons/bootstrap/Download";
+import { isArray } from "node:util";
 
 /**
  * Expedition: Benthic Cover report
@@ -38,8 +40,9 @@ export const BenthicCover: React.FunctionComponent<{ printing: boolean }> = (
   return (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="benthicCover" useChildCard>
-        {(data: Station[]) => {
-          const averages = data.find((s) => s.station_id === "averages");
+        {(stations: Station[]) => {
+          if (!stations || !Array.isArray(stations)) return <Skeleton />;
+          const averages = stations.find((s) => s.station_id === "averages");
           const averageMetrics = averages
             ? Object.entries(averages)
                 .filter(([key]) => key !== "station_id")
@@ -61,7 +64,7 @@ export const BenthicCover: React.FunctionComponent<{ printing: boolean }> = (
                   <>
                     <DataDownload
                       filename="BenthicCover"
-                      data={data}
+                      data={stations}
                       formats={["csv", "json"]}
                       placement="left-start"
                       titleElement={
@@ -125,7 +128,7 @@ export const BenthicCover: React.FunctionComponent<{ printing: boolean }> = (
                   collapsed={!props.printing}
                 >
                   {genSketchTable(
-                    data.filter(
+                    stations.filter(
                       (s) =>
                         s.station_id && s.station_id.startsWith("station:"),
                     ),
@@ -141,7 +144,7 @@ export const BenthicCover: React.FunctionComponent<{ printing: boolean }> = (
                     collapsed={!props.printing}
                   >
                     {genSketchTable(
-                      data.filter(
+                      stations.filter(
                         (s) =>
                           s.station_id && s.station_id.startsWith("sketch:"),
                       ),

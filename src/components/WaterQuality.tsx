@@ -7,6 +7,7 @@ import {
   DataDownload,
   ReportError,
   ResultsCard,
+  Skeleton,
   SketchClassTableStyled,
   Table,
   ToolbarCard,
@@ -51,8 +52,9 @@ export const WaterQuality: React.FunctionComponent<{ printing: boolean }> = (
   return (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="waterQuality" useChildCard>
-        {(data: WaterQualityReportResult) => {
-          const metrics = data.metrics;
+        {(results: WaterQualityReportResult) => {
+          if (!results || !results.metrics || !Array.isArray(results.metrics))
+            return <Skeleton />;
 
           return (
             <ReportError>
@@ -61,7 +63,7 @@ export const WaterQuality: React.FunctionComponent<{ printing: boolean }> = (
                 items={
                   <DataDownload
                     filename="WaterQuality"
-                    data={data.metrics}
+                    data={results.metrics}
                     formats={["csv", "json"]}
                     placement="left-start"
                     titleElement={
@@ -82,7 +84,7 @@ export const WaterQuality: React.FunctionComponent<{ printing: boolean }> = (
                 </p>
 
                 <ClassTable
-                  rows={metrics}
+                  rows={results.metrics}
                   metricGroup={metricGroup}
                   columnConfig={[
                     {
@@ -114,7 +116,7 @@ export const WaterQuality: React.FunctionComponent<{ printing: boolean }> = (
                   key={props.printing + "WaterQuality Dive Site Collapse"}
                   collapsed={!props.printing}
                 >
-                  {genSketchTable(data, metricGroup, t)}
+                  {genSketchTable(results, metricGroup, t)}
                 </Collapse>
 
                 {isCollection && (
@@ -123,7 +125,7 @@ export const WaterQuality: React.FunctionComponent<{ printing: boolean }> = (
                     key={props.printing + "WaterQuality Sketch Collapse"}
                     collapsed={!props.printing}
                   >
-                    {genPerSketchTable(data, t)}
+                    {genPerSketchTable(results, t)}
                   </Collapse>
                 )}
 
