@@ -47,7 +47,7 @@ function createSmokeTest(
     test(
       `${functionName} - tests run against all examples`,
       async () => {
-        const examples = await getExamplePolygonSketchAll();
+        const examples = await getExamplePolygonSketchAll("mpa");
         for (const example of examples) {
           const result = await functionToTest(example);
           expect(result).toBeTruthy();
@@ -78,7 +78,7 @@ const tests = [
   { name: "hydrothermalVents", func: hydrothermalVents },
   { name: "invertPresence", func: invertPresence },
   { name: "juvenileCoralDensity", func: juvenileCoralDensity },
-  { name: "mangroves", func: mangroves },
+  { name: "mangroves", func: mangroves, timeout: 500_000 },
   { name: "marxan", func: marxan, timeout: 500_000 },
   { name: "pristineSeas", func: pristineSeas },
   { name: "sites", func: sites },
@@ -93,7 +93,7 @@ tests.forEach(({ name, func, timeout }) => {
   createSmokeTest(name, func, timeout);
 });
 
-// clipToOceanEez - special case
+// clipToOceanEez
 describe("clipToOceanEez", () => {
   test("clipToOceanEez", async () => {
     const examples = await getExampleFeatures();

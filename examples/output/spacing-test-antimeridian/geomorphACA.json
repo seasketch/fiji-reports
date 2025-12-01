@@ -6,7 +6,7 @@
       "classId": "Back Reef Slope",
       "sketchId": "101153",
       "groupId": null,
-      "value": 10850486.029532,
+      "value": 10850486.029557,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
@@ -18,7 +18,7 @@
       "classId": "Back Reef Slope",
       "sketchId": "101154",
       "groupId": null,
-      "value": 10850486.029532,
+      "value": 10850486.029557,
       "extra": {
         "sketchName": "a"
       }
@@ -40,7 +40,7 @@
       "classId": "Deep Lagoon",
       "sketchId": "101153",
       "groupId": null,
-      "value": 6450952.85116,
+      "value": 6450952.851161,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
@@ -52,7 +52,7 @@
       "classId": "Deep Lagoon",
       "sketchId": "101154",
       "groupId": null,
-      "value": 6450952.85116,
+      "value": 6450952.851161,
       "extra": {
         "sketchName": "a"
       }

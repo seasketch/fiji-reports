@@ -121,13 +121,24 @@ export const MarxanHistogram: React.FC<MarxanHistogramProps> = ({
 
     // Draw average line if provided
     if (average !== undefined && average !== null && !isNaN(average)) {
-      const floorRating = Math.floor(average);
-      const ceilRating = Math.ceil(average);
-      const fraction = average - floorRating;
+      // Create a continuous scale for positioning the average line
+      // Map from rating values to x positions (center of each bar)
+      const ratingValues = data.map((d) => d.rating);
+      const minRating = Math.min(...ratingValues);
+      const maxRating = Math.max(...ratingValues);
 
-      const floorX = (x(floorRating.toString()) ?? 0) + x.bandwidth() / 2;
-      const ceilX = (x(ceilRating.toString()) ?? 0) + x.bandwidth() / 2;
-      const avgX = floorX + (ceilX - floorX) * fraction;
+      // Create positions array - center of each bar
+      const positions = data.map(
+        (d) => (x(d.rating.toString()) ?? 0) + x.bandwidth() / 2,
+      );
+
+      // Create linear scale for interpolation
+      const xLinear = d3
+        .scaleLinear()
+        .domain([minRating, maxRating])
+        .range([positions[0], positions[positions.length - 1]]);
+
+      const avgX = xLinear(average);
 
       // Average line
       svg

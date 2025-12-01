@@ -33,9 +33,12 @@
     "src/functions/dhw.ts",
     "src/functions/bleachingAlerts.ts",
     "src/functions/benthicACA.ts",
+    "src/functions/benthicACAWorker.ts",
     "src/functions/marxan.ts",
     "src/functions/geomorphACA.ts",
+    "src/functions/geomorphACAWorker.ts",
     "src/functions/pristineSeas.ts",
-    "src/functions/mangroves.ts"
+    "src/functions/mangroves.ts",
+    "src/functions/mangrovesWorker.ts"
   ]
 }

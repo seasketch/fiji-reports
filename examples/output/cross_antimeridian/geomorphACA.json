@@ -6,7 +6,7 @@
       "classId": "Back Reef Slope",
       "sketchId": "78746",
       "groupId": null,
-      "value": 17096160.889414,
+      "value": 17096160.889348,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -39,7 +39,7 @@
       "classId": "Outer Reef Flat",
       "sketchId": "78746",
       "groupId": null,
-      "value": 44758991.835386,
+      "value": 44758991.835351,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -61,7 +61,7 @@
       "classId": "Reef Crest",
       "sketchId": "78746",
       "groupId": null,
-      "value": 9288120.490593,
+      "value": 9288120.490595,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -94,7 +94,7 @@
       "classId": "Sheltered Reef Slope",
       "sketchId": "78746",
       "groupId": null,
-      "value": 11696006.873358,
+      "value": 11696006.873356,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
