@@ -9,7 +9,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 1207539778.186999,
+    "value": 1211488642.24814,
     "classId": "Outer Reef Flat",
     "groupId": null,
     "geographyId": "eez",
@@ -17,7 +17,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 732559690.8390019,
+    "value": 734957751.445969,
     "classId": "Back Reef Slope",
     "groupId": null,
     "geographyId": "eez",
@@ -25,7 +25,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 148336419.94799942,
+    "value": 148828166.814668,
     "classId": "Plateau",
     "groupId": null,
     "geographyId": "eez",
@@ -33,7 +33,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 178382086.038,
+    "value": 178959626.637656,
     "classId": "Reef Crest",
     "groupId": null,
     "geographyId": "eez",
@@ -41,7 +41,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 199569698.7689989,
+    "value": 200214431.391822,
     "classId": "Reef Slope",
     "groupId": null,
     "geographyId": "eez",
@@ -49,7 +49,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 768233071.523994,
+    "value": 770736164.407225,
     "classId": "Inner Reef Flat",
     "groupId": null,
     "geographyId": "eez",
@@ -57,7 +57,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 311879528.6490006,
+    "value": 312902613.166838,
     "classId": "Deep Lagoon",
     "groupId": null,
     "geographyId": "eez",
@@ -65,7 +65,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 407263490.25000226,
+    "value": 408616341.8140846,
     "classId": "Sheltered Reef Slope",
     "groupId": null,
     "geographyId": "eez",
@@ -73,7 +73,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 577965640.7760029,
+    "value": 579847918.514721,
     "classId": "Shallow Lagoon",
     "groupId": null,
     "geographyId": "eez",

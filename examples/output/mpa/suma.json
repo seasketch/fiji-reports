@@ -1,5 +1,5 @@
 {
-  "totalValue": 4996827690.794791,
+  "totalValue": 4995856459.832187,
   "metrics": [
     {
       "geographyId": null,
@@ -447,7 +447,7 @@
       "classId": "Masomo bay",
       "sketchId": "75741",
       "groupId": null,
-      "value": 306017.247173,
+      "value": 303032.951641,
       "extra": {
         "sketchName": "mpa"
       }
@@ -700,7 +700,7 @@
       "classId": "Northwest Lau Group",
       "sketchId": "75741",
       "groupId": null,
-      "value": 78955855.775178,
+      "value": 78844289.73899,
       "extra": {
         "sketchName": "mpa"
       }
@@ -722,7 +722,7 @@
       "classId": "Nukutolu",
       "sketchId": "75741",
       "groupId": null,
-      "value": 2347266.097753,
+      "value": 2336162.019322,
       "extra": {
         "sketchName": "mpa"
       }
@@ -788,7 +788,7 @@
       "classId": "Qilaqila bay of islands",
       "sketchId": "75741",
       "groupId": null,
-      "value": 7691242.909669,
+      "value": 7645203.597077,
       "extra": {
         "sketchName": "mpa"
       }
@@ -1085,7 +1085,7 @@
       "classId": "Tuvuca",
       "sketchId": "75741",
       "groupId": null,
-      "value": 2699467.212679,
+      "value": 2697954.639949,
       "extra": {
         "sketchName": "mpa"
       }
@@ -1118,7 +1118,7 @@
       "classId": "Vanuabalavu Island and reefs",
       "sketchId": "75741",
       "groupId": null,
-      "value": 822244708.055212,
+      "value": 821386555.701526,
       "extra": {
         "sketchName": "mpa"
       }
@@ -1283,7 +1283,7 @@
       "classId": "Yacata/Kaibu",
       "sketchId": "75741",
       "groupId": null,
-      "value": 9459312.305398,
+      "value": 9373307.781853,
       "extra": {
         "sketchName": "mpa"
       }

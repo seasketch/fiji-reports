@@ -4,8 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
   Feature,
   isVectorDatasource,
   getFeaturesForSketchBBoxes,
@@ -19,7 +17,6 @@ import {
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
 import { splitSketchAntimeridian } from "../util/antimeridian.js";
-
 /**
  * Overlap with Special Unique Marine Areas
  */
@@ -77,12 +74,10 @@ export async function suma(
           );
         }
 
-        // Calculate overlap metrics
         const overlapResult = await overlapPolygonArea(
           metricGroup.metricId,
           finalFeatures,
           splitSketch,
-          { solveOverlap: false },
         );
 
         return overlapResult.map(

@@ -37,7 +37,7 @@ export const Mangroves: React.FunctionComponent<{
     classId: "2020",
     sketchId: null,
     groupId: null,
-    value: 45824445.182033, // total: 487056197.5336999,
+    value: 45814946.6511,
   };
   // Labels
   const titleLabel = t("Mangroves - Global Mangrove Watch");

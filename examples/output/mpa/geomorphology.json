@@ -39,7 +39,7 @@
       "classId": "geo_escarpments",
       "sketchId": "75741",
       "groupId": "Escarpments",
-      "value": 4591762258.303439,
+      "value": 4591754765.238515,
       "extra": {
         "sketchName": "mpa"
       }
@@ -105,7 +105,7 @@
       "classId": "geo_shelf",
       "sketchId": "75741",
       "groupId": "Shelf",
-      "value": 4406728296.599102,
+      "value": 4406352953.298533,
       "extra": {
         "sketchName": "mpa"
       }
@@ -116,7 +116,7 @@
       "classId": "geo_slope",
       "sketchId": "75741",
       "groupId": "Slope",
-      "value": 8844346211.789207,
+      "value": 8844338730.746973,
       "extra": {
         "sketchName": "mpa"
       }

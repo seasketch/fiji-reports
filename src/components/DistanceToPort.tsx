@@ -152,7 +152,10 @@ export const DistanceToPort: React.FunctionComponent<{ printing: boolean }> = (
                     <p>🗺️ Source Data: World Port Index 2019</p>
                     <p>
                       📈 Report: Calculates the minimum distance over water
-                      between MPAs and the closest port.
+                      between MPAs and the closest port. Note: This report uses
+                      the outer ring of the sketch to find closest distance to
+                      port. This assumption will pose an error only if the
+                      entire island of Viti Levu was contained within a sketch.
                     </p>
                   </Trans>
                 </Collapse>
