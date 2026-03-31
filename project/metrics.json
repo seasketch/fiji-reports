@@ -691,12 +691,6 @@
         "layerId": "xeAw0m2je"
       },
       {
-        "classId": "geo_trenches",
-        "display": "Trenches",
-        "datasourceId": "geo_trenches",
-        "layerId": "jaHzzO6Pr"
-      },
-      {
         "classId": "geo_troughs",
         "display": "Troughs",
         "datasourceId": "geo_troughs",

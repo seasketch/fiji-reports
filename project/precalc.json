@@ -277,7 +277,7 @@
     "classId": "geo_basins-total",
     "sketchId": null,
     "groupId": null,
-    "value": 326312869291.8502
+    "value": 55859191193.41074
   },
   {
     "geographyId": "eez",
@@ -285,7 +285,7 @@
     "classId": "geo_bridges-total",
     "sketchId": null,
     "groupId": null,
-    "value": 69183632.68926236
+    "value": 69183740.16193685
   },
   {
     "geographyId": "eez",
@@ -293,7 +293,7 @@
     "classId": "geo_canyons-total",
     "sketchId": null,
     "groupId": null,
-    "value": 27273595892.093426
+    "value": 11453317206.330723
   },
   {
     "geographyId": "eez",
@@ -309,7 +309,7 @@
     "classId": "geo_guyots-total",
     "sketchId": null,
     "groupId": null,
-    "value": 5439115068.368765
+    "value": 442402693.4707921
   },
   {
     "geographyId": "eez",
@@ -317,7 +317,7 @@
     "classId": "geo_plateaus-total",
     "sketchId": null,
     "groupId": null,
-    "value": 259505581839.25952
+    "value": 100820449914.37894
   },
   {
     "geographyId": "eez",
@@ -325,7 +325,7 @@
     "classId": "geo_ridges-total",
     "sketchId": null,
     "groupId": null,
-    "value": 112332906818.29323
+    "value": 47521311114.16436
   },
   {
     "geographyId": "eez",
@@ -349,7 +349,7 @@
     "classId": "geo_shelf-total",
     "sketchId": null,
     "groupId": null,
-    "value": 42997729455.1937
+    "value": 39563756764.15999
   },
   {
     "geographyId": "eez",
@@ -1741,7 +1741,7 @@
     "classId": "geo_basins-total",
     "sketchId": null,
     "groupId": null,
-    "value": 77
+    "value": 76
   },
   {
     "geographyId": "eez",
@@ -1757,7 +1757,7 @@
     "classId": "geo_canyons-total",
     "sketchId": null,
     "groupId": null,
-    "value": 97
+    "value": 56
   },
   {
     "geographyId": "eez",
@@ -1773,7 +1773,7 @@
     "classId": "geo_guyots-total",
     "sketchId": null,
     "groupId": null,
-    "value": 3
+    "value": 1
   },
   {
     "geographyId": "eez",
@@ -1781,7 +1781,7 @@
     "classId": "geo_plateaus-total",
     "sketchId": null,
     "groupId": null,
-    "value": 16
+    "value": 13
   },
   {
     "geographyId": "eez",
@@ -1789,7 +1789,7 @@
     "classId": "geo_ridges-total",
     "sketchId": null,
     "groupId": null,
-    "value": 74
+    "value": 20
   },
   {
     "geographyId": "eez",
@@ -1813,7 +1813,7 @@
     "classId": "geo_shelf-total",
     "sketchId": null,
     "groupId": null,
-    "value": 85
+    "value": 75
   },
   {
     "geographyId": "eez",
