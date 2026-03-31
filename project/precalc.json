@@ -197,7 +197,7 @@
     "classId": "ebsa-EBSA No: 22: Taveuni and Ringgold Islands",
     "sketchId": null,
     "groupId": null,
-    "value": 16509428422.408566
+    "value": 12062150844.324663
   },
   {
     "geographyId": "eez",
@@ -205,7 +205,7 @@
     "classId": "ebsa-EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
     "sketchId": null,
     "groupId": null,
-    "value": 85103001270.0157
+    "value": 82961464053.91286
   },
   {
     "geographyId": "eez",
@@ -213,7 +213,7 @@
     "classId": "ebsa-EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
     "sketchId": null,
     "groupId": null,
-    "value": 23139529713.254745
+    "value": 15606887991.962734
   },
   {
     "geographyId": "eez",
@@ -221,7 +221,7 @@
     "classId": "ebsa-EBSA No. 5:  Kadavu and the Southern Lau Region",
     "sketchId": null,
     "groupId": null,
-    "value": 193628330902.15793
+    "value": 188030949576.5863
   },
   {
     "geographyId": "eez",
@@ -229,7 +229,7 @@
     "classId": "ebsa-total",
     "sketchId": null,
     "groupId": null,
-    "value": 318380290307.837
+    "value": 298661452466.78656
   },
   {
     "geographyId": "eez",
@@ -1661,7 +1661,7 @@
     "classId": "ebsa-EBSA No: 22: Taveuni and Ringgold Islands",
     "sketchId": null,
     "groupId": null,
-    "value": 2
+    "value": 3
   },
   {
     "geographyId": "eez",
@@ -1669,7 +1669,7 @@
     "classId": "ebsa-EBSA No. 13: South of Tuvalu/Wallis & Fortuna/North of Fiji Plateau",
     "sketchId": null,
     "groupId": null,
-    "value": 2
+    "value": 1
   },
   {
     "geographyId": "eez",
@@ -1677,7 +1677,7 @@
     "classId": "ebsa-EBSA No. 14: Vatu-i-Ra/Lomaiviti, Fiji",
     "sketchId": null,
     "groupId": null,
-    "value": 1
+    "value": 2
   },
   {
     "geographyId": "eez",
@@ -1685,7 +1685,7 @@
     "classId": "ebsa-EBSA No. 5:  Kadavu and the Southern Lau Region",
     "sketchId": null,
     "groupId": null,
-    "value": 2
+    "value": 3
   },
   {
     "geographyId": "eez",
@@ -1693,7 +1693,7 @@
     "classId": "ebsa-total",
     "sketchId": null,
     "groupId": null,
-    "value": 7
+    "value": 9
   },
   {
     "geographyId": "eez",
