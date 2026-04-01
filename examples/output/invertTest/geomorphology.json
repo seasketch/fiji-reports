@@ -6,7 +6,7 @@
       "classId": "geo_basins",
       "sketchId": "112904",
       "groupId": "Basins",
-      "value": 649168903.836657,
+      "value": 1539411508.5777,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -28,7 +28,7 @@
       "classId": "geo_canyons",
       "sketchId": "112904",
       "groupId": "Canyons",
-      "value": 1536500671.954702,
+      "value": 1571120315.788474,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -72,7 +72,7 @@
       "classId": "geo_ridges",
       "sketchId": "112904",
       "groupId": "Ridges",
-      "value": 315627.812095,
+      "value": 264241.70376,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -105,7 +105,7 @@
       "classId": "geo_shelf",
       "sketchId": "112904",
       "groupId": "Shelf",
-      "value": 8135435637.810535,
+      "value": 8136120905.265924,
       "extra": {
         "sketchName": "invertTest"
       }
@@ -127,17 +127,6 @@
       "classId": "geo_spreadingridges",
       "sketchId": "112904",
       "groupId": "Spreading Ridges",
-      "value": 0,
-      "extra": {
-        "sketchName": "invertTest"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "112904",
-      "groupId": "Trenches",
       "value": 0,
       "extra": {
         "sketchName": "invertTest"

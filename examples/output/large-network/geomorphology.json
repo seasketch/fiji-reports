@@ -6,7 +6,7 @@
       "classId": "geo_basins",
       "sketchId": "77760",
       "groupId": "Basins",
-      "value": 23680708777.42137,
+      "value": 0,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -40,7 +40,7 @@
       "classId": "geo_basins",
       "sketchId": "77763",
       "groupId": "Basins",
-      "value": 23680708777.42137,
+      "value": 0,
       "extra": {
         "sketchName": "southwest"
       }
@@ -118,7 +118,7 @@
       "classId": "geo_canyons",
       "sketchId": "77760",
       "groupId": "Canyons",
-      "value": 81219535.227434,
+      "value": 97933027.634767,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -130,7 +130,7 @@
       "classId": "geo_canyons",
       "sketchId": "77761",
       "groupId": "Canyons",
-      "value": 81219535.227434,
+      "value": 97933027.634767,
       "extra": {
         "sketchName": "vanua"
       }
@@ -342,7 +342,7 @@
       "classId": "geo_ridges",
       "sketchId": "77760",
       "groupId": "Ridges",
-      "value": 94240617.502443,
+      "value": 658231023.997306,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -354,7 +354,7 @@
       "classId": "geo_ridges",
       "sketchId": "77761",
       "groupId": "Ridges",
-      "value": 9448094.435418,
+      "value": 640024603.311175,
       "extra": {
         "sketchName": "vanua"
       }
@@ -365,7 +365,7 @@
       "classId": "geo_ridges",
       "sketchId": "77762",
       "groupId": "Ridges",
-      "value": 0,
+      "value": 18206420.686131,
       "extra": {
         "sketchName": "moce"
       }
@@ -387,7 +387,7 @@
       "classId": "geo_ridges",
       "sketchId": "77764",
       "groupId": "Ridges",
-      "value": 84792523.067024,
+      "value": 0,
       "extra": {
         "sketchName": "rotuma"
       }
@@ -510,7 +510,7 @@
       "classId": "geo_shelf",
       "sketchId": "77760",
       "groupId": "Shelf",
-      "value": 725865824.136376,
+      "value": 633332413.058399,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -522,7 +522,7 @@
       "classId": "geo_shelf",
       "sketchId": "77761",
       "groupId": "Shelf",
-      "value": 615214402.102699,
+      "value": 615125992.372268,
       "extra": {
         "sketchName": "vanua"
       }
@@ -533,7 +533,7 @@
       "classId": "geo_shelf",
       "sketchId": "77762",
       "groupId": "Shelf",
-      "value": 18256324.247409,
+      "value": 18206420.686131,
       "extra": {
         "sketchName": "moce"
       }
@@ -555,7 +555,7 @@
       "classId": "geo_shelf",
       "sketchId": "77764",
       "groupId": "Shelf",
-      "value": 92395097.786268,
+      "value": 0,
       "extra": {
         "sketchName": "rotuma"
       }
@@ -667,62 +667,6 @@
       "classId": "geo_spreadingridges",
       "sketchId": "77764",
       "groupId": "Spreading Ridges",
-      "value": 0,
-      "extra": {
-        "sketchName": "rotuma"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "77760",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "large-network",
-        "isCollection": true
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "77761",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "vanua"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "77762",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "moce"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "77763",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "southwest"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "77764",
-      "groupId": "Trenches",
       "value": 0,
       "extra": {
         "sketchName": "rotuma"

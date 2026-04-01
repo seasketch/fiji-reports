@@ -411,40 +411,6 @@
     {
       "geographyId": null,
       "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "79005",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "hydrothermalVents"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "79006",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "ventsOverlap",
-        "isCollection": true
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "79007",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "hydrothermalVents (copy)"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
       "classId": "geo_troughs",
       "sketchId": "79005",
       "groupId": "Troughs",

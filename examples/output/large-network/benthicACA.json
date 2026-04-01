@@ -6,7 +6,7 @@
       "classId": "Coral/Algae",
       "sketchId": "77760",
       "groupId": null,
-      "value": 33049221.727333,
+      "value": 33049221.374019,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -18,7 +18,7 @@
       "classId": "Coral/Algae",
       "sketchId": "77761",
       "groupId": null,
-      "value": 25503694.355288,
+      "value": 25503618.25303,
       "extra": {
         "sketchName": "vanua"
       }
@@ -29,7 +29,7 @@
       "classId": "Coral/Algae",
       "sketchId": "77762",
       "groupId": null,
-      "value": 468221.33473,
+      "value": 468222.275584,
       "extra": {
         "sketchName": "moce"
       }
@@ -51,7 +51,7 @@
       "classId": "Coral/Algae",
       "sketchId": "77764",
       "groupId": null,
-      "value": 7077306.037315,
+      "value": 7077380.845405,
       "extra": {
         "sketchName": "rotuma"
       }
@@ -62,7 +62,7 @@
       "classId": "Microalgal Mats",
       "sketchId": "77760",
       "groupId": null,
-      "value": 7257974.988312,
+      "value": 7258057.535149,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -74,7 +74,7 @@
       "classId": "Microalgal Mats",
       "sketchId": "77761",
       "groupId": null,
-      "value": 6665965.129278,
+      "value": 6666043.788957,
       "extra": {
         "sketchName": "vanua"
       }
@@ -85,7 +85,7 @@
       "classId": "Microalgal Mats",
       "sketchId": "77762",
       "groupId": null,
-      "value": 392583.064852,
+      "value": 392586.95201,
       "extra": {
         "sketchName": "moce"
       }
@@ -118,7 +118,7 @@
       "classId": "Rock",
       "sketchId": "77760",
       "groupId": null,
-      "value": 18172492.773578,
+      "value": 18172844.277888,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -130,7 +130,7 @@
       "classId": "Rock",
       "sketchId": "77761",
       "groupId": null,
-      "value": 13401801.166666,
+      "value": 13402029.331128,
       "extra": {
         "sketchName": "vanua"
       }
@@ -141,7 +141,7 @@
       "classId": "Rock",
       "sketchId": "77762",
       "groupId": null,
-      "value": 655410.770887,
+      "value": 655417.355025,
       "extra": {
         "sketchName": "moce"
       }
@@ -163,7 +163,7 @@
       "classId": "Rock",
       "sketchId": "77764",
       "groupId": null,
-      "value": 4115280.836025,
+      "value": 4115397.591735,
       "extra": {
         "sketchName": "rotuma"
       }
@@ -174,7 +174,7 @@
       "classId": "Rubble",
       "sketchId": "77760",
       "groupId": null,
-      "value": 13320066.940321,
+      "value": 13320203.677717,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -186,7 +186,7 @@
       "classId": "Rubble",
       "sketchId": "77761",
       "groupId": null,
-      "value": 10140473.538591,
+      "value": 10140559.032178,
       "extra": {
         "sketchName": "vanua"
       }
@@ -197,7 +197,7 @@
       "classId": "Rubble",
       "sketchId": "77762",
       "groupId": null,
-      "value": 478199.856923,
+      "value": 478202.459944,
       "extra": {
         "sketchName": "moce"
       }
@@ -219,7 +219,7 @@
       "classId": "Rubble",
       "sketchId": "77764",
       "groupId": null,
-      "value": 2701393.544808,
+      "value": 2701442.185595,
       "extra": {
         "sketchName": "rotuma"
       }
@@ -230,7 +230,7 @@
       "classId": "Sand",
       "sketchId": "77760",
       "groupId": null,
-      "value": 10926226.317877,
+      "value": 10926401.513314,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -242,7 +242,7 @@
       "classId": "Sand",
       "sketchId": "77761",
       "groupId": null,
-      "value": 8810356.791885,
+      "value": 8810496.180935,
       "extra": {
         "sketchName": "vanua"
       }
@@ -253,7 +253,7 @@
       "classId": "Sand",
       "sketchId": "77762",
       "groupId": null,
-      "value": 1416108.698758,
+      "value": 1416109.609004,
       "extra": {
         "sketchName": "moce"
       }
@@ -275,7 +275,7 @@
       "classId": "Sand",
       "sketchId": "77764",
       "groupId": null,
-      "value": 699760.827233,
+      "value": 699795.723375,
       "extra": {
         "sketchName": "rotuma"
       }
@@ -286,7 +286,7 @@
       "classId": "Seagrass",
       "sketchId": "77760",
       "groupId": null,
-      "value": 1676986.134705,
+      "value": 1677038.875955,
       "extra": {
         "sketchName": "large-network",
         "isCollection": true
@@ -298,7 +298,7 @@
       "classId": "Seagrass",
       "sketchId": "77761",
       "groupId": null,
-      "value": 917326.800932,
+      "value": 917372.198641,
       "extra": {
         "sketchName": "vanua"
       }
@@ -309,7 +309,7 @@
       "classId": "Seagrass",
       "sketchId": "77762",
       "groupId": null,
-      "value": 26725.228404,
+      "value": 26725.358847,
       "extra": {
         "sketchName": "moce"
       }
@@ -331,7 +331,7 @@
       "classId": "Seagrass",
       "sketchId": "77764",
       "groupId": null,
-      "value": 732934.105369,
+      "value": 732941.318466,
       "extra": {
         "sketchName": "rotuma"
       }

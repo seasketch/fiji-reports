@@ -61,7 +61,7 @@
     "classId": "deepwater_bioregions-Fiji - Tonga Chains",
     "sketchId": null,
     "groupId": null,
-    "value": 59228490786.97751
+    "value": 59236681050.52409
   },
   {
     "geographyId": "eez",
@@ -117,7 +117,7 @@
     "classId": "deepwater_bioregions-Northern Hunga and Wallis plateaus and North Viti and Vanua Levu basin",
     "sketchId": null,
     "groupId": null,
-    "value": 55212539586.590324
+    "value": 55212539671.24044
   },
   {
     "geographyId": "eez",
@@ -181,7 +181,7 @@
     "classId": "deepwater_bioregions-total",
     "sketchId": null,
     "groupId": null,
-    "value": 1238455302492.714
+    "value": 1238463492840.911
   },
   {
     "geographyId": "eez",
@@ -245,7 +245,7 @@
     "classId": "geo_abyss-Hills",
     "sketchId": null,
     "groupId": null,
-    "value": 593821101675.3174
+    "value": 593821101743.8081
   },
   {
     "geographyId": "eez",
@@ -253,7 +253,7 @@
     "classId": "geo_abyss-Mountains",
     "sketchId": null,
     "groupId": null,
-    "value": 498278570803.55884
+    "value": 498286761083.42377
   },
   {
     "geographyId": "eez",
@@ -269,7 +269,7 @@
     "classId": "geo_abyss-total",
     "sketchId": null,
     "groupId": null,
-    "value": 1147578871032.758
+    "value": 1147587061381.114
   },
   {
     "geographyId": "eez",
@@ -277,7 +277,7 @@
     "classId": "geo_basins-total",
     "sketchId": null,
     "groupId": null,
-    "value": 55859191193.41074
+    "value": 55859520248.11292
   },
   {
     "geographyId": "eez",
@@ -301,7 +301,7 @@
     "classId": "geo_escarpments-total",
     "sketchId": null,
     "groupId": null,
-    "value": 196361875635.52658
+    "value": 196372827190.07523
   },
   {
     "geographyId": "eez",
@@ -317,7 +317,7 @@
     "classId": "geo_plateaus-total",
     "sketchId": null,
     "groupId": null,
-    "value": 100820449914.37894
+    "value": 100834808798.87408
   },
   {
     "geographyId": "eez",
@@ -325,7 +325,7 @@
     "classId": "geo_ridges-total",
     "sketchId": null,
     "groupId": null,
-    "value": 47521311114.16436
+    "value": 47531563660.45797
   },
   {
     "geographyId": "eez",
@@ -349,7 +349,7 @@
     "classId": "geo_shelf-total",
     "sketchId": null,
     "groupId": null,
-    "value": 39563756764.15999
+    "value": 39600416768.47608
   },
   {
     "geographyId": "eez",
@@ -357,7 +357,7 @@
     "classId": "geo_slope-total",
     "sketchId": null,
     "groupId": null,
-    "value": 70865119919.67438
+    "value": 70866147477.50114
   },
   {
     "geographyId": "eez",
@@ -389,7 +389,7 @@
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 8.4304
+    "value": 8.4305
   },
   {
     "geographyId": "eez",
@@ -405,7 +405,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 6.5163
+    "value": 6.5164
   },
   {
     "geographyId": "eez",
@@ -429,7 +429,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 5.8973
+    "value": 5.8977
   },
   {
     "geographyId": "eez",
@@ -453,7 +453,7 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1.39
+    "value": 16607419571.28176
   },
   {
     "geographyId": "eez",
@@ -466,10 +466,26 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "pristineSeas_combined-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1242951139846.6235
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "pristineSeas_multi-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1249810126339.7747
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "suma_dissolved-total",
     "sketchId": null,
     "groupId": null,
-    "value": 148985722636.263
+    "value": 149070264869.00235
   },
   {
     "geographyId": "eez",
@@ -477,7 +493,7 @@
     "classId": "suma-Ba delta",
     "sketchId": null,
     "groupId": null,
-    "value": 18674486.48819984
+    "value": 19137766.767997906
   },
   {
     "geographyId": "eez",
@@ -485,7 +501,7 @@
     "classId": "suma-Batiki Island",
     "sketchId": null,
     "groupId": null,
-    "value": 22495767.48084733
+    "value": 23178608.739230443
   },
   {
     "geographyId": "eez",
@@ -493,7 +509,7 @@
     "classId": "suma-Beqa barrier reef and lagoon",
     "sketchId": null,
     "groupId": null,
-    "value": 401765749.82613164
+    "value": 403164567.0045857
   },
   {
     "geographyId": "eez",
@@ -501,7 +517,7 @@
     "classId": "suma-Bouma Heritage Park",
     "sketchId": null,
     "groupId": null,
-    "value": 25717483.9346368
+    "value": 26309268.451070614
   },
   {
     "geographyId": "eez",
@@ -509,7 +525,7 @@
     "classId": "suma-Bukatatanoa and Oneata Group",
     "sketchId": null,
     "groupId": null,
-    "value": 1776351135.0412478
+    "value": 1776935091.6754444
   },
   {
     "geographyId": "eez",
@@ -565,7 +581,7 @@
     "classId": "suma-Cakaulevu and Kia Island_Macuata",
     "sketchId": null,
     "groupId": null,
-    "value": 802443785.7085327
+    "value": 807394151.759802
   },
   {
     "geographyId": "eez",
@@ -573,7 +589,7 @@
     "classId": "suma-Cakaulevu_ Bua",
     "sketchId": null,
     "groupId": null,
-    "value": 578929264.234139
+    "value": 582301601.8439499
   },
   {
     "geographyId": "eez",
@@ -581,7 +597,7 @@
     "classId": "suma-Caqalai Island",
     "sketchId": null,
     "groupId": null,
-    "value": 143546.73806351534
+    "value": 165652.6279433979
   },
   {
     "geographyId": "eez",
@@ -589,7 +605,7 @@
     "classId": "suma-Central Lau Ridge",
     "sketchId": null,
     "groupId": null,
-    "value": 8218748051.1153555
+    "value": 8228442673.37248
   },
   {
     "geographyId": "eez",
@@ -597,7 +613,7 @@
     "classId": "suma-Central Lau Seamount",
     "sketchId": null,
     "groupId": null,
-    "value": 2631165592.015744
+    "value": 2633141067.548101
   },
   {
     "geographyId": "eez",
@@ -605,7 +621,7 @@
     "classId": "suma-Central Viti Canyons",
     "sketchId": null,
     "groupId": null,
-    "value": 6631520618.172805
+    "value": 6634582402.404884
   },
   {
     "geographyId": "eez",
@@ -613,7 +629,7 @@
     "classId": "suma-Ceva-i-Ra reef/ Conway Island",
     "sketchId": null,
     "groupId": null,
-    "value": 1253702055.8192658
+    "value": 1261892319.3658516
   },
   {
     "geographyId": "eez",
@@ -621,7 +637,7 @@
     "classId": "suma-Cicia",
     "sketchId": null,
     "groupId": null,
-    "value": 12246401.767418727
+    "value": 13085469.165108234
   },
   {
     "geographyId": "eez",
@@ -629,7 +645,7 @@
     "classId": "suma-Conway reef _ Ceva -i -ra Island",
     "sketchId": null,
     "groupId": null,
-    "value": 20590174.879141077
+    "value": 23966305.40096425
   },
   {
     "geographyId": "eez",
@@ -637,7 +653,7 @@
     "classId": "suma-Davetalevu passage and islands",
     "sketchId": null,
     "groupId": null,
-    "value": 80213754.38903987
+    "value": 80251728.92795528
   },
   {
     "geographyId": "eez",
@@ -645,7 +661,7 @@
     "classId": "suma-Dreketi and Saweni mangroves and mudflats",
     "sketchId": null,
     "groupId": null,
-    "value": 2376403.1963930978
+    "value": 6780246.487450499
   },
   {
     "geographyId": "eez",
@@ -669,7 +685,7 @@
     "classId": "suma-Fulaga and Ogea Islands",
     "sketchId": null,
     "groupId": null,
-    "value": 225850584.42438906
+    "value": 232799001.22912443
   },
   {
     "geographyId": "eez",
@@ -677,7 +693,7 @@
     "classId": "suma-Fulaga lagoon",
     "sketchId": null,
     "groupId": null,
-    "value": 20933384.83155575
+    "value": 21498809.15039046
   },
   {
     "geographyId": "eez",
@@ -685,7 +701,7 @@
     "classId": "suma-Gau Island and barrier reef",
     "sketchId": null,
     "groupId": null,
-    "value": 195399802.32591662
+    "value": 197481177.89636558
   },
   {
     "geographyId": "eez",
@@ -693,7 +709,7 @@
     "classId": "suma-Great and North Astrolabe reef",
     "sketchId": null,
     "groupId": null,
-    "value": 344645229.89518774
+    "value": 345060327.05393744
   },
   {
     "geographyId": "eez",
@@ -701,7 +717,7 @@
     "classId": "suma-Kabara and Vuaqava islands",
     "sketchId": null,
     "groupId": null,
-    "value": 119353904.31113157
+    "value": 120941773.4543563
   },
   {
     "geographyId": "eez",
@@ -709,7 +725,7 @@
     "classId": "suma-Kabara Island",
     "sketchId": null,
     "groupId": null,
-    "value": 10021944.52944288
+    "value": 10745635.784346754
   },
   {
     "geographyId": "eez",
@@ -717,7 +733,7 @@
     "classId": "suma-Kadavu mangrove bays",
     "sketchId": null,
     "groupId": null,
-    "value": 13291.314813170937
+    "value": 78275.34054931789
   },
   {
     "geographyId": "eez",
@@ -725,7 +741,7 @@
     "classId": "suma-Kadomo Island",
     "sketchId": null,
     "groupId": null,
-    "value": 1144928.1352815751
+    "value": 1200240.5080569012
   },
   {
     "geographyId": "eez",
@@ -733,7 +749,7 @@
     "classId": "suma-Karoni Island and reef",
     "sketchId": null,
     "groupId": null,
-    "value": 51310601.19063132
+    "value": 52306976.029370405
   },
   {
     "geographyId": "eez",
@@ -741,7 +757,7 @@
     "classId": "suma-Koro East corner",
     "sketchId": null,
     "groupId": null,
-    "value": 25402437.28119577
+    "value": 25500978.711806767
   },
   {
     "geographyId": "eez",
@@ -749,7 +765,7 @@
     "classId": "suma-Kubulau and Namena",
     "sketchId": null,
     "groupId": null,
-    "value": 243433219.47374752
+    "value": 243555680.2071775
   },
   {
     "geographyId": "eez",
@@ -765,7 +781,7 @@
     "classId": "suma-Leleuvia Island and Caqalai sandbank",
     "sketchId": null,
     "groupId": null,
-    "value": 441127.8939549535
+    "value": 456989.1637529139
   },
   {
     "geographyId": "eez",
@@ -773,7 +789,7 @@
     "classId": "suma-Makogai Island and barrier reef",
     "sketchId": null,
     "groupId": null,
-    "value": 69194439.7596987
+    "value": 69557785.54501529
   },
   {
     "geographyId": "eez",
@@ -781,7 +797,7 @@
     "classId": "suma-Malamala Island",
     "sketchId": null,
     "groupId": null,
-    "value": 270439.9011571262
+    "value": 277019.8456605296
   },
   {
     "geographyId": "eez",
@@ -789,7 +805,7 @@
     "classId": "suma-Malololevu Island",
     "sketchId": null,
     "groupId": null,
-    "value": 1583684.8682035997
+    "value": 1663042.9701298499
   },
   {
     "geographyId": "eez",
@@ -797,7 +813,7 @@
     "classId": "suma-Masomo bay",
     "sketchId": null,
     "groupId": null,
-    "value": 303032.9516411645
+    "value": 886337.9472622159
   },
   {
     "geographyId": "eez",
@@ -805,7 +821,7 @@
     "classId": "suma-Matuku Island",
     "sketchId": null,
     "groupId": null,
-    "value": 35002009.25653847
+    "value": 36579768.88029542
   },
   {
     "geographyId": "eez",
@@ -821,7 +837,7 @@
     "classId": "suma-Moala Island including Cakova Passage, Keteira Bay",
     "sketchId": null,
     "groupId": null,
-    "value": 157133858.05285466
+    "value": 159110477.171574
   },
   {
     "geographyId": "eez",
@@ -829,7 +845,7 @@
     "classId": "suma-Moce Group",
     "sketchId": null,
     "groupId": null,
-    "value": 391051816.23628515
+    "value": 392048191.07502425
   },
   {
     "geographyId": "eez",
@@ -837,7 +853,7 @@
     "classId": "suma-Momi Bay and passage",
     "sketchId": null,
     "groupId": null,
-    "value": 35071016.59828538
+    "value": 35529574.20420619
   },
   {
     "geographyId": "eez",
@@ -845,7 +861,7 @@
     "classId": "suma-Monuriki Island",
     "sketchId": null,
     "groupId": null,
-    "value": 1375995.4858485563
+    "value": 1465600.9287046767
   },
   {
     "geographyId": "eez",
@@ -861,7 +877,7 @@
     "classId": "suma-Nadi Bay reefs",
     "sketchId": null,
     "groupId": null,
-    "value": 7768596.855875658
+    "value": 8022045.665947117
   },
   {
     "geographyId": "eez",
@@ -877,7 +893,7 @@
     "classId": "suma-Nairai Island",
     "sketchId": null,
     "groupId": null,
-    "value": 173626087.93272692
+    "value": 174606496.59435695
   },
   {
     "geographyId": "eez",
@@ -885,7 +901,7 @@
     "classId": "suma-Namuka Bay",
     "sketchId": null,
     "groupId": null,
-    "value": 20271787.39240243
+    "value": 21069340.886670046
   },
   {
     "geographyId": "eez",
@@ -893,7 +909,7 @@
     "classId": "suma-Nananu-i-Ra Island and reefs",
     "sketchId": null,
     "groupId": null,
-    "value": 72350297.26330857
+    "value": 72852996.7028253
   },
   {
     "geographyId": "eez",
@@ -917,7 +933,7 @@
     "classId": "suma-Nasoata Island",
     "sketchId": null,
     "groupId": null,
-    "value": 639973.383513331
+    "value": 673115.4778188338
   },
   {
     "geographyId": "eez",
@@ -925,7 +941,7 @@
     "classId": "suma-Natadola Bay",
     "sketchId": null,
     "groupId": null,
-    "value": 3172405.4515016084
+    "value": 3202017.296353187
   },
   {
     "geographyId": "eez",
@@ -933,7 +949,7 @@
     "classId": "suma-Natewa bay",
     "sketchId": null,
     "groupId": null,
-    "value": 246469021.86163205
+    "value": 246586842.88569868
   },
   {
     "geographyId": "eez",
@@ -949,7 +965,7 @@
     "classId": "suma-Naviti and smaller islands",
     "sketchId": null,
     "groupId": null,
-    "value": 34029673.76451174
+    "value": 34863985.239215694
   },
   {
     "geographyId": "eez",
@@ -957,7 +973,7 @@
     "classId": "suma-Navula-Malolo reef including Tavarua and Namotu Islands",
     "sketchId": null,
     "groupId": null,
-    "value": 60885782.38202051
+    "value": 60919127.18909259
   },
   {
     "geographyId": "eez",
@@ -981,7 +997,7 @@
     "classId": "suma-Northwest Lau Group",
     "sketchId": null,
     "groupId": null,
-    "value": 78844289.73899029
+    "value": 79517318.76714507
   },
   {
     "geographyId": "eez",
@@ -989,7 +1005,7 @@
     "classId": "suma-Nukulau and Makuluva Islands",
     "sketchId": null,
     "groupId": null,
-    "value": 5152970.859378319
+    "value": 5218692.193403873
   },
   {
     "geographyId": "eez",
@@ -997,7 +1013,7 @@
     "classId": "suma-Nukutolu",
     "sketchId": null,
     "groupId": null,
-    "value": 2336162.01932204
+    "value": 2389249.13401407
   },
   {
     "geographyId": "eez",
@@ -1013,7 +1029,7 @@
     "classId": "suma-Oneata Island and barrier reef",
     "sketchId": null,
     "groupId": null,
-    "value": 102947919.05446903
+    "value": 103469111.39216064
   },
   {
     "geographyId": "eez",
@@ -1021,7 +1037,7 @@
     "classId": "suma-Ono-I-Lau Group",
     "sketchId": null,
     "groupId": null,
-    "value": 196984883.388682
+    "value": 198745016.37560764
   },
   {
     "geographyId": "eez",
@@ -1029,7 +1045,7 @@
     "classId": "suma-Ovalau East Reefs",
     "sketchId": null,
     "groupId": null,
-    "value": 23338347.994282935
+    "value": 23443803.835942343
   },
   {
     "geographyId": "eez",
@@ -1037,7 +1053,7 @@
     "classId": "suma-Qaloqalo Salt Lake_Naweni",
     "sketchId": null,
     "groupId": null,
-    "value": 991965.4656332207
+    "value": 1007472.9430663219
   },
   {
     "geographyId": "eez",
@@ -1045,7 +1061,7 @@
     "classId": "suma-Qilaqila bay of islands",
     "sketchId": null,
     "groupId": null,
-    "value": 7645203.597076684
+    "value": 7945759.129490084
   },
   {
     "geographyId": "eez",
@@ -1053,7 +1069,7 @@
     "classId": "suma-Rewa delta",
     "sketchId": null,
     "groupId": null,
-    "value": 37236135.26598394
+    "value": 40543931.743050426
   },
   {
     "geographyId": "eez",
@@ -1061,7 +1077,7 @@
     "classId": "suma-Ringgold and Cikobia islands and reefs",
     "sketchId": null,
     "groupId": null,
-    "value": 4169271425.742267
+    "value": 4171799349.59916
   },
   {
     "geographyId": "eez",
@@ -1069,7 +1085,7 @@
     "classId": "suma-Rotuma archipelago",
     "sketchId": null,
     "groupId": null,
-    "value": 5516624942.601926
+    "value": 5518660373.334156
   },
   {
     "geographyId": "eez",
@@ -1077,7 +1093,7 @@
     "classId": "suma-Rotuma Island",
     "sketchId": null,
     "groupId": null,
-    "value": 76080427.62155436
+    "value": 77098201.24931231
   },
   {
     "geographyId": "eez",
@@ -1085,7 +1101,7 @@
     "classId": "suma-Sabeto delta",
     "sketchId": null,
     "groupId": null,
-    "value": 2041633.1598533257
+    "value": 2228758.9930398753
   },
   {
     "geographyId": "eez",
@@ -1101,7 +1117,7 @@
     "classId": "suma-Serua mangroves and passages",
     "sketchId": null,
     "groupId": null,
-    "value": 119352827.83674866
+    "value": 121511554.54222345
   },
   {
     "geographyId": "eez",
@@ -1109,7 +1125,7 @@
     "classId": "suma-Sigatoka Catchment",
     "sketchId": null,
     "groupId": null,
-    "value": 3184801.376511387
+    "value": 3204035.5084549547
   },
   {
     "geographyId": "eez",
@@ -1117,7 +1133,7 @@
     "classId": "suma-Somosomo straits",
     "sketchId": null,
     "groupId": null,
-    "value": 153835523.25451374
+    "value": 0
   },
   {
     "geographyId": "eez",
@@ -1125,7 +1141,7 @@
     "classId": "suma-South Denarau mangroves",
     "sketchId": null,
     "groupId": null,
-    "value": 347933.86803867045
+    "value": 689459.3126123217
   },
   {
     "geographyId": "eez",
@@ -1133,7 +1149,7 @@
     "classId": "suma-South Kadavu reefs",
     "sketchId": null,
     "groupId": null,
-    "value": 58838022.80951532
+    "value": 58841006.371533096
   },
   {
     "geographyId": "eez",
@@ -1181,7 +1197,7 @@
     "classId": "suma-Sovi Bay",
     "sketchId": null,
     "groupId": null,
-    "value": 1308911.3769884144
+    "value": 1420737.164278407
   },
   {
     "geographyId": "eez",
@@ -1205,7 +1221,7 @@
     "classId": "suma-Suva mudflats",
     "sketchId": null,
     "groupId": null,
-    "value": 3542862.0819054004
+    "value": 3628736.9420885574
   },
   {
     "geographyId": "eez",
@@ -1213,7 +1229,7 @@
     "classId": "suma-Tailevu mangroves and mudflats",
     "sketchId": null,
     "groupId": null,
-    "value": 248378776.3731803
+    "value": 250824570.39598548
   },
   {
     "geographyId": "eez",
@@ -1221,7 +1237,7 @@
     "classId": "suma-Tavua Island",
     "sketchId": null,
     "groupId": null,
-    "value": 602182.4584272337
+    "value": 740553.1987608793
   },
   {
     "geographyId": "eez",
@@ -1229,7 +1245,7 @@
     "classId": "suma-Tavua Peninsula",
     "sketchId": null,
     "groupId": null,
-    "value": 19617487.37055493
+    "value": 20671482.206993323
   },
   {
     "geographyId": "eez",
@@ -1237,7 +1253,7 @@
     "classId": "suma-Tavunasici",
     "sketchId": null,
     "groupId": null,
-    "value": 3416391.127860154
+    "value": 3472563.303140221
   },
   {
     "geographyId": "eez",
@@ -1253,7 +1269,7 @@
     "classId": "suma-total",
     "sketchId": null,
     "groupId": null,
-    "value": 154630819700.69016
+    "value": 154584589884.0732
   },
   {
     "geographyId": "eez",
@@ -1261,7 +1277,7 @@
     "classId": "suma-Totoya",
     "sketchId": null,
     "groupId": null,
-    "value": 131309261.00619361
+    "value": 134407617.1226946
   },
   {
     "geographyId": "eez",
@@ -1269,7 +1285,7 @@
     "classId": "suma-Tuvuca",
     "sketchId": null,
     "groupId": null,
-    "value": 19614572.392306663
+    "value": 20278206.82715301
   },
   {
     "geographyId": "eez",
@@ -1277,7 +1293,7 @@
     "classId": "suma-Ugaga Island (Royal Davui)",
     "sketchId": null,
     "groupId": null,
-    "value": 412407.7516619026
+    "value": 418415.7454654907
   },
   {
     "geographyId": "eez",
@@ -1285,7 +1301,7 @@
     "classId": "suma-Vanua Masi Reef",
     "sketchId": null,
     "groupId": null,
-    "value": 109551498.08748503
+    "value": 109614262.38398974
   },
   {
     "geographyId": "eez",
@@ -1293,7 +1309,7 @@
     "classId": "suma-Vanuabalavu Island and reefs",
     "sketchId": null,
     "groupId": null,
-    "value": 913305173.8554144
+    "value": 920059480.0297046
   },
   {
     "geographyId": "eez",
@@ -1301,7 +1317,7 @@
     "classId": "suma-Vatoa Group",
     "sketchId": null,
     "groupId": null,
-    "value": 102152706.04987304
+    "value": 102621931.54424997
   },
   {
     "geographyId": "eez",
@@ -1309,7 +1325,7 @@
     "classId": "suma-Vatu-i-Ra Island and reef",
     "sketchId": null,
     "groupId": null,
-    "value": 122538742.15828153
+    "value": 122553439.09167463
   },
   {
     "geographyId": "eez",
@@ -1317,7 +1333,7 @@
     "classId": "suma-Vatu-i-Ra passage",
     "sketchId": null,
     "groupId": null,
-    "value": 1415506341.2436051
+    "value": 1415570229.6076667
   },
   {
     "geographyId": "eez",
@@ -1333,7 +1349,7 @@
     "classId": "suma-Vatulele island",
     "sketchId": null,
     "groupId": null,
-    "value": 55907677.82035085
+    "value": 56694880.131058134
   },
   {
     "geographyId": "eez",
@@ -1341,7 +1357,7 @@
     "classId": "suma-Viwa Island and barrier reef",
     "sketchId": null,
     "groupId": null,
-    "value": 188238051.13012367
+    "value": 189081286.89969206
   },
   {
     "geographyId": "eez",
@@ -1357,7 +1373,7 @@
     "classId": "suma-Wailagilala atoll",
     "sketchId": null,
     "groupId": null,
-    "value": 26600215.583589107
+    "value": 26855873.324452832
   },
   {
     "geographyId": "eez",
@@ -1365,7 +1381,7 @@
     "classId": "suma-Wailagilala atoll and Cakau Gala",
     "sketchId": null,
     "groupId": null,
-    "value": 289766999.1205625
+    "value": 290022656.86142623
   },
   {
     "geographyId": "eez",
@@ -1373,7 +1389,7 @@
     "classId": "suma-Wainiyabia and Galoa shark corridor",
     "sketchId": null,
     "groupId": null,
-    "value": 87204744.67979035
+    "value": 88363007.92624679
   },
   {
     "geographyId": "eez",
@@ -1381,7 +1397,7 @@
     "classId": "suma-Wakaya Island and barrier reef",
     "sketchId": null,
     "groupId": null,
-    "value": 133335558.35860948
+    "value": 133993454.15333967
   },
   {
     "geographyId": "eez",
@@ -1421,7 +1437,7 @@
     "classId": "suma-Yacata/Kaibu",
     "sketchId": null,
     "groupId": null,
-    "value": 9373307.78185343
+    "value": 9981566.479755852
   },
   {
     "geographyId": "eez",
@@ -1429,7 +1445,7 @@
     "classId": "suma-Yadua Island",
     "sketchId": null,
     "groupId": null,
-    "value": 21594587.07051599
+    "value": 22890895.055264644
   },
   {
     "geographyId": "eez",
@@ -1437,7 +1453,7 @@
     "classId": "suma-Yagasa Group",
     "sketchId": null,
     "groupId": null,
-    "value": 267583219.88756996
+    "value": 268494018.57648855
   },
   {
     "geographyId": "eez",
@@ -1445,7 +1461,7 @@
     "classId": "suma-Yanuca Island_ Cuvu",
     "sketchId": null,
     "groupId": null,
-    "value": 1388524.2217030807
+    "value": 1484218.196798236
   },
   {
     "geographyId": "eez",
@@ -1453,7 +1469,7 @@
     "classId": "suma-Yanuyanu Island_Naweni",
     "sketchId": null,
     "groupId": null,
-    "value": 81883.23173501348
+    "value": 88311.43965528687
   },
   {
     "geographyId": "eez",
@@ -1461,7 +1477,7 @@
     "classId": "suma-Yasawa Island",
     "sketchId": null,
     "groupId": null,
-    "value": 491845313.1618525
+    "value": 495423598.6216646
   },
   {
     "geographyId": "eez",
@@ -1853,7 +1869,7 @@
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1097786
+    "value": 1097969
   },
   {
     "geographyId": "eez",
@@ -1861,7 +1877,7 @@
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1097786
+    "value": 1097969
   },
   {
     "geographyId": "eez",
@@ -1869,7 +1885,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1097786
+    "value": 1097969
   },
   {
     "geographyId": "eez",
@@ -1877,7 +1893,7 @@
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1097786
+    "value": 1097969
   },
   {
     "geographyId": "eez",
@@ -1885,7 +1901,7 @@
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1097786
+    "value": 1097969
   },
   {
     "geographyId": "eez",
@@ -1893,7 +1909,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1097786
+    "value": 1097969
   },
   {
     "geographyId": "eez",
@@ -1901,7 +1917,7 @@
     "classId": "gfw_2024-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1097786
+    "value": 1097969
   },
   {
     "geographyId": "eez",
@@ -1917,7 +1933,7 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 10984
+    "value": 4756417
   },
   {
     "geographyId": "eez",
@@ -1930,10 +1946,26 @@
   {
     "geographyId": "eez",
     "metricId": "count",
+    "classId": "pristineSeas_combined-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 576
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "pristineSeas_multi-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 79872
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
     "classId": "suma_dissolved-total",
     "sketchId": null,
     "groupId": null,
-    "value": 108
+    "value": 128
   },
   {
     "geographyId": "eez",
@@ -2181,7 +2213,7 @@
     "classId": "suma-Kadavu mangrove bays",
     "sketchId": null,
     "groupId": null,
-    "value": 27
+    "value": 47
   },
   {
     "geographyId": "eez",
@@ -2581,7 +2613,7 @@
     "classId": "suma-Somosomo straits",
     "sketchId": null,
     "groupId": null,
-    "value": 2
+    "value": 0
   },
   {
     "geographyId": "eez",
@@ -2717,7 +2749,7 @@
     "classId": "suma-total",
     "sketchId": null,
     "groupId": null,
-    "value": 259
+    "value": 277
   },
   {
     "geographyId": "eez",
@@ -2933,7 +2965,7 @@
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 139191.299966
+    "value": 139221.719966
   },
   {
     "geographyId": "eez",
@@ -2949,7 +2981,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 104964.689845
+    "value": 104987.279845
   },
   {
     "geographyId": "eez",
@@ -2973,7 +3005,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 73144.049939
+    "value": 73238.229937
   },
   {
     "geographyId": "eez",
@@ -2997,7 +3029,23 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 466.93986
+    "value": 206284.525279
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "pristineSeas_combined-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 869.441968
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "pristineSeas_multi-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 39648.650748
   },
   {
     "geographyId": "eez",
@@ -3053,7 +3101,7 @@
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 84304
+    "value": 84305
   },
   {
     "geographyId": "eez",
@@ -3069,7 +3117,7 @@
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 65163
+    "value": 65164
   },
   {
     "geographyId": "eez",
@@ -3093,7 +3141,7 @@
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 58973
+    "value": 58977
   },
   {
     "geographyId": "eez",
@@ -3117,6 +3165,22 @@
     "classId": "gfw_purseseine-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 139
+    "value": 61569
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "pristineSeas_combined-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 576
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "pristineSeas_multi-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 79872
   }
 ]

@@ -6,7 +6,7 @@
       "classId": "geo_basins",
       "sketchId": "101153",
       "groupId": "Basins",
-      "value": 2414104261.661955,
+      "value": 1219182046.060766,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
@@ -18,7 +18,7 @@
       "classId": "geo_basins",
       "sketchId": "101154",
       "groupId": "Basins",
-      "value": 0,
+      "value": 114180356.88257,
       "extra": {
         "sketchName": "a"
       }
@@ -29,7 +29,7 @@
       "classId": "geo_basins",
       "sketchId": "101155",
       "groupId": "Basins",
-      "value": 2414104261.661955,
+      "value": 1105001689.178196,
       "extra": {
         "sketchName": "b"
       }
@@ -74,7 +74,7 @@
       "classId": "geo_canyons",
       "sketchId": "101153",
       "groupId": "Canyons",
-      "value": 113656400.886646,
+      "value": 113843441.888348,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
@@ -97,7 +97,7 @@
       "classId": "geo_canyons",
       "sketchId": "101155",
       "groupId": "Canyons",
-      "value": 113656400.886646,
+      "value": 113843441.888348,
       "extra": {
         "sketchName": "b"
       }
@@ -176,7 +176,7 @@
       "classId": "geo_plateaus",
       "sketchId": "101153",
       "groupId": "Plateaus",
-      "value": 7528747330.341343,
+      "value": 2576578985.423629,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
@@ -199,7 +199,7 @@
       "classId": "geo_plateaus",
       "sketchId": "101155",
       "groupId": "Plateaus",
-      "value": 7528747330.341343,
+      "value": 2576578985.423629,
       "extra": {
         "sketchName": "b"
       }
@@ -210,7 +210,7 @@
       "classId": "geo_ridges",
       "sketchId": "101153",
       "groupId": "Ridges",
-      "value": 334240528.064572,
+      "value": 346503656.447484,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
@@ -233,7 +233,7 @@
       "classId": "geo_ridges",
       "sketchId": "101155",
       "groupId": "Ridges",
-      "value": 334240528.064572,
+      "value": 346503656.447484,
       "extra": {
         "sketchName": "b"
       }
@@ -312,7 +312,7 @@
       "classId": "geo_shelf",
       "sketchId": "101153",
       "groupId": "Shelf",
-      "value": 466177396.713116,
+      "value": 466465068.073433,
       "extra": {
         "sketchName": "spacing-test-antimeridian",
         "isCollection": true
@@ -324,7 +324,7 @@
       "classId": "geo_shelf",
       "sketchId": "101154",
       "groupId": "Shelf",
-      "value": 461040991.704803,
+      "value": 461275704.480881,
       "extra": {
         "sketchName": "a"
       }
@@ -335,7 +335,7 @@
       "classId": "geo_shelf",
       "sketchId": "101155",
       "groupId": "Shelf",
-      "value": 5136405.008313,
+      "value": 5189363.592552,
       "extra": {
         "sketchName": "b"
       }
@@ -404,40 +404,6 @@
       "sketchId": "101155",
       "groupId": "Spreading Ridges",
       "value": 2298155626.719269,
-      "extra": {
-        "sketchName": "b"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "101153",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "spacing-test-antimeridian",
-        "isCollection": true
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "101154",
-      "groupId": "Trenches",
-      "value": 0,
-      "extra": {
-        "sketchName": "a"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "101155",
-      "groupId": "Trenches",
-      "value": 0,
       "extra": {
         "sketchName": "b"
       }

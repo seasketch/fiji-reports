@@ -1,7 +1,7 @@
 [
   {
     "metricId": "geomorphACA",
-    "value": 745086125.9159981,
+    "value": 783474892.0348613,
     "classId": "Terrestrial Reef Flat",
     "groupId": null,
     "geographyId": "eez",
@@ -9,7 +9,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 1211488642.24814,
+    "value": 1232754027.1507876,
     "classId": "Outer Reef Flat",
     "groupId": null,
     "geographyId": "eez",
@@ -17,7 +17,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 734957751.445969,
+    "value": 739756683.263185,
     "classId": "Back Reef Slope",
     "groupId": null,
     "geographyId": "eez",
@@ -25,7 +25,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 148828166.814668,
+    "value": 148516578.90090278,
     "classId": "Plateau",
     "groupId": null,
     "geographyId": "eez",
@@ -33,7 +33,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 178959626.637656,
+    "value": 180650320.73692134,
     "classId": "Reef Crest",
     "groupId": null,
     "geographyId": "eez",
@@ -41,7 +41,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 200214431.391822,
+    "value": 201423223.7003687,
     "classId": "Reef Slope",
     "groupId": null,
     "geographyId": "eez",
@@ -49,7 +49,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 770736164.407225,
+    "value": 776636894.3774731,
     "classId": "Inner Reef Flat",
     "groupId": null,
     "geographyId": "eez",
@@ -57,7 +57,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 312902613.166838,
+    "value": 312033496.4013523,
     "classId": "Deep Lagoon",
     "groupId": null,
     "geographyId": "eez",
@@ -65,7 +65,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 408616341.8140846,
+    "value": 409056661.148335,
     "classId": "Sheltered Reef Slope",
     "groupId": null,
     "geographyId": "eez",
@@ -73,7 +73,7 @@
   },
   {
     "metricId": "geomorphACA",
-    "value": 579847918.514721,
+    "value": 579772760.8930745,
     "classId": "Shallow Lagoon",
     "groupId": null,
     "geographyId": "eez",

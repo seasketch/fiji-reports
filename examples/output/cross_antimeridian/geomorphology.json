@@ -28,7 +28,7 @@
       "classId": "geo_canyons",
       "sketchId": "78746",
       "groupId": "Canyons",
-      "value": 1100239324.738853,
+      "value": 1142480169.812947,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -72,7 +72,7 @@
       "classId": "geo_ridges",
       "sketchId": "78746",
       "groupId": "Ridges",
-      "value": 644438717.545118,
+      "value": 1120603075.910942,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -105,7 +105,7 @@
       "classId": "geo_shelf",
       "sketchId": "78746",
       "groupId": "Shelf",
-      "value": 799198975.41699,
+      "value": 799254675.747971,
       "extra": {
         "sketchName": "cross_antimeridian"
       }
@@ -127,17 +127,6 @@
       "classId": "geo_spreadingridges",
       "sketchId": "78746",
       "groupId": "Spreading Ridges",
-      "value": 0,
-      "extra": {
-        "sketchName": "cross_antimeridian"
-      }
-    },
-    {
-      "geographyId": null,
-      "metricId": "geomorphology",
-      "classId": "geo_trenches",
-      "sketchId": "78746",
-      "groupId": "Trenches",
       "value": 0,
       "extra": {
         "sketchName": "cross_antimeridian"
