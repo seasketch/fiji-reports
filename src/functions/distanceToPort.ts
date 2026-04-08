@@ -26,6 +26,8 @@ import {
   polygon,
   booleanIntersects,
   multiPolygon,
+  booleanPointInPolygon,
+  point,
 } from "@turf/turf";
 
 // Normalize longitude to handle antimeridian crossing - same as in pyriv.ts
@@ -63,6 +65,16 @@ function normalizeSketch(
       },
     };
   }
+}
+
+function isPortInsideSketch(
+  sketch: Sketch<Polygon | MultiPolygon>,
+  port: Feature<Point>,
+): boolean {
+  const portCoord = normalizeLongitude(
+    port.geometry.coordinates as [number, number],
+  );
+  return booleanPointInPolygon(point(portCoord), sketch.geometry);
 }
 
 // Define the function to calculate the distance to the nearest port
@@ -113,6 +125,17 @@ export async function distanceToPort(
         console.log(
           `Finding shortest path from ${sketch.properties.name} to port ${port.properties?.PORT_NAME}`,
         );
+
+        if (isPortInsideSketch(sketch, port)) {
+          const pc = normalizeLongitude(
+            port.geometry.coordinates as [number, number],
+          );
+          minDist = 0;
+          closestPort = port;
+          closestPath = lineString([pc, pc]);
+          break;
+        }
+
         const { path, totalDistance } = findShortestPath(
           finalGraph.graph,
           sketch,

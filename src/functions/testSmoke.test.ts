@@ -47,7 +47,7 @@ function createSmokeTest(
     test(
       `${functionName} - tests run against all examples`,
       async () => {
-        const examples = await getExamplePolygonSketchAll();
+        const examples = await getExamplePolygonSketchAll("aoi");
         for (const example of examples) {
           const result = await functionToTest(example);
           expect(result).toBeTruthy();

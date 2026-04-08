@@ -10,7 +10,6 @@ import {
   ToolbarCard,
 } from "@seasketch/geoprocessing/client-ui";
 import {
-  GeogProp,
   ReportResult,
   firstMatchingMetric,
   percentWithEdge,
@@ -37,7 +36,7 @@ export const Mangroves: React.FunctionComponent<{
     classId: "2020",
     sketchId: null,
     groupId: null,
-    value: 45814946.6511,
+    value: 73774597.23629834,
   };
   // Labels
   const titleLabel = t("Mangroves - Global Mangrove Watch");

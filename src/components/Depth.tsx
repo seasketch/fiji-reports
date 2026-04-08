@@ -10,6 +10,7 @@ import {
   SketchClassTable,
   ReportError,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import { BathymetryResults } from "../functions/bathymetry.js";
 import { Trans, useTranslation } from "react-i18next";
@@ -36,6 +37,7 @@ export const Depth: React.FunctionComponent<{ printing: boolean }> = (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={title} functionName="bathymetry" useChildCard>
         {(data: BathymetryResults[]) => {
+          if (!data || !Array.isArray(data)) return <Skeleton />;
           const overallStats = isCollection
             ? data.find((s) => s.isCollection)
             : data[0];

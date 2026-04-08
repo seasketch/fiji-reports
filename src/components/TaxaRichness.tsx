@@ -11,6 +11,7 @@ import {
   Table,
   ToolbarCard,
   useSketchProperties,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   MetricGroup,
@@ -57,6 +58,7 @@ export const TaxaRichness: React.FunctionComponent<{ printing: boolean }> = (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="taxaRichness" useChildCard>
         {(data: RichnessReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
           return (
             <ReportError>
               <ToolbarCard

@@ -388,7 +388,7 @@
     "metricId": "area",
     "classId": "gfw_2018-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 8.4305
   },
   {
@@ -396,7 +396,7 @@
     "metricId": "area",
     "classId": "gfw_2019-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 7.8801
   },
   {
@@ -404,7 +404,7 @@
     "metricId": "area",
     "classId": "gfw_2020-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 6.5164
   },
   {
@@ -412,7 +412,7 @@
     "metricId": "area",
     "classId": "gfw_2021-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 6.0395
   },
   {
@@ -420,7 +420,7 @@
     "metricId": "area",
     "classId": "gfw_2022-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 6.4778
   },
   {
@@ -428,7 +428,7 @@
     "metricId": "area",
     "classId": "gfw_2023-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 5.8977
   },
   {
@@ -436,7 +436,7 @@
     "metricId": "area",
     "classId": "gfw_2024-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 6.0872
   },
   {
@@ -444,7 +444,7 @@
     "metricId": "area",
     "classId": "gfw_longline-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 86.11
   },
   {
@@ -452,7 +452,7 @@
     "metricId": "area",
     "classId": "gfw_purseseine-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 16607419571.28176
   },
   {
@@ -461,14 +461,14 @@
     "classId": "gmw_2020-total",
     "sketchId": null,
     "groupId": null,
-    "value": 45824445.182033
+    "value": 73774597.23629834
   },
   {
     "geographyId": "eez",
     "metricId": "area",
     "classId": "pristineSeas_combined-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1242951139846.6235
   },
   {
@@ -476,7 +476,7 @@
     "metricId": "area",
     "classId": "pristineSeas_multi-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1249810126339.7747
   },
   {
@@ -1868,7 +1868,7 @@
     "metricId": "count",
     "classId": "gfw_2018-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1097969
   },
   {
@@ -1876,7 +1876,7 @@
     "metricId": "count",
     "classId": "gfw_2019-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1097969
   },
   {
@@ -1884,7 +1884,7 @@
     "metricId": "count",
     "classId": "gfw_2020-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1097969
   },
   {
@@ -1892,7 +1892,7 @@
     "metricId": "count",
     "classId": "gfw_2021-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1097969
   },
   {
@@ -1900,7 +1900,7 @@
     "metricId": "count",
     "classId": "gfw_2022-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1097969
   },
   {
@@ -1908,7 +1908,7 @@
     "metricId": "count",
     "classId": "gfw_2023-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1097969
   },
   {
@@ -1916,7 +1916,7 @@
     "metricId": "count",
     "classId": "gfw_2024-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 1097969
   },
   {
@@ -1924,7 +1924,7 @@
     "metricId": "count",
     "classId": "gfw_longline-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 10984
   },
   {
@@ -1932,7 +1932,7 @@
     "metricId": "count",
     "classId": "gfw_purseseine-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 4756417
   },
   {
@@ -1941,14 +1941,14 @@
     "classId": "gmw_2020-total",
     "sketchId": null,
     "groupId": null,
-    "value": 1929
+    "value": 2788
   },
   {
     "geographyId": "eez",
     "metricId": "count",
     "classId": "pristineSeas_combined-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 576
   },
   {
@@ -1956,7 +1956,7 @@
     "metricId": "count",
     "classId": "pristineSeas_multi-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 79872
   },
   {
@@ -2964,7 +2964,7 @@
     "metricId": "sum",
     "classId": "gfw_2018-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 139221.719966
   },
   {
@@ -2972,7 +2972,7 @@
     "metricId": "sum",
     "classId": "gfw_2019-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 130127.979943
   },
   {
@@ -2980,7 +2980,7 @@
     "metricId": "sum",
     "classId": "gfw_2020-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 104987.279845
   },
   {
@@ -2988,7 +2988,7 @@
     "metricId": "sum",
     "classId": "gfw_2021-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 89528.759873
   },
   {
@@ -2996,7 +2996,7 @@
     "metricId": "sum",
     "classId": "gfw_2022-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 89419.699968
   },
   {
@@ -3004,7 +3004,7 @@
     "metricId": "sum",
     "classId": "gfw_2023-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 73238.229937
   },
   {
@@ -3012,7 +3012,7 @@
     "metricId": "sum",
     "classId": "gfw_2024-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 85494.260149
   },
   {
@@ -3020,7 +3020,7 @@
     "metricId": "sum",
     "classId": "gfw_longline-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 191706.65913
   },
   {
@@ -3028,7 +3028,7 @@
     "metricId": "sum",
     "classId": "gfw_purseseine-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 206284.525279
   },
   {
@@ -3036,7 +3036,7 @@
     "metricId": "sum",
     "classId": "pristineSeas_combined-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 869.441968
   },
   {
@@ -3044,7 +3044,7 @@
     "metricId": "sum",
     "classId": "pristineSeas_multi-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 39648.650748
   },
   {
@@ -3052,7 +3052,7 @@
     "metricId": "valid",
     "classId": "bleachingAlerts-1",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 86
   },
   {
@@ -3060,7 +3060,7 @@
     "metricId": "valid",
     "classId": "bleachingAlerts-2",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 14380
   },
   {
@@ -3068,7 +3068,7 @@
     "metricId": "valid",
     "classId": "bleachingAlerts-3",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 19679
   },
   {
@@ -3076,7 +3076,7 @@
     "metricId": "valid",
     "classId": "bleachingAlerts-4",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 15730
   },
   {
@@ -3084,7 +3084,7 @@
     "metricId": "valid",
     "classId": "bleachingAlerts-5",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 5040
   },
   {
@@ -3092,7 +3092,7 @@
     "metricId": "valid",
     "classId": "bleachingAlerts-6",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 6
   },
   {
@@ -3100,7 +3100,7 @@
     "metricId": "valid",
     "classId": "gfw_2018-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 84305
   },
   {
@@ -3108,7 +3108,7 @@
     "metricId": "valid",
     "classId": "gfw_2019-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 78801
   },
   {
@@ -3116,7 +3116,7 @@
     "metricId": "valid",
     "classId": "gfw_2020-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 65164
   },
   {
@@ -3124,7 +3124,7 @@
     "metricId": "valid",
     "classId": "gfw_2021-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 60395
   },
   {
@@ -3132,7 +3132,7 @@
     "metricId": "valid",
     "classId": "gfw_2022-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 64778
   },
   {
@@ -3140,7 +3140,7 @@
     "metricId": "valid",
     "classId": "gfw_2023-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 58977
   },
   {
@@ -3148,7 +3148,7 @@
     "metricId": "valid",
     "classId": "gfw_2024-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 60872
   },
   {
@@ -3156,7 +3156,7 @@
     "metricId": "valid",
     "classId": "gfw_longline-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 8611
   },
   {
@@ -3164,7 +3164,7 @@
     "metricId": "valid",
     "classId": "gfw_purseseine-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 61569
   },
   {
@@ -3172,7 +3172,7 @@
     "metricId": "valid",
     "classId": "pristineSeas_combined-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 576
   },
   {
@@ -3180,7 +3180,7 @@
     "metricId": "valid",
     "classId": "pristineSeas_multi-total",
     "sketchId": null,
-    "groupId": "band-0",
+    "groupId": null,
     "value": 79872
   }
 ]

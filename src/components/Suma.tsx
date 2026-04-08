@@ -12,6 +12,7 @@ import {
   VerticalSpacer,
   ToolbarCard,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   GeogProp,
@@ -61,6 +62,7 @@ export const Suma: React.FunctionComponent<{
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="suma" useChildCard>
         {(data: { totalValue: number; metrics: Metric[] }) => {
+          if (!data || !data.metrics) return <Skeleton />;
           const totalValue = data.totalValue;
           const totalSUMAs = 148263414428.76416; // From QGIS
 

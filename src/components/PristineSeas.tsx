@@ -1,6 +1,7 @@
 import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
+  Card,
   ClassTable,
   Collapse,
   DataDownload,
@@ -9,6 +10,7 @@ import {
   Pill,
   ReportError,
   ResultsCard,
+  Skeleton,
   SketchClassTable,
   ToolbarCard,
   useSketchProperties,
@@ -47,6 +49,7 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="pristineSeas" useChildCard>
         {(data: PristineSeasReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
           const metrics = metricsWithSketchId(
             data.metrics.filter(
               (m) =>
@@ -54,6 +57,20 @@ export const PristineSeas: React.FunctionComponent<{ printing: boolean }> = (
             ),
             [id],
           );
+
+          if (
+            data.metrics.find((m) => m.classId === "multi" && m.sketchId === id)
+              ?.value === null
+          ) {
+            return (
+              <Card title={titleLabel}>
+                <p>
+                  This small area of interest is better suited for the Marxan
+                  framework. See above report.
+                </p>
+              </Card>
+            );
+          }
 
           return (
             <ReportError>

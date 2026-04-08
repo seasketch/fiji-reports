@@ -10,6 +10,7 @@ import {
   DataDownload,
   Pill,
   Table,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import { Download } from "@styled-icons/bootstrap/Download";
 import { TFunction } from "i18next";
@@ -71,6 +72,7 @@ export const Marxan: React.FunctionComponent<{ printing: boolean }> = (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="marxan" useChildCard>
         {(data: ReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
           const overallStats = calculateMarxanStats(
             data.metrics.filter((m) => m.sketchId === id),
           );

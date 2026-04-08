@@ -9,6 +9,7 @@ import {
   useSketchProperties,
   ToolbarCard,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   GeogProp,
@@ -49,6 +50,7 @@ export const HydrothermalVents: React.FunctionComponent<{
         useChildCard
       >
         {(data: ReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
           const percMetricIdName = `${metricGroup.metricId}Perc`;
 
           const valueMetrics = metricsWithSketchId(

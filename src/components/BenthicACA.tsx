@@ -7,6 +7,7 @@ import {
   LayerToggle,
   ReportError,
   ResultsCard,
+  Skeleton,
   SketchClassTable,
   ToolbarCard,
   useSketchProperties,
@@ -47,6 +48,8 @@ export const BenthicACA: React.FunctionComponent<{ printing: boolean }> = (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="benthicACA" useChildCard>
         {(data: ReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
+
           const percMetricIdName = `${metricGroup.metricId}Perc`;
 
           const valueMetrics = metricsWithSketchId(

@@ -4,6 +4,7 @@ import {
   Collapse,
   ReportError,
   ResultsCard,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import { DHWResults } from "../functions/dhw.js";
 import { DhwLineChart } from "./DhwLineChart.js";
@@ -21,6 +22,7 @@ export const Dhw: React.FunctionComponent<{ printing: boolean }> = (props) => {
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="dhw">
         {(data: DHWResults[]) => {
+          if (!data || !Array.isArray(data)) return <Skeleton />;
           // Check if we have any valid data points
           const hasValidData = data.some(
             (d) => d.min !== null || d.mean !== null || d.max !== null,

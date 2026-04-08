@@ -9,6 +9,7 @@ import {
   useSketchProperties,
   ToolbarCard,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   flattenBySketchAllClass,
@@ -52,6 +53,7 @@ export const Gfw: React.FunctionComponent<{
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="gfw" useChildCard>
         {(data: ReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
           const percMetricIdName = `${metricGroup.metricId}Perc`;
 
           const valueMetrics = metricsWithSketchId(

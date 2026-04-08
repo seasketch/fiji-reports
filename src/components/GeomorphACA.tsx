@@ -10,6 +10,7 @@ import {
   SketchClassTable,
   ToolbarCard,
   useSketchProperties,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   Metric,
@@ -47,6 +48,7 @@ export const GeomorphACA: React.FunctionComponent<{ printing: boolean }> = (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="geomorphACA" useChildCard>
         {(data: ReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
           const percMetricIdName = `${metricGroup.metricId}Perc`;
 
           const valueMetrics = metricsWithSketchId(

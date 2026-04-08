@@ -11,6 +11,7 @@ import {
   ToolbarCard,
   useSketchProperties,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import project from "../../project/projectClient.js";
 import { SpRichnessResults } from "../util/overlapPolygonStats.js";
@@ -41,6 +42,8 @@ export const BenthicRichness: React.FunctionComponent<{ printing: boolean }> = (
         useChildCard
       >
         {(metricResults: SpRichnessResults[]) => {
+          if (!metricResults || !Array.isArray(metricResults))
+            return <Skeleton />;
           const overallStats = isCollection
             ? metricResults.find((s) => s.isCollection)!
             : metricResults[0];

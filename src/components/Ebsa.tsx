@@ -10,6 +10,7 @@ import {
   useSketchProperties,
   ToolbarCard,
   DataDownload,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   Metric,
@@ -58,6 +59,7 @@ export const Ebsa: React.FunctionComponent<{
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="ebsa" useChildCard>
         {(data: ReportResult) => {
+          if (!data || !data.metrics) return <Skeleton />;
           const percMetricIdName = `${metricGroup.metricId}Perc`;
 
           const valueMetrics = metricsWithSketchId(
